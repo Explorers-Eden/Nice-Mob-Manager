@@ -1,0 +1,6 @@
+{
+    "values":[
+      "mob_settings:load",
+      "mob_settings:init"
+    ]
+  }

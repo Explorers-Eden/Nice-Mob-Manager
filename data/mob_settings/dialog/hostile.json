@@ -1,0 +1,390 @@
+{
+  "type": "minecraft:simple_input_form",
+  "body": [
+    {
+      "type": "minecraft:item",
+      "item": {
+        "id": "minecraft:spawner",
+        "components": {
+          "minecraft:tooltip_display": {
+            "hide_tooltip": true
+          }
+        }
+      },
+      "description": {
+        "translate": "menu.mob_settings.hostile_mob_settings.description",
+        "fallback": "Configure Hostile Mob Settings:"
+      }
+    },
+    {
+      "type": "minecraft:plain_message",
+      "contents": {
+        "translate": "menu.mob_settings.init_values",
+        "fallback": "Sliders adjust the mob's values relative to their vanilla percentages.",
+        "color": "gray"
+      },
+      "width": 1024
+    }
+  ],
+  "can_close_with_escape": true,
+  "external_title": {
+    "translate": "menu.mob_settings.hostile_mobs.title",
+    "fallback": "Hostile Mobs"
+  },
+  "title": {
+    "translate": "menu.mob_settings.main.title",
+    "fallback": "Nice Mob Settings"
+  },
+  "inputs": [
+    {
+      "type": "minecraft:single_option",
+      "key": "type",
+      "label": {
+        "translate": "menu.nice_mobs.mob_type",
+        "fallback": "Mob Type"
+      },
+      "label_visible": true,
+      "options": [
+        {
+          "id": "all_hostile",
+          "display": {
+            "translate": "menu.nice_mobs.all_hostile_mobs",
+            "fallback": "All Hostile Mobs"
+          },
+          "initial": true
+        },
+        {
+          "id": "blaze",
+          "display": {
+            "translate": "entity.minecraft.blaze"
+          }
+        },
+        {
+          "id": "bogged",
+          "display": {
+            "translate": "entity.minecraft.bogged"
+          }
+        },
+        {
+          "id": "breeze",
+          "display": {
+            "translate": "entity.minecraft.breeze"
+          }
+        },
+        {
+          "id": "creeper",
+          "display": {
+            "translate": "entity.minecraft.creeper"
+          }
+        },
+        {
+          "id": "elder_guardian",
+          "display": {
+            "translate": "entity.minecraft.elder_guardian"
+          }
+        },
+        {
+          "id": "endermite",
+          "display": {
+            "translate": "entity.minecraft.endermite"
+          }
+        },
+        {
+          "id": "evoker",
+          "display": {
+            "translate": "entity.minecraft.evoker"
+          }
+        },
+        {
+          "id": "ghast",
+          "display": {
+            "translate": "entity.minecraft.ghast"
+          }
+        },
+        {
+          "id": "guardian",
+          "display": {
+            "translate": "entity.minecraft.guardian"
+          }
+        },
+        {
+          "id": "hoglin",
+          "display": {
+            "translate": "entity.minecraft.hoglin"
+          }
+        },
+        {
+          "id": "magma_cube",
+          "display": {
+            "translate": "entity.minecraft.magma_cube"
+          }
+        },
+        {
+          "id": "phantom",
+          "display": {
+            "translate": "entity.minecraft.phantom"
+          }
+        },
+        {
+          "id": "piglin_brute",
+          "display": {
+            "translate": "entity.minecraft.piglin_brute"
+          }
+        },
+        {
+          "id": "pillager",
+          "display": {
+            "translate": "entity.minecraft.pillager"
+          }
+        },
+        {
+          "id": "ravager",
+          "display": {
+            "translate": "entity.minecraft.ravager"
+          }
+        },
+        {
+          "id": "shulker",
+          "display": {
+            "translate": "entity.minecraft.shulker"
+          }
+        },
+        {
+          "id": "silverfish",
+          "display": {
+            "translate": "entity.minecraft.silverfish"
+          }
+        },
+        {
+          "id": "skeleton",
+          "display": {
+            "translate": "entity.minecraft.skeleton"
+          }
+        },
+        {
+          "id": "slime",
+          "display": {
+            "translate": "entity.minecraft.slime"
+          }
+        },
+        {
+          "id": "stray",
+          "display": {
+            "translate": "entity.minecraft.stray"
+          }
+        },
+        {
+          "id": "vex",
+          "display": {
+            "translate": "entity.minecraft.vex"
+          }
+        },
+        {
+          "id": "vindicator",
+          "display": {
+            "translate": "entity.minecraft.warden"
+          }
+        },
+        {
+          "id": "witch",
+          "display": {
+            "translate": "entity.minecraft.witch"
+          }
+        },
+        {
+          "id": "wither_skeleton",
+          "display": {
+            "translate": "entity.minecraft.wither_skeleton"
+          }
+        },
+        {
+          "id": "zoglin",
+          "display": {
+            "translate": "entity.minecraft.zoglin"
+          }
+        },
+        {
+          "id": "zombie",
+          "display": {
+            "translate": "entity.minecraft.zombie"
+          }
+        },
+        {
+          "id": "zombie_villager",
+          "display": {
+            "translate": "entity.minecraft.zombie_villager"
+          }
+        }
+      ]
+    },
+    {
+      "type": "minecraft:number_range",
+      "key": "scale_min",
+      "label": {
+        "translate": "menu.mob_settings.option.scale_min",
+        "fallback": "Min Scale"
+      },
+      "start": 1,
+      "end": 99,
+      "step": 1,
+      "initial": 80
+    },
+    {
+      "type": "minecraft:number_range",
+      "key": "scale_max",
+      "label": {
+        "translate": "menu.mob_settings.option.scale_max",
+        "fallback": "Max Scale"
+      },
+      "start": 100,
+      "end": 200,
+      "step": 1,
+      "initial": 115
+    },
+    {
+      "type": "minecraft:number_range",
+      "key": "health",
+      "label": {
+        "translate": "menu.mob_settings.option.health",
+        "fallback": "Health"
+      },
+      "start": 1,
+      "end": 200,
+      "step": 1,
+      "initial": 100
+    },
+    {
+      "type": "minecraft:number_range",
+      "key": "tempt_range",
+      "label": {
+        "translate": "menu.mob_settings.option.tempt_range",
+        "fallback": "Tempt Range"
+      },
+      "start": 1,
+      "end": 200,
+      "step": 1,
+      "initial": 100
+    },
+    {
+      "type": "minecraft:number_range",
+      "key": "follow_range",
+      "label": {
+        "translate": "menu.mob_settings.option.follow_range",
+        "fallback": "Follow Range"
+      },
+      "start": 1,
+      "end": 200,
+      "step": 1,
+      "initial": 100
+    },
+    {
+      "type": "minecraft:number_range",
+      "key": "safe_fall",
+      "label": {
+        "translate": "menu.mob_settings.option.safe_fall",
+        "fallback": "Safe Fall Distance"
+      },
+      "start": 1,
+      "end": 200,
+      "step": 1,
+      "initial": 100
+    },
+    {
+      "type": "minecraft:number_range",
+      "key": "move_speed",
+      "label": {
+        "translate": "menu.mob_settings.option.move_speed",
+        "fallback": "Movement Speed"
+      },
+      "start": 1,
+      "end": 200,
+      "step": 1,
+      "initial": 100
+    },
+    {
+      "type": "minecraft:number_range",
+      "key": "attck_dmg",
+      "label": {
+        "translate": "menu.mob_settings.option.attck_dmg",
+        "fallback": "Attack Damage"
+      },
+      "start": 1,
+      "end": 200,
+      "step": 1,
+      "initial": 100
+    },
+    {
+      "type": "minecraft:number_range",
+      "key": "attck_speed",
+      "label": {
+        "translate": "menu.mob_settings.option.attck_speed",
+        "fallback": "Attack Speed"
+      },
+      "start": 1,
+      "end": 200,
+      "step": 1,
+      "initial": 100
+    },
+    {
+      "type": "minecraft:single_option",
+      "key": "burn",
+      "label": {
+        "translate": "menu.mob_settings.option.can_burn",
+        "fallback": "Can Burn"
+      },
+      "options": [
+        {
+          "id": "enabled",
+          "display": {
+            "translate": "menu.nice_mobs.enabled",
+            "fallback": "Enabled"
+          },
+          "initial": true
+        },
+        {
+          "id": "disabled",
+          "display": {
+            "translate": "menu.nice_mobs.disabled",
+            "fallback": "Disabled"
+          }
+        }
+      ]
+    },
+    {
+      "type": "minecraft:single_option",
+      "key": "drown",
+      "label": {
+        "translate": "menu.mob_settings.option.can_drown",
+        "fallback": "Can Drown"
+      },
+      "options": [
+        {
+          "id": "enabled",
+          "display": {
+            "translate": "menu.nice_mobs.enabled",
+            "fallback": "Enabled"
+          },
+          "initial": true
+        },
+        {
+          "id": "disabled",
+          "display": {
+            "translate": "menu.nice_mobs.disabled",
+            "fallback": "Disabled"
+          }
+        }
+      ]
+    }
+  ],
+  "action": {
+    "label": {
+      "translate": "menu.mob_settings.option.confirm",
+      "fallback": "Confirm"
+    },
+    "id": "confirm",
+    "on_submit": {
+      "type": "minecraft:command_template",
+      "template": "function mob_settings:menu_config/hostile_mobs {type:$(type),attck_dmg:$(attck_dmg),attck_speed:$(attck_speed),scale_min:$(scale_min),scale_max:$(scale_max),health:$(health),tempt_range:$(tempt_range),follow_range:$(follow_range),safe_fall:$(safe_fall),move_speed:$(move_speed),burn:$(burn),drown:$(drown)}"
+    }
+  }
+}

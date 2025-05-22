@@ -1,0 +1,12 @@
+$execute store result storage eden:temp mob_settings.salmon.scale float 0.01 run random value $(scale_min)..$(scale_max)
+$execute store result storage eden:temp mob_settings.salmon.health float $(health) run attribute @s minecraft:max_health base get
+$execute store result storage eden:temp mob_settings.salmon.tempt_range float $(tempt_range) run attribute @s minecraft:tempt_range base get
+$execute store result storage eden:temp mob_settings.salmon.follow_range float $(follow_range) run attribute @s minecraft:follow_range base get
+$execute store result storage eden:temp mob_settings.salmon.move_speed float $(move_speed) run attribute @s minecraft:movement_speed base get
+$execute store result storage eden:temp mob_settings.salmon.safe_fall float $(safe_fall) run attribute @s minecraft:safe_fall_distance base get
+
+execute if data storage eden:mob_settings salmon{breed:"disabled"} run tag @s add eden.settings.breed.disabled
+execute if data storage eden:mob_settings salmon{drown:"disabled"} run tag @s add eden.settings.drown.disabled
+execute if data storage eden:mob_settings salmon{burn:"disabled"} run attribute @s minecraft:burning_time base set 0
+
+function mob_settings:apply/passive_mobs/exec with storage eden:temp mob_settings.salmon

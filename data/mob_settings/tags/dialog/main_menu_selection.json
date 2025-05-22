@@ -1,0 +1,9 @@
+{
+    "values":[
+      "mob_settings:passive",
+      "mob_settings:neutral",
+      "mob_settings:hostile",
+      "mob_settings:misc",
+      "mob_settings:restore_default"
+    ]
+  }

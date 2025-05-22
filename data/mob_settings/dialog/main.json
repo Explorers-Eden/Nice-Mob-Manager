@@ -1,0 +1,29 @@
+{
+  "type": "minecraft:dialog_list",
+  "body": {
+    "type": "minecraft:item",
+    "item": {
+      "id": "minecraft:spawner",
+      "components": {
+        "minecraft:tooltip_display": {
+          "hide_tooltip": true
+        }
+      }
+    },
+    "description": {
+      "translate": "menu.mob_settings.main.description",
+      "fallback": "Select a Mob Category:"
+    }
+  },
+  "can_close_with_escape": true,
+  "external_title": {
+    "translate": "menu.mob_settings.main.title",
+    "fallback": "Nice Mob Settings"
+  },
+  "title": {
+    "translate": "menu.mob_settings.main.title",
+    "fallback": "Nice Mob Settings"
+  },
+  "columns": 1,
+  "dialogs": "#mob_settings:main_menu_selection"
+}

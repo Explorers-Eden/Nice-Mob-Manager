@@ -1,0 +1,84 @@
+{
+  "type": "minecraft:simple_input_form",
+  "body": [
+    {
+      "type": "minecraft:item",
+      "item": {
+        "id": "minecraft:spawner",
+        "components": {
+          "minecraft:tooltip_display": {
+            "hide_tooltip": true
+          }
+        }
+      },
+      "description": {
+        "translate": "menu.mob_settings.passive_selection.description",
+        "fallback": "Configure Miscellaneous Settings:"
+      }
+    },
+    {
+      "type": "minecraft:plain_message",
+      "contents": {
+        "translate": "menu.mob_settings.init_values",
+        "fallback": "Initial values are always default values.",
+        "color": "gray"
+      },
+      "width": 1024
+    }
+  ],
+  "can_close_with_escape": true,
+  "external_title": {
+    "translate": "menu.mob_settings.misc_settings.title",
+    "fallback": "Miscellaneous"
+  },
+  "title": {
+    "translate": "menu.mob_settings.main.title",
+    "fallback": "Nice Mob Settings"
+  },
+  "inputs": [
+    {
+      "type": "minecraft:boolean",
+      "key": "need_sky",
+      "label": {
+        "translate": "menu.mob_settings.option.need_sky",
+        "fallback": "Scaling only applies to Mobs on the surface"
+      },
+      "initial": true,
+      "on_true": "enabled",
+      "on_false": "disabled"
+    },
+    {
+      "type": "minecraft:boolean",
+      "key": "insomnia",
+      "label": {
+        "translate": "menu.mob_settings.option.insomnia",
+        "fallback": "Phantom Spawning"
+      },
+      "initial": true,
+      "on_true": "gamerule doInsomnia true",
+      "on_false": "gamerule doInsomnia false"
+    },
+    {
+      "type": "minecraft:boolean",
+      "key": "warden",
+      "label": {
+        "translate": "menu.mob_settings.option.warden",
+        "fallback": "Warden Spawning"
+      },
+      "initial": true,
+      "on_true": "gamerule doWardenSpawning true",
+      "on_false": "gamerule doWardenSpawning false"
+    }
+  ],
+  "action": {
+    "label": {
+      "translate": "menu.mob_settings.option.confirm",
+      "fallback": "Confirm"
+    },
+    "id": "confirm",
+    "on_submit": {
+      "type": "minecraft:command_template",
+      "template": "function mob_settings:menu_config/misc {need_sky:$(need_sky),insomnia:\"$(insomnia)\",warden:\"$(warden)\"}"
+    }
+  }
+}

@@ -1,7 +1,7 @@
 tellraw @s [{"bold":false,"color":"gray","italic":false,"text":"▊ "},{"bold":false,"color":"white","italic":false,"text":"Nice Mob Settings: Passive Mob settings applied!"}]
 
-$data modify storage eden:temp mob_settings.config.type set value $(type)
-$data modify storage eden:settings mob_settings.$(type) set value {scale_min:$(scale_min),scale_max:$(scale_max),health:$(health),tempt_range:$(tempt_range),follow_range:$(follow_range),safe_fall:$(safe_fall),move_speed:$(move_speed),breed:$(breed),burn:$(burn),drown:$(drown)}
+
+$data modify storage eden:settings mob_settings.$(type) set value {type:$(type),scale_min:$(scale_min),scale_max:$(scale_max),health:$(health),tempt_range:$(tempt_range),follow_range:$(follow_range),safe_fall:$(safe_fall),move_speed:$(move_speed),breed:$(breed),burn:$(burn),drown:$(drown)}
 
 $execute store result storage eden:settings mob_settings.$(type).health float 0.01 run data get storage eden:settings mob_settings.$(type).health
 $execute store result storage eden:settings mob_settings.$(type).tempt_range float 0.01 run data get storage eden:settings mob_settings.$(type).tempt_range
@@ -9,37 +9,37 @@ $execute store result storage eden:settings mob_settings.$(type).follow_range fl
 $execute store result storage eden:settings mob_settings.$(type).safe_fall float 0.01 run data get storage eden:settings mob_settings.$(type).safe_fall
 $execute store result storage eden:settings mob_settings.$(type).move_speed float 0.01 run data get storage eden:settings mob_settings.$(type).move_speed
 
-execute unless data storage eden:temp mob_settings.config{type:"all_passive"} run return fail
-data modify storage eden:settings mob_settings.allay set from storage eden:settings mob_settings.all_passive
-data modify storage eden:settings mob_settings.armadillo set from storage eden:settings mob_settings.all_passive
-data modify storage eden:settings mob_settings.axolotl set from storage eden:settings mob_settings.all_passive
-data modify storage eden:settings mob_settings.bat set from storage eden:settings mob_settings.all_passive
-data modify storage eden:settings mob_settings.camel set from storage eden:settings mob_settings.all_passive
-data modify storage eden:settings mob_settings.cat set from storage eden:settings mob_settings.all_passive
-data modify storage eden:settings mob_settings.chicken set from storage eden:settings mob_settings.all_passive
-data modify storage eden:settings mob_settings.cod set from storage eden:settings mob_settings.all_passive
-data modify storage eden:settings mob_settings.cow set from storage eden:settings mob_settings.all_passive
-data modify storage eden:settings mob_settings.donkey set from storage eden:settings mob_settings.all_passive
-data modify storage eden:settings mob_settings.frog set from storage eden:settings mob_settings.all_passive
-data modify storage eden:settings mob_settings.glow_squid set from storage eden:settings mob_settings.all_passive
-data modify storage eden:settings mob_settings.horse set from storage eden:settings mob_settings.all_passive
-data modify storage eden:settings mob_settings.mooshroom set from storage eden:settings mob_settings.all_passive
-data modify storage eden:settings mob_settings.mule set from storage eden:settings mob_settings.all_passive
-data modify storage eden:settings mob_settings.ocelot set from storage eden:settings mob_settings.all_passive
-data modify storage eden:settings mob_settings.parrot set from storage eden:settings mob_settings.all_passive
-data modify storage eden:settings mob_settings.pig set from storage eden:settings mob_settings.all_passive
-data modify storage eden:settings mob_settings.pufferfish set from storage eden:settings mob_settings.all_passive
-data modify storage eden:settings mob_settings.rabbit set from storage eden:settings mob_settings.all_passive
-data modify storage eden:settings mob_settings.salmon set from storage eden:settings mob_settings.all_passive
-data modify storage eden:settings mob_settings.sheep set from storage eden:settings mob_settings.all_passive
-data modify storage eden:settings mob_settings.skeleton_horse set from storage eden:settings mob_settings.all_passive
-data modify storage eden:settings mob_settings.sniffer set from storage eden:settings mob_settings.all_passive
-data modify storage eden:settings mob_settings.snow_golem set from storage eden:settings mob_settings.all_passive
-data modify storage eden:settings mob_settings.squid set from storage eden:settings mob_settings.all_passive
-data modify storage eden:settings mob_settings.strider set from storage eden:settings mob_settings.all_passive
-data modify storage eden:settings mob_settings.tadpole set from storage eden:settings mob_settings.all_passive
-data modify storage eden:settings mob_settings.tropical_fish set from storage eden:settings mob_settings.all_passive
-data modify storage eden:settings mob_settings.turtle set from storage eden:settings mob_settings.all_passive
-data modify storage eden:settings mob_settings.villager set from storage eden:settings mob_settings.all_passive
-data modify storage eden:settings mob_settings.wandering_trader set from storage eden:settings mob_settings.all_passive
-data modify storage eden:settings mob_settings.zombie_horse set from storage eden:settings mob_settings.all_passive
+$execute unless data storage eden:settings mob_settings.$(type){type:"all_passive"} run return fail
+$data modify storage eden:settings mob_settings.allay set value {type:"allay",scale_min:$(scale_min),scale_max:$(scale_max),health:$(health),tempt_range:$(tempt_range),follow_range:$(follow_range),safe_fall:$(safe_fall),move_speed:$(move_speed),breed:$(breed),burn:$(burn),drown:$(drown)}
+$data modify storage eden:settings mob_settings.armadillo set value {type:"armadillo",scale_min:$(scale_min),scale_max:$(scale_max),health:$(health),tempt_range:$(tempt_range),follow_range:$(follow_range),safe_fall:$(safe_fall),move_speed:$(move_speed),breed:$(breed),burn:$(burn),drown:$(drown)}
+$data modify storage eden:settings mob_settings.axolotl set value {type:"axolotl",scale_min:$(scale_min),scale_max:$(scale_max),health:$(health),tempt_range:$(tempt_range),follow_range:$(follow_range),safe_fall:$(safe_fall),move_speed:$(move_speed),breed:$(breed),burn:$(burn),drown:$(drown)}
+$data modify storage eden:settings mob_settings.bat set value {type:"bat",scale_min:$(scale_min),scale_max:$(scale_max),health:$(health),tempt_range:$(tempt_range),follow_range:$(follow_range),safe_fall:$(safe_fall),move_speed:$(move_speed),breed:$(breed),burn:$(burn),drown:$(drown)}
+$data modify storage eden:settings mob_settings.camel set value {type:"camel",scale_min:$(scale_min),scale_max:$(scale_max),health:$(health),tempt_range:$(tempt_range),follow_range:$(follow_range),safe_fall:$(safe_fall),move_speed:$(move_speed),breed:$(breed),burn:$(burn),drown:$(drown)}
+$data modify storage eden:settings mob_settings.cat set value {type:"cat",scale_min:$(scale_min),scale_max:$(scale_max),health:$(health),tempt_range:$(tempt_range),follow_range:$(follow_range),safe_fall:$(safe_fall),move_speed:$(move_speed),breed:$(breed),burn:$(burn),drown:$(drown)}
+$data modify storage eden:settings mob_settings.chicken set value {type:"chicken",scale_min:$(scale_min),scale_max:$(scale_max),health:$(health),tempt_range:$(tempt_range),follow_range:$(follow_range),safe_fall:$(safe_fall),move_speed:$(move_speed),breed:$(breed),burn:$(burn),drown:$(drown)}
+$data modify storage eden:settings mob_settings.cod set value {type:"cod",scale_min:$(scale_min),scale_max:$(scale_max),health:$(health),tempt_range:$(tempt_range),follow_range:$(follow_range),safe_fall:$(safe_fall),move_speed:$(move_speed),breed:$(breed),burn:$(burn),drown:$(drown)}
+$data modify storage eden:settings mob_settings.cow set value {type:"cow",scale_min:$(scale_min),scale_max:$(scale_max),health:$(health),tempt_range:$(tempt_range),follow_range:$(follow_range),safe_fall:$(safe_fall),move_speed:$(move_speed),breed:$(breed),burn:$(burn),drown:$(drown)}
+$data modify storage eden:settings mob_settings.donkey set value {type:"donkey",scale_min:$(scale_min),scale_max:$(scale_max),health:$(health),tempt_range:$(tempt_range),follow_range:$(follow_range),safe_fall:$(safe_fall),move_speed:$(move_speed),breed:$(breed),burn:$(burn),drown:$(drown)}
+$data modify storage eden:settings mob_settings.frog set value {type:"frog",scale_min:$(scale_min),scale_max:$(scale_max),health:$(health),tempt_range:$(tempt_range),follow_range:$(follow_range),safe_fall:$(safe_fall),move_speed:$(move_speed),breed:$(breed),burn:$(burn),drown:$(drown)}
+$data modify storage eden:settings mob_settings.glow_squid set value {type:"glow_squid",scale_min:$(scale_min),scale_max:$(scale_max),health:$(health),tempt_range:$(tempt_range),follow_range:$(follow_range),safe_fall:$(safe_fall),move_speed:$(move_speed),breed:$(breed),burn:$(burn),drown:$(drown)}
+$data modify storage eden:settings mob_settings.horse set value {type:"horse",scale_min:$(scale_min),scale_max:$(scale_max),health:$(health),tempt_range:$(tempt_range),follow_range:$(follow_range),safe_fall:$(safe_fall),move_speed:$(move_speed),breed:$(breed),burn:$(burn),drown:$(drown)}
+$data modify storage eden:settings mob_settings.mooshroom set value {type:"mooshroom",scale_min:$(scale_min),scale_max:$(scale_max),health:$(health),tempt_range:$(tempt_range),follow_range:$(follow_range),safe_fall:$(safe_fall),move_speed:$(move_speed),breed:$(breed),burn:$(burn),drown:$(drown)}
+$data modify storage eden:settings mob_settings.mule set value {type:"mule",scale_min:$(scale_min),scale_max:$(scale_max),health:$(health),tempt_range:$(tempt_range),follow_range:$(follow_range),safe_fall:$(safe_fall),move_speed:$(move_speed),breed:$(breed),burn:$(burn),drown:$(drown)}
+$data modify storage eden:settings mob_settings.ocelot set value {type:"ocelot",scale_min:$(scale_min),scale_max:$(scale_max),health:$(health),tempt_range:$(tempt_range),follow_range:$(follow_range),safe_fall:$(safe_fall),move_speed:$(move_speed),breed:$(breed),burn:$(burn),drown:$(drown)}
+$data modify storage eden:settings mob_settings.parrot set value {type:"parrot",scale_min:$(scale_min),scale_max:$(scale_max),health:$(health),tempt_range:$(tempt_range),follow_range:$(follow_range),safe_fall:$(safe_fall),move_speed:$(move_speed),breed:$(breed),burn:$(burn),drown:$(drown)}
+$data modify storage eden:settings mob_settings.pig set value {type:"pig",scale_min:$(scale_min),scale_max:$(scale_max),health:$(health),tempt_range:$(tempt_range),follow_range:$(follow_range),safe_fall:$(safe_fall),move_speed:$(move_speed),breed:$(breed),burn:$(burn),drown:$(drown)}
+$data modify storage eden:settings mob_settings.pufferfish set value {type:"pufferfish",scale_min:$(scale_min),scale_max:$(scale_max),health:$(health),tempt_range:$(tempt_range),follow_range:$(follow_range),safe_fall:$(safe_fall),move_speed:$(move_speed),breed:$(breed),burn:$(burn),drown:$(drown)}
+$data modify storage eden:settings mob_settings.rabbit set value {type:"rabbit",scale_min:$(scale_min),scale_max:$(scale_max),health:$(health),tempt_range:$(tempt_range),follow_range:$(follow_range),safe_fall:$(safe_fall),move_speed:$(move_speed),breed:$(breed),burn:$(burn),drown:$(drown)}
+$data modify storage eden:settings mob_settings.salmon set value {type:"salmon",scale_min:$(scale_min),scale_max:$(scale_max),health:$(health),tempt_range:$(tempt_range),follow_range:$(follow_range),safe_fall:$(safe_fall),move_speed:$(move_speed),breed:$(breed),burn:$(burn),drown:$(drown)}
+$data modify storage eden:settings mob_settings.sheep set value {type:"sheep",scale_min:$(scale_min),scale_max:$(scale_max),health:$(health),tempt_range:$(tempt_range),follow_range:$(follow_range),safe_fall:$(safe_fall),move_speed:$(move_speed),breed:$(breed),burn:$(burn),drown:$(drown)}
+$data modify storage eden:settings mob_settings.skeleton_horse set value {type:"skeleton_horse",scale_min:$(scale_min),scale_max:$(scale_max),health:$(health),tempt_range:$(tempt_range),follow_range:$(follow_range),safe_fall:$(safe_fall),move_speed:$(move_speed),breed:$(breed),burn:$(burn),drown:$(drown)}
+$data modify storage eden:settings mob_settings.sniffer set value {type:"sniffer",scale_min:$(scale_min),scale_max:$(scale_max),health:$(health),tempt_range:$(tempt_range),follow_range:$(follow_range),safe_fall:$(safe_fall),move_speed:$(move_speed),breed:$(breed),burn:$(burn),drown:$(drown)}
+$data modify storage eden:settings mob_settings.snow_golem set value {type:"snow_golem",scale_min:$(scale_min),scale_max:$(scale_max),health:$(health),tempt_range:$(tempt_range),follow_range:$(follow_range),safe_fall:$(safe_fall),move_speed:$(move_speed),breed:$(breed),burn:$(burn),drown:$(drown)}
+$data modify storage eden:settings mob_settings.squid set value {type:"squid",scale_min:$(scale_min),scale_max:$(scale_max),health:$(health),tempt_range:$(tempt_range),follow_range:$(follow_range),safe_fall:$(safe_fall),move_speed:$(move_speed),breed:$(breed),burn:$(burn),drown:$(drown)}
+$data modify storage eden:settings mob_settings.strider set value {type:"strider",scale_min:$(scale_min),scale_max:$(scale_max),health:$(health),tempt_range:$(tempt_range),follow_range:$(follow_range),safe_fall:$(safe_fall),move_speed:$(move_speed),breed:$(breed),burn:$(burn),drown:$(drown)}
+$data modify storage eden:settings mob_settings.tadpole set value {type:"tadpole",scale_min:$(scale_min),scale_max:$(scale_max),health:$(health),tempt_range:$(tempt_range),follow_range:$(follow_range),safe_fall:$(safe_fall),move_speed:$(move_speed),breed:$(breed),burn:$(burn),drown:$(drown)}
+$data modify storage eden:settings mob_settings.tropical_fish set value {type:"tropical_fish",scale_min:$(scale_min),scale_max:$(scale_max),health:$(health),tempt_range:$(tempt_range),follow_range:$(follow_range),safe_fall:$(safe_fall),move_speed:$(move_speed),breed:$(breed),burn:$(burn),drown:$(drown)}
+$data modify storage eden:settings mob_settings.turtle set value {type:"turtle",scale_min:$(scale_min),scale_max:$(scale_max),health:$(health),tempt_range:$(tempt_range),follow_range:$(follow_range),safe_fall:$(safe_fall),move_speed:$(move_speed),breed:$(breed),burn:$(burn),drown:$(drown)}
+$data modify storage eden:settings mob_settings.villager set value {type:"villager",scale_min:$(scale_min),scale_max:$(scale_max),health:$(health),tempt_range:$(tempt_range),follow_range:$(follow_range),safe_fall:$(safe_fall),move_speed:$(move_speed),breed:$(breed),burn:$(burn),drown:$(drown)}
+$data modify storage eden:settings mob_settings.wandering_trader set value {type:"wandering_trader",scale_min:$(scale_min),scale_max:$(scale_max),health:$(health),tempt_range:$(tempt_range),follow_range:$(follow_range),safe_fall:$(safe_fall),move_speed:$(move_speed),breed:$(breed),burn:$(burn),drown:$(drown)}
+$data modify storage eden:settings mob_settings.zombie_horse set value {type:"zombie_horse",scale_min:$(scale_min),scale_max:$(scale_max),health:$(health),tempt_range:$(tempt_range),follow_range:$(follow_range),safe_fall:$(safe_fall),move_speed:$(move_speed),breed:$(breed),burn:$(burn),drown:$(drown)}

@@ -114,6 +114,12 @@
           }
         },
         {
+          "id": "husk",
+          "display": {
+            "translate": "entity.minecraft.husk"
+          }
+        },
+        {
           "id": "magma_cube",
           "display": {
             "translate": "entity.minecraft.magma_cube"

@@ -37,7 +37,7 @@ data modify storage eden:settings mob_settings.turtle set from storage eden:sett
 data modify storage eden:settings mob_settings.villager set from storage eden:settings mob_settings.all_passive
 data modify storage eden:settings mob_settings.wandering_trader set from storage eden:settings mob_settings.all_passive
 data modify storage eden:settings mob_settings.zombie_horse set from storage eden:settings mob_settings.all_passive
-data modify storage eden:settings mob_settings.happy_ghast set from storage eden:settings mob_settings.happy_ghast
+data modify storage eden:settings mob_settings.happy_ghast set from storage eden:settings mob_settings.all_passive
 
 data modify storage eden:settings mob_settings.allay.type set value "allay"
 data modify storage eden:settings mob_settings.armadillo.type set value "armadillo"

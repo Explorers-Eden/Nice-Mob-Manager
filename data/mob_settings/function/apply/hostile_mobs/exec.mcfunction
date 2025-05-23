@@ -2,7 +2,6 @@ $execute if data storage eden:settings mob_settings.misc{need_sky:"enabled"} at 
 $execute if data storage eden:settings mob_settings.misc{need_sky:"disabled"} run attribute @s minecraft:scale base set $(scale)
 $attribute @s minecraft:max_health base set $(health)
 $data modify entity @s Health set value $(health)
-$attribute @s minecraft:tempt_range base set $(tempt_range)
 $attribute @s minecraft:follow_range base set $(follow_range)
 $attribute @s minecraft:movement_speed base set $(move_speed)
 $attribute @s minecraft:safe_fall_distance base set $(safe_fall)

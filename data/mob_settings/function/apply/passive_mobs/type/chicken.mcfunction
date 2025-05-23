@@ -6,8 +6,8 @@ $execute store result storage eden:temp mob_settings.chicken.follow_range float 
 $execute store result storage eden:temp mob_settings.chicken.move_speed float $(move_speed) run attribute @s minecraft:movement_speed base get
 $execute store result storage eden:temp mob_settings.chicken.safe_fall float $(safe_fall) run attribute @s minecraft:safe_fall_distance base get
 
-execute if data storage eden:mob_settings chicken{breed:"disabled"} run tag @s add eden.settings.breed.disabled
-execute if data storage eden:mob_settings chicken{drown:"disabled"} run tag @s add eden.settings.drown.disabled
-execute if data storage eden:mob_settings chicken{burn:"disabled"} run attribute @s minecraft:burning_time base set 0
+execute if data storage eden:settings mob_settings.chicken{breed:"disabled"} run tag @s add eden.settings.breed.disabled
+execute if data storage eden:settings mob_settings.chicken{drown:"disabled"} run tag @s add eden.settings.drown.disabled
+execute if data storage eden:settings mob_settings.chicken{burn:"disabled"} run attribute @s minecraft:burning_time base set 0
 
 function mob_settings:apply/passive_mobs/exec with storage eden:temp mob_settings.chicken

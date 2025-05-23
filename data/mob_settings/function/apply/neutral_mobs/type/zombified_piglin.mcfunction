@@ -7,8 +7,8 @@ $execute store result storage eden:temp mob_settings.bee.safe_fall float $(safe_
 $execute store result storage eden:temp mob_settings.bee.attck_dmg float $(attck_dmg) run attribute @s minecraft:attack_damage base get
 $execute store result storage eden:temp mob_settings.bee.attck_speed float $(attck_speed) run attribute @s minecraft:attack_speed base get
 
-execute if data storage eden:mob_settings bee{breed:"disabled"} run tag @s add eden.settings.breed.disabled
-execute if data storage eden:mob_settings bee{drown:"disabled"} run tag @s add eden.settings.drown.disabled
-execute if data storage eden:mob_settings bee{burn:"disabled"} run attribute @s minecraft:burning_time base set 0
+execute if data storage eden:settings mob_settings.bee{breed:"disabled"} run tag @s add eden.settings.breed.disabled
+execute if data storage eden:settings mob_settings.bee{drown:"disabled"} run tag @s add eden.settings.drown.disabled
+execute if data storage eden:settings mob_settings.bee{burn:"disabled"} run attribute @s minecraft:burning_time base set 0
 
 function mob_settings:apply/neutral_mobs/exec with storage eden:temp mob_settings.bee

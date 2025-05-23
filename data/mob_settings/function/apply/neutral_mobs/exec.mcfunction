@@ -1,5 +1,5 @@
-$execute if data storage eden:mob_settings misc{need_sky:"enabled"} at @s if predicate eden:location/can_see_sky run attribute @s minecraft:scale base set $(scale)
-$execute if data storage eden:mob_settings misc{need_sky:"disabled"} run attribute @s minecraft:scale base set $(scale)
+$execute if data storage eden:settings mob_settings.misc{need_sky:"enabled"} at @s if predicate eden:location/can_see_sky run attribute @s minecraft:scale base set $(scale)
+$execute if data storage eden:settings mob_settings.misc{need_sky:"disabled"} run attribute @s minecraft:scale base set $(scale)
 $attribute @s minecraft:max_health base set $(health)
 $data modify entity @s Health set value $(health)
 $attribute @s minecraft:tempt_range base set $(tempt_range)

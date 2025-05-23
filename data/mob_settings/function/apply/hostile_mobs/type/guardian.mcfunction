@@ -7,7 +7,7 @@ $execute store result storage eden:temp mob_settings.guardian.safe_fall float $(
 $execute store result storage eden:temp mob_settings.guardian.attck_dmg float $(attck_dmg) run attribute @s minecraft:attack_damage base get
 $execute store result storage eden:temp mob_settings.guardian.attck_speed float $(attck_speed) run attribute @s minecraft:attack_speed base get
 
-execute if data storage eden:mob_settings guardian{drown:"disabled"} run tag @s add eden.settings.drown.disabled
-execute if data storage eden:mob_settings guardian{burn:"disabled"} run attribute @s minecraft:burning_time base set 0
+execute if data storage eden:settings mob_settings.guardian{drown:"disabled"} run tag @s add eden.settings.drown.disabled
+execute if data storage eden:settings mob_settings.guardian{burn:"disabled"} run attribute @s minecraft:burning_time base set 0
 
 function mob_settings:apply/hostile_mobs/exec with storage eden:temp mob_settings.guardian

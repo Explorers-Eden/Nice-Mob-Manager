@@ -171,7 +171,7 @@
         "fallback": "Max Scale"
       },
       "start": 100,
-      "end": 200,
+      "end": 500,
       "step": 1,
       "initial": 115
     },
@@ -183,7 +183,7 @@
         "fallback": "Health"
       },
       "start": 1,
-      "end": 200,
+      "end": 500,
       "step": 1,
       "initial": 100
     },
@@ -195,7 +195,7 @@
         "fallback": "Tempt Range"
       },
       "start": 1,
-      "end": 200,
+      "end": 500,
       "step": 1,
       "initial": 100
     },
@@ -207,7 +207,7 @@
         "fallback": "Follow Range"
       },
       "start": 1,
-      "end": 200,
+      "end": 500,
       "step": 1,
       "initial": 100
     },
@@ -219,7 +219,7 @@
         "fallback": "Safe Fall Distance"
       },
       "start": 1,
-      "end": 200,
+      "end": 500,
       "step": 1,
       "initial": 100
     },
@@ -231,7 +231,7 @@
         "fallback": "Movement Speed"
       },
       "start": 1,
-      "end": 200,
+      "end": 500,
       "step": 1,
       "initial": 100
     },
@@ -243,7 +243,7 @@
         "fallback": "Attack Damage"
       },
       "start": 1,
-      "end": 200,
+      "end": 500,
       "step": 1,
       "initial": 100
     },
@@ -255,7 +255,7 @@
         "fallback": "Attack Speed"
       },
       "start": 1,
-      "end": 200,
+      "end": 500,
       "step": 1,
       "initial": 100
     },

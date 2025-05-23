@@ -1,1 +1,1 @@
-execute unless data storage eden:mob_settings misc run function mob_settings:menu_config/restore_default
+execute unless data storage eden:settings mob_settings.misc run function mob_settings:menu_config/restore_default

@@ -1,4 +1,5 @@
-data modify storage eden:settings mob_settings.misc.need_sky set value enabled
+data modify storage eden:settings mob_settings.misc set value {killerrabbitspawning:0.02,jebspawning:0.03,babymountspawning:0.05,jebcolor:"enabled",egglay:"enabled",need_sky:"enabled"}
+
 gamerule doInsomnia true
 gamerule doWardenSpawning true
 gamerule sendCommandFeedback true

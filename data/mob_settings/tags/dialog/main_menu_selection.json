@@ -4,6 +4,7 @@
       "mob_settings:neutral",
       "mob_settings:hostile",
       "mob_settings:misc",
+      "mob_settings:gamerules",
       "mob_settings:restore_default"
     ]
   }

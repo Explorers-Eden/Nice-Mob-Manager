@@ -1,7 +1,6 @@
-tellraw @s [{"bold":false,"color":"gray","italic":false,"text":"▊ "},{"bold":false,"color":"gray","italic":false,"text":"Nice Mob Settings: Neutral Mob settings applied!"}]
-playsound minecraft:entity.chicken.egg neutral @s ~ ~ ~ .5 2
-
 $data modify storage eden:settings mob_settings.$(type) set value {type:$(type),attck_dmg:$(attck_dmg),scale_min:$(scale_min),scale_max:$(scale_max),health:$(health),tempt_range:$(tempt_range),follow_range:$(follow_range),safe_fall:$(safe_fall),move_speed:$(move_speed),breed:$(breed),silent:$(silent),burn:$(burn),drown:$(drown)}
+
+dialog show @s mob_settings:main
 
 $execute unless data storage eden:settings mob_settings.$(type){type:"all_neutral"} run return fail
 data modify storage eden:settings mob_settings.bee set from storage eden:settings mob_settings.all_neutral

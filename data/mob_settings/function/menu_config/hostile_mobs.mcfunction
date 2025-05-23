@@ -1,7 +1,6 @@
-tellraw @s [{"bold":false,"color":"gray","italic":false,"text":"▊ "},{"bold":false,"color":"gray","italic":false,"text":"Nice Mob Settings: Hostile Mob settings applied!"}]
-playsound minecraft:entity.chicken.egg neutral @s ~ ~ ~ .5 2
-
 $data modify storage eden:settings mob_settings.$(type) set value {type:$(type),attck_dmg:$(attck_dmg),scale_min:$(scale_min),scale_max:$(scale_max),health:$(health),follow_range:$(follow_range),safe_fall:$(safe_fall),move_speed:$(move_speed),burn:$(burn),silent:$(silent),drown:$(drown)}
+
+dialog show @s mob_settings:main
 
 $execute unless data storage eden:settings mob_settings.$(type){type:"all_hostile"} run return fail
 data modify storage eden:settings mob_settings.blaze set from storage eden:settings mob_settings.all_hostile

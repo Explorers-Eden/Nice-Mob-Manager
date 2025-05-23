@@ -20,7 +20,7 @@
       "type": "minecraft:plain_message",
       "contents": {
         "translate": "menu.mob_settings.init_values",
-        "fallback": "Sliders adjust the mob's values relative to their vanilla percentages.",
+        "fallback": "Initial values shown are always default values.",
         "color": "gray"
       },
       "width": 1024
@@ -230,8 +230,9 @@
         "translate": "menu.mob_settings.option.scale_min",
         "fallback": "Min Scale"
       },
+      "label_format": "options.percent_value",
       "start": 1,
-      "end": 99,
+      "end": 500,
       "step": 1,
       "initial": 80
     },
@@ -242,7 +243,8 @@
         "translate": "menu.mob_settings.option.scale_max",
         "fallback": "Max Scale"
       },
-      "start": 100,
+      "label_format": "options.percent_value",
+      "start": 1,
       "end": 500,
       "step": 1,
       "initial": 115
@@ -254,6 +256,7 @@
         "translate": "menu.mob_settings.option.health",
         "fallback": "Health"
       },
+      "label_format": "options.percent_value",
       "start": 1,
       "end": 500,
       "step": 1,
@@ -266,6 +269,7 @@
         "translate": "menu.mob_settings.option.follow_range",
         "fallback": "Follow Range"
       },
+      "label_format": "options.percent_value",
       "start": 1,
       "end": 500,
       "step": 1,
@@ -278,6 +282,7 @@
         "translate": "menu.mob_settings.option.safe_fall",
         "fallback": "Safe Fall Distance"
       },
+      "label_format": "options.percent_value",
       "start": 1,
       "end": 500,
       "step": 1,
@@ -290,6 +295,7 @@
         "translate": "menu.mob_settings.option.move_speed",
         "fallback": "Movement Speed"
       },
+      "label_format": "options.percent_value",
       "start": 1,
       "end": 500,
       "step": 1,
@@ -302,6 +308,7 @@
         "translate": "menu.mob_settings.option.attck_dmg",
         "fallback": "Attack Damage"
       },
+      "label_format": "options.percent_value",
       "start": 1,
       "end": 500,
       "step": 1,

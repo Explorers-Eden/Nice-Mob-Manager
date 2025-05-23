@@ -271,7 +271,8 @@
           "id": "enabled",
           "display": {
             "translate": "menu.nice_mobs.enabled",
-            "fallback": "Enabled"
+            "fallback": "Enabled",
+            "color": "green"
           },
           "initial": true
         },
@@ -279,7 +280,8 @@
           "id": "disabled",
           "display": {
             "translate": "menu.nice_mobs.disabled",
-            "fallback": "Disabled"
+            "fallback": "Disabled",
+            "color": "red"
           }
         }
       ]
@@ -296,7 +298,8 @@
           "id": "enabled",
           "display": {
             "translate": "menu.nice_mobs.enabled",
-            "fallback": "Enabled"
+            "fallback": "Enabled",
+            "color": "green"
           },
           "initial": true
         },
@@ -304,7 +307,8 @@
           "id": "disabled",
           "display": {
             "translate": "menu.nice_mobs.disabled",
-            "fallback": "Disabled"
+            "fallback": "Disabled",
+            "color": "red"
           }
         }
       ]
@@ -321,7 +325,8 @@
           "id": "enabled",
           "display": {
             "translate": "menu.nice_mobs.enabled",
-            "fallback": "Enabled"
+            "fallback": "Enabled",
+            "color": "green"
           },
           "initial": true
         },
@@ -329,8 +334,36 @@
           "id": "disabled",
           "display": {
             "translate": "menu.nice_mobs.disabled",
-            "fallback": "Disabled"
+            "fallback": "Disabled",
+            "color": "red"
           }
+        }
+      ]
+    },
+    {
+      "type": "minecraft:single_option",
+      "key": "silent",
+      "label": {
+        "translate": "menu.mob_settings.option.is_silent",
+        "fallback": "Is Silent"
+      },
+      "options": [
+        {
+          "id": "enabled",
+          "display": {
+            "translate": "menu.nice_mobs.enabled",
+            "fallback": "Enabled",
+            "color": "green"
+          }
+        },
+        {
+          "id": "disabled",
+          "display": {
+            "translate": "menu.nice_mobs.disabled",
+            "fallback": "Disabled",
+            "color": "red"
+          },
+          "initial": true
         }
       ]
     }
@@ -343,7 +376,7 @@
     "id": "confirm",
     "on_submit": {
       "type": "minecraft:command_template",
-      "template": "function mob_settings:menu_config/neutral_mobs {type:$(type),attck_dmg:$(attck_dmg),attck_speed:$(attck_speed),scale_min:$(scale_min),scale_max:$(scale_max),health:$(health),tempt_range:$(tempt_range),follow_range:$(follow_range),safe_fall:$(safe_fall),move_speed:$(move_speed),breed:$(breed),burn:$(burn),drown:$(drown)}"
+      "template": "function mob_settings:menu_config/neutral_mobs {type:$(type),attck_dmg:$(attck_dmg),attck_speed:$(attck_speed),scale_min:$(scale_min),scale_max:$(scale_max),health:$(health),tempt_range:$(tempt_range),follow_range:$(follow_range),safe_fall:$(safe_fall),move_speed:$(move_speed),breed:$(breed),burn:$(burn),silent:$(silent),drown:$(drown)}"
     }
   }
 }

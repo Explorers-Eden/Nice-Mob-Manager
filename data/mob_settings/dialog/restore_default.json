@@ -30,8 +30,8 @@
   },
   "yes": {
     "label": {
-      "translate": "menu.mob_settings.yes",
-      "fallback": "Yes"
+      "translate": "menu.mob_settings.confirm",
+      "fallback": "Confirm"
     },
     "on_click": {
       "action": "run_command",
@@ -40,8 +40,8 @@
   },
   "no": {
     "label": {
-      "translate": "menu.mob_settings.no",
-      "fallback": "No"
+      "translate": "menu.mob_settings.back",
+      "fallback": "Back"
     },
     "on_click": {
       "action": "show_dialog",

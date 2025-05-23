@@ -9,6 +9,7 @@ $execute store result storage eden:temp mob_settings.attck_speed float $(attck_s
 
 $execute if data storage eden:settings mob_settings.$(type){breed:"disabled"} run tag @s add eden.settings.breed.disabled
 $execute if data storage eden:settings mob_settings.$(type){drown:"disabled"} run tag @s add eden.settings.drown.disabled
+$execute if data storage eden:settings mob_settings.$(type){silent:"enabled"} run data modify entity @s Silent set value 1b
 $execute if data storage eden:settings mob_settings.$(type){burn:"disabled"} run attribute @s minecraft:burning_time base set 0
 
 function mob_settings:apply/neutral_mobs/exec with storage eden:temp mob_settings

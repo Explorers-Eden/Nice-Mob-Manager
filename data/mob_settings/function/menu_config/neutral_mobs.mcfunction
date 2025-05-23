@@ -1,15 +1,7 @@
 tellraw @s [{"bold":false,"color":"gray","italic":false,"text":"▊ "},{"bold":false,"color":"gray","italic":false,"text":"Nice Mob Settings: Neutral Mob settings applied!"}]
 playsound minecraft:entity.chicken.egg neutral @s ~ ~ ~ .5 2
 
-$data modify storage eden:settings mob_settings.$(type) set value {type:$(type),attck_dmg:$(attck_dmg),attck_speed:$(attck_speed),scale_min:$(scale_min),scale_max:$(scale_max),health:$(health),tempt_range:$(tempt_range),follow_range:$(follow_range),safe_fall:$(safe_fall),move_speed:$(move_speed),breed:$(breed),silent:$(silent),burn:$(burn),drown:$(drown)}
-
-$execute store result storage eden:settings mob_settings.$(type).health float 0.01 run data get storage eden:settings mob_settings.$(type).health
-$execute store result storage eden:settings mob_settings.$(type).tempt_range float 0.01 run data get storage eden:settings mob_settings.$(type).tempt_range
-$execute store result storage eden:settings mob_settings.$(type).follow_range float 0.01 run data get storage eden:settings mob_settings.$(type).follow_range
-$execute store result storage eden:settings mob_settings.$(type).safe_fall float 0.01 run data get storage eden:settings mob_settings.$(type).safe_fall
-$execute store result storage eden:settings mob_settings.$(type).move_speed float 0.01 run data get storage eden:settings mob_settings.$(type).move_speed
-$execute store result storage eden:settings mob_settings.$(type).attck_dmg float 0.01 run data get storage eden:settings mob_settings.$(type).attck_dmg
-$execute store result storage eden:settings mob_settings.$(type).attck_speed float 0.01 run data get storage eden:settings mob_settings.$(type).attck_speed
+$data modify storage eden:settings mob_settings.$(type) set value {type:$(type),attck_dmg:$(attck_dmg),scale_min:$(scale_min),scale_max:$(scale_max),health:$(health),tempt_range:$(tempt_range),follow_range:$(follow_range),safe_fall:$(safe_fall),move_speed:$(move_speed),breed:$(breed),silent:$(silent),burn:$(burn),drown:$(drown)}
 
 $execute unless data storage eden:settings mob_settings.$(type){type:"all_neutral"} run return fail
 data modify storage eden:settings mob_settings.bee set from storage eden:settings mob_settings.all_neutral

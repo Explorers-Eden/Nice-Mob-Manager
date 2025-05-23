@@ -248,18 +248,6 @@
       "initial": 100
     },
     {
-      "type": "minecraft:number_range",
-      "key": "attck_speed",
-      "label": {
-        "translate": "menu.mob_settings.option.attck_speed",
-        "fallback": "Attack Speed"
-      },
-      "start": 1,
-      "end": 500,
-      "step": 1,
-      "initial": 100
-    },
-    {
       "type": "minecraft:single_option",
       "key": "breed",
       "label": {
@@ -376,7 +364,7 @@
     "id": "confirm",
     "on_submit": {
       "type": "minecraft:command_template",
-      "template": "function mob_settings:menu_config/neutral_mobs {type:$(type),attck_dmg:$(attck_dmg),attck_speed:$(attck_speed),scale_min:$(scale_min),scale_max:$(scale_max),health:$(health),tempt_range:$(tempt_range),follow_range:$(follow_range),safe_fall:$(safe_fall),move_speed:$(move_speed),breed:$(breed),burn:$(burn),silent:$(silent),drown:$(drown)}"
+      "template": "function mob_settings:menu_config/neutral_mobs {type:$(type),attck_dmg:$(attck_dmg),scale_min:$(scale_min),scale_max:$(scale_max),health:$(health),tempt_range:$(tempt_range),follow_range:$(follow_range),safe_fall:$(safe_fall),move_speed:$(move_speed),breed:$(breed),burn:$(burn),silent:$(silent),drown:$(drown)}"
     }
   }
 }

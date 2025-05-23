@@ -3,12 +3,6 @@ playsound minecraft:entity.chicken.egg neutral @s ~ ~ ~ .5 2
 
 $data modify storage eden:settings mob_settings.$(type) set value {type:$(type),scale_min:$(scale_min),scale_max:$(scale_max),health:$(health),tempt_range:$(tempt_range),follow_range:$(follow_range),safe_fall:$(safe_fall),move_speed:$(move_speed),breed:$(breed),burn:$(burn),silent:$(silent),drown:$(drown)}
 
-$execute store result storage eden:settings mob_settings.$(type).health float 0.01 run data get storage eden:settings mob_settings.$(type).health
-$execute store result storage eden:settings mob_settings.$(type).tempt_range float 0.01 run data get storage eden:settings mob_settings.$(type).tempt_range
-$execute store result storage eden:settings mob_settings.$(type).follow_range float 0.01 run data get storage eden:settings mob_settings.$(type).follow_range
-$execute store result storage eden:settings mob_settings.$(type).safe_fall float 0.01 run data get storage eden:settings mob_settings.$(type).safe_fall
-$execute store result storage eden:settings mob_settings.$(type).move_speed float 0.01 run data get storage eden:settings mob_settings.$(type).move_speed
-
 $execute unless data storage eden:settings mob_settings.$(type){type:"all_passive"} run return fail
 data modify storage eden:settings mob_settings.allay set from storage eden:settings mob_settings.all_passive
 data modify storage eden:settings mob_settings.armadillo set from storage eden:settings mob_settings.all_passive

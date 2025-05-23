@@ -1,11 +1,10 @@
 $execute store result storage eden:temp mob_settings.scale float 0.01 run random value $(scale_min)..$(scale_max)
-$execute store result storage eden:temp mob_settings.health float $(health) run attribute @s minecraft:max_health base get
-$execute store result storage eden:temp mob_settings.tempt_range float $(tempt_range) run attribute @s minecraft:tempt_range base get
-$execute store result storage eden:temp mob_settings.follow_range float $(follow_range) run attribute @s minecraft:follow_range base get
-$execute store result storage eden:temp mob_settings.move_speed float $(move_speed) run attribute @s minecraft:movement_speed base get
-$execute store result storage eden:temp mob_settings.safe_fall float $(safe_fall) run attribute @s minecraft:safe_fall_distance base get
-$execute store result storage eden:temp mob_settings.attck_dmg float $(attck_dmg) run attribute @s minecraft:attack_damage base get
-$execute store result storage eden:temp mob_settings.attck_speed float $(attck_speed) run attribute @s minecraft:attack_speed base get
+$execute store result storage eden:temp mob_settings.health float 0.01 run attribute @s minecraft:max_health base get $(health)
+$execute store result storage eden:temp mob_settings.tempt_range float 0.01 run attribute @s minecraft:tempt_range base get $(tempt_range)
+$execute store result storage eden:temp mob_settings.follow_range float 0.01 run attribute @s minecraft:follow_range base get $(follow_range)
+$execute store result storage eden:temp mob_settings.move_speed float 0.01 run attribute @s minecraft:movement_speed base get $(move_speed)
+$execute store result storage eden:temp mob_settings.safe_fall float 0.01 run attribute @s minecraft:safe_fall_distance base get $(safe_fall)
+$execute store result storage eden:temp mob_settings.attck_dmg float 0.01 run attribute @s minecraft:attack_damage base get $(attck_dmg)
 
 $execute if data storage eden:settings mob_settings.$(type){breed:"disabled"} run tag @s add eden.settings.breed.disabled
 $execute if data storage eden:settings mob_settings.$(type){drown:"disabled"} run tag @s add eden.settings.drown.disabled

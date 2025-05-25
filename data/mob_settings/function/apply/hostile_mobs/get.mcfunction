@@ -9,5 +9,8 @@ $execute store result storage eden:temp mob_settings.attck_dmg float 0.01 run at
 $execute if data storage eden:settings mob_settings.$(type){drown:"disabled"} run tag @s add eden.settings.drown.disabled
 $execute if data storage eden:settings mob_settings.$(type){silent:"enabled"} run data modify entity @s Silent set value 1b
 $execute if data storage eden:settings mob_settings.$(type){burn:"disabled"} run attribute @s minecraft:burning_time base set 0
+$execute if data storage eden:settings mob_settings.$(type){pickup:"disabled"} run data modify entity @s CanPickUpLoot set value 0b
+
+execute if predicate {"condition":"minecraft:value_check","value":{"type":"minecraft:storage","storage":"eden:settings","path":"mob_settings.misc.illusionerspawning"},"range":{"min":0.01}} as @s[type=evoker] at @s run function mob_settings:illusioner with storage eden:settings mob_settings.misc
 
 function mob_settings:apply/hostile_mobs/exec with storage eden:temp mob_settings

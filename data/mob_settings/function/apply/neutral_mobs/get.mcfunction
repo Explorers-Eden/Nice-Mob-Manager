@@ -11,5 +11,9 @@ $execute if data storage eden:settings mob_settings.$(type){breed:"disabled"} ru
 $execute if data storage eden:settings mob_settings.$(type){drown:"disabled"} run tag @s add eden.settings.drown.disabled
 $execute if data storage eden:settings mob_settings.$(type){silent:"enabled"} run data modify entity @s Silent set value 1b
 $execute if data storage eden:settings mob_settings.$(type){burn:"disabled"} run attribute @s minecraft:burning_time base set 0
+$execute if data storage eden:settings mob_settings.$(type){pickup:"disabled"} run data modify entity @s CanPickUpLoot set value 0b
+
+execute if data storage eden:settings mob_settings.misc{irongolemanger:"disabled"} as @s[type=minecraft:iron_golem] run data modify entity @s PlayerCreated set value 1b
+execute if predicate {"condition":"minecraft:value_check","value":{"type":"minecraft:storage","storage":"eden:settings","path":"mob_settings.misc.babymountspawning"},"range":{"min":0.01}} as @s[type=#eden:valid_for_baby_mount] at @s run function mob_settings:baby_mount/init with storage eden:settings mob_settings.misc
 
 function mob_settings:apply/neutral_mobs/exec with storage eden:temp mob_settings

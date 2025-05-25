@@ -65,6 +65,60 @@
     },
     {
       "type": "minecraft:single_option",
+      "key": "skeletonhorsetrap",
+      "label": {
+        "translate": "menu.mob_settings.option.skeletonhorsetrap",
+        "fallback": "Skeleton Horse Traps"
+      },
+      "options": [
+        {
+          "id": "enabled",
+          "display": {
+            "translate": "menu.nice_mobs.enabled",
+            "fallback": "Enabled",
+            "color": "green"
+          },
+          "initial": true
+        },
+        {
+          "id": "disabled",
+          "display": {
+            "translate": "menu.nice_mobs.disabled",
+            "fallback": "Disabled",
+            "color": "red"
+          }
+        }
+      ]
+    },
+    {
+      "type": "minecraft:single_option",
+      "key": "irongolemanger",
+      "label": {
+        "translate": "menu.mob_settings.option.irongolemanger",
+        "fallback": "Iron Golem Angry At Player"
+      },
+      "options": [
+        {
+          "id": "enabled",
+          "display": {
+            "translate": "menu.nice_mobs.enabled",
+            "fallback": "Enabled",
+            "color": "green"
+          },
+          "initial": true
+        },
+        {
+          "id": "disabled",
+          "display": {
+            "translate": "menu.nice_mobs.disabled",
+            "fallback": "Disabled",
+            "color": "red"
+          }
+        }
+      ]
+    },
+    {
+      "type": "minecraft:single_option",
       "key": "egglay",
       "label": {
         "translate": "menu.mob_settings.option.egglay",
@@ -89,19 +143,6 @@
           }
         }
       ]
-    },
-    {
-      "type": "minecraft:number_range",
-      "key": "jebspawning",
-      "label": {
-        "translate": "menu.mob_settings.option.jebspawning",
-        "fallback": "Jeb Sheep Spawning Chance"
-      },
-      "label_format": "options.percent_value",
-      "start": 0,
-      "end": 100,
-      "step": 1,
-      "initial": 3
     },
     {
       "type": "minecraft:single_option",
@@ -131,38 +172,24 @@
       ]
     },
     {
-      "type": "minecraft:single_option",
-      "key": "egglay",
+      "type": "minecraft:number_range",
+      "key": "jebspawning",
       "label": {
-        "translate": "menu.mob_settings.option.egglay",
-        "fallback": "Chickens Lay Eggs"
+        "translate": "menu.mob_settings.option.jebspawning",
+        "fallback": "Jeb Sheep Spawn Chance"
       },
-      "options": [
-        {
-          "id": "enabled",
-          "display": {
-            "translate": "menu.nice_mobs.enabled",
-            "fallback": "Enabled",
-            "color": "green"
-          },
-          "initial": true
-        },
-        {
-          "id": "disabled",
-          "display": {
-            "translate": "menu.nice_mobs.disabled",
-            "fallback": "Disabled",
-            "color": "red"
-          }
-        }
-      ]
+      "label_format": "options.percent_value",
+      "start": 0,
+      "end": 100,
+      "step": 1,
+      "initial": 3
     },
     {
       "type": "minecraft:number_range",
       "key": "killerrabbitspawning",
       "label": {
         "translate": "menu.mob_settings.option.jebspawning",
-        "fallback": "Killer Rabbit Spawning Chance"
+        "fallback": "Killer Rabbit Spawn Chance"
       },
       "label_format": "options.percent_value",
       "start": 0,
@@ -175,13 +202,39 @@
       "key": "babymountspawning",
       "label": {
         "translate": "menu.mob_settings.option.babymountspawning",
-        "fallback": "Baby Mount Spawning Chance"
+        "fallback": "Baby Mount Spawn Chance"
       },
       "label_format": "options.percent_value",
       "start": 0,
       "end": 100,
       "step": 1,
       "initial": 5
+    },
+    {
+      "type": "minecraft:number_range",
+      "key": "illusionerspawning",
+      "label": {
+        "translate": "menu.mob_settings.option.illusionerspawning",
+        "fallback": "Evoker To Illusioner Chance"
+      },
+      "label_format": "options.percent_value",
+      "start": 0,
+      "end": 100,
+      "step": 1,
+      "initial": 25
+    },
+    {
+      "type": "minecraft:number_range",
+      "key": "brownmoospawning",
+      "label": {
+        "translate": "menu.mob_settings.option.brownmoospawning",
+        "fallback": "Brown Mooshroom Spawn Chance"
+      },
+      "label_format": "options.percent_value",
+      "start": 0,
+      "end": 100,
+      "step": 1,
+      "initial": 15
     }
   ],
   "action": {
@@ -192,7 +245,7 @@
     "id": "confirm",
     "on_submit": {
       "type": "minecraft:command_template",
-      "template": "function mob_settings:menu_config/misc {babymountspawning:$(babymountspawning),killerrabbitspawning:$(killerrabbitspawning),jebcolor:$(jebcolor),jebspawning:$(jebspawning),egglay:$(egglay),need_sky:$(need_sky)}"
+      "template": "function mob_settings:menu_config/misc {skeletonhorsetrap:$(skeletonhorsetrap),irongolemanger:$(irongolemanger),brownmoospawning:$(brownmoospawning),illusionerspawning:$(illusionerspawning),babymountspawning:$(babymountspawning),killerrabbitspawning:$(killerrabbitspawning),jebcolor:$(jebcolor),jebspawning:$(jebspawning),egglay:$(egglay),need_sky:$(need_sky)}"
     }
   }
 }

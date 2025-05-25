@@ -9,6 +9,7 @@ execute as @s[type=ghast] run function mob_settings:apply/hostile_mobs/get with 
 execute as @s[type=guardian] run function mob_settings:apply/hostile_mobs/get with storage eden:settings mob_settings.guardian
 execute as @s[type=hoglin] run function mob_settings:apply/hostile_mobs/get with storage eden:settings mob_settings.hoglin
 execute as @s[type=husk] run function mob_settings:apply/hostile_mobs/get with storage eden:settings mob_settings.husk
+execute as @s[type=illusioner] run function mob_settings:apply/hostile_mobs/get with storage eden:settings mob_settings.illusioner
 execute as @s[type=magma_cube] run function mob_settings:apply/hostile_mobs/get with storage eden:settings mob_settings.magma_cube
 execute as @s[type=phantom] run function mob_settings:apply/hostile_mobs/get with storage eden:settings mob_settings.phantom
 execute as @s[type=piglin_brute] run function mob_settings:apply/hostile_mobs/get with storage eden:settings mob_settings.piglin_brute

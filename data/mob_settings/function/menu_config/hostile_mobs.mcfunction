@@ -1,4 +1,4 @@
-$data modify storage eden:settings mob_settings.$(type) set value {type:$(type),attck_dmg:$(attck_dmg),scale_min:$(scale_min),scale_max:$(scale_max),health:$(health),follow_range:$(follow_range),safe_fall:$(safe_fall),move_speed:$(move_speed),burn:$(burn),silent:$(silent),drown:$(drown)}
+$data modify storage eden:settings mob_settings.$(type) set value {type:$(type),pickup:$(pickup),attck_dmg:$(attck_dmg),scale_min:$(scale_min),scale_max:$(scale_max),health:$(health),follow_range:$(follow_range),safe_fall:$(safe_fall),move_speed:$(move_speed),burn:$(burn),silent:$(silent),drown:$(drown)}
 
 dialog show @s mob_settings:main
 
@@ -32,6 +32,7 @@ data modify storage eden:settings mob_settings.zoglin set from storage eden:sett
 data modify storage eden:settings mob_settings.zombie set from storage eden:settings mob_settings.all_hostile
 data modify storage eden:settings mob_settings.zombie_villager set from storage eden:settings mob_settings.all_hostile
 data modify storage eden:settings mob_settings.husk set from storage eden:settings mob_settings.all_hostile
+data modify storage eden:settings mob_settings.illusioner set from storage eden:settings mob_settings.all_hostile
 
 data modify storage eden:settings mob_settings.blaze.type set value "blaze"
 data modify storage eden:settings mob_settings.bogged.type set value "bogged"

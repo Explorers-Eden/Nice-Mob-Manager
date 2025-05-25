@@ -120,6 +120,12 @@
           }
         },
         {
+          "id": "illusioner",
+          "display": {
+            "translate": "entity.minecraft.illusioner"
+          }
+        },
+        {
           "id": "magma_cube",
           "display": {
             "translate": "entity.minecraft.magma_cube"
@@ -234,7 +240,7 @@
       "start": 1,
       "end": 500,
       "step": 1,
-      "initial": 80
+      "initial": 90
     },
     {
       "type": "minecraft:number_range",
@@ -247,7 +253,7 @@
       "start": 1,
       "end": 500,
       "step": 1,
-      "initial": 115
+      "initial": 110
     },
     {
       "type": "minecraft:number_range",
@@ -370,6 +376,33 @@
     },
     {
       "type": "minecraft:single_option",
+      "key": "pickup",
+      "label": {
+        "translate": "menu.mob_settings.option.can_pickup",
+        "fallback": "Can Pick Up Loot"
+      },
+      "options": [
+        {
+          "id": "enabled",
+          "display": {
+            "translate": "menu.nice_mobs.enabled",
+            "fallback": "Enabled",
+            "color": "green"
+          },
+          "initial": true
+        },
+        {
+          "id": "disabled",
+          "display": {
+            "translate": "menu.nice_mobs.disabled",
+            "fallback": "Disabled",
+            "color": "red"
+          }
+        }
+      ]
+    },
+    {
+      "type": "minecraft:single_option",
       "key": "silent",
       "label": {
         "translate": "menu.mob_settings.option.is_silent",
@@ -404,7 +437,7 @@
     "id": "confirm",
     "on_submit": {
       "type": "minecraft:command_template",
-      "template": "function mob_settings:menu_config/hostile_mobs {type:$(type),attck_dmg:$(attck_dmg),scale_min:$(scale_min),scale_max:$(scale_max),health:$(health),follow_range:$(follow_range),safe_fall:$(safe_fall),move_speed:$(move_speed),burn:$(burn),silent:$(silent),drown:$(drown)}"
+      "template": "function mob_settings:menu_config/hostile_mobs {pickup:$(pickup),type:$(type),attck_dmg:$(attck_dmg),scale_min:$(scale_min),scale_max:$(scale_max),health:$(health),follow_range:$(follow_range),safe_fall:$(safe_fall),move_speed:$(move_speed),burn:$(burn),silent:$(silent),drown:$(drown)}"
     }
   }
 }

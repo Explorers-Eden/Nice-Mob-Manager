@@ -1,4 +1,4 @@
-data modify storage eden:settings mob_settings.misc set value {skeletonhorsetrap:"enabled",brownmoospawning:0.15,killerrabbitspawning:0.02,jebspawning:0.03,illusionerspawning:0.25,babymountspawning:0.05,irongolemanger:"enabled",jebcolor:"enabled",egglay:"enabled",need_sky:"enabled"}
+data modify storage eden:settings mob_settings.misc set value {creeperfuse:"enabled",skeletonhorsetrap:"enabled",immunezombie:0.0,brownmoospawning:0.15,killerrabbitspawning:0.02,jebspawning:0.03,illusionerspawning:0.25,babymountspawning:0.05,irongolemanger:"enabled",jebcolor:"enabled",egglay:"enabled",need_sky:"enabled"}
 
 gamerule doInsomnia true
 gamerule doWardenSpawning true

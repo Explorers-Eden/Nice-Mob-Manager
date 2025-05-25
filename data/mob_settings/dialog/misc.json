@@ -146,6 +146,33 @@
     },
     {
       "type": "minecraft:single_option",
+      "key": "creeperfuse",
+      "label": {
+        "translate": "menu.mob_settings.option.creeperfuse",
+        "fallback": "Size Relative Creeper Fuse"
+      },
+      "options": [
+        {
+          "id": "enabled",
+          "display": {
+            "translate": "menu.nice_mobs.enabled",
+            "fallback": "Enabled",
+            "color": "green"
+          },
+          "initial": true
+        },
+        {
+          "id": "disabled",
+          "display": {
+            "translate": "menu.nice_mobs.disabled",
+            "fallback": "Disabled",
+            "color": "red"
+          }
+        }
+      ]
+    },
+    {
+      "type": "minecraft:single_option",
       "key": "jebcolor",
       "label": {
         "translate": "menu.mob_settings.option.jebcolor",
@@ -225,6 +252,19 @@
     },
     {
       "type": "minecraft:number_range",
+      "key": "immunezombie",
+      "label": {
+        "translate": "menu.mob_settings.option.immunezombie",
+        "fallback": "Immune To Zombification Chance"
+      },
+      "label_format": "options.percent_value",
+      "start": 0,
+      "end": 100,
+      "step": 1,
+      "initial": 0
+    },
+    {
+      "type": "minecraft:number_range",
       "key": "brownmoospawning",
       "label": {
         "translate": "menu.mob_settings.option.brownmoospawning",
@@ -245,7 +285,7 @@
     "id": "confirm",
     "on_submit": {
       "type": "minecraft:command_template",
-      "template": "function mob_settings:menu_config/misc {skeletonhorsetrap:$(skeletonhorsetrap),irongolemanger:$(irongolemanger),brownmoospawning:$(brownmoospawning),illusionerspawning:$(illusionerspawning),babymountspawning:$(babymountspawning),killerrabbitspawning:$(killerrabbitspawning),jebcolor:$(jebcolor),jebspawning:$(jebspawning),egglay:$(egglay),need_sky:$(need_sky)}"
+      "template": "function mob_settings:menu_config/misc {immunezombie:$(immunezombie),creeperfuse:$(creeperfuse),skeletonhorsetrap:$(skeletonhorsetrap),irongolemanger:$(irongolemanger),brownmoospawning:$(brownmoospawning),illusionerspawning:$(illusionerspawning),babymountspawning:$(babymountspawning),killerrabbitspawning:$(killerrabbitspawning),jebcolor:$(jebcolor),jebspawning:$(jebspawning),egglay:$(egglay),need_sky:$(need_sky)}"
     }
   }
 }

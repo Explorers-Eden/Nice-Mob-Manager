@@ -15,5 +15,6 @@ $execute if data storage eden:settings mob_settings.$(type){pickup:"disabled"} r
 
 execute if data storage eden:settings mob_settings.misc{irongolemanger:"disabled"} as @s[type=minecraft:iron_golem] run data modify entity @s PlayerCreated set value 1b
 execute if predicate {"condition":"minecraft:value_check","value":{"type":"minecraft:storage","storage":"eden:settings","path":"mob_settings.misc.babymountspawning"},"range":{"min":0.01}} as @s[type=#eden:valid_for_baby_mount] at @s run function mob_settings:baby_mount/init with storage eden:settings mob_settings.misc
+execute if predicate {"condition":"minecraft:value_check","value":{"type":"minecraft:storage","storage":"eden:settings","path":"mob_settings.misc.immunezombie"},"range":{"min":0.01}} run function mob_settings:immune_zombification with storage eden:settings mob_settings.misc
 
 function mob_settings:apply/neutral_mobs/exec with storage eden:temp mob_settings

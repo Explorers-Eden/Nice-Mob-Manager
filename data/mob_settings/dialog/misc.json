@@ -173,6 +173,33 @@
     },
     {
       "type": "minecraft:single_option",
+      "key": "snifferbrain",
+      "label": {
+        "translate": "menu.mob_settings.option.snifferbrain",
+        "fallback": "Sniffers Track Digs"
+      },
+      "options": [
+        {
+          "id": "enabled",
+          "display": {
+            "translate": "menu.nice_mobs.enabled",
+            "fallback": "Enabled",
+            "color": "green"
+          },
+          "initial": true
+        },
+        {
+          "id": "disabled",
+          "display": {
+            "translate": "menu.nice_mobs.disabled",
+            "fallback": "Disabled",
+            "color": "red"
+          }
+        }
+      ]
+    },
+    {
+      "type": "minecraft:single_option",
       "key": "jebcolor",
       "label": {
         "translate": "menu.mob_settings.option.jebcolor",
@@ -285,7 +312,7 @@
     "id": "confirm",
     "on_submit": {
       "type": "minecraft:command_template",
-      "template": "function mob_settings:menu_config/misc {immunezombie:$(immunezombie),creeperfuse:$(creeperfuse),skeletonhorsetrap:$(skeletonhorsetrap),irongolemanger:$(irongolemanger),brownmoospawning:$(brownmoospawning),illusionerspawning:$(illusionerspawning),babymountspawning:$(babymountspawning),killerrabbitspawning:$(killerrabbitspawning),jebcolor:$(jebcolor),jebspawning:$(jebspawning),egglay:$(egglay),need_sky:$(need_sky)}"
+      "template": "function mob_settings:menu_config/misc {snifferbrain:$(snifferbrain),immunezombie:$(immunezombie),creeperfuse:$(creeperfuse),skeletonhorsetrap:$(skeletonhorsetrap),irongolemanger:$(irongolemanger),brownmoospawning:$(brownmoospawning),illusionerspawning:$(illusionerspawning),babymountspawning:$(babymountspawning),killerrabbitspawning:$(killerrabbitspawning),jebcolor:$(jebcolor),jebspawning:$(jebspawning),egglay:$(egglay),need_sky:$(need_sky)}"
     }
   }
 }

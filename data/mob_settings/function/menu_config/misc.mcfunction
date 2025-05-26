@@ -1,4 +1,4 @@
-$data modify storage eden:settings mob_settings.misc set value {creeperfuse:$(creeperfuse),skeletonhorsetrap:$(skeletonhorsetrap),irongolemanger:$(irongolemanger),jebcolor:$(jebcolor),egglay:$(egglay),need_sky:$(need_sky)}
+$data modify storage eden:settings mob_settings.misc set value {snifferbrain:$(snifferbrain),creeperfuse:$(creeperfuse),skeletonhorsetrap:$(skeletonhorsetrap),irongolemanger:$(irongolemanger),jebcolor:$(jebcolor),egglay:$(egglay),need_sky:$(need_sky)}
 
 $data modify storage eden:temp mob_settings.jebspawning set value $(jebspawning)
 execute store result storage eden:settings mob_settings.misc.jebspawning float 0.01 run data get storage eden:temp mob_settings.jebspawning

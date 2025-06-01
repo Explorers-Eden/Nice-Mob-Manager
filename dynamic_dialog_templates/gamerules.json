@@ -1,65 +1,30 @@
 {
-  "type": "minecraft:simple_input_form",
-  "body": [
-    {
-      "type": "minecraft:item",
-      "item": {
-        "id": "minecraft:spawner",
-        "components": {
-          "minecraft:tooltip_display": {
-            "hide_tooltip": true
-          }
-        }
-      },
-      "description": {
-        "translate": "menu.mob_settings.configure_vanilla_gamerules",
-        "fallback": "Configure Vanilla Gamerules:"
-      }
-    },
-    {
-      "type": "minecraft:plain_message",
-      "contents": {
-        "translate": "menu.mob_settings.init_values",
-        "fallback": "Initial values shown are always default values.",
-        "color": "gray"
-      },
-      "width": 1024
-    }
-  ],
-  "can_close_with_escape": true,
-  "external_title": {
-    "translate": "menu.mob_settings.vanilla_gamerules",
-    "fallback": "Vanilla Gamerules"
-  },
-  "title": {
-    "translate": "menu.mob_settings.main.title",
-    "fallback": "Nice Mob Settings"
-  },
+  "type": "minecraft:confirmation",
   "inputs": [
     {
       "type": "minecraft:single_option",
       "key": "cmdfeedback",
       "label": {
-        "translate": "menu.mob_settings.option.commandfeedback",
+        "translate": "option.mob_settings.commandfeedback",
         "fallback": "Send Command Feedback"
       },
       "options": [
         {
           "id": "gamerule sendCommandFeedback true",
           "display": {
-            "translate": "menu.nice_mobs.enabled",
+            "translate": "option.mob_settings.enabled",
             "fallback": "Enabled",
             "color": "green"
-          },
-          "initial": true
+          }
         },
         {
           "id": "gamerule sendCommandFeedback false",
           "display": {
-            "translate": "menu.nice_mobs.disabled",
+            "translate": "option.mob_settings.disabled",
             "fallback": "Disabled",
             "color": "red"
-          }
+          },
+          "initial": false
         }
       ]
     },
@@ -67,26 +32,26 @@
       "type": "minecraft:single_option",
       "key": "insomnia",
       "label": {
-        "translate": "menu.mob_settings.option.insomnia",
+        "translate": "option.mob_settings.insomnia",
         "fallback": "Phantom Spawning"
       },
       "options": [
         {
           "id": "gamerule doInsomnia true",
           "display": {
-            "translate": "menu.nice_mobs.enabled",
+            "translate": "option.mob_settings.enabled",
             "fallback": "Enabled",
             "color": "green"
-          },
-          "initial": true
+          }
         },
         {
           "id": "gamerule doInsomnia false",
           "display": {
-            "translate": "menu.nice_mobs.disabled",
+            "translate": "option.mob_settings.disabled",
             "fallback": "Disabled",
             "color": "red"
-          }
+          },
+          "initial": false
         }
       ]
     },
@@ -94,26 +59,26 @@
       "type": "minecraft:single_option",
       "key": "warden",
       "label": {
-        "translate": "menu.mob_settings.option.warden",
+        "translate": "option.mob_settings.warden",
         "fallback": "Warden Spawning"
       },
       "options": [
         {
           "id": "gamerule doWardenSpawning true",
           "display": {
-            "translate": "menu.nice_mobs.enabled",
+            "translate": "option.mob_settings.enabled",
             "fallback": "Enabled",
             "color": "green"
-          },
-          "initial": true
+          }
         },
         {
           "id": "gamerule doWardenSpawning false",
           "display": {
-            "translate": "menu.nice_mobs.disabled",
+            "translate": "option.mob_settings.disabled",
             "fallback": "Disabled",
             "color": "red"
-          }
+          },
+          "initial": false
         }
       ]
     },
@@ -121,26 +86,26 @@
       "type": "minecraft:single_option",
       "key": "raids",
       "label": {
-        "translate": "menu.mob_settings.option.raids",
+        "translate": "option.mob_settings.raids",
         "fallback": "Raids"
       },
       "options": [
         {
-          "id": "gamerule disableRaids true",
-          "display": {
-            "translate": "menu.nice_mobs.enabled",
-            "fallback": "Enabled",
-            "color": "green"
-          },
-          "initial": true
-        },
-        {
           "id": "gamerule disableRaids false",
           "display": {
-            "translate": "menu.nice_mobs.disabled",
+            "translate": "option.mob_settings.enabled",
+            "fallback": "Enabled",
+            "color": "green"
+          }
+        },
+        {
+          "id": "gamerule disableRaids true",
+          "display": {
+            "translate": "option.mob_settings.disabled",
             "fallback": "Disabled",
             "color": "red"
-          }
+          },
+          "initial": false
         }
       ]
     },
@@ -148,26 +113,26 @@
       "type": "minecraft:single_option",
       "key": "mobloot",
       "label": {
-        "translate": "menu.mob_settings.option.mobloot",
+        "translate": "option.mob_settings.mobloot",
         "fallback": "Mob Loot"
       },
       "options": [
         {
           "id": "gamerule doMobLoot true",
           "display": {
-            "translate": "menu.nice_mobs.enabled",
+            "translate": "option.mob_settings.enabled",
             "fallback": "Enabled",
             "color": "green"
-          },
-          "initial": true
+          }
         },
         {
           "id": "gamerule doMobLoot false",
           "display": {
-            "translate": "menu.nice_mobs.disabled",
+            "translate": "option.mob_settings.disabled",
             "fallback": "Disabled",
             "color": "red"
-          }
+          },
+          "initial": false
         }
       ]
     },
@@ -175,26 +140,26 @@
       "type": "minecraft:single_option",
       "key": "patrols",
       "label": {
-        "translate": "menu.mob_settings.option.patrols",
+        "translate": "option.mob_settings.patrols",
         "fallback": "Patrol Spawning"
       },
       "options": [
         {
           "id": "gamerule doPatrolSpawning true",
           "display": {
-            "translate": "menu.nice_mobs.enabled",
+            "translate": "option.mob_settings.enabled",
             "fallback": "Enabled",
             "color": "green"
-          },
-          "initial": true
+          }
         },
         {
           "id": "gamerule doPatrolSpawning false",
           "display": {
-            "translate": "menu.nice_mobs.disabled",
+            "translate": "option.mob_settings.disabled",
             "fallback": "Disabled",
             "color": "red"
-          }
+          },
+          "initial": false
         }
       ]
     },
@@ -202,26 +167,26 @@
       "type": "minecraft:single_option",
       "key": "trader",
       "label": {
-        "translate": "menu.mob_settings.option.trader",
+        "translate": "option.mob_settings.trader",
         "fallback": "Wandering Trader Spawning"
       },
       "options": [
         {
           "id": "gamerule doTraderSpawning true",
           "display": {
-            "translate": "menu.nice_mobs.enabled",
+            "translate": "option.mob_settings.enabled",
             "fallback": "Enabled",
             "color": "green"
-          },
-          "initial": true
+          }
         },
         {
           "id": "gamerule doTraderSpawning false",
           "display": {
-            "translate": "menu.nice_mobs.disabled",
+            "translate": "option.mob_settings.disabled",
             "fallback": "Disabled",
             "color": "red"
-          }
+          },
+          "initial": false
         }
       ]
     },
@@ -229,26 +194,53 @@
       "type": "minecraft:single_option",
       "key": "griefing",
       "label": {
-        "translate": "menu.mob_settings.option.griefing",
+        "translate": "option.mob_settings.griefing",
         "fallback": "Mob Griefing"
       },
       "options": [
         {
           "id": "gamerule mobGriefing true",
           "display": {
-            "translate": "menu.nice_mobs.enabled",
+            "translate": "option.mob_settings.enabled",
             "fallback": "Enabled",
             "color": "green"
-          },
-          "initial": true
+          }
         },
         {
           "id": "gamerule mobGriefing false",
           "display": {
-            "translate": "menu.nice_mobs.disabled",
+            "translate": "option.mob_settings.disabled",
             "fallback": "Disabled",
             "color": "red"
+          },
+          "initial": false
+        }
+      ]
+    },
+    {
+      "type": "minecraft:single_option",
+      "key": "locatorbar",
+      "label": {
+        "translate": "option.mob_settings.locatorbar",
+        "fallback": "Locator Bar"
+      },
+      "options": [
+        {
+          "id": "gamerule locatorBar true",
+          "display": {
+            "translate": "option.mob_settings.enabled",
+            "fallback": "Enabled",
+            "color": "green"
           }
+        },
+        {
+          "id": "gamerule locatorBar false",
+          "display": {
+            "translate": "option.mob_settings.disabled",
+            "fallback": "Disabled",
+            "color": "red"
+          },
+          "initial": false
         }
       ]
     },
@@ -256,7 +248,7 @@
       "type": "minecraft:number_range",
       "key": "cramming",
       "label": {
-        "translate": "menu.mob_settings.option.cramming",
+        "translate": "option.mob_settings.cramming",
         "fallback": "Max Entity Cramming"
       },
       "start": 1,
@@ -265,15 +257,34 @@
       "initial": 24
     }
   ],
-  "action": {
+  "can_close_with_escape": true,
+  "pause": true,
+  "after_action": "close",
+  "external_title": {
+    "translate": "menu.mob_settings.gamerule.title",
+    "fallback": "Vanilla Gamerules"
+  },
+  "title": {
+    "translate": "menu.mob_settings.main.title",
+    "fallback": "Nice Mob Settings"
+  },
+  "yes": {
     "label": {
-      "translate": "menu.mob_settings.option.confirm",
+      "translate": "option.mob_settings.confirm",
       "fallback": "Confirm"
     },
-    "id": "confirm",
-    "on_submit": {
-      "type": "minecraft:command_template",
-      "template": "function mob_settings:menu_config/gamerules {cramming:$(cramming),griefing:\"$(griefing)\",trader:\"$(trader)\",patrols:\"$(patrols)\",mobloot:\"$(mobloot)\",raids:\"$(raids)\",insomnia:\"$(insomnia)\",warden:\"$(warden)\",cmdfeedback:\"$(cmdfeedback)\"}"
+    "action": {
+      "type": "minecraft:dynamic/run_command",
+      "template": "$(command_template)"
+    }
+  },
+  "no": {
+    "label": {
+      "translate": "gui.back"
+    },
+    "action": {
+      "type": "minecraft:show_dialog",
+      "dialog": "mob_settings:main"
     }
   }
 }

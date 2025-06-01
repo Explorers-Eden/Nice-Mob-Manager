@@ -1,5 +1,13 @@
 {
-  "type": "minecraft:simple_input_form",
+  "type": "minecraft:multi_action",
+  "external_title": {
+    "translate": "menu.mob_settings.neutral_mobs.title",
+    "fallback": "Neutral Mobs"
+  },
+  "title": {
+    "translate": "menu.mob_settings.main.title",
+    "fallback": "Nice Mob Settings"
+  },
   "body": [
     {
       "type": "minecraft:item",
@@ -12,393 +20,177 @@
         }
       },
       "description": {
-        "translate": "menu.mob_settings.neutral_mob_settings.description",
-        "fallback": "Configure Neutral Mob Settings:"
+        "translate": "menu.mob_settings.neutral_mobs.description",
+        "fallback": "Select A Neutral Mob To Configure"
       }
-    },
-    {
-      "type": "minecraft:plain_message",
-      "contents": {
-        "translate": "menu.mob_settings.init_values",
-        "fallback": "Initial values shown are always default values.",
-        "color": "gray"
-      },
-      "width": 1024
     }
   ],
   "can_close_with_escape": true,
-  "external_title": {
-    "translate": "menu.mob_settings.neutral_mobs.title",
-    "fallback": "Neutral Mobs"
-  },
-  "title": {
-    "translate": "menu.mob_settings.main.title",
-    "fallback": "Nice Mob Settings"
-  },
-  "inputs": [
-    {
-      "type": "minecraft:single_option",
-      "key": "type",
-      "label": {
-        "translate": "menu.nice_mobs.mob_type",
-        "fallback": "Mob Type"
-      },
-      "label_visible": true,
-      "options": [
-        {
-          "id": "all_neutral",
-          "display": {
-            "translate": "menu.nice_mobs.all_neutral_mobs",
-            "fallback": "All Neutral Mobs"
-          },
-          "initial": true
-        },
-        {
-          "id": "bee",
-          "display": {
-            "translate": "entity.minecraft.bee"
-          }
-        },
-        {
-          "id": "cave_spider",
-          "display": {
-            "translate": "entity.minecraft.cave_spider"
-          }
-        },
-        {
-          "id": "dolphin",
-          "display": {
-            "translate": "entity.minecraft.dolphin"
-          }
-        },
-        {
-          "id": "drowned",
-          "display": {
-            "translate": "entity.minecraft.drowned"
-          }
-        },
-        {
-          "id": "enderman",
-          "display": {
-            "translate": "entity.minecraft.enderman"
-          }
-        },
-        {
-          "id": "fox",
-          "display": {
-            "translate": "entity.minecraft.fox"
-          }
-        },
-        {
-          "id": "goat",
-          "display": {
-            "translate": "entity.minecraft.goat"
-          }
-        },
-        {
-          "id": "iron_golem",
-          "display": {
-            "translate": "entity.minecraft.iron_golem"
-          }
-        },
-        {
-          "id": "llama",
-          "display": {
-            "translate": "entity.minecraft.llama"
-          }
-        },
-        {
-          "id": "panda",
-          "display": {
-            "translate": "entity.minecraft.panda"
-          }
-        },
-        {
-          "id": "piglin",
-          "display": {
-            "translate": "entity.minecraft.piglin"
-          }
-        },
-        {
-          "id": "polar_bear",
-          "display": {
-            "translate": "entity.minecraft.polar_bear"
-          }
-        },
-        {
-          "id": "spider",
-          "display": {
-            "translate": "entity.minecraft.spider"
-          }
-        },
-        {
-          "id": "trader_llama",
-          "display": {
-            "translate": "entity.minecraft.trader_llama"
-          }
-        },
-        {
-          "id": "wolf",
-          "display": {
-            "translate": "entity.minecraft.wolf"
-          }
-        },
-        {
-          "id": "zombified_piglin",
-          "display": {
-            "translate": "entity.minecraft.zombified_piglin"
-          }
-        }
-      ]
-    },
-    {
-      "type": "minecraft:number_range",
-      "key": "scale_min",
-      "label": {
-        "translate": "menu.mob_settings.option.scale_min",
-        "fallback": "Min Scale"
-      },
-      "label_format": "options.percent_value",
-      "start": 1,
-      "end": 500,
-      "step": 1,
-      "initial": 90
-    },
-    {
-      "type": "minecraft:number_range",
-      "key": "scale_max",
-      "label": {
-        "translate": "menu.mob_settings.option.scale_max",
-        "fallback": "Max Scale"
-      },
-      "label_format": "options.percent_value",
-      "start": 1,
-      "end": 500,
-      "step": 1,
-      "initial": 110
-    },
-    {
-      "type": "minecraft:number_range",
-      "key": "health",
-      "label": {
-        "translate": "menu.mob_settings.option.health",
-        "fallback": "Health"
-      },
-      "label_format": "options.percent_value",
-      "start": 1,
-      "end": 500,
-      "step": 1,
-      "initial": 100
-    },
-    {
-      "type": "minecraft:number_range",
-      "key": "tempt_range",
-      "label": {
-        "translate": "menu.mob_settings.option.tempt_range",
-        "fallback": "Tempt Range"
-      },
-      "start": 1,
-      "end": 500,
-      "step": 1,
-      "initial": 100
-    },
-    {
-      "type": "minecraft:number_range",
-      "key": "follow_range",
-      "label": {
-        "translate": "menu.mob_settings.option.follow_range",
-        "fallback": "Follow Range"
-      },
-      "label_format": "options.percent_value",
-      "start": 1,
-      "end": 500,
-      "step": 1,
-      "initial": 100
-    },
-    {
-      "type": "minecraft:number_range",
-      "key": "safe_fall",
-      "label": {
-        "translate": "menu.mob_settings.option.safe_fall",
-        "fallback": "Safe Fall Distance"
-      },
-      "label_format": "options.percent_value",
-      "start": 1,
-      "end": 500,
-      "step": 1,
-      "initial": 100
-    },
-    {
-      "type": "minecraft:number_range",
-      "key": "move_speed",
-      "label": {
-        "translate": "menu.mob_settings.option.move_speed",
-        "fallback": "Movement Speed"
-      },
-      "label_format": "options.percent_value",
-      "start": 1,
-      "end": 500,
-      "step": 1,
-      "initial": 100
-    },
-    {
-      "type": "minecraft:number_range",
-      "key": "attck_dmg",
-      "label": {
-        "translate": "menu.mob_settings.option.attck_dmg",
-        "fallback": "Attack Damage"
-      },
-      "label_format": "options.percent_value",
-      "start": 1,
-      "end": 500,
-      "step": 1,
-      "initial": 100
-    },
-    {
-      "type": "minecraft:single_option",
-      "key": "breed",
-      "label": {
-        "translate": "menu.mob_settings.option.can_breed",
-        "fallback": "Can Breed"
-      },
-      "options": [
-        {
-          "id": "enabled",
-          "display": {
-            "translate": "menu.nice_mobs.enabled",
-            "fallback": "Enabled",
-            "color": "green"
-          },
-          "initial": true
-        },
-        {
-          "id": "disabled",
-          "display": {
-            "translate": "menu.nice_mobs.disabled",
-            "fallback": "Disabled",
-            "color": "red"
-          }
-        }
-      ]
-    },
-    {
-      "type": "minecraft:single_option",
-      "key": "burn",
-      "label": {
-        "translate": "menu.mob_settings.option.can_burn",
-        "fallback": "Can Burn"
-      },
-      "options": [
-        {
-          "id": "enabled",
-          "display": {
-            "translate": "menu.nice_mobs.enabled",
-            "fallback": "Enabled",
-            "color": "green"
-          },
-          "initial": true
-        },
-        {
-          "id": "disabled",
-          "display": {
-            "translate": "menu.nice_mobs.disabled",
-            "fallback": "Disabled",
-            "color": "red"
-          }
-        }
-      ]
-    },
-    {
-      "type": "minecraft:single_option",
-      "key": "drown",
-      "label": {
-        "translate": "menu.mob_settings.option.can_drown",
-        "fallback": "Can Drown"
-      },
-      "options": [
-        {
-          "id": "enabled",
-          "display": {
-            "translate": "menu.nice_mobs.enabled",
-            "fallback": "Enabled",
-            "color": "green"
-          },
-          "initial": true
-        },
-        {
-          "id": "disabled",
-          "display": {
-            "translate": "menu.nice_mobs.disabled",
-            "fallback": "Disabled",
-            "color": "red"
-          }
-        }
-      ]
-    },
-    {
-      "type": "minecraft:single_option",
-      "key": "pickup",
-      "label": {
-        "translate": "menu.mob_settings.option.can_pickup",
-        "fallback": "Can Pick Up Loot"
-      },
-      "options": [
-        {
-          "id": "enabled",
-          "display": {
-            "translate": "menu.nice_mobs.enabled",
-            "fallback": "Enabled",
-            "color": "green"
-          },
-          "initial": true
-        },
-        {
-          "id": "disabled",
-          "display": {
-            "translate": "menu.nice_mobs.disabled",
-            "fallback": "Disabled",
-            "color": "red"
-          }
-        }
-      ]
-    },
-    {
-      "type": "minecraft:single_option",
-      "key": "silent",
-      "label": {
-        "translate": "menu.mob_settings.option.is_silent",
-        "fallback": "Is Silent"
-      },
-      "options": [
-        {
-          "id": "enabled",
-          "display": {
-            "translate": "menu.nice_mobs.enabled",
-            "fallback": "Enabled",
-            "color": "green"
-          }
-        },
-        {
-          "id": "disabled",
-          "display": {
-            "translate": "menu.nice_mobs.disabled",
-            "fallback": "Disabled",
-            "color": "red"
-          },
-          "initial": true
-        }
-      ]
-    }
-  ],
-  "action": {
+  "pause": true,
+  "exit_action": {
     "label": {
-      "translate": "menu.mob_settings.option.confirm",
-      "fallback": "Confirm"
+      "translate": "gui.back"
     },
-    "id": "confirm",
-    "on_submit": {
-      "type": "minecraft:command_template",
-      "template": "function mob_settings:menu_config/neutral_mobs {pickup:$(pickup),type:$(type),attck_dmg:$(attck_dmg),scale_min:$(scale_min),scale_max:$(scale_max),health:$(health),tempt_range:$(tempt_range),follow_range:$(follow_range),safe_fall:$(safe_fall),move_speed:$(move_speed),breed:$(breed),burn:$(burn),silent:$(silent),drown:$(drown)}"
+    "action": {
+      "type": "minecraft:show_dialog",
+      "dialog": "mob_settings:main"
     }
-  }
+  },
+  "columns": 2,
+  "actions": [
+    {
+      "label": {
+        "translate": "option.nice_mobs.all_neutral_mobs",
+        "fallback": "All Neutral Mobs"
+      },
+      "action": {
+        "type": "minecraft:run_command",
+        "command": "function mob_settings:dialog/dynamic/neutral with storage eden:settings mob_settings.all_neutral"
+      }
+    },
+    {
+      "label": {
+        "translate": "entity.minecraft.bee"
+      },
+      "action": {
+        "type": "minecraft:run_command",
+        "command": "function mob_settings:dialog/dynamic/neutral with storage eden:settings mob_settings.bee"
+      }
+    },
+    {
+      "label": {
+        "translate": "entity.minecraft.cave_spider"
+      },
+      "action": {
+        "type": "minecraft:run_command",
+        "command": "function mob_settings:dialog/dynamic/neutral with storage eden:settings mob_settings.cave_spider"
+      }
+    },
+    {
+      "label": {
+        "translate": "entity.minecraft.dolphin"
+      },
+      "action": {
+        "type": "minecraft:run_command",
+        "command": "function mob_settings:dialog/dynamic/neutral with storage eden:settings mob_settings.dolphin"
+      }
+    },
+    {
+      "label": {
+        "translate": "entity.minecraft.drowned"
+      },
+      "action": {
+        "type": "minecraft:run_command",
+        "command": "function mob_settings:dialog/dynamic/neutral with storage eden:settings mob_settings.drowned"
+      }
+    },
+    {
+      "label": {
+        "translate": "entity.minecraft.enderman"
+      },
+      "action": {
+        "type": "minecraft:run_command",
+        "command": "function mob_settings:dialog/dynamic/neutral with storage eden:settings mob_settings.enderman"
+      }
+    },
+    {
+      "label": {
+        "translate": "entity.minecraft.fox"
+      },
+      "action": {
+        "type": "minecraft:run_command",
+        "command": "function mob_settings:dialog/dynamic/neutral with storage eden:settings mob_settings.fox"
+      }
+    },
+    {
+      "label": {
+        "translate": "entity.minecraft.goat"
+      },
+      "action": {
+        "type": "minecraft:run_command",
+        "command": "function mob_settings:dialog/dynamic/neutral with storage eden:settings mob_settings.goat"
+      }
+    },
+    {
+      "label": {
+        "translate": "entity.minecraft.iron_golem"
+      },
+      "action": {
+        "type": "minecraft:run_command",
+        "command": "function mob_settings:dialog/dynamic/neutral with storage eden:settings mob_settings.iron_golem"
+      }
+    },
+    {
+      "label": {
+        "translate": "entity.minecraft.llama"
+      },
+      "action": {
+        "type": "minecraft:run_command",
+        "command": "function mob_settings:dialog/dynamic/neutral with storage eden:settings mob_settings.llama"
+      }
+    },
+    {
+      "label": {
+        "translate": "entity.minecraft.panda"
+      },
+      "action": {
+        "type": "minecraft:run_command",
+        "command": "function mob_settings:dialog/dynamic/neutral with storage eden:settings mob_settings.panda"
+      }
+    },
+    {
+      "label": {
+        "translate": "entity.minecraft.piglin"
+      },
+      "action": {
+        "type": "minecraft:run_command",
+        "command": "function mob_settings:dialog/dynamic/neutral with storage eden:settings mob_settings.piglin"
+      }
+    },
+    {
+      "label": {
+        "translate": "entity.minecraft.polar_bear"
+      },
+      "action": {
+        "type": "minecraft:run_command",
+        "command": "function mob_settings:dialog/dynamic/neutral with storage eden:settings mob_settings.polar_bear"
+      }
+    },
+    {
+      "label": {
+        "translate": "entity.minecraft.spider"
+      },
+      "action": {
+        "type": "minecraft:run_command",
+        "command": "function mob_settings:dialog/dynamic/neutral with storage eden:settings mob_settings.spider"
+      }
+    },
+    {
+      "label": {
+        "translate": "entity.minecraft.trader_llama"
+      },
+      "action": {
+        "type": "minecraft:run_command",
+        "command": "function mob_settings:dialog/dynamic/neutral with storage eden:settings mob_settings.trader_llama"
+      }
+    },
+    {
+      "label": {
+        "translate": "entity.minecraft.wolf"
+      },
+      "action": {
+        "type": "minecraft:run_command",
+        "command": "function mob_settings:dialog/dynamic/neutral with storage eden:settings mob_settings.wolf"
+      }
+    },
+    {
+      "label": {
+        "translate": "entity.minecraft.zombified_piglin"
+      },
+      "action": {
+        "type": "minecraft:run_command",
+        "command": "function mob_settings:dialog/dynamic/neutral with storage eden:settings mob_settings.zombified_piglin"
+      }
+    }
+  ]
 }

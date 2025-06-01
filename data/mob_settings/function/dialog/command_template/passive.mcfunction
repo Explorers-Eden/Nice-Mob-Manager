@@ -1,6 +1,21 @@
-$data modify storage eden:settings mob_settings.$(type) set value {type:$(type),pickup:$(pickup),scale_min:$(scale_min),scale_max:$(scale_max),health:$(health),tempt_range:$(tempt_range),follow_range:$(follow_range),safe_fall:$(safe_fall),move_speed:$(move_speed),breed:$(breed),burn:$(burn),silent:$(silent),drown:$(drown)}
+$data modify storage eden:settings mob_settings.$(type) set value {locator_color:'$(locator_color)',locator_range:$(locator_range),type:$(type),pickup:$(pickup),scale_min:$(scale_min),scale_max:$(scale_max),health:$(health),tempt_range:$(tempt_range),follow_range:$(follow_range),safe_fall:$(safe_fall),move_speed:$(move_speed),breed:$(breed),burn:$(burn),silent:$(silent),drown:$(drown)}
 
-dialog show @s mob_settings:main
+$execute if data storage eden:settings mob_settings.$(type){burn:"enabled"} run data modify storage eden:settings mob_settings.$(type).burn_initial set value "false"
+$execute unless data storage eden:settings mob_settings.$(type){burn:"enabled"} run data modify storage eden:settings mob_settings.$(type).burn_initial set value "true"
+
+$execute if data storage eden:settings mob_settings.$(type){pickup:"enabled"} run data modify storage eden:settings mob_settings.$(type).pickup_initial set value "false"
+$execute unless data storage eden:settings mob_settings.$(type){pickup:"enabled"} run data modify storage eden:settings mob_settings.$(type).pickup_initial set value "true"
+
+$execute if data storage eden:settings mob_settings.$(type){silent:"enabled"} run data modify storage eden:settings mob_settings.$(type).silent_initial set value "false"
+$execute unless data storage eden:settings mob_settings.$(type){silent:"enabled"} run data modify storage eden:settings mob_settings.$(type).silent_initial set value "true"
+
+$execute if data storage eden:settings mob_settings.$(type){drown:"enabled"} run data modify storage eden:settings mob_settings.$(type).drown_initial set value "false"
+$execute unless data storage eden:settings mob_settings.$(type){drown:"enabled"} run data modify storage eden:settings mob_settings.$(type).drown_initial set value "true"
+
+$execute if data storage eden:settings mob_settings.$(type){breed:"enabled"} run data modify storage eden:settings mob_settings.$(type).breed_initial set value "false"
+$execute unless data storage eden:settings mob_settings.$(type){breed:"enabled"} run data modify storage eden:settings mob_settings.$(type).breed_initial set value "true"
+
+dialog show @s mob_settings:passive
 
 $execute unless data storage eden:settings mob_settings.$(type){type:"all_passive"} run return fail
 data modify storage eden:settings mob_settings.allay set from storage eden:settings mob_settings.all_passive

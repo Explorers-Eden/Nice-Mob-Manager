@@ -1,5 +1,13 @@
 {
-  "type": "minecraft:simple_input_form",
+  "type": "minecraft:multi_action",
+  "external_title": {
+    "translate": "menu.mob_settings.hostile_mobs.title",
+    "fallback": "Hostile Mobs"
+  },
+  "title": {
+    "translate": "menu.mob_settings.main.title",
+    "fallback": "Nice Mob Settings"
+  },
   "body": [
     {
       "type": "minecraft:item",
@@ -12,432 +20,303 @@
         }
       },
       "description": {
-        "translate": "menu.mob_settings.hostile_mob_settings.description",
-        "fallback": "Configure Hostile Mob Settings:"
+        "translate": "menu.mob_settings.hostile_mobs.description",
+        "fallback": "Select A Hostile Mob To Configure"
       }
-    },
-    {
-      "type": "minecraft:plain_message",
-      "contents": {
-        "translate": "menu.mob_settings.init_values",
-        "fallback": "Initial values shown are always default values.",
-        "color": "gray"
-      },
-      "width": 1024
     }
   ],
   "can_close_with_escape": true,
-  "external_title": {
-    "translate": "menu.mob_settings.hostile_mobs.title",
-    "fallback": "Hostile Mobs"
-  },
-  "title": {
-    "translate": "menu.mob_settings.main.title",
-    "fallback": "Nice Mob Settings"
-  },
-  "inputs": [
-    {
-      "type": "minecraft:single_option",
-      "key": "type",
-      "label": {
-        "translate": "menu.nice_mobs.mob_type",
-        "fallback": "Mob Type"
-      },
-      "label_visible": true,
-      "options": [
-        {
-          "id": "all_hostile",
-          "display": {
-            "translate": "menu.nice_mobs.all_hostile_mobs",
-            "fallback": "All Hostile Mobs"
-          },
-          "initial": true
-        },
-        {
-          "id": "blaze",
-          "display": {
-            "translate": "entity.minecraft.blaze"
-          }
-        },
-        {
-          "id": "bogged",
-          "display": {
-            "translate": "entity.minecraft.bogged"
-          }
-        },
-        {
-          "id": "breeze",
-          "display": {
-            "translate": "entity.minecraft.breeze"
-          }
-        },
-        {
-          "id": "creeper",
-          "display": {
-            "translate": "entity.minecraft.creeper"
-          }
-        },
-        {
-          "id": "elder_guardian",
-          "display": {
-            "translate": "entity.minecraft.elder_guardian"
-          }
-        },
-        {
-          "id": "endermite",
-          "display": {
-            "translate": "entity.minecraft.endermite"
-          }
-        },
-        {
-          "id": "evoker",
-          "display": {
-            "translate": "entity.minecraft.evoker"
-          }
-        },
-        {
-          "id": "ghast",
-          "display": {
-            "translate": "entity.minecraft.ghast"
-          }
-        },
-        {
-          "id": "guardian",
-          "display": {
-            "translate": "entity.minecraft.guardian"
-          }
-        },
-        {
-          "id": "hoglin",
-          "display": {
-            "translate": "entity.minecraft.hoglin"
-          }
-        },
-        {
-          "id": "husk",
-          "display": {
-            "translate": "entity.minecraft.husk"
-          }
-        },
-        {
-          "id": "illusioner",
-          "display": {
-            "translate": "entity.minecraft.illusioner"
-          }
-        },
-        {
-          "id": "magma_cube",
-          "display": {
-            "translate": "entity.minecraft.magma_cube"
-          }
-        },
-        {
-          "id": "phantom",
-          "display": {
-            "translate": "entity.minecraft.phantom"
-          }
-        },
-        {
-          "id": "piglin_brute",
-          "display": {
-            "translate": "entity.minecraft.piglin_brute"
-          }
-        },
-        {
-          "id": "pillager",
-          "display": {
-            "translate": "entity.minecraft.pillager"
-          }
-        },
-        {
-          "id": "ravager",
-          "display": {
-            "translate": "entity.minecraft.ravager"
-          }
-        },
-        {
-          "id": "shulker",
-          "display": {
-            "translate": "entity.minecraft.shulker"
-          }
-        },
-        {
-          "id": "silverfish",
-          "display": {
-            "translate": "entity.minecraft.silverfish"
-          }
-        },
-        {
-          "id": "skeleton",
-          "display": {
-            "translate": "entity.minecraft.skeleton"
-          }
-        },
-        {
-          "id": "slime",
-          "display": {
-            "translate": "entity.minecraft.slime"
-          }
-        },
-        {
-          "id": "stray",
-          "display": {
-            "translate": "entity.minecraft.stray"
-          }
-        },
-        {
-          "id": "vex",
-          "display": {
-            "translate": "entity.minecraft.vex"
-          }
-        },
-        {
-          "id": "vindicator",
-          "display": {
-            "translate": "entity.minecraft.warden"
-          }
-        },
-        {
-          "id": "witch",
-          "display": {
-            "translate": "entity.minecraft.witch"
-          }
-        },
-        {
-          "id": "wither_skeleton",
-          "display": {
-            "translate": "entity.minecraft.wither_skeleton"
-          }
-        },
-        {
-          "id": "zoglin",
-          "display": {
-            "translate": "entity.minecraft.zoglin"
-          }
-        },
-        {
-          "id": "zombie",
-          "display": {
-            "translate": "entity.minecraft.zombie"
-          }
-        },
-        {
-          "id": "zombie_villager",
-          "display": {
-            "translate": "entity.minecraft.zombie_villager"
-          }
-        }
-      ]
-    },
-    {
-      "type": "minecraft:number_range",
-      "key": "scale_min",
-      "label": {
-        "translate": "menu.mob_settings.option.scale_min",
-        "fallback": "Min Scale"
-      },
-      "label_format": "options.percent_value",
-      "start": 1,
-      "end": 500,
-      "step": 1,
-      "initial": 90
-    },
-    {
-      "type": "minecraft:number_range",
-      "key": "scale_max",
-      "label": {
-        "translate": "menu.mob_settings.option.scale_max",
-        "fallback": "Max Scale"
-      },
-      "label_format": "options.percent_value",
-      "start": 1,
-      "end": 500,
-      "step": 1,
-      "initial": 110
-    },
-    {
-      "type": "minecraft:number_range",
-      "key": "health",
-      "label": {
-        "translate": "menu.mob_settings.option.health",
-        "fallback": "Health"
-      },
-      "label_format": "options.percent_value",
-      "start": 1,
-      "end": 500,
-      "step": 1,
-      "initial": 100
-    },
-    {
-      "type": "minecraft:number_range",
-      "key": "follow_range",
-      "label": {
-        "translate": "menu.mob_settings.option.follow_range",
-        "fallback": "Follow Range"
-      },
-      "label_format": "options.percent_value",
-      "start": 1,
-      "end": 500,
-      "step": 1,
-      "initial": 100
-    },
-    {
-      "type": "minecraft:number_range",
-      "key": "safe_fall",
-      "label": {
-        "translate": "menu.mob_settings.option.safe_fall",
-        "fallback": "Safe Fall Distance"
-      },
-      "label_format": "options.percent_value",
-      "start": 1,
-      "end": 500,
-      "step": 1,
-      "initial": 100
-    },
-    {
-      "type": "minecraft:number_range",
-      "key": "move_speed",
-      "label": {
-        "translate": "menu.mob_settings.option.move_speed",
-        "fallback": "Movement Speed"
-      },
-      "label_format": "options.percent_value",
-      "start": 1,
-      "end": 500,
-      "step": 1,
-      "initial": 100
-    },
-    {
-      "type": "minecraft:number_range",
-      "key": "attck_dmg",
-      "label": {
-        "translate": "menu.mob_settings.option.attck_dmg",
-        "fallback": "Attack Damage"
-      },
-      "label_format": "options.percent_value",
-      "start": 1,
-      "end": 500,
-      "step": 1,
-      "initial": 100
-    },
-    {
-      "type": "minecraft:single_option",
-      "key": "burn",
-      "label": {
-        "translate": "menu.mob_settings.option.can_burn",
-        "fallback": "Can Burn"
-      },
-      "options": [
-        {
-          "id": "enabled",
-          "display": {
-            "translate": "menu.nice_mobs.enabled",
-            "fallback": "Enabled",
-            "color": "green"
-          },
-          "initial": true
-        },
-        {
-          "id": "disabled",
-          "display": {
-            "translate": "menu.nice_mobs.disabled",
-            "fallback": "Disabled",
-            "color": "red"
-          }
-        }
-      ]
-    },
-    {
-      "type": "minecraft:single_option",
-      "key": "drown",
-      "label": {
-        "translate": "menu.mob_settings.option.can_drown",
-        "fallback": "Can Drown"
-      },
-      "options": [
-        {
-          "id": "enabled",
-          "display": {
-            "translate": "menu.nice_mobs.enabled",
-            "fallback": "Enabled",
-            "color": "green"
-          },
-          "initial": true
-        },
-        {
-          "id": "disabled",
-          "display": {
-            "translate": "menu.nice_mobs.disabled",
-            "fallback": "Disabled",
-            "color": "red"
-          }
-        }
-      ]
-    },
-    {
-      "type": "minecraft:single_option",
-      "key": "pickup",
-      "label": {
-        "translate": "menu.mob_settings.option.can_pickup",
-        "fallback": "Can Pick Up Loot"
-      },
-      "options": [
-        {
-          "id": "enabled",
-          "display": {
-            "translate": "menu.nice_mobs.enabled",
-            "fallback": "Enabled",
-            "color": "green"
-          },
-          "initial": true
-        },
-        {
-          "id": "disabled",
-          "display": {
-            "translate": "menu.nice_mobs.disabled",
-            "fallback": "Disabled",
-            "color": "red"
-          }
-        }
-      ]
-    },
-    {
-      "type": "minecraft:single_option",
-      "key": "silent",
-      "label": {
-        "translate": "menu.mob_settings.option.is_silent",
-        "fallback": "Is Silent"
-      },
-      "options": [
-        {
-          "id": "enabled",
-          "display": {
-            "translate": "menu.nice_mobs.enabled",
-            "fallback": "Enabled",
-            "color": "green"
-          }
-        },
-        {
-          "id": "disabled",
-          "display": {
-            "translate": "menu.nice_mobs.disabled",
-            "fallback": "Disabled",
-            "color": "red"
-          },
-          "initial": true
-        }
-      ]
-    }
-  ],
-  "action": {
+  "pause": true,
+  "exit_action": {
     "label": {
-      "translate": "menu.mob_settings.option.confirm",
-      "fallback": "Confirm"
+      "translate": "gui.back"
     },
-    "id": "confirm",
-    "on_submit": {
-      "type": "minecraft:command_template",
-      "template": "function mob_settings:menu_config/hostile_mobs {pickup:$(pickup),type:$(type),attck_dmg:$(attck_dmg),scale_min:$(scale_min),scale_max:$(scale_max),health:$(health),follow_range:$(follow_range),safe_fall:$(safe_fall),move_speed:$(move_speed),burn:$(burn),silent:$(silent),drown:$(drown)}"
+    "action": {
+      "type": "minecraft:show_dialog",
+      "dialog": "mob_settings:main"
     }
-  }
+  },
+  "columns": 2,
+  "actions": [
+    {
+      "label": {
+        "translate": "option.nice_mobs.all_hostile_mobs",
+        "fallback": "All Hostile Mobs"
+      },
+      "action": {
+        "type": "minecraft:run_command",
+        "command": "function mob_settings:dialog/dynamic/hostile with storage eden:settings mob_settings.all_hostile"
+      }
+    },
+    {
+      "label": {
+        "translate": "entity.minecraft.blaze"
+      },
+      "action": {
+        "type": "minecraft:run_command",
+        "command": "function mob_settings:dialog/dynamic/hostile with storage eden:settings mob_settings.blaze"
+      }
+    },
+    {
+      "label": {
+        "translate": "entity.minecraft.bogged"
+      },
+      "action": {
+        "type": "minecraft:run_command",
+        "command": "function mob_settings:dialog/dynamic/hostile with storage eden:settings mob_settings.bogged"
+      }
+    },
+    {
+      "label": {
+        "translate": "entity.minecraft.breeze"
+      },
+      "action": {
+        "type": "minecraft:run_command",
+        "command": "function mob_settings:dialog/dynamic/hostile with storage eden:settings mob_settings.breeze"
+      }
+    },
+    {
+      "label": {
+        "translate": "entity.minecraft.creeper"
+      },
+      "action": {
+        "type": "minecraft:run_command",
+        "command": "function mob_settings:dialog/dynamic/hostile with storage eden:settings mob_settings.creeper"
+      }
+    },
+    {
+      "label": {
+        "translate": "entity.minecraft.elder_guardian"
+      },
+      "action": {
+        "type": "minecraft:run_command",
+        "command": "function mob_settings:dialog/dynamic/hostile with storage eden:settings mob_settings.elder_guardian"
+      }
+    },
+    {
+      "label": {
+        "translate": "entity.minecraft.endermite"
+      },
+      "action": {
+        "type": "minecraft:run_command",
+        "command": "function mob_settings:dialog/dynamic/hostile with storage eden:settings mob_settings.endermite"
+      }
+    },
+    {
+      "label": {
+        "translate": "entity.minecraft.evoker"
+      },
+      "action": {
+        "type": "minecraft:run_command",
+        "command": "function mob_settings:dialog/dynamic/hostile with storage eden:settings mob_settings.evoker"
+      }
+    },
+    {
+      "label": {
+        "translate": "entity.minecraft.ghast"
+      },
+      "action": {
+        "type": "minecraft:run_command",
+        "command": "function mob_settings:dialog/dynamic/hostile with storage eden:settings mob_settings.ghast"
+      }
+    },
+    {
+      "label": {
+        "translate": "entity.minecraft.guardian"
+      },
+      "action": {
+        "type": "minecraft:run_command",
+        "command": "function mob_settings:dialog/dynamic/hostile with storage eden:settings mob_settings.guardian"
+      }
+    },
+    {
+      "label": {
+        "translate": "entity.minecraft.hoglin"
+      },
+      "action": {
+        "type": "minecraft:run_command",
+        "command": "function mob_settings:dialog/dynamic/hostile with storage eden:settings mob_settings.hoglin"
+      }
+    },
+    {
+      "label": {
+        "translate": "entity.minecraft.husk"
+      },
+      "action": {
+        "type": "minecraft:run_command",
+        "command": "function mob_settings:dialog/dynamic/hostile with storage eden:settings mob_settings.husk"
+      }
+    },
+    {
+      "label": {
+        "translate": "entity.minecraft.illusioner"
+      },
+      "action": {
+        "type": "minecraft:run_command",
+        "command": "function mob_settings:dialog/dynamic/hostile with storage eden:settings mob_settings.illusioner"
+      }
+    },
+    {
+      "label": {
+        "translate": "entity.minecraft.magma_cube"
+      },
+      "action": {
+        "type": "minecraft:run_command",
+        "command": "function mob_settings:dialog/dynamic/hostile with storage eden:settings mob_settings.magma_cube"
+      }
+    },
+    {
+      "label": {
+        "translate": "entity.minecraft.phantom"
+      },
+      "action": {
+        "type": "minecraft:run_command",
+        "command": "function mob_settings:dialog/dynamic/hostile with storage eden:settings mob_settings.phantom"
+      }
+    },
+    {
+      "label": {
+        "translate": "entity.minecraft.piglin_brute"
+      },
+      "action": {
+        "type": "minecraft:run_command",
+        "command": "function mob_settings:dialog/dynamic/hostile with storage eden:settings mob_settings.piglin_brute"
+      }
+    },
+    {
+      "label": {
+        "translate": "entity.minecraft.pillager"
+      },
+      "action": {
+        "type": "minecraft:run_command",
+        "command": "function mob_settings:dialog/dynamic/hostile with storage eden:settings mob_settings.pillager"
+      }
+    },
+    {
+      "label": {
+        "translate": "entity.minecraft.ravager"
+      },
+      "action": {
+        "type": "minecraft:run_command",
+        "command": "function mob_settings:dialog/dynamic/hostile with storage eden:settings mob_settings.ravager"
+      }
+    },
+    {
+      "label": {
+        "translate": "entity.minecraft.shulker"
+      },
+      "action": {
+        "type": "minecraft:run_command",
+        "command": "function mob_settings:dialog/dynamic/hostile with storage eden:settings mob_settings.shulker"
+      }
+    },
+    {
+      "label": {
+        "translate": "entity.minecraft.silverfish"
+      },
+      "action": {
+        "type": "minecraft:run_command",
+        "command": "function mob_settings:dialog/dynamic/hostile with storage eden:settings mob_settings.silverfish"
+      }
+    },
+    {
+      "label": {
+        "translate": "entity.minecraft.skeleton"
+      },
+      "action": {
+        "type": "minecraft:run_command",
+        "command": "function mob_settings:dialog/dynamic/hostile with storage eden:settings mob_settings.skeleton"
+      }
+    },
+    {
+      "label": {
+        "translate": "entity.minecraft.slime"
+      },
+      "action": {
+        "type": "minecraft:run_command",
+        "command": "function mob_settings:dialog/dynamic/hostile with storage eden:settings mob_settings.slime"
+      }
+    },
+    {
+      "label": {
+        "translate": "entity.minecraft.stray"
+      },
+      "action": {
+        "type": "minecraft:run_command",
+        "command": "function mob_settings:dialog/dynamic/hostile with storage eden:settings mob_settings.stray"
+      }
+    },
+    {
+      "label": {
+        "translate": "entity.minecraft.vex"
+      },
+      "action": {
+        "type": "minecraft:run_command",
+        "command": "function mob_settings:dialog/dynamic/hostile with storage eden:settings mob_settings.vex"
+      }
+    },
+    {
+      "label": {
+        "translate": "entity.minecraft.vindicator"
+      },
+      "action": {
+        "type": "minecraft:run_command",
+        "command": "function mob_settings:dialog/dynamic/hostile with storage eden:settings mob_settings.vindicator"
+      }
+    },
+    {
+      "label": {
+        "translate": "entity.minecraft.warden"
+      },
+      "action": {
+        "type": "minecraft:run_command",
+        "command": "function mob_settings:dialog/dynamic/hostile with storage eden:settings mob_settings.warden"
+      }
+    },
+    {
+      "label": {
+        "translate": "entity.minecraft.witch"
+      },
+      "action": {
+        "type": "minecraft:run_command",
+        "command": "function mob_settings:dialog/dynamic/hostile with storage eden:settings mob_settings.witch"
+      }
+    },
+    {
+      "label": {
+        "translate": "entity.minecraft.wither_skeleton"
+      },
+      "action": {
+        "type": "minecraft:run_command",
+        "command": "function mob_settings:dialog/dynamic/hostile with storage eden:settings mob_settings.wither_skeleton"
+      }
+    },
+    {
+      "label": {
+        "translate": "entity.minecraft.zoglin"
+      },
+      "action": {
+        "type": "minecraft:run_command",
+        "command": "function mob_settings:dialog/dynamic/hostile with storage eden:settings mob_settings.zoglin"
+      }
+    },
+    {
+      "label": {
+        "translate": "entity.minecraft.zombie"
+      },
+      "action": {
+        "type": "minecraft:run_command",
+        "command": "function mob_settings:dialog/dynamic/hostile with storage eden:settings mob_settings.zombie"
+      }
+    },
+    {
+      "label": {
+        "translate": "entity.minecraft.zombie_villager"
+      },
+      "action": {
+        "type": "minecraft:run_command",
+        "command": "function mob_settings:dialog/dynamic/hostile with storage eden:settings mob_settings.zombie_villager"
+      }
+    }
+  ]
 }

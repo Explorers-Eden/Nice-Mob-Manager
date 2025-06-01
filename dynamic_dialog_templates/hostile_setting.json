@@ -1,0 +1,273 @@
+{
+  "type": "minecraft:confirmation",
+  "body": [
+    {
+      "type": "minecraft:item",
+      "item": {
+        "id": "minecraft:spawner",
+        "components": {
+          "minecraft:tooltip_display": {
+            "hide_tooltip": true
+          }
+        }
+      },
+      "description": {
+        "translate": "menu.mob_settings.hostile_mob_settings.description",
+        "fallback": "Configure Hostile Mob Settings:"
+      }
+    }
+  ],
+  "inputs": [
+    {
+      "type": "minecraft:number_range",
+      "key": "scale_min",
+      "label": {
+        "translate": "option.mob_settings.scale_min",
+        "fallback": "Min Scale"
+      },
+      "label_format": "options.percent_value",
+      "start": 1,
+      "end": 500,
+      "step": 1,
+      "initial": 90
+    },
+    {
+      "type": "minecraft:number_range",
+      "key": "scale_max",
+      "label": {
+        "translate": "option.mob_settings.scale_max",
+        "fallback": "Max Scale"
+      },
+      "label_format": "options.percent_value",
+      "start": 1,
+      "end": 500,
+      "step": 1,
+      "initial": 110
+    },
+    {
+      "type": "minecraft:number_range",
+      "key": "health",
+      "label": {
+        "translate": "option.mob_settings.health",
+        "fallback": "Health"
+      },
+      "label_format": "options.percent_value",
+      "start": 1,
+      "end": 500,
+      "step": 1,
+      "initial": 100
+    },
+    {
+      "type": "minecraft:number_range",
+      "key": "follow_range",
+      "label": {
+        "translate": "option.mob_settings.follow_range",
+        "fallback": "Follow Range"
+      },
+      "label_format": "options.percent_value",
+      "start": 1,
+      "end": 500,
+      "step": 1,
+      "initial": 100
+    },
+    {
+      "type": "minecraft:number_range",
+      "key": "safe_fall",
+      "label": {
+        "translate": "option.mob_settings.safe_fall",
+        "fallback": "Safe Fall Distance"
+      },
+      "label_format": "options.percent_value",
+      "start": 1,
+      "end": 500,
+      "step": 1,
+      "initial": 100
+    },
+    {
+      "type": "minecraft:number_range",
+      "key": "move_speed",
+      "label": {
+        "translate": "option.mob_settings.move_speed",
+        "fallback": "Movement Speed"
+      },
+      "label_format": "options.percent_value",
+      "start": 1,
+      "end": 500,
+      "step": 1,
+      "initial": 100
+    },
+    {
+      "type": "minecraft:number_range",
+      "key": "attck_dmg",
+      "label": {
+        "translate": "option.mob_settings.attck_dmg",
+        "fallback": "Attack Damage"
+      },
+      "label_format": "options.percent_value",
+      "start": 1,
+      "end": 500,
+      "step": 1,
+      "initial": 100
+    },
+    {
+      "type": "minecraft:single_option",
+      "key": "burn",
+      "label": {
+        "translate": "option.mob_settings.can_burn",
+        "fallback": "Can Burn"
+      },
+      "options": [
+        {
+          "id": "enabled",
+          "display": {
+            "translate": "menu.nice_mobs.enabled",
+            "fallback": "Enabled",
+            "color": "green"
+          }
+        },
+        {
+          "id": "disabled",
+          "display": {
+            "translate": "menu.nice_mobs.disabled",
+            "fallback": "Disabled",
+            "color": "red"
+          },
+          "initial": false
+        }
+      ]
+    },
+    {
+      "type": "minecraft:single_option",
+      "key": "drown",
+      "label": {
+        "translate": "option.mob_settings.can_drown",
+        "fallback": "Can Drown"
+      },
+      "options": [
+        {
+          "id": "enabled",
+          "display": {
+            "translate": "menu.nice_mobs.enabled",
+            "fallback": "Enabled",
+            "color": "green"
+          }
+        },
+        {
+          "id": "disabled",
+          "display": {
+            "translate": "menu.nice_mobs.disabled",
+            "fallback": "Disabled",
+            "color": "red"
+          },
+          "initial": false
+        }
+      ]
+    },
+    {
+      "type": "minecraft:single_option",
+      "key": "pickup",
+      "label": {
+        "translate": "option.mob_settings.can_pickup",
+        "fallback": "Can Pick Up Loot"
+      },
+      "options": [
+        {
+          "id": "enabled",
+          "display": {
+            "translate": "menu.nice_mobs.enabled",
+            "fallback": "Enabled",
+            "color": "green"
+          }
+        },
+        {
+          "id": "disabled",
+          "display": {
+            "translate": "menu.nice_mobs.disabled",
+            "fallback": "Disabled",
+            "color": "red"
+          },
+          "initial": false
+        }
+      ]
+    },
+    {
+      "type": "minecraft:single_option",
+      "key": "silent",
+      "label": {
+        "translate": "option.mob_settings.is_silent",
+        "fallback": "Is Silent"
+      },
+      "options": [
+        {
+          "id": "enabled",
+          "display": {
+            "translate": "menu.nice_mobs.enabled",
+            "fallback": "Enabled",
+            "color": "green"
+          }
+        },
+        {
+          "id": "disabled",
+          "display": {
+            "translate": "menu.nice_mobs.disabled",
+            "fallback": "Disabled",
+            "color": "red"
+          },
+          "initial": true
+        }
+      ]
+    },
+    {
+      "type": "minecraft:text",
+      "key": "locator_color",
+      "label": {
+        "translate": "option.mob_settings.locator_color",
+        "fallback": "Locator Bar Color (Hex)"
+      },
+      "initial": "8b0000",
+      "max_length": 9
+    },
+    {
+      "type": "minecraft:number_range",
+      "key": "locator_range",
+      "label": {
+        "translate": "option.mob_settings.locator_range",
+        "fallback": "Locator Bar Range"
+      },
+      "start": 0,
+      "end": 1024,
+      "step": 1,
+      "initial": 16
+    }
+  ],
+  "can_close_with_escape": true,
+  "pause": true,
+  "after_action": "close",
+  "external_title": {
+    "translate": "menu.mob_settings.hostile_mobs.title",
+    "fallback": "Hostile Mobs"
+  },
+  "title": {
+    "translate": "menu.mob_settings.main.title",
+    "fallback": "Nice Mob Settings"
+  },
+  "yes": {
+    "label": {
+      "translate": "option.mob_settings.confirm",
+      "fallback": "Confirm"
+    },
+    "action": {
+      "type": "minecraft:dynamic/run_command",
+      "template": "function mob_settings:dialog/command_template/hostile {type:$(type)$(command_template)"
+    }
+  },
+  "no": {
+    "label": {
+      "translate": "gui.back"
+    },
+    "action": {
+      "type": "minecraft:show_dialog",
+      "dialog": "mob_settings:hostile"
+    }
+  }
+}

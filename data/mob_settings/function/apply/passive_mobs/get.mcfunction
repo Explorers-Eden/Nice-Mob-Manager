@@ -13,6 +13,9 @@ $execute if data storage eden:settings mob_settings.$(type){silent:"enabled"} ru
 $execute if data storage eden:settings mob_settings.$(type){burn:"disabled"} run attribute @s minecraft:burning_time base set 0
 $execute if data storage eden:settings mob_settings.$(type){pickup:"disabled"} run data modify entity @s CanPickUpLoot set value 0b
 
+$attribute @s minecraft:waypoint_transmit_range base set $(locator_range)
+$waypoint modify @s color hex $(locator_color)
+
 execute if predicate {"condition":"minecraft:value_check","value":{"type":"minecraft:storage","storage":"eden:settings","path":"mob_settings.misc.jebspawning"},"range":{"min":0.01}} as @s[type=sheep] run function mob_settings:jeb_sheep/set_name with storage eden:settings mob_settings.misc
 execute if predicate {"condition":"minecraft:value_check","value":{"type":"minecraft:storage","storage":"eden:settings","path":"mob_settings.misc.brownmoospawning"},"range":{"min":0.01}} as @s[type=mooshroom] run function mob_settings:brown_mooshroom with storage eden:settings mob_settings.misc
 execute if predicate {"condition":"minecraft:value_check","value":{"type":"minecraft:storage","storage":"eden:settings","path":"mob_settings.misc.babymountspawning"},"range":{"min":0.01}} as @s[type=#eden:valid_for_baby_mount] at @s run function mob_settings:baby_mount/init with storage eden:settings mob_settings.misc

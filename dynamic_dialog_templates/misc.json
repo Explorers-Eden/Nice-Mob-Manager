@@ -1,5 +1,5 @@
 {
-  "type": "minecraft:simple_input_form",
+  "type": "minecraft:confirmation",
   "body": [
     {
       "type": "minecraft:item",
@@ -12,29 +12,11 @@
         }
       },
       "description": {
-        "translate": "menu.mob_settings.passive_selection.description",
+        "translate": "menu.mob_settings.misc.description",
         "fallback": "Configure Miscellaneous Settings:"
       }
-    },
-    {
-      "type": "minecraft:plain_message",
-      "contents": {
-        "translate": "menu.mob_settings.init_values",
-        "fallback": "Initial values shown are always default values.",
-        "color": "gray"
-      },
-      "width": 1024
     }
   ],
-  "can_close_with_escape": true,
-  "external_title": {
-    "translate": "menu.mob_settings.misc_settings.title",
-    "fallback": "Miscellaneous"
-  },
-  "title": {
-    "translate": "menu.mob_settings.main.title",
-    "fallback": "Nice Mob Settings"
-  },
   "inputs": [
     {
       "type": "minecraft:single_option",
@@ -50,8 +32,7 @@
             "translate": "menu.nice_mobs.enabled",
             "fallback": "Enabled",
             "color": "green"
-          },
-          "initial": true
+          }
         },
         {
           "id": "disabled",
@@ -59,7 +40,8 @@
             "translate": "menu.nice_mobs.disabled",
             "fallback": "Disabled",
             "color": "red"
-          }
+          },
+          "initial": false
         }
       ]
     },
@@ -77,8 +59,7 @@
             "translate": "menu.nice_mobs.enabled",
             "fallback": "Enabled",
             "color": "green"
-          },
-          "initial": true
+          }
         },
         {
           "id": "disabled",
@@ -86,7 +67,8 @@
             "translate": "menu.nice_mobs.disabled",
             "fallback": "Disabled",
             "color": "red"
-          }
+          },
+          "initial": false
         }
       ]
     },
@@ -104,8 +86,7 @@
             "translate": "menu.nice_mobs.enabled",
             "fallback": "Enabled",
             "color": "green"
-          },
-          "initial": true
+          }
         },
         {
           "id": "disabled",
@@ -113,7 +94,8 @@
             "translate": "menu.nice_mobs.disabled",
             "fallback": "Disabled",
             "color": "red"
-          }
+          },
+          "initial": false
         }
       ]
     },
@@ -131,8 +113,7 @@
             "translate": "menu.nice_mobs.enabled",
             "fallback": "Enabled",
             "color": "green"
-          },
-          "initial": true
+          }
         },
         {
           "id": "disabled",
@@ -140,7 +121,8 @@
             "translate": "menu.nice_mobs.disabled",
             "fallback": "Disabled",
             "color": "red"
-          }
+          },
+          "initial": false
         }
       ]
     },
@@ -158,8 +140,7 @@
             "translate": "menu.nice_mobs.enabled",
             "fallback": "Enabled",
             "color": "green"
-          },
-          "initial": true
+          }
         },
         {
           "id": "disabled",
@@ -167,7 +148,8 @@
             "translate": "menu.nice_mobs.disabled",
             "fallback": "Disabled",
             "color": "red"
-          }
+          },
+          "initial": false
         }
       ]
     },
@@ -185,8 +167,7 @@
             "translate": "menu.nice_mobs.enabled",
             "fallback": "Enabled",
             "color": "green"
-          },
-          "initial": true
+          }
         },
         {
           "id": "disabled",
@@ -194,7 +175,8 @@
             "translate": "menu.nice_mobs.disabled",
             "fallback": "Disabled",
             "color": "red"
-          }
+          },
+          "initial": false
         }
       ]
     },
@@ -212,8 +194,7 @@
             "translate": "menu.nice_mobs.enabled",
             "fallback": "Enabled",
             "color": "green"
-          },
-          "initial": true
+          }
         },
         {
           "id": "disabled",
@@ -221,7 +202,8 @@
             "translate": "menu.nice_mobs.disabled",
             "fallback": "Disabled",
             "color": "red"
-          }
+          },
+          "initial": false
         }
       ]
     },
@@ -304,15 +286,34 @@
       "initial": 15
     }
   ],
-  "action": {
+  "can_close_with_escape": true,
+  "pause": true,
+  "after_action": "close",
+  "external_title": {
+    "translate": "menu.mob_settings.misc_settings.title",
+    "fallback": "Miscellaneous"
+  },
+  "title": {
+    "translate": "menu.mob_settings.main.title",
+    "fallback": "Nice Mob Settings"
+  },
+  "yes": {
     "label": {
-      "translate": "menu.mob_settings.option.confirm",
+      "translate": "option.mob_settings.confirm",
       "fallback": "Confirm"
     },
-    "id": "confirm",
-    "on_submit": {
-      "type": "minecraft:command_template",
-      "template": "function mob_settings:menu_config/misc {snifferbrain:$(snifferbrain),immunezombie:$(immunezombie),creeperfuse:$(creeperfuse),skeletonhorsetrap:$(skeletonhorsetrap),irongolemanger:$(irongolemanger),brownmoospawning:$(brownmoospawning),illusionerspawning:$(illusionerspawning),babymountspawning:$(babymountspawning),killerrabbitspawning:$(killerrabbitspawning),jebcolor:$(jebcolor),jebspawning:$(jebspawning),egglay:$(egglay),need_sky:$(need_sky)}"
+    "action": {
+      "type": "minecraft:dynamic/run_command",
+      "template": "$(command_template)"
+    }
+  },
+  "no": {
+    "label": {
+      "translate": "gui.back"
+    },
+    "action": {
+      "type": "minecraft:show_dialog",
+      "dialog": "mob_settings:main"
     }
   }
 }

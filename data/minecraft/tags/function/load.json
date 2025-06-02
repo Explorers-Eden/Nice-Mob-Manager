@@ -1,8 +1,8 @@
 {
     "values":[
-      "mob_settings:load",
-      "mob_settings:init",
-      "mob_settings:jeb_sheep/change_color/run",
-      "mob_settings:baby_nametag"
+      "mob_manager:load",
+      "mob_manager:init",
+      "mob_manager:jeb_sheep/change_color/run",
+      "mob_manager:baby_nametag"
     ]
   }

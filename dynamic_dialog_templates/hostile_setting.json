@@ -12,8 +12,8 @@
         }
       },
       "description": {
-        "translate": "menu.mob_settings.hostile_mob_settings.description",
-        "fallback": "Configure Hostile Mob Settings:"
+        "translate": "menu.mob_manager.hostile_mob_manager.description",
+        "fallback": "Configure Hostile Mob Manager:"
       }
     }
   ],
@@ -22,7 +22,7 @@
       "type": "minecraft:number_range",
       "key": "scale_min",
       "label": {
-        "translate": "option.mob_settings.scale_min",
+        "translate": "option.mob_manager.scale_min",
         "fallback": "Min Scale"
       },
       "label_format": "options.percent_value",
@@ -35,7 +35,7 @@
       "type": "minecraft:number_range",
       "key": "scale_max",
       "label": {
-        "translate": "option.mob_settings.scale_max",
+        "translate": "option.mob_manager.scale_max",
         "fallback": "Max Scale"
       },
       "label_format": "options.percent_value",
@@ -48,7 +48,7 @@
       "type": "minecraft:number_range",
       "key": "health",
       "label": {
-        "translate": "option.mob_settings.health",
+        "translate": "option.mob_manager.health",
         "fallback": "Health"
       },
       "label_format": "options.percent_value",
@@ -61,7 +61,7 @@
       "type": "minecraft:number_range",
       "key": "follow_range",
       "label": {
-        "translate": "option.mob_settings.follow_range",
+        "translate": "option.mob_manager.follow_range",
         "fallback": "Follow Range"
       },
       "label_format": "options.percent_value",
@@ -74,7 +74,7 @@
       "type": "minecraft:number_range",
       "key": "safe_fall",
       "label": {
-        "translate": "option.mob_settings.safe_fall",
+        "translate": "option.mob_manager.safe_fall",
         "fallback": "Safe Fall Distance"
       },
       "label_format": "options.percent_value",
@@ -87,7 +87,7 @@
       "type": "minecraft:number_range",
       "key": "move_speed",
       "label": {
-        "translate": "option.mob_settings.move_speed",
+        "translate": "option.mob_manager.move_speed",
         "fallback": "Movement Speed"
       },
       "label_format": "options.percent_value",
@@ -100,7 +100,7 @@
       "type": "minecraft:number_range",
       "key": "attck_dmg",
       "label": {
-        "translate": "option.mob_settings.attck_dmg",
+        "translate": "option.mob_manager.attck_dmg",
         "fallback": "Attack Damage"
       },
       "label_format": "options.percent_value",
@@ -113,7 +113,7 @@
       "type": "minecraft:single_option",
       "key": "burn",
       "label": {
-        "translate": "option.mob_settings.can_burn",
+        "translate": "option.mob_manager.can_burn",
         "fallback": "Can Burn"
       },
       "options": [
@@ -140,7 +140,7 @@
       "type": "minecraft:single_option",
       "key": "drown",
       "label": {
-        "translate": "option.mob_settings.can_drown",
+        "translate": "option.mob_manager.can_drown",
         "fallback": "Can Drown"
       },
       "options": [
@@ -167,7 +167,7 @@
       "type": "minecraft:single_option",
       "key": "pickup",
       "label": {
-        "translate": "option.mob_settings.can_pickup",
+        "translate": "option.mob_manager.can_pickup",
         "fallback": "Can Pick Up Loot"
       },
       "options": [
@@ -194,7 +194,7 @@
       "type": "minecraft:single_option",
       "key": "silent",
       "label": {
-        "translate": "option.mob_settings.is_silent",
+        "translate": "option.mob_manager.is_silent",
         "fallback": "Is Silent"
       },
       "options": [
@@ -221,7 +221,7 @@
       "type": "minecraft:text",
       "key": "locator_color",
       "label": {
-        "translate": "option.mob_settings.locator_color",
+        "translate": "option.mob_manager.locator_color",
         "fallback": "Locator Bar Color (Hex)"
       },
       "initial": "8b0000",
@@ -231,7 +231,7 @@
       "type": "minecraft:number_range",
       "key": "locator_range",
       "label": {
-        "translate": "option.mob_settings.locator_range",
+        "translate": "option.mob_manager.locator_range",
         "fallback": "Locator Bar Range"
       },
       "start": 0,
@@ -244,21 +244,21 @@
   "pause": true,
   "after_action": "close",
   "external_title": {
-    "translate": "menu.mob_settings.hostile_mobs.title",
+    "translate": "menu.mob_manager.hostile_mobs.title",
     "fallback": "Hostile Mobs"
   },
   "title": {
-    "translate": "menu.mob_settings.main.title",
-    "fallback": "Nice Mob Settings"
+    "translate": "menu.mob_manager.main.title",
+    "fallback": "Nice Mob Manager"
   },
   "yes": {
     "label": {
-      "translate": "option.mob_settings.confirm",
+      "translate": "option.mob_manager.confirm",
       "fallback": "Confirm"
     },
     "action": {
       "type": "minecraft:dynamic/run_command",
-      "template": "function mob_settings:dialog/command_template/hostile {type:$(type)$(command_template)"
+      "template": "function mob_manager:dialog/command_template/hostile {type:$(type)$(command_template)"
     }
   },
   "no": {
@@ -267,7 +267,7 @@
     },
     "action": {
       "type": "minecraft:show_dialog",
-      "dialog": "mob_settings:hostile"
+      "dialog": "mob_manager:hostile"
     }
   }
 }

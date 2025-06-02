@@ -1,0 +1,196 @@
+{
+  "type": "minecraft:multi_action",
+  "external_title": {
+    "translate": "menu.mob_manager.neutral_mobs.title",
+    "fallback": "Neutral Mobs"
+  },
+  "title": {
+    "translate": "menu.mob_manager.main.title",
+    "fallback": "Nice Mob Manager"
+  },
+  "body": [
+    {
+      "type": "minecraft:item",
+      "item": {
+        "id": "minecraft:spawner",
+        "components": {
+          "minecraft:tooltip_display": {
+            "hide_tooltip": true
+          }
+        }
+      },
+      "description": {
+        "translate": "menu.mob_manager.neutral_mobs.description",
+        "fallback": "Select A Neutral Mob To Configure"
+      }
+    }
+  ],
+  "can_close_with_escape": true,
+  "pause": true,
+  "exit_action": {
+    "label": {
+      "translate": "gui.back"
+    },
+    "action": {
+      "type": "minecraft:show_dialog",
+      "dialog": "mob_manager:main"
+    }
+  },
+  "columns": 2,
+  "actions": [
+    {
+      "label": {
+        "translate": "option.nice_mobs.all_neutral_mobs",
+        "fallback": "All Neutral Mobs"
+      },
+      "action": {
+        "type": "minecraft:run_command",
+        "command": "function mob_manager:dialog/dynamic/neutral with storage eden:settings mob_manager.all_neutral"
+      }
+    },
+    {
+      "label": {
+        "translate": "entity.minecraft.bee"
+      },
+      "action": {
+        "type": "minecraft:run_command",
+        "command": "function mob_manager:dialog/dynamic/neutral with storage eden:settings mob_manager.bee"
+      }
+    },
+    {
+      "label": {
+        "translate": "entity.minecraft.cave_spider"
+      },
+      "action": {
+        "type": "minecraft:run_command",
+        "command": "function mob_manager:dialog/dynamic/neutral with storage eden:settings mob_manager.cave_spider"
+      }
+    },
+    {
+      "label": {
+        "translate": "entity.minecraft.dolphin"
+      },
+      "action": {
+        "type": "minecraft:run_command",
+        "command": "function mob_manager:dialog/dynamic/neutral with storage eden:settings mob_manager.dolphin"
+      }
+    },
+    {
+      "label": {
+        "translate": "entity.minecraft.drowned"
+      },
+      "action": {
+        "type": "minecraft:run_command",
+        "command": "function mob_manager:dialog/dynamic/neutral with storage eden:settings mob_manager.drowned"
+      }
+    },
+    {
+      "label": {
+        "translate": "entity.minecraft.enderman"
+      },
+      "action": {
+        "type": "minecraft:run_command",
+        "command": "function mob_manager:dialog/dynamic/neutral with storage eden:settings mob_manager.enderman"
+      }
+    },
+    {
+      "label": {
+        "translate": "entity.minecraft.fox"
+      },
+      "action": {
+        "type": "minecraft:run_command",
+        "command": "function mob_manager:dialog/dynamic/neutral with storage eden:settings mob_manager.fox"
+      }
+    },
+    {
+      "label": {
+        "translate": "entity.minecraft.goat"
+      },
+      "action": {
+        "type": "minecraft:run_command",
+        "command": "function mob_manager:dialog/dynamic/neutral with storage eden:settings mob_manager.goat"
+      }
+    },
+    {
+      "label": {
+        "translate": "entity.minecraft.iron_golem"
+      },
+      "action": {
+        "type": "minecraft:run_command",
+        "command": "function mob_manager:dialog/dynamic/neutral with storage eden:settings mob_manager.iron_golem"
+      }
+    },
+    {
+      "label": {
+        "translate": "entity.minecraft.llama"
+      },
+      "action": {
+        "type": "minecraft:run_command",
+        "command": "function mob_manager:dialog/dynamic/neutral with storage eden:settings mob_manager.llama"
+      }
+    },
+    {
+      "label": {
+        "translate": "entity.minecraft.panda"
+      },
+      "action": {
+        "type": "minecraft:run_command",
+        "command": "function mob_manager:dialog/dynamic/neutral with storage eden:settings mob_manager.panda"
+      }
+    },
+    {
+      "label": {
+        "translate": "entity.minecraft.piglin"
+      },
+      "action": {
+        "type": "minecraft:run_command",
+        "command": "function mob_manager:dialog/dynamic/neutral with storage eden:settings mob_manager.piglin"
+      }
+    },
+    {
+      "label": {
+        "translate": "entity.minecraft.polar_bear"
+      },
+      "action": {
+        "type": "minecraft:run_command",
+        "command": "function mob_manager:dialog/dynamic/neutral with storage eden:settings mob_manager.polar_bear"
+      }
+    },
+    {
+      "label": {
+        "translate": "entity.minecraft.spider"
+      },
+      "action": {
+        "type": "minecraft:run_command",
+        "command": "function mob_manager:dialog/dynamic/neutral with storage eden:settings mob_manager.spider"
+      }
+    },
+    {
+      "label": {
+        "translate": "entity.minecraft.trader_llama"
+      },
+      "action": {
+        "type": "minecraft:run_command",
+        "command": "function mob_manager:dialog/dynamic/neutral with storage eden:settings mob_manager.trader_llama"
+      }
+    },
+    {
+      "label": {
+        "translate": "entity.minecraft.wolf"
+      },
+      "action": {
+        "type": "minecraft:run_command",
+        "command": "function mob_manager:dialog/dynamic/neutral with storage eden:settings mob_manager.wolf"
+      }
+    },
+    {
+      "label": {
+        "translate": "entity.minecraft.zombified_piglin"
+      },
+      "action": {
+        "type": "minecraft:run_command",
+        "command": "function mob_manager:dialog/dynamic/neutral with storage eden:settings mob_manager.zombified_piglin"
+      }
+    }
+  ]
+}

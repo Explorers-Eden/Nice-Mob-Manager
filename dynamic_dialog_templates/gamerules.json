@@ -5,14 +5,14 @@
       "type": "minecraft:single_option",
       "key": "cmdfeedback",
       "label": {
-        "translate": "option.mob_settings.commandfeedback",
+        "translate": "option.mob_manager.commandfeedback",
         "fallback": "Send Command Feedback"
       },
       "options": [
         {
           "id": "gamerule sendCommandFeedback true",
           "display": {
-            "translate": "option.mob_settings.enabled",
+            "translate": "option.mob_manager.enabled",
             "fallback": "Enabled",
             "color": "green"
           }
@@ -20,7 +20,7 @@
         {
           "id": "gamerule sendCommandFeedback false",
           "display": {
-            "translate": "option.mob_settings.disabled",
+            "translate": "option.mob_manager.disabled",
             "fallback": "Disabled",
             "color": "red"
           },
@@ -32,14 +32,14 @@
       "type": "minecraft:single_option",
       "key": "insomnia",
       "label": {
-        "translate": "option.mob_settings.insomnia",
+        "translate": "option.mob_manager.insomnia",
         "fallback": "Phantom Spawning"
       },
       "options": [
         {
           "id": "gamerule doInsomnia true",
           "display": {
-            "translate": "option.mob_settings.enabled",
+            "translate": "option.mob_manager.enabled",
             "fallback": "Enabled",
             "color": "green"
           }
@@ -47,7 +47,7 @@
         {
           "id": "gamerule doInsomnia false",
           "display": {
-            "translate": "option.mob_settings.disabled",
+            "translate": "option.mob_manager.disabled",
             "fallback": "Disabled",
             "color": "red"
           },
@@ -59,14 +59,14 @@
       "type": "minecraft:single_option",
       "key": "warden",
       "label": {
-        "translate": "option.mob_settings.warden",
+        "translate": "option.mob_manager.warden",
         "fallback": "Warden Spawning"
       },
       "options": [
         {
           "id": "gamerule doWardenSpawning true",
           "display": {
-            "translate": "option.mob_settings.enabled",
+            "translate": "option.mob_manager.enabled",
             "fallback": "Enabled",
             "color": "green"
           }
@@ -74,7 +74,7 @@
         {
           "id": "gamerule doWardenSpawning false",
           "display": {
-            "translate": "option.mob_settings.disabled",
+            "translate": "option.mob_manager.disabled",
             "fallback": "Disabled",
             "color": "red"
           },
@@ -86,14 +86,14 @@
       "type": "minecraft:single_option",
       "key": "raids",
       "label": {
-        "translate": "option.mob_settings.raids",
+        "translate": "option.mob_manager.raids",
         "fallback": "Raids"
       },
       "options": [
         {
           "id": "gamerule disableRaids false",
           "display": {
-            "translate": "option.mob_settings.enabled",
+            "translate": "option.mob_manager.enabled",
             "fallback": "Enabled",
             "color": "green"
           }
@@ -101,7 +101,7 @@
         {
           "id": "gamerule disableRaids true",
           "display": {
-            "translate": "option.mob_settings.disabled",
+            "translate": "option.mob_manager.disabled",
             "fallback": "Disabled",
             "color": "red"
           },
@@ -113,14 +113,14 @@
       "type": "minecraft:single_option",
       "key": "mobloot",
       "label": {
-        "translate": "option.mob_settings.mobloot",
+        "translate": "option.mob_manager.mobloot",
         "fallback": "Mob Loot"
       },
       "options": [
         {
           "id": "gamerule doMobLoot true",
           "display": {
-            "translate": "option.mob_settings.enabled",
+            "translate": "option.mob_manager.enabled",
             "fallback": "Enabled",
             "color": "green"
           }
@@ -128,7 +128,7 @@
         {
           "id": "gamerule doMobLoot false",
           "display": {
-            "translate": "option.mob_settings.disabled",
+            "translate": "option.mob_manager.disabled",
             "fallback": "Disabled",
             "color": "red"
           },
@@ -140,14 +140,14 @@
       "type": "minecraft:single_option",
       "key": "patrols",
       "label": {
-        "translate": "option.mob_settings.patrols",
+        "translate": "option.mob_manager.patrols",
         "fallback": "Patrol Spawning"
       },
       "options": [
         {
           "id": "gamerule doPatrolSpawning true",
           "display": {
-            "translate": "option.mob_settings.enabled",
+            "translate": "option.mob_manager.enabled",
             "fallback": "Enabled",
             "color": "green"
           }
@@ -155,7 +155,7 @@
         {
           "id": "gamerule doPatrolSpawning false",
           "display": {
-            "translate": "option.mob_settings.disabled",
+            "translate": "option.mob_manager.disabled",
             "fallback": "Disabled",
             "color": "red"
           },
@@ -167,14 +167,14 @@
       "type": "minecraft:single_option",
       "key": "trader",
       "label": {
-        "translate": "option.mob_settings.trader",
+        "translate": "option.mob_manager.trader",
         "fallback": "Wandering Trader Spawning"
       },
       "options": [
         {
           "id": "gamerule doTraderSpawning true",
           "display": {
-            "translate": "option.mob_settings.enabled",
+            "translate": "option.mob_manager.enabled",
             "fallback": "Enabled",
             "color": "green"
           }
@@ -182,7 +182,7 @@
         {
           "id": "gamerule doTraderSpawning false",
           "display": {
-            "translate": "option.mob_settings.disabled",
+            "translate": "option.mob_manager.disabled",
             "fallback": "Disabled",
             "color": "red"
           },
@@ -194,14 +194,14 @@
       "type": "minecraft:single_option",
       "key": "griefing",
       "label": {
-        "translate": "option.mob_settings.griefing",
+        "translate": "option.mob_manager.griefing",
         "fallback": "Mob Griefing"
       },
       "options": [
         {
           "id": "gamerule mobGriefing true",
           "display": {
-            "translate": "option.mob_settings.enabled",
+            "translate": "option.mob_manager.enabled",
             "fallback": "Enabled",
             "color": "green"
           }
@@ -209,7 +209,7 @@
         {
           "id": "gamerule mobGriefing false",
           "display": {
-            "translate": "option.mob_settings.disabled",
+            "translate": "option.mob_manager.disabled",
             "fallback": "Disabled",
             "color": "red"
           },
@@ -221,14 +221,14 @@
       "type": "minecraft:single_option",
       "key": "locatorbar",
       "label": {
-        "translate": "option.mob_settings.locatorbar",
+        "translate": "option.mob_manager.locatorbar",
         "fallback": "Locator Bar"
       },
       "options": [
         {
           "id": "gamerule locatorBar true",
           "display": {
-            "translate": "option.mob_settings.enabled",
+            "translate": "option.mob_manager.enabled",
             "fallback": "Enabled",
             "color": "green"
           }
@@ -236,7 +236,7 @@
         {
           "id": "gamerule locatorBar false",
           "display": {
-            "translate": "option.mob_settings.disabled",
+            "translate": "option.mob_manager.disabled",
             "fallback": "Disabled",
             "color": "red"
           },
@@ -248,7 +248,7 @@
       "type": "minecraft:number_range",
       "key": "cramming",
       "label": {
-        "translate": "option.mob_settings.cramming",
+        "translate": "option.mob_manager.cramming",
         "fallback": "Max Entity Cramming"
       },
       "start": 1,
@@ -261,16 +261,16 @@
   "pause": true,
   "after_action": "close",
   "external_title": {
-    "translate": "menu.mob_settings.gamerule.title",
+    "translate": "menu.mob_manager.gamerule.title",
     "fallback": "Vanilla Gamerules"
   },
   "title": {
-    "translate": "menu.mob_settings.main.title",
-    "fallback": "Nice Mob Settings"
+    "translate": "menu.mob_manager.main.title",
+    "fallback": "Nice Mob Manager"
   },
   "yes": {
     "label": {
-      "translate": "option.mob_settings.confirm",
+      "translate": "option.mob_manager.confirm",
       "fallback": "Confirm"
     },
     "action": {
@@ -284,7 +284,7 @@
     },
     "action": {
       "type": "minecraft:show_dialog",
-      "dialog": "mob_settings:main"
+      "dialog": "mob_manager:main"
     }
   }
 }

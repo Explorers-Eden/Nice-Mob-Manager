@@ -27,7 +27,7 @@
     },
     "action": {
       "type": "minecraft:show_dialog",
-      "dialog": "mob_settings:main"
+      "dialog": "mob_manager:main"
     }
   },
   "columns": 1,

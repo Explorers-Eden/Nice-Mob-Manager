@@ -12,7 +12,7 @@
         }
       },
       "description": {
-        "translate": "menu.mob_settings.misc.description",
+        "translate": "menu.mob_manager.misc.description",
         "fallback": "Configure Miscellaneous Settings:"
       }
     }
@@ -22,7 +22,7 @@
       "type": "minecraft:single_option",
       "key": "need_sky",
       "label": {
-        "translate": "menu.mob_settings.option.need_sky",
+        "translate": "menu.mob_manager.option.need_sky",
         "fallback": "Scaling Only On Surface"
       },
       "options": [
@@ -49,7 +49,7 @@
       "type": "minecraft:single_option",
       "key": "skeletonhorsetrap",
       "label": {
-        "translate": "menu.mob_settings.option.skeletonhorsetrap",
+        "translate": "menu.mob_manager.option.skeletonhorsetrap",
         "fallback": "Skeleton Horse Traps"
       },
       "options": [
@@ -76,7 +76,7 @@
       "type": "minecraft:single_option",
       "key": "irongolemanger",
       "label": {
-        "translate": "menu.mob_settings.option.irongolemanger",
+        "translate": "menu.mob_manager.option.irongolemanger",
         "fallback": "Iron Golem Angry At Player"
       },
       "options": [
@@ -103,7 +103,7 @@
       "type": "minecraft:single_option",
       "key": "egglay",
       "label": {
-        "translate": "menu.mob_settings.option.egglay",
+        "translate": "menu.mob_manager.option.egglay",
         "fallback": "Chickens Lay Eggs"
       },
       "options": [
@@ -130,7 +130,7 @@
       "type": "minecraft:single_option",
       "key": "creeperfuse",
       "label": {
-        "translate": "menu.mob_settings.option.creeperfuse",
+        "translate": "menu.mob_manager.option.creeperfuse",
         "fallback": "Size Relative Creeper Fuse"
       },
       "options": [
@@ -157,7 +157,7 @@
       "type": "minecraft:single_option",
       "key": "snifferbrain",
       "label": {
-        "translate": "menu.mob_settings.option.snifferbrain",
+        "translate": "menu.mob_manager.option.snifferbrain",
         "fallback": "Sniffers Track Digs"
       },
       "options": [
@@ -184,7 +184,7 @@
       "type": "minecraft:single_option",
       "key": "jebcolor",
       "label": {
-        "translate": "menu.mob_settings.option.jebcolor",
+        "translate": "menu.mob_manager.option.jebcolor",
         "fallback": "Random Jeb Sheep Wool Color"
       },
       "options": [
@@ -211,7 +211,7 @@
       "type": "minecraft:number_range",
       "key": "jebspawning",
       "label": {
-        "translate": "menu.mob_settings.option.jebspawning",
+        "translate": "menu.mob_manager.option.jebspawning",
         "fallback": "Jeb Sheep Spawn Chance"
       },
       "label_format": "options.percent_value",
@@ -224,7 +224,7 @@
       "type": "minecraft:number_range",
       "key": "killerrabbitspawning",
       "label": {
-        "translate": "menu.mob_settings.option.jebspawning",
+        "translate": "menu.mob_manager.option.jebspawning",
         "fallback": "Killer Rabbit Spawn Chance"
       },
       "label_format": "options.percent_value",
@@ -237,7 +237,7 @@
       "type": "minecraft:number_range",
       "key": "babymountspawning",
       "label": {
-        "translate": "menu.mob_settings.option.babymountspawning",
+        "translate": "menu.mob_manager.option.babymountspawning",
         "fallback": "Baby Mount Spawn Chance"
       },
       "label_format": "options.percent_value",
@@ -250,7 +250,7 @@
       "type": "minecraft:number_range",
       "key": "illusionerspawning",
       "label": {
-        "translate": "menu.mob_settings.option.illusionerspawning",
+        "translate": "menu.mob_manager.option.illusionerspawning",
         "fallback": "Evoker To Illusioner Chance"
       },
       "label_format": "options.percent_value",
@@ -263,7 +263,7 @@
       "type": "minecraft:number_range",
       "key": "immunezombie",
       "label": {
-        "translate": "menu.mob_settings.option.immunezombie",
+        "translate": "menu.mob_manager.option.immunezombie",
         "fallback": "Immune To Zombification Chance"
       },
       "label_format": "options.percent_value",
@@ -276,7 +276,7 @@
       "type": "minecraft:number_range",
       "key": "brownmoospawning",
       "label": {
-        "translate": "menu.mob_settings.option.brownmoospawning",
+        "translate": "menu.mob_manager.option.brownmoospawning",
         "fallback": "Brown Mooshroom Spawn Chance"
       },
       "label_format": "options.percent_value",
@@ -290,16 +290,16 @@
   "pause": true,
   "after_action": "close",
   "external_title": {
-    "translate": "menu.mob_settings.misc_settings.title",
+    "translate": "menu.mob_manager.misc_settings.title",
     "fallback": "Miscellaneous"
   },
   "title": {
-    "translate": "menu.mob_settings.main.title",
-    "fallback": "Nice Mob Settings"
+    "translate": "menu.mob_manager.main.title",
+    "fallback": "Nice Mob Manager"
   },
   "yes": {
     "label": {
-      "translate": "option.mob_settings.confirm",
+      "translate": "option.mob_manager.confirm",
       "fallback": "Confirm"
     },
     "action": {
@@ -313,7 +313,7 @@
     },
     "action": {
       "type": "minecraft:show_dialog",
-      "dialog": "mob_settings:main"
+      "dialog": "mob_manager:main"
     }
   }
 }

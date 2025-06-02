@@ -1,0 +1,340 @@
+{
+  "type": "minecraft:multi_action",
+  "external_title": {
+    "translate": "menu.mob_manager.hostile_mobs.title",
+    "fallback": "Hostile Mobs"
+  },
+  "title": {
+    "translate": "menu.mob_manager.main.title",
+    "fallback": "Nice Mob Manager"
+  },
+  "body": [
+    {
+      "type": "minecraft:item",
+      "item": {
+        "id": "minecraft:spawner",
+        "components": {
+          "minecraft:tooltip_display": {
+            "hide_tooltip": true
+          }
+        }
+      },
+      "description": {
+        "translate": "menu.mob_manager.hostile_mobs.description",
+        "fallback": "Select A Hostile Mob To Configure"
+      }
+    }
+  ],
+  "can_close_with_escape": true,
+  "pause": true,
+  "exit_action": {
+    "label": {
+      "translate": "gui.back"
+    },
+    "action": {
+      "type": "minecraft:show_dialog",
+      "dialog": "mob_manager:main"
+    }
+  },
+  "columns": 2,
+  "actions": [
+    {
+      "label": {
+        "translate": "option.nice_mobs.all_hostile_mobs",
+        "fallback": "All Hostile Mobs"
+      },
+      "action": {
+        "type": "minecraft:run_command",
+        "command": "function mob_manager:dialog/dynamic/hostile with storage eden:settings mob_manager.all_hostile"
+      }
+    },
+    {
+      "label": {
+        "translate": "entity.minecraft.blaze"
+      },
+      "action": {
+        "type": "minecraft:run_command",
+        "command": "function mob_manager:dialog/dynamic/hostile with storage eden:settings mob_manager.blaze"
+      }
+    },
+    {
+      "label": {
+        "translate": "entity.minecraft.bogged"
+      },
+      "action": {
+        "type": "minecraft:run_command",
+        "command": "function mob_manager:dialog/dynamic/hostile with storage eden:settings mob_manager.bogged"
+      }
+    },
+    {
+      "label": {
+        "translate": "entity.minecraft.breeze"
+      },
+      "action": {
+        "type": "minecraft:run_command",
+        "command": "function mob_manager:dialog/dynamic/hostile with storage eden:settings mob_manager.breeze"
+      }
+    },
+    {
+      "label": {
+        "translate": "entity.minecraft.creeper"
+      },
+      "action": {
+        "type": "minecraft:run_command",
+        "command": "function mob_manager:dialog/dynamic/hostile with storage eden:settings mob_manager.creeper"
+      }
+    },
+    {
+      "label": {
+        "translate": "entity.minecraft.elder_guardian"
+      },
+      "action": {
+        "type": "minecraft:run_command",
+        "command": "function mob_manager:dialog/dynamic/hostile with storage eden:settings mob_manager.elder_guardian"
+      }
+    },
+    {
+      "label": {
+        "translate": "entity.minecraft.endermite"
+      },
+      "action": {
+        "type": "minecraft:run_command",
+        "command": "function mob_manager:dialog/dynamic/hostile with storage eden:settings mob_manager.endermite"
+      }
+    },
+    {
+      "label": {
+        "translate": "entity.minecraft.ender_dragon"
+      },
+      "action": {
+        "type": "minecraft:run_command",
+        "command": "function mob_manager:dialog/dynamic/hostile with storage eden:settings mob_manager.ender_dragon"
+      }
+    },
+    {
+      "label": {
+        "translate": "entity.minecraft.evoker"
+      },
+      "action": {
+        "type": "minecraft:run_command",
+        "command": "function mob_manager:dialog/dynamic/hostile with storage eden:settings mob_manager.evoker"
+      }
+    },
+    {
+      "label": {
+        "translate": "entity.minecraft.ghast"
+      },
+      "action": {
+        "type": "minecraft:run_command",
+        "command": "function mob_manager:dialog/dynamic/hostile with storage eden:settings mob_manager.ghast"
+      }
+    },
+    {
+      "label": {
+        "translate": "entity.minecraft.guardian"
+      },
+      "action": {
+        "type": "minecraft:run_command",
+        "command": "function mob_manager:dialog/dynamic/hostile with storage eden:settings mob_manager.guardian"
+      }
+    },
+    {
+      "label": {
+        "translate": "entity.minecraft.hoglin"
+      },
+      "action": {
+        "type": "minecraft:run_command",
+        "command": "function mob_manager:dialog/dynamic/hostile with storage eden:settings mob_manager.hoglin"
+      }
+    },
+    {
+      "label": {
+        "translate": "entity.minecraft.husk"
+      },
+      "action": {
+        "type": "minecraft:run_command",
+        "command": "function mob_manager:dialog/dynamic/hostile with storage eden:settings mob_manager.husk"
+      }
+    },
+    {
+      "label": {
+        "translate": "entity.minecraft.illusioner"
+      },
+      "action": {
+        "type": "minecraft:run_command",
+        "command": "function mob_manager:dialog/dynamic/hostile with storage eden:settings mob_manager.illusioner"
+      }
+    },
+    {
+      "label": {
+        "translate": "entity.minecraft.magma_cube"
+      },
+      "action": {
+        "type": "minecraft:run_command",
+        "command": "function mob_manager:dialog/dynamic/hostile with storage eden:settings mob_manager.magma_cube"
+      }
+    },
+    {
+      "label": {
+        "translate": "entity.minecraft.phantom"
+      },
+      "action": {
+        "type": "minecraft:run_command",
+        "command": "function mob_manager:dialog/dynamic/hostile with storage eden:settings mob_manager.phantom"
+      }
+    },
+    {
+      "label": {
+        "translate": "entity.minecraft.piglin_brute"
+      },
+      "action": {
+        "type": "minecraft:run_command",
+        "command": "function mob_manager:dialog/dynamic/hostile with storage eden:settings mob_manager.piglin_brute"
+      }
+    },
+    {
+      "label": {
+        "translate": "entity.minecraft.pillager"
+      },
+      "action": {
+        "type": "minecraft:run_command",
+        "command": "function mob_manager:dialog/dynamic/hostile with storage eden:settings mob_manager.pillager"
+      }
+    },
+    {
+      "label": {
+        "translate": "entity.minecraft.ravager"
+      },
+      "action": {
+        "type": "minecraft:run_command",
+        "command": "function mob_manager:dialog/dynamic/hostile with storage eden:settings mob_manager.ravager"
+      }
+    },
+    {
+      "label": {
+        "translate": "entity.minecraft.shulker"
+      },
+      "action": {
+        "type": "minecraft:run_command",
+        "command": "function mob_manager:dialog/dynamic/hostile with storage eden:settings mob_manager.shulker"
+      }
+    },
+    {
+      "label": {
+        "translate": "entity.minecraft.silverfish"
+      },
+      "action": {
+        "type": "minecraft:run_command",
+        "command": "function mob_manager:dialog/dynamic/hostile with storage eden:settings mob_manager.silverfish"
+      }
+    },
+    {
+      "label": {
+        "translate": "entity.minecraft.skeleton"
+      },
+      "action": {
+        "type": "minecraft:run_command",
+        "command": "function mob_manager:dialog/dynamic/hostile with storage eden:settings mob_manager.skeleton"
+      }
+    },
+    {
+      "label": {
+        "translate": "entity.minecraft.slime"
+      },
+      "action": {
+        "type": "minecraft:run_command",
+        "command": "function mob_manager:dialog/dynamic/hostile with storage eden:settings mob_manager.slime"
+      }
+    },
+    {
+      "label": {
+        "translate": "entity.minecraft.stray"
+      },
+      "action": {
+        "type": "minecraft:run_command",
+        "command": "function mob_manager:dialog/dynamic/hostile with storage eden:settings mob_manager.stray"
+      }
+    },
+    {
+      "label": {
+        "translate": "entity.minecraft.vex"
+      },
+      "action": {
+        "type": "minecraft:run_command",
+        "command": "function mob_manager:dialog/dynamic/hostile with storage eden:settings mob_manager.vex"
+      }
+    },
+    {
+      "label": {
+        "translate": "entity.minecraft.vindicator"
+      },
+      "action": {
+        "type": "minecraft:run_command",
+        "command": "function mob_manager:dialog/dynamic/hostile with storage eden:settings mob_manager.vindicator"
+      }
+    },
+    {
+      "label": {
+        "translate": "entity.minecraft.warden"
+      },
+      "action": {
+        "type": "minecraft:run_command",
+        "command": "function mob_manager:dialog/dynamic/hostile with storage eden:settings mob_manager.warden"
+      }
+    },
+    {
+      "label": {
+        "translate": "entity.minecraft.witch"
+      },
+      "action": {
+        "type": "minecraft:run_command",
+        "command": "function mob_manager:dialog/dynamic/hostile with storage eden:settings mob_manager.witch"
+      }
+    },
+    {
+      "label": {
+        "translate": "entity.minecraft.wither"
+      },
+      "action": {
+        "type": "minecraft:run_command",
+        "command": "function mob_manager:dialog/dynamic/hostile with storage eden:settings mob_manager.wither"
+      }
+    },
+    {
+      "label": {
+        "translate": "entity.minecraft.wither_skeleton"
+      },
+      "action": {
+        "type": "minecraft:run_command",
+        "command": "function mob_manager:dialog/dynamic/hostile with storage eden:settings mob_manager.wither_skeleton"
+      }
+    },
+    {
+      "label": {
+        "translate": "entity.minecraft.zoglin"
+      },
+      "action": {
+        "type": "minecraft:run_command",
+        "command": "function mob_manager:dialog/dynamic/hostile with storage eden:settings mob_manager.zoglin"
+      }
+    },
+    {
+      "label": {
+        "translate": "entity.minecraft.zombie"
+      },
+      "action": {
+        "type": "minecraft:run_command",
+        "command": "function mob_manager:dialog/dynamic/hostile with storage eden:settings mob_manager.zombie"
+      }
+    },
+    {
+      "label": {
+        "translate": "entity.minecraft.zombie_villager"
+      },
+      "action": {
+        "type": "minecraft:run_command",
+        "command": "function mob_manager:dialog/dynamic/hostile with storage eden:settings mob_manager.zombie_villager"
+      }
+    }
+  ]
+}

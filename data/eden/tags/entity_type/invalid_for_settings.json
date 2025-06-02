@@ -47,8 +47,6 @@
     "minecraft:cherry_chest_boat",
     "minecraft:dark_oak_chest_boat",
     "minecraft:mangrove_chest_boat",
-    "minecraft:bamboo_chest_raft",
-    "minecraft:wither",
-    "minecraft:ender_dragon"
+    "minecraft:bamboo_chest_raft"
   ]
 }

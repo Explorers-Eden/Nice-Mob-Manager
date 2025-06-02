@@ -104,6 +104,15 @@
     },
     {
       "label": {
+        "translate": "entity.minecraft.ender_dragon"
+      },
+      "action": {
+        "type": "minecraft:run_command",
+        "command": "function mob_settings:dialog/dynamic/hostile with storage eden:settings mob_settings.ender_dragon"
+      }
+    },
+    {
+      "label": {
         "translate": "entity.minecraft.evoker"
       },
       "action": {
@@ -280,6 +289,15 @@
       "action": {
         "type": "minecraft:run_command",
         "command": "function mob_settings:dialog/dynamic/hostile with storage eden:settings mob_settings.witch"
+      }
+    },
+    {
+      "label": {
+        "translate": "entity.minecraft.wither"
+      },
+      "action": {
+        "type": "minecraft:run_command",
+        "command": "function mob_settings:dialog/dynamic/hostile with storage eden:settings mob_settings.wither"
       }
     },
     {

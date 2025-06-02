@@ -13,7 +13,9 @@ $execute if data storage eden:settings mob_settings.$(type){burn:"disabled"} run
 $execute if data storage eden:settings mob_settings.$(type){pickup:"disabled"} run data modify entity @s CanPickUpLoot set value 0b
 
 $attribute @s minecraft:waypoint_transmit_range base set $(locator_range)
-$waypoint modify @s color hex $(locator_color)
+$execute if data storage eden:settings mob_settings.misc{locator_assets:"disabled"} run waypoint modify @s color hex $(locator_color)
+$execute if data storage eden:settings mob_settings.misc{locator_assets:"enabled"} run waypoint modify @s style set mob_settings:$(type)
+execute if data storage eden:settings mob_settings.misc{locator_assets:"enabled"} run waypoint modify @s color white
 
 execute if predicate {"condition":"minecraft:value_check","value":{"type":"minecraft:storage","storage":"eden:settings","path":"mob_settings.misc.illusionerspawning"},"range":{"min":0.01}} as @s[type=evoker] at @s run function mob_settings:illusioner with storage eden:settings mob_settings.misc
 execute if predicate {"condition":"minecraft:value_check","value":{"type":"minecraft:storage","storage":"eden:settings","path":"mob_settings.misc.immunezombie"},"range":{"min":0.01}} run function mob_settings:immune_zombification with storage eden:settings mob_settings.misc

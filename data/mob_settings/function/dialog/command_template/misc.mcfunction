@@ -1,5 +1,4 @@
-$data modify storage eden:settings mob_settings.misc set value {snifferbrain:$(snifferbrain),creeperfuse:$(creeperfuse),skeletonhorsetrap:$(skeletonhorsetrap),irongolemanger:$(irongolemanger),jebcolor:$(jebcolor),egglay:$(egglay),need_sky:$(need_sky)}
-data modify storage eden:settings mob_settings.misc.command_template set value "function mob_settings:dialog/command_template/misc {snifferbrain:$(snifferbrain),immunezombie:$(immunezombie),creeperfuse:$(creeperfuse),skeletonhorsetrap:$(skeletonhorsetrap),irongolemanger:$(irongolemanger),brownmoospawning:$(brownmoospawning),illusionerspawning:$(illusionerspawning),babymountspawning:$(babymountspawning),killerrabbitspawning:$(killerrabbitspawning),jebcolor:$(jebcolor),jebspawning:$(jebspawning),egglay:$(egglay),need_sky:$(need_sky)}"
+$data modify storage eden:settings mob_settings.misc merge value {locator_assets:$(locator_assets),snifferbrain:$(snifferbrain),creeperfuse:$(creeperfuse),skeletonhorsetrap:$(skeletonhorsetrap),irongolemanger:$(irongolemanger),jebcolor:$(jebcolor),egglay:$(egglay),need_sky:$(need_sky)}
 
 execute if data storage eden:settings mob_settings.misc{snifferbrain:"enabled"} run data modify storage eden:settings mob_settings.misc.snifferbrain_initial set value "false"
 execute unless data storage eden:settings mob_settings.misc{snifferbrain:"enabled"} run data modify storage eden:settings mob_settings.misc.snifferbrain_initial set value "true"
@@ -21,6 +20,9 @@ execute unless data storage eden:settings mob_settings.misc{egglay:"enabled"} ru
 
 execute if data storage eden:settings mob_settings.misc{need_sky:"enabled"} run data modify storage eden:settings mob_settings.misc.need_sky_initial set value "false"
 execute unless data storage eden:settings mob_settings.misc{need_sky:"enabled"} run data modify storage eden:settings mob_settings.misc.need_sky_initial set value "true"
+
+execute if data storage eden:settings mob_settings.misc{locator_assets:"enabled"} run data modify storage eden:settings mob_settings.misc.locator_assets_initial set value "false"
+execute unless data storage eden:settings mob_settings.misc{locator_assets:"enabled"} run data modify storage eden:settings mob_settings.misc.locator_assets_initial set value "true"
 
 $data modify storage eden:settings mob_settings.misc.jebspawning_initial set value $(jebspawning)
 execute store result storage eden:settings mob_settings.misc.jebspawning float 0.01 run data get storage eden:settings mob_settings.misc.jebspawning_initial

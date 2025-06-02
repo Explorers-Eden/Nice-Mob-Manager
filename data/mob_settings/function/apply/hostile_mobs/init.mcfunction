@@ -28,3 +28,5 @@ execute as @s[type=wither_skeleton] run function mob_settings:apply/hostile_mobs
 execute as @s[type=zoglin] run function mob_settings:apply/hostile_mobs/get with storage eden:settings mob_settings.zoglin
 execute as @s[type=zombie] run function mob_settings:apply/hostile_mobs/get with storage eden:settings mob_settings.zombie
 execute as @s[type=zombie_villager] run function mob_settings:apply/hostile_mobs/get with storage eden:settings mob_settings.zombie_villager
+execute as @s[type=wither] run function mob_settings:apply/hostile_mobs/get with storage eden:settings mob_settings.wither
+execute as @s[type=ender_dragon] run function mob_settings:apply/hostile_mobs/get with storage eden:settings mob_settings.ender_dragon

@@ -1,4 +1,4 @@
-$data modify storage eden:settings mob_manager.misc merge value {locator_assets:$(locator_assets),snifferbrain:$(snifferbrain),creeperfuse:$(creeperfuse),skeletonhorsetrap:$(skeletonhorsetrap),irongolemanger:$(irongolemanger),jebcolor:$(jebcolor),egglay:$(egglay),need_sky:$(need_sky)}
+$data modify storage eden:settings mob_manager.misc merge value {rabbitcarrot:$(rabbitcarrot),locator_assets:$(locator_assets),snifferbrain:$(snifferbrain),creeperfuse:$(creeperfuse),skeletonhorsetrap:$(skeletonhorsetrap),irongolemanger:$(irongolemanger),jebcolor:$(jebcolor),egglay:$(egglay),need_sky:$(need_sky)}
 
 execute if data storage eden:settings mob_manager.misc{snifferbrain:"enabled"} run data modify storage eden:settings mob_manager.misc.snifferbrain_initial set value "false"
 execute unless data storage eden:settings mob_manager.misc{snifferbrain:"enabled"} run data modify storage eden:settings mob_manager.misc.snifferbrain_initial set value "true"
@@ -23,6 +23,9 @@ execute unless data storage eden:settings mob_manager.misc{need_sky:"enabled"} r
 
 execute if data storage eden:settings mob_manager.misc{locator_assets:"enabled"} run data modify storage eden:settings mob_manager.misc.locator_assets_initial set value "false"
 execute unless data storage eden:settings mob_manager.misc{locator_assets:"enabled"} run data modify storage eden:settings mob_manager.misc.locator_assets_initial set value "true"
+
+execute if data storage eden:settings mob_manager.misc{rabbitcarrot:"enabled"} run data modify storage eden:settings mob_manager.misc.rabbitcarrot_initial set value "false"
+execute unless data storage eden:settings mob_manager.misc{rabbitcarrot:"enabled"} run data modify storage eden:settings mob_manager.misc.rabbitcarrot_initial set value "true"
 
 $data modify storage eden:settings mob_manager.misc.jebspawning_initial set value $(jebspawning)
 execute store result storage eden:settings mob_manager.misc.jebspawning float 0.01 run data get storage eden:settings mob_manager.misc.jebspawning_initial

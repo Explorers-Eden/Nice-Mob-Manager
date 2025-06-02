@@ -5,7 +5,7 @@
       "type": "minecraft:plain_message",
       "contents": {
         "translate": "menu.mob_manager.restore.description",
-        "fallback": "Proceeding will reset all set values. Do you want to continue?"
+        "fallback": "Proceeding will reset all configured values. Do you want to continue?"
       },
       "width": 1024
     },

@@ -3,7 +3,7 @@
   "body": {
     "type": "minecraft:item",
     "item": {
-      "id": "minecraft:spawner",
+      "id": "minecraft:command_block",
       "components": {
         "minecraft:tooltip_display": {
           "hide_tooltip": true
@@ -12,7 +12,7 @@
     },
     "description": {
       "translate": "menu.mob_manager.main.description",
-      "fallback": "Select a Mob Category:"
+      "fallback": "Select What You Want To Configure:"
     }
   },
   "can_close_with_escape": true,
@@ -30,7 +30,7 @@
       "translate": "mco.selectServer.close"
     }
   },
-  "columns": 1,
+  "columns": 2,
   "actions": [
     {
       "label": {
@@ -64,8 +64,38 @@
     },
     {
       "label": {
+        "translate": "menu.mob_manager.mob_equipment",
+        "fallback": "Mob Equipment"
+      },
+      "action": {
+        "type": "minecraft:run_command",
+        "command": "function mob_manager:dialog/dynamic/gamerules with storage eden:settings mob_manager.gamerules"
+      }
+    },
+    {
+      "label": {
+        "translate": "menu.mob_manager.rarity_mobs",
+        "fallback": "Rarity Mobs"
+      },
+      "action": {
+        "type": "minecraft:run_command",
+        "command": "function mob_manager:dialog/dynamic/gamerules with storage eden:settings mob_manager.gamerules"
+      }
+    },
+    {
+      "label": {
+        "translate": "menu.mob_manager.wandering_trader",
+        "fallback": "Wandering Trader"
+      },
+      "action": {
+        "type": "minecraft:run_command",
+        "command": "function mob_manager:dialog/dynamic/gamerules with storage eden:settings mob_manager.gamerules"
+      }
+    },
+    {
+      "label": {
         "translate": "menu.mob_manager.misc_settings.title",
-        "fallback": "Miscellaneous"
+        "fallback": "Miscellaneous Settings"
       },
       "action": {
         "type": "minecraft:run_command",
@@ -85,7 +115,8 @@
     {
       "label": {
         "translate": "menu.mob_manager.restore.title",
-        "fallback": "Restore Default Values"
+        "fallback": "Restore Default Settings",
+        "color": "gray"
       },
       "action": {
         "type": "minecraft:show_dialog",
@@ -95,7 +126,8 @@
     {
       "label": {
         "translate": "menu.eden.info.title",
-        "fallback": "Explorer's Eden"
+        "fallback": "Explorer's Eden",
+        "color": "gray"
       },
       "action": {
         "type": "minecraft:show_dialog",

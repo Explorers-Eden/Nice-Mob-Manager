@@ -1,4 +1,4 @@
-$data modify storage eden:settings mob_manager.$(type) set value {locator_color:'$(locator_color)',locator_range:$(locator_range),type:$(type),pickup:$(pickup),scale_min:$(scale_min),scale_max:$(scale_max),health:$(health),tempt_range:$(tempt_range),follow_range:$(follow_range),safe_fall:$(safe_fall),move_speed:$(move_speed),breed:$(breed),burn:$(burn),silent:$(silent),drown:$(drown)}
+$data modify storage eden:settings mob_manager.$(type) merge value {locator_color:'$(locator_color)',locator_range:$(locator_range),type:$(type),pickup:$(pickup),scale_min:$(scale_min),scale_max:$(scale_max),health:$(health),tempt_range:$(tempt_range),follow_range:$(follow_range),safe_fall:$(safe_fall),move_speed:$(move_speed),breed:$(breed),burn:$(burn),silent:$(silent),drown:$(drown)}
 
 $execute if data storage eden:settings mob_manager.$(type){burn:"enabled"} run data modify storage eden:settings mob_manager.$(type).burn_initial set value "false"
 $execute unless data storage eden:settings mob_manager.$(type){burn:"enabled"} run data modify storage eden:settings mob_manager.$(type).burn_initial set value "true"
@@ -18,40 +18,40 @@ $execute unless data storage eden:settings mob_manager.$(type){breed:"enabled"} 
 dialog show @s mob_manager:passive
 
 $execute unless data storage eden:settings mob_manager.$(type){type:"all_passive"} run return fail
-data modify storage eden:settings mob_manager.allay set from storage eden:settings mob_manager.all_passive
-data modify storage eden:settings mob_manager.armadillo set from storage eden:settings mob_manager.all_passive
-data modify storage eden:settings mob_manager.axolotl set from storage eden:settings mob_manager.all_passive
-data modify storage eden:settings mob_manager.bat set from storage eden:settings mob_manager.all_passive
-data modify storage eden:settings mob_manager.camel set from storage eden:settings mob_manager.all_passive
-data modify storage eden:settings mob_manager.cat set from storage eden:settings mob_manager.all_passive
-data modify storage eden:settings mob_manager.chicken set from storage eden:settings mob_manager.all_passive
-data modify storage eden:settings mob_manager.cod set from storage eden:settings mob_manager.all_passive
-data modify storage eden:settings mob_manager.cow set from storage eden:settings mob_manager.all_passive
-data modify storage eden:settings mob_manager.donkey set from storage eden:settings mob_manager.all_passive
-data modify storage eden:settings mob_manager.frog set from storage eden:settings mob_manager.all_passive
-data modify storage eden:settings mob_manager.glow_squid set from storage eden:settings mob_manager.all_passive
-data modify storage eden:settings mob_manager.horse set from storage eden:settings mob_manager.all_passive
-data modify storage eden:settings mob_manager.mooshroom set from storage eden:settings mob_manager.all_passive
-data modify storage eden:settings mob_manager.mule set from storage eden:settings mob_manager.all_passive
-data modify storage eden:settings mob_manager.ocelot set from storage eden:settings mob_manager.all_passive
-data modify storage eden:settings mob_manager.parrot set from storage eden:settings mob_manager.all_passive
-data modify storage eden:settings mob_manager.pig set from storage eden:settings mob_manager.all_passive
-data modify storage eden:settings mob_manager.pufferfish set from storage eden:settings mob_manager.all_passive
-data modify storage eden:settings mob_manager.rabbit set from storage eden:settings mob_manager.all_passive
-data modify storage eden:settings mob_manager.salmon set from storage eden:settings mob_manager.all_passive
-data modify storage eden:settings mob_manager.sheep set from storage eden:settings mob_manager.all_passive
-data modify storage eden:settings mob_manager.skeleton_horse set from storage eden:settings mob_manager.all_passive
-data modify storage eden:settings mob_manager.sniffer set from storage eden:settings mob_manager.all_passive
-data modify storage eden:settings mob_manager.snow_golem set from storage eden:settings mob_manager.all_passive
-data modify storage eden:settings mob_manager.squid set from storage eden:settings mob_manager.all_passive
-data modify storage eden:settings mob_manager.strider set from storage eden:settings mob_manager.all_passive
-data modify storage eden:settings mob_manager.tadpole set from storage eden:settings mob_manager.all_passive
-data modify storage eden:settings mob_manager.tropical_fish set from storage eden:settings mob_manager.all_passive
-data modify storage eden:settings mob_manager.turtle set from storage eden:settings mob_manager.all_passive
-data modify storage eden:settings mob_manager.villager set from storage eden:settings mob_manager.all_passive
-data modify storage eden:settings mob_manager.wandering_trader set from storage eden:settings mob_manager.all_passive
-data modify storage eden:settings mob_manager.zombie_horse set from storage eden:settings mob_manager.all_passive
-data modify storage eden:settings mob_manager.happy_ghast set from storage eden:settings mob_manager.all_passive
+data modify storage eden:settings mob_manager.allay merge from storage eden:settings mob_manager.all_passive
+data modify storage eden:settings mob_manager.armadillo merge from storage eden:settings mob_manager.all_passive
+data modify storage eden:settings mob_manager.axolotl merge from storage eden:settings mob_manager.all_passive
+data modify storage eden:settings mob_manager.bat merge from storage eden:settings mob_manager.all_passive
+data modify storage eden:settings mob_manager.camel merge from storage eden:settings mob_manager.all_passive
+data modify storage eden:settings mob_manager.cat merge from storage eden:settings mob_manager.all_passive
+data modify storage eden:settings mob_manager.chicken merge from storage eden:settings mob_manager.all_passive
+data modify storage eden:settings mob_manager.cod merge from storage eden:settings mob_manager.all_passive
+data modify storage eden:settings mob_manager.cow merge from storage eden:settings mob_manager.all_passive
+data modify storage eden:settings mob_manager.donkey merge from storage eden:settings mob_manager.all_passive
+data modify storage eden:settings mob_manager.frog merge from storage eden:settings mob_manager.all_passive
+data modify storage eden:settings mob_manager.glow_squid merge from storage eden:settings mob_manager.all_passive
+data modify storage eden:settings mob_manager.horse merge from storage eden:settings mob_manager.all_passive
+data modify storage eden:settings mob_manager.mooshroom merge from storage eden:settings mob_manager.all_passive
+data modify storage eden:settings mob_manager.mule merge from storage eden:settings mob_manager.all_passive
+data modify storage eden:settings mob_manager.ocelot merge from storage eden:settings mob_manager.all_passive
+data modify storage eden:settings mob_manager.parrot merge from storage eden:settings mob_manager.all_passive
+data modify storage eden:settings mob_manager.pig merge from storage eden:settings mob_manager.all_passive
+data modify storage eden:settings mob_manager.pufferfish merge from storage eden:settings mob_manager.all_passive
+data modify storage eden:settings mob_manager.rabbit merge from storage eden:settings mob_manager.all_passive
+data modify storage eden:settings mob_manager.salmon merge from storage eden:settings mob_manager.all_passive
+data modify storage eden:settings mob_manager.sheep merge from storage eden:settings mob_manager.all_passive
+data modify storage eden:settings mob_manager.skeleton_horse merge from storage eden:settings mob_manager.all_passive
+data modify storage eden:settings mob_manager.sniffer merge from storage eden:settings mob_manager.all_passive
+data modify storage eden:settings mob_manager.snow_golem merge from storage eden:settings mob_manager.all_passive
+data modify storage eden:settings mob_manager.squid merge from storage eden:settings mob_manager.all_passive
+data modify storage eden:settings mob_manager.strider merge from storage eden:settings mob_manager.all_passive
+data modify storage eden:settings mob_manager.tadpole merge from storage eden:settings mob_manager.all_passive
+data modify storage eden:settings mob_manager.tropical_fish merge from storage eden:settings mob_manager.all_passive
+data modify storage eden:settings mob_manager.turtle merge from storage eden:settings mob_manager.all_passive
+data modify storage eden:settings mob_manager.villager merge from storage eden:settings mob_manager.all_passive
+data modify storage eden:settings mob_manager.wandering_trader merge from storage eden:settings mob_manager.all_passive
+data modify storage eden:settings mob_manager.zombie_horse merge from storage eden:settings mob_manager.all_passive
+data modify storage eden:settings mob_manager.happy_ghast merge from storage eden:settings mob_manager.all_passive
 
 data modify storage eden:settings mob_manager.allay.type set value "allay"
 data modify storage eden:settings mob_manager.armadillo.type set value "armadillo"

@@ -4,7 +4,7 @@
     {
       "type": "minecraft:plain_message",
       "contents": {
-        "translate": "option.eden.info.description",
+        "translate": "menu.eden.description",
         "fallback": "Curious about our work? Head to the links below to explore more.",
         "italic": true
       }
@@ -44,7 +44,7 @@
     },
     {
       "label": {
-        "translate": "option.eden.enchantments",
+        "translate": "option.eden.info.enchantments",
         "fallback": "Enchantment Overview"
       },
       "action": {

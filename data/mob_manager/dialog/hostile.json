@@ -43,6 +43,10 @@
         "translate": "option.nice_mobs.all_hostile_mobs",
         "fallback": "All Hostile Mobs"
       },
+      "tooltip": {
+        "translate": "option.mob_manager.all_hostile.tooltip",
+        "fallback": "Configuring all hostile mobs will override any settings for individual hostile mobs you did before!"
+      },
       "action": {
         "type": "minecraft:run_command",
         "command": "function mob_manager:dialog/dynamic/hostile with storage eden:settings mob_manager.all_hostile"

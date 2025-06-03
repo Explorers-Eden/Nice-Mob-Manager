@@ -1,0 +1,80 @@
+{
+  "type": "minecraft:multi_action",
+  "body": {
+    "type": "minecraft:item",
+    "item": {
+      "id": "minecraft:command_block",
+      "components": {
+        "minecraft:tooltip_display": {
+          "hide_tooltip": true
+        }
+      }
+    },
+    "description": {
+      "translate": "menu.mob_manager.rarity_mobs.description",
+      "fallback": "Select A Rarity To Configure:"
+    }
+  },
+  "can_close_with_escape": true,
+  "external_title": {
+    "translate": "menu.mob_manager.rarity_mobs.title",
+    "fallback": "Rarity Mobs"
+  },
+  "title": {
+    "translate": "menu.mob_manager.main.title",
+    "fallback": "Nice Mob Manager"
+  },
+  "pause": true,
+  "exit_action": {
+    "label": {
+      "translate": "gui.back"
+    },
+    "action": {
+      "type": "show_dialog",
+      "dialog": "mob_manager:main"
+    }
+  },
+  "columns": 1,
+  "actions": [
+    {
+      "label": {
+        "translate": "menu.mob_manager.rarity_mobs_common.title",
+        "fallback": "Common"
+      },
+      "action": {
+        "type": "minecraft:run_command",
+        "command": "function mob_manager:dialog/dynamic/rarity_mobs with storage eden:settings mob_manager.rarity_mobs.common"
+      }
+    },
+    {
+      "label": {
+        "translate": "menu.mob_manager.rarity_mobs_rare.title",
+        "fallback": "Rare"
+      },
+      "action": {
+        "type": "minecraft:run_command",
+        "command": "function mob_manager:dialog/dynamic/rarity_mobs with storage eden:settings mob_manager.rarity_mobs.rare"
+      }
+    },
+    {
+      "label": {
+        "translate": "menu.mob_manager.rarity_mobs_legendary.title",
+        "fallback": "Legendary"
+      },
+      "action": {
+        "type": "minecraft:run_command",
+        "command": "function mob_manager:dialog/dynamic/rarity_mobs with storage eden:settings mob_manager.rarity_mobs.legendary"
+      }
+    },
+    {
+      "label": {
+        "translate": "menu.mob_manager.rarity_mobs_mythic.title",
+        "fallback": "Mythic"
+      },
+      "action": {
+        "type": "minecraft:run_command",
+        "command": "function mob_manager:dialog/dynamic/rarity_mobs with storage eden:settings mob_manager.rarity_mobs.mythic"
+      }
+    }
+  ]
+}

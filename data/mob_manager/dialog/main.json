@@ -12,7 +12,7 @@
     },
     "description": {
       "translate": "menu.mob_manager.main.description",
-      "fallback": "Select What You Want To Configure:"
+      "fallback": "Select An Option To Configure:"
     }
   },
   "can_close_with_escape": true,
@@ -37,6 +37,10 @@
         "translate": "menu.mob_manager.passive_mobs.title",
         "fallback": "Passive Mobs"
       },
+      "tooltip": {
+        "translate": "option.mob_manager.main.passive.tooltip",
+        "fallback": "Customize settings for either all or specific passive mobs."
+      },
       "action": {
         "type": "minecraft:show_dialog",
         "dialog": "mob_manager:passive"
@@ -46,6 +50,10 @@
       "label": {
         "translate": "menu.mob_manager.neutral_mobs.title",
         "fallback": "Neutral Mobs"
+      },
+      "tooltip": {
+        "translate": "option.mob_manager.main.neutral.tooltip",
+        "fallback": "Customize settings for either all or specific neutral mobs."
       },
       "action": {
         "type": "minecraft:show_dialog",
@@ -57,6 +65,10 @@
         "translate": "menu.mob_manager.hostile_mobs.title",
         "fallback": "Hostile Mobs"
       },
+      "tooltip": {
+        "translate": "option.mob_manager.main.hostile.tooltip",
+        "fallback": "Customize settings for either all or specific hostile mobs."
+      },
       "action": {
         "type": "minecraft:show_dialog",
         "dialog": "mob_manager:hostile"
@@ -66,6 +78,10 @@
       "label": {
         "translate": "menu.mob_manager.mob_equipment",
         "fallback": "Mob Equipment"
+      },
+      "tooltip": {
+        "translate": "option.mob_manager.main.mob_equipment.tooltip",
+        "fallback": "Customize settings for the random equipment mobs can spawn with."
       },
       "action": {
         "type": "minecraft:run_command",
@@ -77,15 +93,23 @@
         "translate": "menu.mob_manager.rarity_mobs",
         "fallback": "Rarity Mobs"
       },
+      "tooltip": {
+        "translate": "option.mob_manager.main.rarity_mobs.tooltip",
+        "fallback": "Customize settings for mobs that spawn with a rarity and are usually stronger but drop better loot."
+      },
       "action": {
-        "type": "minecraft:run_command",
-        "command": "function mob_manager:dialog/dynamic/gamerules with storage eden:settings mob_manager.gamerules"
+        "type": "minecraft:show_dialog",
+        "dialog": "mob_manager:rarity_mobs"
       }
     },
     {
       "label": {
         "translate": "menu.mob_manager.wandering_trader",
         "fallback": "Wandering Trader"
+      },
+      "tooltip": {
+        "translate": "option.mob_manager.main.wandering_trader.tooltip",
+        "fallback": "Customize settings for the Wandering Trader such as spawn announcements and trades."
       },
       "action": {
         "type": "minecraft:run_command",
@@ -97,6 +121,10 @@
         "translate": "menu.mob_manager.misc_settings.title",
         "fallback": "Miscellaneous Settings"
       },
+      "tooltip": {
+        "translate": "option.mob_manager.main.misc.tooltip",
+        "fallback": "Customize miscellaneous settings for mobs that don't quite fit into another category."
+      },
       "action": {
         "type": "minecraft:run_command",
         "command": "function mob_manager:dialog/dynamic/misc with storage eden:settings mob_manager.misc"
@@ -106,6 +134,10 @@
       "label": {
         "translate": "menu.mob_manager.vanilla_gamerules",
         "fallback": "Vanilla Gamerules"
+      },
+      "tooltip": {
+        "translate": "option.mob_manager.main.rarity_mobs.tooltip",
+        "fallback": "Customize vanilla gamerules."
       },
       "action": {
         "type": "minecraft:run_command",

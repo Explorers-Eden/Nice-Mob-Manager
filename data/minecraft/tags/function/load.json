@@ -3,6 +3,8 @@
       "mob_manager:load",
       "mob_manager:init",
       "mob_manager:jeb_sheep/change_color/run",
-      "mob_manager:baby_nametag"
+      "mob_manager:keep_baby",
+      "mob_manager:rarity_mobs/init",
+      "mob_manager:rarity_mobs/particles/init"
     ]
   }

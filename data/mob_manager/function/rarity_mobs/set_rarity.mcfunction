@@ -8,4 +8,5 @@ $execute if data storage eden:settings mob_manager.rarity_mobs.$(type){customnam
 
 $tag @s add mob_manager.rarity_mobs.$(type)
 
-$say rarity_$(type)
+execute if data storage eden:settings mob_manager.misc{locator_assets:"enabled"} run waypoint modify @s style set mob_manager:rarity_mob
+$waypoint modify @s color hex $(color)

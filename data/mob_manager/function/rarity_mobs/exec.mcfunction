@@ -1,4 +1,5 @@
-$execute as @s[type=!#$(validmobs)] run return fail
+execute as @s[tag=nice_mobs.base] run return run tag @s add mob_manager.rarity_mobs.applied
+$execute as @s[type=!#$(validmobs)] run return run tag @s add mob_manager.rarity_mobs.applied
 $execute as @s[type=#$(validmobs),tag=mob_manager.rarity_mobs.not_$(type)] run return fail
 $scoreboard players add @s mob_manager.rarity_mobs.$(type).timer 0
 $execute if score @s mob_manager.rarity_mobs.$(type).timer matches ..$(spawntime) run return run scoreboard players add @s mob_manager.rarity_mobs.$(type).timer 1

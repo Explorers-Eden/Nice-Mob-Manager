@@ -15,6 +15,9 @@ $execute unless data storage eden:settings mob_manager.$(type){drown:"enabled"} 
 $execute if data storage eden:settings mob_manager.$(type){breed:"enabled"} run data modify storage eden:settings mob_manager.$(type).breed_initial set value "false"
 $execute unless data storage eden:settings mob_manager.$(type){breed:"enabled"} run data modify storage eden:settings mob_manager.$(type).breed_initial set value "true"
 
+$data modify storage eden:settings mob_manager.$(type).mobhead_initial set value $(mobhead)
+$execute store result storage eden:settings mob_manager.$(type).mobhead float 0.01 run data get storage eden:settings mob_manager.$(type).mobhead_initial
+
 dialog show @s mob_manager:neutral
 
 $execute unless data storage eden:settings mob_manager.$(type){type:"all_neutral"} run return fail

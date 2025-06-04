@@ -14,11 +14,24 @@ $dialog show @s \
       },\
       "description":{\
         "translate":"menu.mob_manager.passive_mob_manager.description",\
-        "fallback":"Configure Passive Mob Manager:"\
+        "fallback":"Configure Passive Mob Settings:"\
       }\
     }\
   ],\
   "inputs":[\
+      {\
+      "type":"minecraft:number_range",\
+      "key":"mobhead",\
+      "label":{\
+        "translate":"menu.mob_manager.option.mobhead",\
+        "fallback":"Mobhead Drop Chance"\
+      },\
+      "label_format":"options.percent_value",\
+      "start":0,\
+      "end":100,\
+      "step":1,\
+      "initial":$(mobhead_initial)\
+    },\
     {\
       "type":"minecraft:number_range",\
       "key":"scale_min",\

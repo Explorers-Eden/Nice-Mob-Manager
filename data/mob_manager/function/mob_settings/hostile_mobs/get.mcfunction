@@ -12,6 +12,8 @@ $execute if data storage eden:settings mob_manager.$(type){silent:"enabled"} run
 $execute if data storage eden:settings mob_manager.$(type){burn:"disabled"} run attribute @s minecraft:burning_time base set 0
 $execute if data storage eden:settings mob_manager.$(type){pickup:"disabled"} run data modify entity @s CanPickUpLoot set value 0b
 
+$data modify entity @s DeathLootTable set value 'eden:entity/default/$(type)'
+
 $attribute @s minecraft:waypoint_transmit_range base set $(locator_range)
 $execute if data storage eden:settings mob_manager.misc{locator_assets:"disabled"} run waypoint modify @s color hex $(locator_color)
 $execute if data storage eden:settings mob_manager.misc{locator_assets:"enabled"} run waypoint modify @s style set mob_manager:$(type)

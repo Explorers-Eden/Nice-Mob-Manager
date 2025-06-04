@@ -12,6 +12,9 @@ $execute unless data storage eden:settings mob_manager.$(type){silent:"enabled"}
 $execute if data storage eden:settings mob_manager.$(type){drown:"enabled"} run data modify storage eden:settings mob_manager.$(type).drown_initial set value "false"
 $execute unless data storage eden:settings mob_manager.$(type){drown:"enabled"} run data modify storage eden:settings mob_manager.$(type).drown_initial set value "true"
 
+$data modify storage eden:settings mob_manager.$(type).mobhead_initial set value $(mobhead)
+$execute store result storage eden:settings mob_manager.$(type).mobhead float 0.01 run data get storage eden:settings mob_manager.$(type).mobhead_initial
+
 dialog show @s mob_manager:hostile
 
 $execute unless data storage eden:settings mob_manager.$(type){type:"all_hostile"} run return fail
@@ -45,6 +48,8 @@ data modify storage eden:settings mob_manager.zombie merge from storage eden:set
 data modify storage eden:settings mob_manager.zombie_villager merge from storage eden:settings mob_manager.all_hostile
 data modify storage eden:settings mob_manager.husk merge from storage eden:settings mob_manager.all_hostile
 data modify storage eden:settings mob_manager.illusioner merge from storage eden:settings mob_manager.all_hostile
+data modify storage eden:settings mob_manager.wither merge from storage eden:settings mob_manager.all_hostile
+data modify storage eden:settings mob_manager.ender_dragon merge from storage eden:settings mob_manager.all_hostile
 
 data modify storage eden:settings mob_manager.blaze.type set value "blaze"
 data modify storage eden:settings mob_manager.bogged.type set value "bogged"
@@ -75,3 +80,6 @@ data modify storage eden:settings mob_manager.zoglin.type set value "zoglin"
 data modify storage eden:settings mob_manager.zombie.type set value "zombie"
 data modify storage eden:settings mob_manager.zombie_villager.type set value "zombie_villager"
 data modify storage eden:settings mob_manager.husk.type set value "husk"
+data modify storage eden:settings mob_manager.illusioner.type set value "illusioner"
+data modify storage eden:settings mob_manager.wither.type set value "wither"
+data modify storage eden:settings mob_manager.ender_dragon.type set value "ender_dragon"

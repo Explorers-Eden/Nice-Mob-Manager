@@ -104,12 +104,12 @@
     },
     {
       "label": {
-        "translate": "menu.mob_manager.wandering_trader",
-        "fallback": "Wandering Trader"
+        "translate": "menu.mob_manager.villager",
+        "fallback": "Villager/Wandering Trader"
       },
       "tooltip": {
-        "translate": "option.mob_manager.main.wandering_trader.tooltip",
-        "fallback": "Customize settings for the Wandering Trader such as spawn announcements and trades."
+        "translate": "option.mob_manager.main.villager.tooltip",
+        "fallback": "Customize settings for Villagers & Wandering Traders."
       },
       "action": {
         "type": "minecraft:run_command",

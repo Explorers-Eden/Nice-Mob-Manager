@@ -25,7 +25,7 @@ $dialog show @s \
       "width": 256,\
       "label":{\
         "translate":"menu.mob_manager.option.husksand",\
-        "fallback":"Sand From Husk Chance"\
+        "fallback":"Sand From Husk"\
       },\
       "label_format":"options.percent_value",\
       "start":0,\
@@ -35,11 +35,165 @@ $dialog show @s \
     },\
     {\
       "type":"minecraft:number_range",\
+      "key":"strayice",\
+      "width": 256,\
+      "label":{\
+        "translate":"menu.mob_manager.option.strayice",\
+        "fallback":"Ice From Stray"\
+      },\
+      "label_format":"options.percent_value",\
+      "start":0,\
+      "end":100,\
+      "step":1,\
+      "initial":$(strayice_initial)\
+    },\
+    {\
+      "type":"minecraft:number_range",\
+      "key":"beehoneycomb",\
+      "width": 256,\
+      "label":{\
+        "translate":"menu.mob_manager.option.beehoneycomb",\
+        "fallback":"Honeycomb From Bee"\
+      },\
+      "label_format":"options.percent_value",\
+      "start":0,\
+      "end":100,\
+      "step":1,\
+      "initial":$(beehoneycomb_initial)\
+    },\
+    {\
+      "type":"minecraft:number_range",\
+      "key":"villageremerald",\
+      "width": 256,\
+      "label":{\
+        "translate":"menu.mob_manager.option.villageremerald",\
+        "fallback":"Emerald From Villager"\
+      },\
+      "label_format":"options.percent_value",\
+      "start":0,\
+      "end":100,\
+      "step":1,\
+      "initial":$(villageremerald_initial)\
+    },\
+    {\
+      "type":"minecraft:number_range",\
+      "key":"elderguardianseaheart",\
+      "width": 256,\
+      "label":{\
+        "translate":"menu.mob_manager.option.elderguardianseaheart",\
+        "fallback":"Heart of the Sea From Elder Guardian"\
+      },\
+      "label_format":"options.percent_value",\
+      "start":0,\
+      "end":100,\
+      "step":1,\
+      "initial":$(elderguardianseaheart_initial)\
+    },\
+    {\
+      "type":"minecraft:number_range",\
+      "key":"piglingold",\
+      "width": 256,\
+      "label":{\
+        "translate":"menu.mob_manager.option.piglingold",\
+        "fallback":"Gold From Piglin"\
+      },\
+      "label_format":"options.percent_value",\
+      "start":0,\
+      "end":100,\
+      "step":1,\
+      "initial":$(piglingold_initial)\
+    },\
+    {\
+      "type":"minecraft:number_range",\
+      "key":"piglinbrutegoldblock",\
+      "width": 256,\
+      "label":{\
+        "translate":"menu.mob_manager.option.piglinbrutegoldblock",\
+        "fallback":"Gold Block From Piglin Brute"\
+      },\
+      "label_format":"options.percent_value",\
+      "start":0,\
+      "end":100,\
+      "step":1,\
+      "initial":$(piglinbrutegoldblock_initial)\
+    },\
+    {\
+      "type":"minecraft:number_range",\
+      "key":"allayshard",\
+      "width": 256,\
+      "label":{\
+        "translate":"menu.mob_manager.option.allayshard",\
+        "fallback":"Amethyst Shard From Allay"\
+      },\
+      "label_format":"options.percent_value",\
+      "start":0,\
+      "end":100,\
+      "step":1,\
+      "initial":$(allayshard_initial)\
+    },\
+    {\
+      "type":"minecraft:number_range",\
+      "key":"goatleather",\
+      "width": 256,\
+      "label":{\
+        "translate":"menu.mob_manager.option.goatleather",\
+        "fallback":"Leather From Goats"\
+      },\
+      "label_format":"options.percent_value",\
+      "start":0,\
+      "end":100,\
+      "step":1,\
+      "initial":$(goatleather_initial)\
+    },\
+    {\
+      "type":"minecraft:number_range",\
+      "key":"creakingresin",\
+      "width": 256,\
+      "label":{\
+        "translate":"menu.mob_manager.option.creakingresin",\
+        "fallback":"Resin Clump From Creaking"\
+      },\
+      "label_format":"options.percent_value",\
+      "start":0,\
+      "end":100,\
+      "step":1,\
+      "initial":$(creakingresin_initial)\
+    },\
+    {\
+      "type":"minecraft:number_range",\
+      "key":"foxsweetberries",\
+      "width": 256,\
+      "label":{\
+        "translate":"menu.mob_manager.option.foxsweetberries",\
+        "fallback":"Sweet Berries From Foxes"\
+      },\
+      "label_format":"options.percent_value",\
+      "start":0,\
+      "end":100,\
+      "step":1,\
+      "initial":$(foxsweetberries_initial)\
+    },\
+    {\
+      "type":"minecraft:number_range",\
+      "key":"traderlead",\
+      "width": 256,\
+      "label":{\
+        "translate":"menu.mob_manager.option.traderlead",\
+        "fallback":"Lead From Wandering Trader"\
+      },\
+      "label_format":"options.percent_value",\
+      "start":0,\
+      "end":100,\
+      "step":1,\
+      "initial":$(traderlead_initial)\
+    },\
+    {\
+      "type":"minecraft:number_range",\
       "key":"batmembrane",\
       "width": 256,\
       "label":{\
         "translate":"menu.mob_manager.option.batmembrane",\
-        "fallback":"Phantom Membrane From Bat Chance"\
+        "fallback":"Phantom Membrane From Bat"\
       },\
       "label_format":"options.percent_value",\
       "start":0,\
@@ -53,7 +207,7 @@ $dialog show @s \
       "width": 256,\
       "label":{\
         "translate":"menu.mob_manager.option.dragonegg",\
-        "fallback":"Dragon Egg From Ender Dragon Chance"\
+        "fallback":"Dragon Egg From Ender Dragon"\
       },\
       "label_format":"options.percent_value",\
       "start":0,\
@@ -67,7 +221,7 @@ $dialog show @s \
       "width": 256,\
       "label":{\
         "translate":"menu.mob_manager.option.dragonelytra",\
-        "fallback":"Elytra From Ender Dragon Chance"\
+        "fallback":"Elytra From Ender Dragon"\
       },\
       "label_format":"options.percent_value",\
       "start":0,\
@@ -81,7 +235,7 @@ $dialog show @s \
       "width": 256,\
       "label":{\
         "translate":"menu.mob_manager.option.shulkerdrop",\
-        "fallback":"2nd Shulker Shell From Shulker Chance"\
+        "fallback":"2nd Shulker Shell From Shulker"\
       },\
       "label_format":"options.percent_value",\
       "start":0,\

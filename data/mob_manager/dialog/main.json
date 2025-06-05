@@ -113,7 +113,7 @@
       },
       "action": {
         "type": "minecraft:run_command",
-        "command": "function mob_manager:dialog/dynamic/gamerules with storage eden:settings mob_manager.gamerules"
+        "command": "function mob_manager:dialog/dynamic/mob_equipment with storage eden:settings mob_manager.mob_equipment"
       }
     },
     {
@@ -127,21 +127,21 @@
       },
       "action": {
         "type": "minecraft:run_command",
-        "command": "function mob_manager:dialog/dynamic/gamerules with storage eden:settings mob_manager.gamerules"
+        "command": "function mob_manager:dialog/dynamic/villager with storage eden:settings mob_manager.villager"
       }
     },
     {
       "label": {
-        "translate": "menu.mob_manager.villager",
+        "translate": "menu.mob_manager.wanderingtrader",
         "fallback": "Wandering Trader"
       },
       "tooltip": {
-        "translate": "option.mob_manager.main.villager.tooltip",
+        "translate": "option.mob_manager.main.wanderingtrader.tooltip",
         "fallback": "Customize Wandering Trader specific settings such as random names or spawn announcement."
       },
       "action": {
         "type": "minecraft:run_command",
-        "command": "function mob_manager:dialog/dynamic/gamerules with storage eden:settings mob_manager.gamerules"
+        "command": "function mob_manager:dialog/dynamic/wandering_trader with storage eden:settings mob_manager.wandering_trader"
       }
     },
     {

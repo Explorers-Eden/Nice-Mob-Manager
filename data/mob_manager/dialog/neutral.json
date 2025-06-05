@@ -12,7 +12,7 @@
     {
       "type": "minecraft:item",
       "item": {
-        "id": "minecraft:command_block",
+        "id": "minecraft:spawner",
         "components": {
           "minecraft:tooltip_display": {
             "hide_tooltip": true
@@ -40,7 +40,7 @@
   "actions": [
     {
       "label": {
-        "translate": "option.nice_mobs.all_neutral_mobs",
+        "translate": "option.mob_manager.all_neutral_mobs",
         "fallback": "All Neutral Mobs"
       },
       "tooltip": {

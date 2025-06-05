@@ -7,3 +7,5 @@ execute as @e[type=#eden:can_breed,tag=mob_manager.settings.breed.disabled] run 
 execute if data storage eden:settings mob_manager.misc{egglay:"disabled"} as @e[type=minecraft:chicken] run data modify entity @s EggLayTime set value 6500
 execute if data storage eden:settings mob_manager.misc{rabbitcarrot:"disabled"} as @e[type=minecraft:rabbit] run data modify entity @s MoreCarrotTicks set value 6500
 execute if data storage eden:settings mob_manager.misc{snifferbrain:"disabled"} as @e[type=minecraft:sniffer] run data remove entity @s Brain.memories.minecraft:sniffer_explored_positions
+execute if data storage eden:settings mob_manager.villager{restock:"enabled"} as @e[type=minecraft:villager] run data modify entity @s RestocksToday set value 0
+execute if data storage eden:settings mob_manager.villager{gossip:"disabled"} as @e[type=minecraft:villager] run data modify entity @s Gossips set value []

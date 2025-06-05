@@ -11,7 +11,7 @@ $execute if data storage eden:settings mob_manager.$(type){drown:"disabled"} run
 $execute if data storage eden:settings mob_manager.$(type){silent:"enabled"} run data modify entity @s Silent set value 1b
 $execute if data storage eden:settings mob_manager.$(type){burn:"disabled"} run attribute @s minecraft:burning_time base set 0
 $execute if data storage eden:settings mob_manager.$(type){pickup:"disabled"} run data modify entity @s CanPickUpLoot set value 0b
-execute as @s[type=shulker] if data storage eden:settings mob_manager.misc{shulkercolor:"enabled"} run function mob_manager:shulker_color/init
+execute as @s[type=shulker] if data storage eden:settings mob_manager.misc{shulkercolor:"enabled"} run function mob_manager:shulker_color with storage eden:temp mob_manager
 
 $data modify entity @s DeathLootTable set value 'eden:entity/default/$(type)'
 

@@ -29,7 +29,7 @@
         {
           "id": "enabled",
           "display": {
-            "translate": "option.nice_mobs.enabled",
+            "translate": "option.mob_manager.enabled",
             "fallback": "Enabled",
             "color": "green"
           }
@@ -37,7 +37,7 @@
         {
           "id": "disabled",
           "display": {
-            "translate": "option.nice_mobs.disabled",
+            "translate": "option.mob_manager.disabled",
             "fallback": "Disabled",
             "color": "red"
           },
@@ -56,7 +56,7 @@
         {
           "id": "enabled",
           "display": {
-            "translate": "option.nice_mobs.enabled",
+            "translate": "option.mob_manager.enabled",
             "fallback": "Enabled",
             "color": "green"
           }
@@ -64,7 +64,7 @@
         {
           "id": "disabled",
           "display": {
-            "translate": "option.nice_mobs.disabled",
+            "translate": "option.mob_manager.disabled",
             "fallback": "Disabled",
             "color": "red"
           },
@@ -76,7 +76,7 @@
       "type": "minecraft:number_range",
       "key": "spawntime",
       "label": {
-        "translate": "option.nice_mobs.rarity_mobs.spawntime",
+        "translate": "option.mob_manager.rarity_mobs.spawntime",
         "fallback": "Time (Sec) Before Getting A Rarity"
       },
       "start": 0,
@@ -88,7 +88,7 @@
       "type": "minecraft:number_range",
       "key": "spawnchance",
       "label": {
-        "translate": "option.nice_mobs.rarity_mobs.spawnchance",
+        "translate": "option.mob_manager.rarity_mobs.spawnchance",
         "fallback": "Rarity Spawn Chance"
       },
       "label_format": "options.percent_value",
@@ -101,7 +101,7 @@
       "type": "minecraft:number_range",
       "key": "health",
       "label": {
-        "translate": "option.nice_mobs.rarity_mobs.health",
+        "translate": "option.mob_manager.rarity_mobs.health",
         "fallback": "Health"
       },
       "start": 1,
@@ -113,7 +113,7 @@
       "type": "minecraft:text",
       "key": "validmobs",
       "label": {
-        "translate": "option.nice_mobs.rarity_mobs.validmobs",
+        "translate": "option.mob_manager.rarity_mobs.validmobs",
         "fallback": "Entity Tag List For Valid Mob Types"
       },
       "initial": "eden:valid_for_rarity",
@@ -123,7 +123,7 @@
       "type": "minecraft:text",
       "key": "loottable",
       "label": {
-        "translate": "option.nice_mobs.rarity_mobs.loottable",
+        "translate": "option.mob_manager.rarity_mobs.loottable",
         "fallback": "On Death Loot Table"
       },
       "initial": "eden:entity/rarity_mob/valuables",

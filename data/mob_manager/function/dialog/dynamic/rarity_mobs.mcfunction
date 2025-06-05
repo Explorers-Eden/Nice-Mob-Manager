@@ -5,7 +5,7 @@ $dialog show @s \
     {\
       "type": "minecraft:item",\
       "item": {\
-        "id": "minecraft:spawner",\
+        "id": "$(bodyicon)",\
         "components": {\
           "minecraft:tooltip_display": {\
             "hide_tooltip": true\
@@ -31,7 +31,7 @@ $dialog show @s \
         {\
           "id": "enabled",\
           "display": {\
-            "translate": "option.nice_mobs.enabled",\
+            "translate": "option.mob_manager.enabled",\
             "fallback": "Enabled",\
             "color": "green"\
           }\
@@ -39,7 +39,7 @@ $dialog show @s \
         {\
           "id": "disabled",\
           "display": {\
-            "translate": "option.nice_mobs.disabled",\
+            "translate": "option.mob_manager.disabled",\
             "fallback": "Disabled",\
             "color": "red"\
           },\
@@ -59,7 +59,7 @@ $dialog show @s \
         {\
           "id": "enabled",\
           "display": {\
-            "translate": "option.nice_mobs.enabled",\
+            "translate": "option.mob_manager.enabled",\
             "fallback": "Enabled",\
             "color": "green"\
           }\
@@ -67,7 +67,7 @@ $dialog show @s \
         {\
           "id": "disabled",\
           "display": {\
-            "translate": "option.nice_mobs.disabled",\
+            "translate": "option.mob_manager.disabled",\
             "fallback": "Disabled",\
             "color": "red"\
           },\
@@ -80,7 +80,7 @@ $dialog show @s \
       "key": "spawntime",\
       "width": 256,\
       "label": {\
-        "translate": "option.nice_mobs.rarity_mobs.spawntime",\
+        "translate": "option.mob_manager.rarity_mobs.spawntime",\
         "fallback": "Time (Sec) Before Assigning A Rarity"\
       },\
       "start": 0,\
@@ -93,7 +93,7 @@ $dialog show @s \
       "key": "spawnchance",\
       "width": 256,\
       "label": {\
-        "translate": "option.nice_mobs.rarity_mobs.spawnchance",\
+        "translate": "option.mob_manager.rarity_mobs.spawnchance",\
         "fallback": "Rarity Chance"\
       },\
       "label_format": "options.percent_value",\
@@ -107,7 +107,7 @@ $dialog show @s \
       "key": "health",\
       "width": 256,\
       "label": {\
-        "translate": "option.nice_mobs.rarity_mobs.health",\
+        "translate": "option.mob_manager.rarity_mobs.health",\
         "fallback": "Health"\
       },\
       "start": 1,\
@@ -120,7 +120,7 @@ $dialog show @s \
       "key": "validmobs",\
       "width": 256,\
       "label": {\
-        "translate": "option.nice_mobs.rarity_mobs.validmobs",\
+        "translate": "option.mob_manager.rarity_mobs.validmobs",\
         "fallback": "Entity Tag List For Valid Mob Types"\
       },\
       "initial": "$(validmobs)",\
@@ -131,7 +131,7 @@ $dialog show @s \
       "key": "loottable",\
       "width": 256,\
       "label": {\
-        "translate": "option.nice_mobs.rarity_mobs.loottable",\
+        "translate": "option.mob_manager.rarity_mobs.loottable",\
         "fallback": "On Death Loot Table"\
       },\
       "initial": "$(loottable)",\

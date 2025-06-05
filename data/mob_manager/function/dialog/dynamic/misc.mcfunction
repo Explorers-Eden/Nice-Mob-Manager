@@ -31,7 +31,7 @@ $dialog show @s \
         {\
           "id":"enabled",\
           "display":{\
-            "translate":"option.nice_mobs.enabled",\
+            "translate":"option.mob_manager.enabled",\
             "fallback":"Enabled",\
             "color":"green"\
           }\
@@ -39,7 +39,7 @@ $dialog show @s \
         {\
           "id":"disabled",\
           "display":{\
-            "translate":"option.nice_mobs.disabled",\
+            "translate":"option.mob_manager.disabled",\
             "fallback":"Disabled",\
             "color":"red"\
           },\
@@ -59,7 +59,7 @@ $dialog show @s \
         {\
           "id":"enabled",\
           "display":{\
-            "translate":"option.nice_mobs.enabled",\
+            "translate":"option.mob_manager.enabled",\
             "fallback":"Enabled",\
             "color":"green"\
           }\
@@ -67,7 +67,7 @@ $dialog show @s \
         {\
           "id":"disabled",\
           "display":{\
-            "translate":"option.nice_mobs.disabled",\
+            "translate":"option.mob_manager.disabled",\
             "fallback":"Disabled",\
             "color":"red"\
           },\
@@ -87,7 +87,7 @@ $dialog show @s \
         {\
           "id":"enabled",\
           "display":{\
-            "translate":"option.nice_mobs.enabled",\
+            "translate":"option.mob_manager.enabled",\
             "fallback":"Enabled",\
             "color":"green"\
           }\
@@ -95,7 +95,7 @@ $dialog show @s \
         {\
           "id":"disabled",\
           "display":{\
-            "translate":"option.nice_mobs.disabled",\
+            "translate":"option.mob_manager.disabled",\
             "fallback":"Disabled",\
             "color":"red"\
           },\
@@ -115,7 +115,7 @@ $dialog show @s \
         {\
           "id":"enabled",\
           "display":{\
-            "translate":"option.nice_mobs.enabled",\
+            "translate":"option.mob_manager.enabled",\
             "fallback":"Enabled",\
             "color":"green"\
           }\
@@ -123,7 +123,7 @@ $dialog show @s \
         {\
           "id":"disabled",\
           "display":{\
-            "translate":"option.nice_mobs.disabled",\
+            "translate":"option.mob_manager.disabled",\
             "fallback":"Disabled",\
             "color":"red"\
           },\
@@ -143,7 +143,7 @@ $dialog show @s \
         {\
           "id":"enabled",\
           "display":{\
-            "translate":"option.nice_mobs.enabled",\
+            "translate":"option.mob_manager.enabled",\
             "fallback":"Enabled",\
             "color":"green"\
           }\
@@ -151,7 +151,7 @@ $dialog show @s \
         {\
           "id":"disabled",\
           "display":{\
-            "translate":"option.nice_mobs.disabled",\
+            "translate":"option.mob_manager.disabled",\
             "fallback":"Disabled",\
             "color":"red"\
           },\
@@ -171,7 +171,7 @@ $dialog show @s \
         {\
           "id":"enabled",\
           "display":{\
-            "translate":"option.nice_mobs.enabled",\
+            "translate":"option.mob_manager.enabled",\
             "fallback":"Enabled",\
             "color":"green"\
           }\
@@ -179,7 +179,7 @@ $dialog show @s \
         {\
           "id":"disabled",\
           "display":{\
-            "translate":"option.nice_mobs.disabled",\
+            "translate":"option.mob_manager.disabled",\
             "fallback":"Disabled",\
             "color":"red"\
           },\
@@ -199,7 +199,7 @@ $dialog show @s \
         {\
           "id":"enabled",\
           "display":{\
-            "translate":"option.nice_mobs.enabled",\
+            "translate":"option.mob_manager.enabled",\
             "fallback":"Enabled",\
             "color":"green"\
           }\
@@ -207,7 +207,7 @@ $dialog show @s \
         {\
           "id":"disabled",\
           "display":{\
-            "translate":"option.nice_mobs.disabled",\
+            "translate":"option.mob_manager.disabled",\
             "fallback":"Disabled",\
             "color":"red"\
           },\
@@ -227,7 +227,7 @@ $dialog show @s \
         {\
           "id":"enabled",\
           "display":{\
-            "translate":"option.nice_mobs.enabled",\
+            "translate":"option.mob_manager.enabled",\
             "fallback":"Enabled",\
             "color":"green"\
           }\
@@ -235,7 +235,7 @@ $dialog show @s \
         {\
           "id":"disabled",\
           "display":{\
-            "translate":"option.nice_mobs.disabled",\
+            "translate":"option.mob_manager.disabled",\
             "fallback":"Disabled",\
             "color":"red"\
           },\
@@ -255,7 +255,7 @@ $dialog show @s \
         {\
           "id":"enabled",\
           "display":{\
-            "translate":"option.nice_mobs.enabled",\
+            "translate":"option.mob_manager.enabled",\
             "fallback":"Enabled",\
             "color":"green"\
           }\
@@ -263,7 +263,7 @@ $dialog show @s \
         {\
           "id":"disabled",\
           "display":{\
-            "translate":"option.nice_mobs.disabled",\
+            "translate":"option.mob_manager.disabled",\
             "fallback":"Disabled",\
             "color":"red"\
           },\
@@ -283,7 +283,7 @@ $dialog show @s \
         {\
           "id":"enabled",\
           "display":{\
-            "translate":"option.nice_mobs.enabled",\
+            "translate":"option.mob_manager.enabled",\
             "fallback":"Enabled",\
             "color":"green"\
           }\
@@ -291,7 +291,7 @@ $dialog show @s \
         {\
           "id":"disabled",\
           "display":{\
-            "translate":"option.nice_mobs.disabled",\
+            "translate":"option.mob_manager.disabled",\
             "fallback":"Disabled",\
             "color":"red"\
           },\

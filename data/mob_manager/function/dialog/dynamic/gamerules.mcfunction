@@ -5,7 +5,7 @@ $dialog show @s \
     {\
       "type":"minecraft:item",\
       "item":{\
-        "id":"minecraft:spawner",\
+        "id":"minecraft:command_block",\
         "components":{\
           "minecraft:tooltip_display":{\
             "hide_tooltip":true\

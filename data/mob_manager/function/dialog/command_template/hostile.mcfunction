@@ -22,6 +22,7 @@ data modify storage eden:settings mob_manager.blaze merge from storage eden:sett
 data modify storage eden:settings mob_manager.bogged merge from storage eden:settings mob_manager.all_hostile
 data modify storage eden:settings mob_manager.breeze merge from storage eden:settings mob_manager.all_hostile
 data modify storage eden:settings mob_manager.creeper merge from storage eden:settings mob_manager.all_hostile
+data modify storage eden:settings mob_manager.creaking merge from storage eden:settings mob_manager.all_hostile
 data modify storage eden:settings mob_manager.elder_guardian merge from storage eden:settings mob_manager.all_hostile
 data modify storage eden:settings mob_manager.endermite merge from storage eden:settings mob_manager.all_hostile
 data modify storage eden:settings mob_manager.evoker merge from storage eden:settings mob_manager.all_hostile
@@ -55,6 +56,7 @@ data modify storage eden:settings mob_manager.blaze.type set value "blaze"
 data modify storage eden:settings mob_manager.bogged.type set value "bogged"
 data modify storage eden:settings mob_manager.breeze.type set value "breeze"
 data modify storage eden:settings mob_manager.creeper.type set value "creeper"
+data modify storage eden:settings mob_manager.creaking.type set value "creaking"
 data modify storage eden:settings mob_manager.elder_guardian.type set value "elder_guardian"
 data modify storage eden:settings mob_manager.endermite.type set value "endermite"
 data modify storage eden:settings mob_manager.evoker.type set value "evoker"

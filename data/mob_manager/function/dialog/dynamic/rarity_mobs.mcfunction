@@ -25,7 +25,7 @@ $dialog show @s \
       "width": 256,\
       "label": {\
         "translate": "option.mob_manager.rarity_mobs.customname",\
-        "fallback": "Custom Names"\
+        "fallback": "Custom Random Names"\
       },\
       "options": [\
         {\
@@ -81,7 +81,7 @@ $dialog show @s \
       "width": 256,\
       "label": {\
         "translate": "option.nice_mobs.rarity_mobs.spawntime",\
-        "fallback": "Time (Sec) Before Getting A Rarity"\
+        "fallback": "Time (Sec) Before Assigning A Rarity"\
       },\
       "start": 0,\
       "end": 600,\
@@ -94,7 +94,7 @@ $dialog show @s \
       "width": 256,\
       "label": {\
         "translate": "option.nice_mobs.rarity_mobs.spawnchance",\
-        "fallback": "Rarity Spawn Chance"\
+        "fallback": "Rarity Chance"\
       },\
       "label_format": "options.percent_value",\
       "start": 0,\

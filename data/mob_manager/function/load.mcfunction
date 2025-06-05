@@ -1,5 +1,7 @@
 ##default technical scoreboard
 scoreboard objectives add eden.technical dummy
+
+##additional scoreboards
 scoreboard objectives remove mob_manager.rarity_mobs.common.timer
 scoreboard objectives remove mob_manager.rarity_mobs.rare.timer
 scoreboard objectives remove mob_manager.rarity_mobs.legendary.timer

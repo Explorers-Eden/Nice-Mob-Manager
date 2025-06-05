@@ -95,7 +95,7 @@ $dialog show @s \
       "width": 256,\
       "label":{\
         "translate":"menu.mob_manager.option.piglingold",\
-        "fallback":"Gold From Piglin"\
+        "fallback":"Gold Ingot From Piglin"\
       },\
       "label_format":"options.percent_value",\
       "start":0,\

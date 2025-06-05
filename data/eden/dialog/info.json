@@ -34,22 +34,12 @@
   "actions": [
     {
       "label": {
-        "translate": "option.eden.info.wiki",
-        "fallback": "Wiki"
+        "translate": "option.eden.info.discord",
+        "fallback": "Join Our Discord"
       },
       "action": {
         "type": "open_url",
-        "url": "https://wiki.explorerseden.eu/doku.php?id=Home"
-      }
-    },
-    {
-      "label": {
-        "translate": "option.eden.info.enchantments",
-        "fallback": "Enchantment Overview"
-      },
-      "action": {
-        "type": "open_url",
-        "url": "https://explorerseden.eu"
+        "url": "https://discord.com/invite/f2pMggfgVv"
       }
     },
     {
@@ -74,12 +64,22 @@
     },
     {
       "label": {
-        "translate": "option.eden.info.discord",
-        "fallback": "Join Our Discord"
+        "translate": "option.eden.info.enchantments",
+        "fallback": "Enchantment Overview"
       },
       "action": {
         "type": "open_url",
-        "url": "https://discord.com/invite/f2pMggfgVv"
+        "url": "https://explorerseden.eu"
+      }
+    },
+    {
+      "label": {
+        "translate": "option.eden.info.wiki",
+        "fallback": "Wiki"
+      },
+      "action": {
+        "type": "open_url",
+        "url": "https://wiki.explorerseden.eu/doku.php?id=Home"
       }
     }
   ]

@@ -22,6 +22,7 @@ $dialog show @s \
     {\
       "type": "minecraft:single_option",\
       "key": "customname",\
+      "width": 256,\
       "label": {\
         "translate": "option.mob_manager.rarity_mobs.customname",\
         "fallback": "Custom Names"\
@@ -49,6 +50,7 @@ $dialog show @s \
     {\
       "type": "minecraft:single_option",\
       "key": "particles",\
+      "width": 256,\
       "label": {\
         "translate": "option.mob_manager.rarity_mobs.particles",\
         "fallback": "Particles"\
@@ -76,6 +78,7 @@ $dialog show @s \
     {\
       "type": "minecraft:number_range",\
       "key": "spawntime",\
+      "width": 256,\
       "label": {\
         "translate": "option.nice_mobs.rarity_mobs.spawntime",\
         "fallback": "Time (Sec) Before Getting A Rarity"\
@@ -88,6 +91,7 @@ $dialog show @s \
     {\
       "type": "minecraft:number_range",\
       "key": "spawnchance",\
+      "width": 256,\
       "label": {\
         "translate": "option.nice_mobs.rarity_mobs.spawnchance",\
         "fallback": "Rarity Spawn Chance"\
@@ -101,6 +105,7 @@ $dialog show @s \
     {\
       "type": "minecraft:number_range",\
       "key": "health",\
+      "width": 256,\
       "label": {\
         "translate": "option.nice_mobs.rarity_mobs.health",\
         "fallback": "Health"\
@@ -113,6 +118,7 @@ $dialog show @s \
     {\
       "type": "minecraft:text",\
       "key": "validmobs",\
+      "width": 256,\
       "label": {\
         "translate": "option.nice_mobs.rarity_mobs.validmobs",\
         "fallback": "Entity Tag List For Valid Mob Types"\
@@ -123,6 +129,7 @@ $dialog show @s \
     {\
       "type": "minecraft:text",\
       "key": "loottable",\
+      "width": 256,\
       "label": {\
         "translate": "option.nice_mobs.rarity_mobs.loottable",\
         "fallback": "On Death Loot Table"\

@@ -76,20 +76,6 @@
     },
     {
       "label": {
-        "translate": "menu.mob_manager.mob_equipment",
-        "fallback": "Mob Equipment"
-      },
-      "tooltip": {
-        "translate": "option.mob_manager.main.mob_equipment.tooltip",
-        "fallback": "Customize settings for the random equipment mobs can spawn with."
-      },
-      "action": {
-        "type": "minecraft:run_command",
-        "command": "function mob_manager:dialog/dynamic/gamerules with storage eden:settings mob_manager.gamerules"
-      }
-    },
-    {
-      "label": {
         "translate": "menu.mob_manager.rarity_mobs",
         "fallback": "Rarity Mobs"
       },
@@ -104,12 +90,54 @@
     },
     {
       "label": {
+        "translate": "menu.mob_manager.mob_drops",
+        "fallback": "Additional Mob Drops"
+      },
+      "tooltip": {
+        "translate": "option.mob_manager.main.mob_drops.tooltip",
+        "fallback": "Customize chances for additional mob drops."
+      },
+      "action": {
+        "type": "minecraft:run_command",
+        "command": "function mob_manager:dialog/dynamic/mob_drops with storage eden:settings mob_manager.mob_drops"
+      }
+    },
+    {
+      "label": {
+        "translate": "menu.mob_manager.mob_equipment",
+        "fallback": "Mob Equipment"
+      },
+      "tooltip": {
+        "translate": "option.mob_manager.main.mob_equipment.tooltip",
+        "fallback": "Customize settings for the random equipment mobs can spawn with."
+      },
+      "action": {
+        "type": "minecraft:run_command",
+        "command": "function mob_manager:dialog/dynamic/gamerules with storage eden:settings mob_manager.gamerules"
+      }
+    },
+    {
+      "label": {
         "translate": "menu.mob_manager.villager",
-        "fallback": "Villager/Wandering Trader"
+        "fallback": "Villager"
       },
       "tooltip": {
         "translate": "option.mob_manager.main.villager.tooltip",
-        "fallback": "Customize settings for Villagers & Wandering Traders."
+        "fallback": "Customize settings for Villager."
+      },
+      "action": {
+        "type": "minecraft:run_command",
+        "command": "function mob_manager:dialog/dynamic/gamerules with storage eden:settings mob_manager.gamerules"
+      }
+    },
+    {
+      "label": {
+        "translate": "menu.mob_manager.villager",
+        "fallback": "Wandering Trader"
+      },
+      "tooltip": {
+        "translate": "option.mob_manager.main.villager.tooltip",
+        "fallback": "Customize settings for Wandering Trader."
       },
       "action": {
         "type": "minecraft:run_command",

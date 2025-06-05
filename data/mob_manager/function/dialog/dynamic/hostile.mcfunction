@@ -22,6 +22,7 @@ $dialog show @s \
       {\
       "type":"minecraft:number_range",\
       "key":"mobhead",\
+      "width": 256,\
       "label":{\
         "translate":"menu.mob_manager.option.mobhead",\
         "fallback":"Mobhead Drop Chance"\
@@ -35,6 +36,7 @@ $dialog show @s \
     {\
       "type":"minecraft:number_range",\
       "key":"scale_min",\
+      "width": 256,\
       "label":{\
         "translate":"option.mob_manager.scale_min",\
         "fallback":"Min Scale"\
@@ -48,6 +50,7 @@ $dialog show @s \
     {\
       "type":"minecraft:number_range",\
       "key":"scale_max",\
+      "width": 256,\
       "label":{\
         "translate":"option.mob_manager.scale_max",\
         "fallback":"Max Scale"\
@@ -61,6 +64,7 @@ $dialog show @s \
     {\
       "type":"minecraft:number_range",\
       "key":"health",\
+      "width": 256,\
       "label":{\
         "translate":"option.mob_manager.health",\
         "fallback":"Health"\
@@ -74,6 +78,7 @@ $dialog show @s \
     {\
       "type":"minecraft:number_range",\
       "key":"follow_range",\
+      "width": 256,\
       "label":{\
         "translate":"option.mob_manager.follow_range",\
         "fallback":"Follow Range"\
@@ -87,6 +92,7 @@ $dialog show @s \
     {\
       "type":"minecraft:number_range",\
       "key":"safe_fall",\
+      "width": 256,\
       "label":{\
         "translate":"option.mob_manager.safe_fall",\
         "fallback":"Safe Fall Distance"\
@@ -100,6 +106,7 @@ $dialog show @s \
     {\
       "type":"minecraft:number_range",\
       "key":"move_speed",\
+      "width": 256,\
       "label":{\
         "translate":"option.mob_manager.move_speed",\
         "fallback":"Movement Speed"\
@@ -113,6 +120,7 @@ $dialog show @s \
     {\
       "type":"minecraft:number_range",\
       "key":"attck_dmg",\
+      "width": 256,\
       "label":{\
         "translate":"option.mob_manager.attck_dmg",\
         "fallback":"Attack Damage"\
@@ -126,6 +134,7 @@ $dialog show @s \
     {\
       "type":"minecraft:single_option",\
       "key":"burn",\
+      "width": 256,\
       "label":{\
         "translate":"option.mob_manager.can_burn",\
         "fallback":"Can Burn"\
@@ -153,6 +162,7 @@ $dialog show @s \
     {\
       "type":"minecraft:single_option",\
       "key":"drown",\
+      "width": 256,\
       "label":{\
         "translate":"option.mob_manager.can_drown",\
         "fallback":"Can Drown"\
@@ -180,6 +190,7 @@ $dialog show @s \
     {\
       "type":"minecraft:single_option",\
       "key":"pickup",\
+      "width": 256,\
       "label":{\
         "translate":"option.mob_manager.can_pickup",\
         "fallback":"Can Pick Up Loot"\
@@ -207,6 +218,7 @@ $dialog show @s \
     {\
       "type":"minecraft:single_option",\
       "key":"silent",\
+      "width": 256,\
       "label":{\
         "translate":"option.mob_manager.is_silent",\
         "fallback":"Is Silent"\
@@ -234,6 +246,7 @@ $dialog show @s \
     {\
       "type":"minecraft:text",\
       "key":"locator_color",\
+      "width": 256,\
       "label":{\
         "translate":"option.mob_manager.locator_color",\
         "fallback":"Locator Bar Color (Hex)"\
@@ -244,6 +257,7 @@ $dialog show @s \
     {\
       "type":"minecraft:number_range",\
       "key":"locator_range",\
+      "width": 256,\
       "label":{\
         "translate":"option.mob_manager.locator_range",\
         "fallback":"Locator Bar Range"\

@@ -22,6 +22,7 @@ $dialog show @s \
     {\
       "type":"minecraft:single_option",\
       "key":"cmdfeedback",\
+      "width": 256,\
       "label":{\
         "translate":"option.mob_manager.commandfeedback",\
         "fallback":"Send Command Feedback"\
@@ -49,6 +50,7 @@ $dialog show @s \
     {\
       "type":"minecraft:single_option",\
       "key":"insomnia",\
+      "width": 256,\
       "label":{\
         "translate":"option.mob_manager.insomnia",\
         "fallback":"Phantom Spawning"\
@@ -76,6 +78,7 @@ $dialog show @s \
     {\
       "type":"minecraft:single_option",\
       "key":"warden",\
+      "width": 256,\
       "label":{\
         "translate":"option.mob_manager.warden",\
         "fallback":"Warden Spawning"\
@@ -103,6 +106,7 @@ $dialog show @s \
     {\
       "type":"minecraft:single_option",\
       "key":"raids",\
+      "width": 256,\
       "label":{\
         "translate":"option.mob_manager.raids",\
         "fallback":"Raids"\
@@ -130,6 +134,7 @@ $dialog show @s \
     {\
       "type":"minecraft:single_option",\
       "key":"mobloot",\
+      "width": 256,\
       "label":{\
         "translate":"option.mob_manager.mobloot",\
         "fallback":"Mob Loot"\
@@ -157,6 +162,7 @@ $dialog show @s \
     {\
       "type":"minecraft:single_option",\
       "key":"patrols",\
+      "width": 256,\
       "label":{\
         "translate":"option.mob_manager.patrols",\
         "fallback":"Patrol Spawning"\
@@ -184,6 +190,7 @@ $dialog show @s \
     {\
       "type":"minecraft:single_option",\
       "key":"trader",\
+      "width": 256,\
       "label":{\
         "translate":"option.mob_manager.trader",\
         "fallback":"Wandering Trader Spawning"\
@@ -211,6 +218,7 @@ $dialog show @s \
     {\
       "type":"minecraft:single_option",\
       "key":"griefing",\
+      "width": 256,\
       "label":{\
         "translate":"option.mob_manager.griefing",\
         "fallback":"Mob Griefing"\
@@ -238,6 +246,7 @@ $dialog show @s \
     {\
       "type":"minecraft:single_option",\
       "key":"locatorbar",\
+      "width": 256,\
       "label":{\
         "translate":"option.mob_manager.locatorbar",\
         "fallback":"Locator Bar"\
@@ -265,6 +274,7 @@ $dialog show @s \
     {\
       "type":"minecraft:number_range",\
       "key":"cramming",\
+      "width": 256,\
       "label":{\
         "translate":"option.mob_manager.cramming",\
         "fallback":"Max Entity Cramming"\

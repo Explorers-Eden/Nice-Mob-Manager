@@ -22,6 +22,7 @@ $dialog show @s \
     {\
       "type":"minecraft:single_option",\
       "key":"locator_assets",\
+      "width": 256,\
       "label":{\
         "translate":"menu.mob_manager.option.locator_assets",\
         "fallback":"Spawn Egg Locator Bar Icons"\
@@ -49,6 +50,7 @@ $dialog show @s \
     {\
       "type":"minecraft:single_option",\
       "key":"need_sky",\
+      "width": 256,\
       "label":{\
         "translate":"menu.mob_manager.option.need_sky",\
         "fallback":"Scaling Only On Surface"\
@@ -76,6 +78,7 @@ $dialog show @s \
     {\
       "type":"minecraft:single_option",\
       "key":"skeletonhorsetrap",\
+      "width": 256,\
       "label":{\
         "translate":"menu.mob_manager.option.skeletonhorsetrap",\
         "fallback":"Skeleton Horse Traps"\
@@ -102,7 +105,36 @@ $dialog show @s \
     },\
     {\
       "type":"minecraft:single_option",\
+      "key":"shulkercolor",\
+      "width": 256,\
+      "label":{\
+        "translate":"menu.mob_manager.option.shulkercolor",\
+        "fallback":"Random Shulker Color"\
+      },\
+      "options":[\
+        {\
+          "id":"enabled",\
+          "display":{\
+            "translate":"option.nice_mobs.enabled",\
+            "fallback":"Enabled",\
+            "color":"green"\
+          }\
+        },\
+        {\
+          "id":"disabled",\
+          "display":{\
+            "translate":"option.nice_mobs.disabled",\
+            "fallback":"Disabled",\
+            "color":"red"\
+          },\
+          "initial":$(shulkercolor_initial)\
+        }\
+      ]\
+    },\
+    {\
+      "type":"minecraft:single_option",\
       "key":"irongolemanger",\
+      "width": 256,\
       "label":{\
         "translate":"menu.mob_manager.option.irongolemanger",\
         "fallback":"Iron Golem Angry At Player"\
@@ -130,6 +162,7 @@ $dialog show @s \
     {\
       "type":"minecraft:single_option",\
       "key":"egglay",\
+      "width": 256,\
       "label":{\
         "translate":"menu.mob_manager.option.egglay",\
         "fallback":"Chickens Lay Eggs"\
@@ -157,6 +190,7 @@ $dialog show @s \
     {\
       "type":"minecraft:single_option",\
       "key":"creeperfuse",\
+      "width": 256,\
       "label":{\
         "translate":"menu.mob_manager.option.creeperfuse",\
         "fallback":"Size Relative Creeper Fuse"\
@@ -184,6 +218,7 @@ $dialog show @s \
     {\
       "type":"minecraft:single_option",\
       "key":"snifferbrain",\
+      "width": 256,\
       "label":{\
         "translate":"menu.mob_manager.option.snifferbrain",\
         "fallback":"Sniffers Track Digs"\
@@ -211,6 +246,7 @@ $dialog show @s \
     {\
       "type":"minecraft:single_option",\
       "key":"rabbitcarrot",\
+      "width": 256,\
       "label":{\
         "translate":"menu.mob_manager.option.rabbitcarrot",\
         "fallback":"Rabbits Eat Carrot Plants"\
@@ -238,6 +274,7 @@ $dialog show @s \
     {\
       "type":"minecraft:single_option",\
       "key":"jebcolor",\
+      "width": 256,\
       "label":{\
         "translate":"menu.mob_manager.option.jebcolor",\
         "fallback":"Random Jeb Sheep Wool Color"\
@@ -265,6 +302,7 @@ $dialog show @s \
     {\
       "type":"minecraft:number_range",\
       "key":"jebspawning",\
+      "width": 256,\
       "label":{\
         "translate":"menu.mob_manager.option.jebspawning",\
         "fallback":"Jeb Sheep Spawn Chance"\
@@ -278,6 +316,7 @@ $dialog show @s \
     {\
       "type":"minecraft:number_range",\
       "key":"killerrabbitspawning",\
+      "width": 256,\
       "label":{\
         "translate":"menu.mob_manager.option.jebspawning",\
         "fallback":"Killer Rabbit Spawn Chance"\
@@ -291,6 +330,7 @@ $dialog show @s \
     {\
       "type":"minecraft:number_range",\
       "key":"babymountspawning",\
+      "width": 256,\
       "label":{\
         "translate":"menu.mob_manager.option.babymountspawning",\
         "fallback":"Baby Mount Spawn Chance"\
@@ -304,6 +344,7 @@ $dialog show @s \
     {\
       "type":"minecraft:number_range",\
       "key":"illusionerspawning",\
+      "width": 256,\
       "label":{\
         "translate":"menu.mob_manager.option.illusionerspawning",\
         "fallback":"Evoker To Illusioner Chance"\
@@ -317,6 +358,7 @@ $dialog show @s \
     {\
       "type":"minecraft:number_range",\
       "key":"immunezombie",\
+      "width": 256,\
       "label":{\
         "translate":"menu.mob_manager.option.immunezombie",\
         "fallback":"Immune To Zombification Chance"\
@@ -330,6 +372,7 @@ $dialog show @s \
     {\
       "type":"minecraft:number_range",\
       "key":"brownmoospawning",\
+      "width": 256,\
       "label":{\
         "translate":"menu.mob_manager.option.brownmoospawning",\
         "fallback":"Brown Mooshroom Spawn Chance"\

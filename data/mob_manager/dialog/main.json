@@ -127,7 +127,7 @@
       },
       "action": {
         "type": "minecraft:run_command",
-        "command": "function mob_manager:dialog/dynamic/villager with storage eden:settings mob_manager.villager"
+        "command": "function mob_manager:dialog/dynamic/villager with storage eden:settings mob_manager.villager_settings"
       }
     },
     {
@@ -141,7 +141,7 @@
       },
       "action": {
         "type": "minecraft:run_command",
-        "command": "function mob_manager:dialog/dynamic/wandering_trader with storage eden:settings mob_manager.wandering_trader"
+        "command": "function mob_manager:dialog/dynamic/wandering_trader with storage eden:settings mob_manager.wandering_trader_settings"
       }
     },
     {

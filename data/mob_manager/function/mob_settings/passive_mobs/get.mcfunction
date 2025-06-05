@@ -24,6 +24,9 @@ execute if predicate {"condition":"minecraft:value_check","value":{"type":"minec
 execute if predicate {"condition":"minecraft:value_check","value":{"type":"minecraft:storage","storage":"eden:settings","path":"mob_manager.misc.brownmoospawning"},"range":{"min":0.01}} as @s[type=mooshroom] run function mob_manager:brown_mooshroom with storage eden:settings mob_manager.misc
 execute if predicate {"condition":"minecraft:value_check","value":{"type":"minecraft:storage","storage":"eden:settings","path":"mob_manager.misc.babymountspawning"},"range":{"min":0.01}} as @s[type=#eden:valid_for_baby_mount] at @s run function mob_manager:baby_mount/init with storage eden:settings mob_manager.misc
 execute if predicate {"condition":"minecraft:value_check","value":{"type":"minecraft:storage","storage":"eden:settings","path":"mob_manager.misc.killerrabbitspawning"},"range":{"min":0.01}} as @s[type=rabbit] run function mob_manager:killer_rabbit with storage eden:settings mob_manager.misc
-execute if data storage eden:settings mob_manager.misc{skeletonhorsetrap:"disabled"} as @s[type=minecraft:skeleton_horse] run data modify entity @s SkeletonTrap set value 0b
+execute if data storage eden:settings mob_manager.misc{skeletonhorsetrap:"disabled"} as @s[type=skeleton_horse] run data modify entity @s SkeletonTrap set value 0b
+execute if data storage eden:settings mob_manager.villager_settings{breeddiversity:"enabled"} as @s[type=villager] run function mob_manager:random_baby_villager
+execute if data storage eden:settings mob_manager.villager_settings{customname:"enabled"} as @s[type=villager] run function mob_manager:villager_names/init
+execute if data storage eden:settings mob_manager.wanderong_trader_settings{customname:"enabled"} as @s[type=villager,tag=!pk.at_vi] run function mob_manager:wandering_trader_names/init
 
 function mob_manager:mob_settings/passive_mobs/exec with storage eden:temp mob_manager

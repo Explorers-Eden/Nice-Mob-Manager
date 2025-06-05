@@ -12,10 +12,20 @@ $dialog show @s \
           }\
         }\
       },\
-      "description":{\
-        "translate":"menu.mob_manager.passive_mob_manager.description",\
-        "fallback":"Configure Passive Mob Settings:"\
-      }\
+      "description":[\
+        {\
+        "translate":"menu.mob_manager.configure_mob.description_prefix",\
+        "fallback":"Configure "\
+        },\
+        {\
+          "translate": "entity.minecraft.$(type)",\
+          "fallback": "Mob"\
+        },\
+        {\
+        "translate":"menu.mob_manager.configure_mob.description_sufix",\
+        "fallback":" Settings:"\
+        }\
+      ]\
     }\
   ],\
   "inputs":[\

@@ -1,7 +1,7 @@
 schedule function mob_manager:keep_baby 10s
 
-tag @e[type=#eden:valid_for_keep_baby,nbt={CustomName:'"Baby"'},tag=!eden.perma.baby.nametag] add eden.perma.baby
-tag @e[type=#eden:valid_for_keep_baby,nbt={CustomName:'"baby"'},tag=!eden.perma.baby.nametag] add eden.perma.baby
+tag @e[type=#eden:valid_for_keep_baby,nbt={CustomName:'"Baby"'},tag=!mob_manager.settings.perma_baby.nametag] add mob_manager.settings.perma_baby.nametag
+tag @e[type=#eden:valid_for_keep_baby,nbt={CustomName:'"baby"'},tag=!mob_manager.settings.perma_baby.nametag] add mob_manager.settings.perma_baby.nametag
 
-execute as @e[type=#eden:valid_for_keep_baby,tag=eden.perma.baby] run data modify entity @s Age set value -999999999
-execute as @e[type=#eden:valid_for_keep_baby,tag=eden.perma.baby.nametag] run data modify entity @s Age set value -999999999
+execute as @e[type=#eden:valid_for_keep_baby,tag=mob_manager.settings.perma_baby] run data modify entity @s Age set value -999999999
+execute as @e[type=#eden:valid_for_keep_baby,tag=mob_manager.settings.perma_baby.nametag] run data modify entity @s Age set value -999999999

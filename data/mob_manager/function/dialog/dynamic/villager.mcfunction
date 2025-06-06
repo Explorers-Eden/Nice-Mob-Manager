@@ -133,56 +133,41 @@ $dialog show @s \
     },\
     {\
       "type": "minecraft:single_option",\
-      "key": "miniblock",\
+      "key": "talking",\
       "width": 256,\
       "label": {\
-        "translate": "option.mob_manager.villager.miniblock",\
-        "fallback": "Miniblock Trades"\
+        "translate": "option.mob_manager.villager.talking",\
+        "fallback": "Talking Villager"\
       },\
       "options": [\
-        {\
-          "id": "enabled",\
-          "display": {\
-            "translate": "option.mob_manager.enabled",\
-            "fallback": "Enabled",\
-            "color": "green"\
-          }\
-        },\
         {\
           "id": "disabled",\
           "display": {\
             "translate": "option.mob_manager.disabled",\
             "fallback": "Disabled",\
             "color": "red"\
+          }\
+        },\
+        {\
+          "id": "actionbar",\
+          "display": {\
+            "translate": "option.mob_manager.actionbar",\
+            "fallback": "Action Bar",\
+            "color": "green"\
           },\
-          "initial": $(miniblock_initial)\
+          "initial": $(talking_actionbar_initial)\
+        },\
+        {\
+          "id": "chat",\
+          "display": {\
+            "translate": "option.mob_manager.chat",\
+            "fallback": "Chat",\
+            "color": "green"\
+          },\
+          "initial": $(talking_chat_initial)\
         }\
       ]\
     },\
-    {\
-      "type": "minecraft:text",\
-      "key": "payitem",\
-      "width": 256,\
-      "label": {\
-        "translate": "option.mob_manager.villager.payitem",\
-        "fallback": "Item Used As Payment For Miniblock Trades"\
-      },\
-      "initial": "$(payitem)",\
-      "max_length": 1024\
-    },\
-    {\
-      "type": "minecraft:number_range",\
-      "key": "payamount",\
-      "width": 256,\
-      "label": {\
-        "translate": "option.mob_manager.villager.payamount",\
-        "fallback": "Item Amount For Miniblock Payment"\
-      },\
-      "start": 1,\
-      "end": 64,\
-      "step": 1,\
-      "initial": $(payamount)\
-    }\
   ],\
   "can_close_with_escape": true,\
   "pause": true,\

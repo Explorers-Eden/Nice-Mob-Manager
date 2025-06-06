@@ -12,10 +12,20 @@ $dialog show @s \
           }\
         }\
       },\
-      "description": {\
-        "translate": "menu.mob_manager.rarity_mobs.settings.description",\
-        "fallback": "Configure Rarity Mob Settings:"\
-      }\
+      "description":[\
+        {\
+        "translate":"menu.mob_manager.configure_mob.description_prefix",\
+        "fallback":"Configure "\
+        },\
+        {\
+          "translate": "menu.mob_manager.rarity_mobs.$(type)",\
+          "fallback": "$(cap_type)"\
+        },\
+        {\
+        "translate":"menu.mob_manager.configure_mob.description_sufix",\
+        "fallback":" Mob Settings:"\
+        }\
+      ]\
     }\
   ],\
   "inputs": [\

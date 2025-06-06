@@ -1,4 +1,4 @@
-$data modify storage eden:settings mob_manager.villager_settings merge value {breeddiversity:$(breeddiversity),gossip:$(gossip),payamount:$(payamount),payitem:'$(payitem)',miniblock:$(miniblock),restock:$(restock),customname:$(customname)}
+$data modify storage eden:settings mob_manager.villager_settings merge value {talking:$(talking),breeddiversity:$(breeddiversity),gossip:$(gossip),restock:$(restock),customname:$(customname)}
 
 execute if data storage eden:settings mob_manager.villager_settings{customname:"enabled"} run data modify storage eden:settings mob_manager.villager_settings.customname_initial set value "false"
 execute unless data storage eden:settings mob_manager.villager_settings{customname:"enabled"} run data modify storage eden:settings mob_manager.villager_settings.customname_initial set value "true"
@@ -14,5 +14,12 @@ execute unless data storage eden:settings mob_manager.villager_settings{gossip:"
 
 execute if data storage eden:settings mob_manager.villager_settings{breeddiversity:"enabled"} run data modify storage eden:settings mob_manager.villager_settings.breeddiversity_initial set value "false"
 execute unless data storage eden:settings mob_manager.villager_settings{breeddiversity:"enabled"} run data modify storage eden:settings mob_manager.villager_settings.breeddiversity_initial set value "true"
+
+execute if data storage eden:settings mob_manager.villager_settings{talking:"disabled"} run data modify storage eden:settings mob_manager.villager_settings.talking_chat_initial set value "false"
+execute if data storage eden:settings mob_manager.villager_settings{talking:"disabled"} run data modify storage eden:settings mob_manager.villager_settings.talking_actionbar_initial set value "false"
+execute if data storage eden:settings mob_manager.villager_settings{talking:"chat"} run data modify storage eden:settings mob_manager.villager_settings.talking_chat_initial set value "true"
+execute if data storage eden:settings mob_manager.villager_settings{talking:"chat"} run data modify storage eden:settings mob_manager.villager_settings.talking_actionbar_initial set value "false"
+execute if data storage eden:settings mob_manager.villager_settings{talking:"actionbar"} run data modify storage eden:settings mob_manager.villager_settings.talking_chat_initial set value "false"
+execute if data storage eden:settings mob_manager.villager_settings{talking:"actionbar"} run data modify storage eden:settings mob_manager.villager_settings.talking_actionbar_initial set value "true"
 
 dialog show @s mob_manager:main

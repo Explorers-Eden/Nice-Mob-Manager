@@ -29,3 +29,7 @@ function mob_manager:database/names/wandering_trader/last
 
 #add colors
 function mob_manager:database/hex_colors
+
+#add trades
+function mob_manager:database/trades/plushie
+function mob_manager:database/trades/miniblock

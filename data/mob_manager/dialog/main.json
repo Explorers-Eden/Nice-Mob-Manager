@@ -123,7 +123,7 @@
       },
       "tooltip": {
         "translate": "option.mob_manager.main.villager.tooltip",
-        "fallback": "Customize Villager specific settings such as random names or additional trades."
+        "fallback": "Customize Villager settings other than those found in \"Passive Mobs\" such as random names or additional trades."
       },
       "action": {
         "type": "minecraft:run_command",
@@ -137,7 +137,7 @@
       },
       "tooltip": {
         "translate": "option.mob_manager.main.wanderingtrader.tooltip",
-        "fallback": "Customize Wandering Trader specific settings such as random names or spawn announcement."
+        "fallback": "Customize Wandering Trader settings other than those found in \"Passive Mobs\" such as random names or spawn announcement."
       },
       "action": {
         "type": "minecraft:run_command",

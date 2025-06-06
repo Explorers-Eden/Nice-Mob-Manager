@@ -1,3 +1,7 @@
+##Trader Team settings
+team add wandering_trader "Wandering Trader"
+team modify wandering_trader color blue
+
 ##default technical scoreboard
 scoreboard objectives add eden.technical dummy
 

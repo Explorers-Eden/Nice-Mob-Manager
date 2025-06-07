@@ -137,7 +137,7 @@ $dialog show @s \
       "width": 256,\
       "label": {\
         "translate": "option.mob_manager.villager.talking",\
-        "fallback": "Talking Villager"\
+        "fallback": "Villagers Talk When Interacted With"\
       },\
       "options": [\
         {\
@@ -168,6 +168,184 @@ $dialog show @s \
         }\
       ]\
     },\
+    {\
+      "type": "minecraft:single_option",\
+      "key": "villagename",\
+      "width": 256,\
+      "label": {\
+        "translate": "option.mob_manager.villager.villagename",\
+        "fallback": "Villagers Name Their Meeting Point"\
+      },\
+      "options": [\
+        {\
+          "id": "enabled",\
+          "display": {\
+            "translate": "option.mob_manager.enabled",\
+            "fallback": "Enabled",\
+            "color": "green"\
+          }\
+        },\
+        {\
+          "id": "disabled",\
+          "display": {\
+            "translate": "option.mob_manager.disabled",\
+            "fallback": "Disabled",\
+            "color": "red"\
+          },\
+          "initial": $(villagename_initial)\
+        }\
+      ]\
+    },\
+    {\
+      "type": "minecraft:single_option",\
+      "key": "villagename_msg",\
+      "width": 256,\
+      "label": {\
+        "translate": "option.mob_manager.villager.villagename_msg",\
+        "fallback": "Display Meeting Point Name To Player"\
+      },\
+      "options": [\
+        {\
+          "id": "disabled",\
+          "display": {\
+            "translate": "option.mob_manager.disabled",\
+            "fallback": "Disabled",\
+            "color": "red"\
+          }\
+        },\
+        {\
+          "id": "title",\
+          "display": {\
+            "translate": "option.mob_manager.title",\
+            "fallback": "Title",\
+            "color": "green"\
+          },\
+          "initial": $(villagename_msg_title_initial)\
+        },\
+        {\
+          "id": "actionbar",\
+          "display": {\
+            "translate": "option.mob_manager.actionbar",\
+            "fallback": "Action Bar",\
+            "color": "green"\
+          },\
+          "initial": $(villagename_msg_actionbar_initial)\
+        },\
+        {\
+          "id": "chat",\
+          "display": {\
+            "translate": "option.mob_manager.chat",\
+            "fallback": "Chat",\
+            "color": "green"\
+          },\
+          "initial": $(villagename_msg_chat_initial)\
+        }\
+      ]\
+    },\
+    {\
+      "type":"minecraft:text",\
+      "key":"locator_color",\
+      "width": 256,\
+      "label":{\
+        "translate":"option.mob_manager.locator_color",\
+        "fallback":"Meeting Point Locator Bar Color (Hex)"\
+      },\
+      "initial":"$(locator_color)",\
+      "max_length":9\
+    },\
+    {\
+      "type":"minecraft:number_range",\
+      "key":"locator_range",\
+      "width": 256,\
+      "label":{\
+        "translate":"option.mob_manager.locator_range",\
+        "fallback":"Meeting Point Locator Bar Range"\
+      },\
+      "start":0,\
+      "end":1024,\
+      "step":1,\
+      "initial":$(locator_range)\
+    },\
+    {\
+      "type": "minecraft:single_option",\
+      "key": "villagename_rename",\
+      "width": 256,\
+      "label": {\
+        "translate": "option.mob_manager.villager.villagename_rename",\
+        "fallback": "Players Can Rename Meeting Point"\
+      },\
+      "options": [\
+        {\
+          "id": "enabled",\
+          "display": {\
+            "translate": "option.mob_manager.enabled",\
+            "fallback": "Enabled",\
+            "color": "green"\
+          }\
+        },\
+        {\
+          "id": "disabled",\
+          "display": {\
+            "translate": "option.mob_manager.disabled",\
+            "fallback": "Disabled",\
+            "color": "red"\
+          },\
+          "initial": $(villagename_rename_initial)\
+        }\
+      ]\
+    },\
+    {\
+      "type": "minecraft:single_option",\
+      "key": "villagecenter_healing",\
+      "width": 256,\
+      "label": {\
+        "translate": "option.mob_manager.villager.villagecenter_healing",\
+        "fallback": "Healing Near Meeting Point At Day"\
+      },\
+      "options": [\
+        {\
+          "id": "enabled",\
+          "display": {\
+            "translate": "option.mob_manager.enabled",\
+            "fallback": "Enabled",\
+            "color": "green"\
+          }\
+        },\
+        {\
+          "id": "disabled",\
+          "display": {\
+            "translate": "option.mob_manager.disabled",\
+            "fallback": "Disabled",\
+            "color": "red"\
+          },\
+          "initial": $(villagecenter_healing_initial)\
+        }\
+      ]\
+    },\
+    {\
+      "type": "minecraft:number_range",\
+      "key": "village_heal_distance",\
+      "width": 256,\
+      "label": {\
+        "translate": "option.mob_manager.wandering_trader.village_heal_distance",\
+        "fallback": "Max Distance For Healing"\
+      },\
+      "start": 1,\
+      "end": 128,\
+      "step": 1,\
+      "initial": $(village_heal_distance)\
+    },\
+    {\
+      "type": "minecraft:text",\
+      "key": "validmobs",\
+      "width": 256,\
+      "label": {\
+        "translate": "option.mob_manager.villager.validmobs",\
+        "fallback": "Entity Tag List For Meeting Point Healing"\
+      },\
+      "initial": "$(validmobs)",\
+      "max_length": 1024\
+    }\
   ],\
   "can_close_with_escape": true,\
   "pause": true,\

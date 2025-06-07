@@ -1,0 +1,1 @@
+$execute as @e[type=#$(validmobs)] at @s if entity @e[type=armor_stand,tag=mob_manager.village.name,distance=..$(village_heal_distance)] unless predicate eden:time/night_time run effect give @s regeneration 5 0 true

@@ -1,0 +1,25 @@
+{
+  "criteria": {
+    "requirement": {
+      "trigger": "minecraft:player_interacted_with_entity",
+      "conditions": {
+        "entity": [
+          {
+            "condition": "minecraft:entity_properties",
+            "entity": "this",
+            "predicate": {
+              "type": "minecraft:villager",
+              "nbt": "{VillagerData: {profession:\"minecraft:none\"}}",
+              "components": {
+                "minecraft:villager/variant": "minecraft:snow"
+              }
+            }
+          }
+        ]
+      }
+    }
+  },
+  "rewards": {
+    "function": "mob_manager:villager/talking/trigger/snow"
+  }
+}

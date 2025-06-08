@@ -14,6 +14,7 @@ scoreboard objectives add mob_manager.rarity_mobs.common.timer dummy
 scoreboard objectives add mob_manager.rarity_mobs.rare.timer dummy
 scoreboard objectives add mob_manager.rarity_mobs.legendary.timer dummy
 scoreboard objectives add mob_manager.rarity_mobs.mythic.timer dummy
+scoreboard objectives add mob_manager.used.bell minecraft.custom:minecraft.bell_ring
 
 ##apply default values on first load
 execute unless data storage eden:settings mob_manager.misc run function mob_manager:default_values

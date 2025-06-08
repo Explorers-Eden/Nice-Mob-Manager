@@ -36,6 +36,15 @@ function mob_manager:database/names/village/snow
 function mob_manager:database/names/village/swamp
 function mob_manager:database/names/village/taiga
 
+#add villager dialogues
+function mob_manager:database/dialogue/villager/desert
+function mob_manager:database/dialogue/villager/jungle
+function mob_manager:database/dialogue/villager/plains
+function mob_manager:database/dialogue/villager/savanna
+function mob_manager:database/dialogue/villager/snow
+function mob_manager:database/dialogue/villager/swamp
+function mob_manager:database/dialogue/villager/taiga
+
 #add colors
 function mob_manager:database/hex_colors
 

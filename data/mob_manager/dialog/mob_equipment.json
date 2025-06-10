@@ -1,0 +1,110 @@
+{
+  "type": "minecraft:multi_action",
+  "body": {
+    "type": "minecraft:item",
+    "item": {
+      "id": "minecraft:smithing_table",
+      "components": {
+        "minecraft:tooltip_display": {
+          "hide_tooltip": true
+        }
+      }
+    },
+    "description": {
+      "translate": "menu.mob_manager.mob_equipment.description",
+      "fallback": "Select An Option To Configure:"
+    }
+  },
+  "can_close_with_escape": true,
+  "external_title": {
+    "translate": "menu.mob_manager.rarity_mobs.title",
+    "fallback": "Mob Equipment"
+  },
+  "title": {
+    "translate": "menu.mob_manager.main.title",
+    "fallback": "Nice Mob Manager"
+  },
+  "pause": true,
+  "exit_action": {
+    "label": {
+      "translate": "gui.back"
+    },
+    "action": {
+      "type": "show_dialog",
+      "dialog": "mob_manager:main"
+    }
+  },
+  "columns": 1,
+  "actions": [
+    {
+      "label": {
+        "translate": "menu.mob_manager.mob_equipment_head.title",
+        "fallback": "Head"
+      },
+      "action": {
+        "type": "minecraft:run_command",
+        "command": "function mob_manager:dialog/dynamic/mob_equipment/slot with storage eden:settings mob_manager.mob_equipment.head"
+      }
+    },
+    {
+      "label": {
+        "translate": "menu.mob_manager.mob_equipment_chest.title",
+        "fallback": "Chest"
+      },
+      "action": {
+        "type": "minecraft:run_command",
+        "command": "function mob_manager:dialog/dynamic/mob_equipment/slot with storage eden:settings mob_manager.mob_equipment.chest"
+      }
+    },
+    {
+      "label": {
+        "translate": "menu.mob_manager.mob_equipment_legs.title",
+        "fallback": "Legs"
+      },
+      "action": {
+        "type": "minecraft:run_command",
+        "command": "function mob_manager:dialog/dynamic/mob_equipment/slot with storage eden:settings mob_manager.mob_equipment.legs"
+      }
+    },
+    {
+      "label": {
+        "translate": "menu.mob_manager.mob_equipment_feet.title",
+        "fallback": "Feet"
+      },
+      "action": {
+        "type": "minecraft:run_command",
+        "command": "function mob_manager:dialog/dynamic/mob_equipment/slot with storage eden:settings mob_manager.mob_equipment.feet"
+      }
+    },
+    {
+      "label": {
+        "translate": "menu.mob_manager.mob_equipment_weapon.title",
+        "fallback": "Mainhand"
+      },
+      "action": {
+        "type": "minecraft:run_command",
+        "command": "function mob_manager:dialog/dynamic/mob_equipment/slot with storage eden:settings mob_manager.mob_equipment.mainhand"
+      }
+    },
+    {
+      "label": {
+        "translate": "menu.mob_manager.mob_equipment_offhand.title",
+        "fallback": "Offhand"
+      },
+      "action": {
+        "type": "minecraft:run_command",
+        "command": "function mob_manager:dialog/dynamic/mob_equipment/slot with storage eden:settings mob_manager.mob_equipment.offhand"
+      }
+    },
+    {
+      "label": {
+        "translate": "menu.mob_manager.mob_equipment_misc.title",
+        "fallback": "Miscellaneous"
+      },
+      "action": {
+        "type": "minecraft:run_command",
+        "command": "function mob_manager:dialog/dynamic/mob_equipment/misc with storage eden:settings mob_manager.mob_equipment.misc"
+      }
+    }
+  ]
+}

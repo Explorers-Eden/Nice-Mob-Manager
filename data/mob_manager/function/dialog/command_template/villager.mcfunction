@@ -41,7 +41,17 @@ execute if data storage eden:settings mob_manager.villager_settings{villagename_
 execute if data storage eden:settings mob_manager.villager_settings{villagename_rename:"enabled"} run data modify storage eden:settings mob_manager.villager_settings.villagename_rename_initial set value "false"
 execute unless data storage eden:settings mob_manager.villager_settings{villagename_rename:"enabled"} run data modify storage eden:settings mob_manager.villager_settings.villagename_rename_initial set value "true"
 
-execute if data storage eden:settings mob_manager.villager_settings{villagecenter_healing:"enabled"} run data modify storage eden:settings mob_manager.villager_settings.villagecenter_healing_initial set value "false"
-execute unless data storage eden:settings mob_manager.villager_settings{villagecenter_healing:"enabled"} run data modify storage eden:settings mob_manager.villager_settings.villagecenter_healing_initial set value "true"
+execute if data storage eden:settings mob_manager.villager_settings{villagecenter_healing:"always"} run data modify storage eden:settings mob_manager.villager_settings.villagecenter_healing_daytime_initial set value "false"
+execute if data storage eden:settings mob_manager.villager_settings{villagecenter_healing:"always"} run data modify storage eden:settings mob_manager.villager_settings.villagecenter_healing_nighttime_initial set value "false"
+execute if data storage eden:settings mob_manager.villager_settings{villagecenter_healing:"always"} run data modify storage eden:settings mob_manager.villager_settings.villagecenter_healing_disabled_initial set value "false"
+execute if data storage eden:settings mob_manager.villager_settings{villagecenter_healing:"daytime"} run data modify storage eden:settings mob_manager.villager_settings.villagecenter_healing_daytime_initial set value "true"
+execute if data storage eden:settings mob_manager.villager_settings{villagecenter_healing:"daytime"} run data modify storage eden:settings mob_manager.villager_settings.villagecenter_healing_nighttime_initial set value "false"
+execute if data storage eden:settings mob_manager.villager_settings{villagecenter_healing:"daytime"} run data modify storage eden:settings mob_manager.villager_settings.villagecenter_healing_disabled_initial set value "false"
+execute if data storage eden:settings mob_manager.villager_settings{villagecenter_healing:"nighttime"} run data modify storage eden:settings mob_manager.villager_settings.villagecenter_healing_daytime_initial set value "false"
+execute if data storage eden:settings mob_manager.villager_settings{villagecenter_healing:"nighttime"} run data modify storage eden:settings mob_manager.villager_settings.villagecenter_healing_nighttime_initial set value "true"
+execute if data storage eden:settings mob_manager.villager_settings{villagecenter_healing:"nighttime"} run data modify storage eden:settings mob_manager.villager_settings.villagecenter_healing_disabled_initial set value "false"
+execute if data storage eden:settings mob_manager.villager_settings{villagecenter_healing:"disabled"} run data modify storage eden:settings mob_manager.villager_settings.villagecenter_healing_daytime_initial set value "false"
+execute if data storage eden:settings mob_manager.villager_settings{villagecenter_healing:"disabled"} run data modify storage eden:settings mob_manager.villager_settings.villagecenter_healing_nighttime_initial set value "false"
+execute if data storage eden:settings mob_manager.villager_settings{villagecenter_healing:"disabled"} run data modify storage eden:settings mob_manager.villager_settings.villagecenter_healing_disabled_initial set value "true"
 
 dialog show @s mob_manager:main

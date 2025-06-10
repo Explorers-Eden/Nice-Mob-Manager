@@ -6,6 +6,7 @@
       "mob_manager:keep_baby",
       "mob_manager:rarity_mobs/init",
       "mob_manager:rarity_mobs/particles/init",
-      "mob_manager:village/init"
+      "mob_manager:village/init",
+      "mob_manager:database/playerheads/update/init"
     ]
   }

@@ -36,14 +36,22 @@ function mob_manager:database/names/village/snow
 function mob_manager:database/names/village/swamp
 function mob_manager:database/names/village/taiga
 
-#add villager dialogues
-function mob_manager:database/dialogue/villager/desert
-function mob_manager:database/dialogue/villager/jungle
-function mob_manager:database/dialogue/villager/plains
-function mob_manager:database/dialogue/villager/savanna
-function mob_manager:database/dialogue/villager/snow
-function mob_manager:database/dialogue/villager/swamp
-function mob_manager:database/dialogue/villager/taiga
+#add villager dialoguess
+function mob_manager:database/dialogues/villager/desert
+function mob_manager:database/dialogues/villager/jungle
+function mob_manager:database/dialogues/villager/plains
+function mob_manager:database/dialogues/villager/savanna
+function mob_manager:database/dialogues/villager/snow
+function mob_manager:database/dialogues/villager/swamp
+function mob_manager:database/dialogues/villager/taiga
+
+#add mobheads
+function mob_manager:database/mobheads/drowned
+function mob_manager:database/mobheads/husk
+function mob_manager:database/mobheads/skeleton
+function mob_manager:database/mobheads/stray
+function mob_manager:database/mobheads/wither_skeleton
+function mob_manager:database/mobheads/zombie
 
 #add colors
 function mob_manager:database/hex_colors

@@ -112,8 +112,8 @@
         "fallback": "Customize settings for the random equipment mobs can spawn with."
       },
       "action": {
-        "type": "minecraft:run_command",
-        "command": "function mob_manager:dialog/dynamic/mob_equipment with storage eden:settings mob_manager.mob_equipment"
+        "type": "minecraft:show_dialog",
+        "dialog": "mob_manager:mob_equipment"
       }
     },
     {

@@ -1,1 +1,1 @@
-$data modify storage eden:temp dialogue.message set from storage eden:database dialogue.villager.$(type).$(id)
+$data modify storage eden:temp dialogues.message set from storage eden:database dialogues.villager.$(type).$(id)

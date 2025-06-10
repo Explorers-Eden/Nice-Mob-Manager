@@ -9,7 +9,6 @@
             "entity": "this",
             "predicate": {
               "type": "minecraft:villager",
-              "nbt": "{VillagerData: {profession:\"minecraft:none\"}}",
               "components": {
                 "minecraft:villager/variant": "minecraft:desert"
               }

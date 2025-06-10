@@ -300,16 +300,34 @@ $dialog show @s \
       "width": 256,\
       "label": {\
         "translate": "option.mob_manager.villager.villagecenter_healing",\
-        "fallback": "Healing Near Meeting Point At Day"\
+        "fallback": "Healing Near Meeting Point"\
       },\
       "options": [\
         {\
-          "id": "enabled",\
+          "id": "always",\
           "display": {\
-            "translate": "option.mob_manager.enabled",\
-            "fallback": "Enabled",\
+            "translate": "option.mob_manager.always",\
+            "fallback": "Always",\
             "color": "green"\
           }\
+        },\
+        {\
+          "id": "daytime",\
+          "display": {\
+            "translate": "option.mob_manager.daytime",\
+            "fallback": "Daytime",\
+            "color": "green"\
+          },\
+          "initial": $(villagecenter_healing_daytime_initial)\
+        },\
+        {\
+          "id": "nighttime",\
+          "display": {\
+            "translate": "option.mob_manager.nighttime",\
+            "fallback": "Nighttime",\
+            "color": "green"\
+          },\
+          "initial": $(villagecenter_healing_nighttime_initial)\
         },\
         {\
           "id": "disabled",\
@@ -318,7 +336,7 @@ $dialog show @s \
             "fallback": "Disabled",\
             "color": "red"\
           },\
-          "initial": $(villagecenter_healing_initial)\
+          "initial": $(villagecenter_healing_disabled_initial)\
         }\
       ]\
     },\

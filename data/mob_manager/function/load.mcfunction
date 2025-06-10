@@ -14,6 +14,8 @@ scoreboard objectives add mob_manager.rarity_mobs.common.timer dummy
 scoreboard objectives add mob_manager.rarity_mobs.rare.timer dummy
 scoreboard objectives add mob_manager.rarity_mobs.legendary.timer dummy
 scoreboard objectives add mob_manager.rarity_mobs.mythic.timer dummy
+scoreboard objectives add mob_manager.playerhead.id dummy
+scoreboard objectives add mob_manager.playerhead.update minecraft.custom:minecraft.leave_game
 scoreboard objectives add mob_manager.used.bell minecraft.custom:minecraft.bell_ring
 
 ##apply default values on first load

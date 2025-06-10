@@ -17,7 +17,7 @@ execute as @e[type=villager,tag=!mob_manager.settings.exclude,tag=mob_manager.se
 execute as @e[type=villager,tag=!mob_manager.settings.exclude,tag=mob_manager.settings.villagename.applied] at @s unless entity @e[type=armor_stand,tag=mob_manager.village.name,distance=..128] run tag @s remove mob_manager.settings.villagename.applied
 
 #heal villagers when enabled and near meeting point
-execute if data storage eden:settings mob_manager.villager_settings{villagecenter_healing:"enabled"} run function mob_manager:village/healing with storage eden:settings mob_manager.villager_settings
+execute unless data storage eden:settings mob_manager.villager_settings{villagecenter_healing:"disabled"} run function mob_manager:village/healing with storage eden:settings mob_manager.villager_settings
 
 #bell particles
 execute as @e[type=armor_stand,tag=mob_manager.village.name] at @s run particle minecraft:wax_on ~ ~.5 ~ .4 .3 .4 .5 1
@@ -25,3 +25,7 @@ execute as @e[type=armor_stand,tag=mob_manager.village.name] at @s run particle 
 #rename triggers
 execute if data storage eden:settings mob_manager.villager_settings{villagename_rename:"enabled"} as @a[scores={mob_manager.used.bell=1..}] at @s if items entity @s weapon.mainhand minecraft:name_tag run function mob_manager:village/rename/check_hand
 scoreboard players set @a[scores={mob_manager.used.bell=1..}] mob_manager.used.bell 0
+
+#display village name message
+execute unless data storage eden:settings mob_manager.villager_settings{villagename_msg:"disabled"} as @e[type=player,tag=!at_village] at @s if entity @e[type=armor_stand,tag=mob_manager.village.name,distance=..96] run function mob_manager:village/message/entering with entity @n[type=armor_stand,tag=mob_manager.village.name]
+execute as @e[type=player,tag=!not_at_village] at @s unless entity @e[type=armor_stand,tag=mob_manager.village.name,distance=..96] run function mob_manager:village/message/exiting

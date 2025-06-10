@@ -382,6 +382,20 @@ $dialog show @s \
       "end":100,\
       "step":1,\
       "initial":$(brownmoospawning_initial)\
+    },\
+    {\
+      "type":"minecraft:number_range",\
+      "key":"lefthanded",\
+      "width": 256,\
+      "label":{\
+        "translate":"menu.mob_manager.option.lefthanded",\
+        "fallback":"Chance For Mobs To Be Left Handed"\
+      },\
+      "label_format":"options.percent_value",\
+      "start":0,\
+      "end":100,\
+      "step":1,\
+      "initial":$(lefthanded_initial)\
     }\
   ],\
   "can_close_with_escape":true,\

@@ -48,4 +48,7 @@ execute store result storage eden:settings mob_manager.misc.brownmoospawning flo
 $data modify storage eden:settings mob_manager.misc.immunezombie_initial set value $(immunezombie)
 execute store result storage eden:settings mob_manager.misc.immunezombie float 0.01 run data get storage eden:settings mob_manager.misc.immunezombie_initial
 
+$data modify storage eden:settings mob_manager.misc.lefthanded_initial set value $(lefthanded)
+execute store result storage eden:settings mob_manager.misc.lefthanded float 0.01 run data get storage eden:settings mob_manager.misc.lefthanded_initial
+
 dialog show @s mob_manager:main

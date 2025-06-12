@@ -16,6 +16,7 @@ execute as @s[type=shulker] if data storage eden:settings mob_manager.misc{shulk
 $data modify entity @s DeathLootTable set value 'eden:entity/default/$(type)'
 
 $attribute @s minecraft:waypoint_transmit_range base set $(locator_range)
+$data modify entity @s data.mob_manager.locator_bar set value {icon:"$(type)",color:"$(locator_color)"}
 $execute if data storage eden:settings mob_manager.misc{locator_assets:"disabled"} run waypoint modify @s color hex $(locator_color)
 $execute if data storage eden:settings mob_manager.misc{locator_assets:"enabled"} run waypoint modify @s style set mob_manager:$(type)
 execute if data storage eden:settings mob_manager.misc{locator_assets:"enabled"} run waypoint modify @s color white

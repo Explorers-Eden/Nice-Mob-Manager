@@ -191,7 +191,7 @@
       },
       "action": {
         "type": "minecraft:show_dialog",
-        "dialog": "eden:info"
+        "dialog": "mob_manager:info"
       }
     }
   ]

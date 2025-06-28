@@ -90,6 +90,15 @@
     },
     {
       "label": {
+        "translate": "entity.minecraft.creaking"
+      },
+      "action": {
+        "type": "minecraft:run_command",
+        "command": "function mob_manager:dialog/dynamic/hostile with storage eden:settings mob_manager.creaking"
+      }
+    },
+    {
+      "label": {
         "translate": "entity.minecraft.elder_guardian"
       },
       "action": {

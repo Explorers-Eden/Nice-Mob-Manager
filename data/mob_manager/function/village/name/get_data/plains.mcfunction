@@ -3,7 +3,7 @@ data modify storage eden:temp village.plains.y set from entity @s Brain.memories
 data modify storage eden:temp village.plains.z set from entity @s Brain.memories.minecraft:meeting_point.value.pos[2]
 
 execute store result storage eden:temp village.plains.id int 1 run random value 1..100
-$data modify storage eden:temp village.plains.name set from storage eden:database village.plains.name.$(id)
+$data modify storage eden:temp village.plains.name set from storage eden:database names.village.plains.name.$(id)
 
 data modify storage eden:temp village.plains.color set from storage eden:database color.villager.plains
 data modify storage eden:temp village.plains.waypoint_range set from storage eden:settings mob_manager.villager_settings.locator_range

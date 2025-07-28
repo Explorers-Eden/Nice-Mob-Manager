@@ -130,6 +130,81 @@ $dialog show @s \
           "initial":$(bannershield_initial)\
         }\
       ]\
+    },\
+    {\
+      "type":"minecraft:single_option",\
+      "key":"vex_equip",\
+      "width": 256,\
+      "label":{\
+        "translate":"menu.mob_manager.option.vex_equip",\
+        "fallback":"Vex Weapon"\
+      },\
+      "options":[\
+        {\
+          "id":"air",\
+          "display":{\
+            "translate":"option.mob_manager.none",\
+            "fallback":"None",\
+            "color":"white"\
+          }\
+        },\
+        {\
+          "id":"stick",\
+          "display":{\
+            "translate":"item.minecraft.stick",\
+            "color":"white"\
+          },\
+          "initial":$(vex_equip_stick_initial)\
+        },\
+        {\
+          "id":"wooden_sword",\
+          "display":{\
+            "translate":"item.minecraft.wooden_sword",\
+            "color":"white"\
+          },\
+          "initial":$(vex_equip_wooden_sword_initial)\
+        },\
+        {\
+          "id":"stone_sword",\
+          "display":{\
+            "translate":"item.minecraft.stone_sword",\
+            "color":"white"\
+          },\
+          "initial":$(vex_equip_stone_sword_initial)\
+        },\
+        {\
+          "id":"iron_sword",\
+          "display":{\
+            "translate":"item.minecraft.iron_sword",\
+            "color":"white"\
+          },\
+          "initial":$(vex_equip_iron_sword_initial)\
+        },\
+        {\
+          "id":"golden_sword",\
+          "display":{\
+            "translate":"item.minecraft.golden_sword",\
+            "color":"white"\
+          },\
+          "initial":$(vex_equip_golden_sword_initial)\
+        },\
+        {\
+          "id":"diamond_sword",\
+          "display":{\
+            "translate":"item.minecraft.diamond_sword",\
+            "color":"white"\
+          },\
+          "initial":$(vex_equip_diamond_sword_initial)\
+        },\
+        {\
+          "id":"netherite_sword",\
+          "display":{\
+            "translate":"item.minecraft.netherite_sword",\
+            "color":"white"\
+          },\
+          "initial":$(vex_equip_netherite_sword_initial)\
+        }\
+      ]\
     }\
   ],\
   "can_close_with_escape":true,\

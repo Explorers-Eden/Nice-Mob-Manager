@@ -8,6 +8,7 @@
       "mob_manager:rarity_mobs/particles/init",
       "mob_manager:village/init",
       "mob_manager:database/playerheads/update/init",
-      "mob_manager:locator_bar/init"
+      "mob_manager:locator_bar/init",
+      "mob_manager:check_gamerules"
     ]
   }

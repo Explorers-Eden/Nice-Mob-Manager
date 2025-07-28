@@ -35,5 +35,6 @@ execute if predicate {"condition":"minecraft:value_check","value":{"type":"minec
 execute if predicate {"condition":"minecraft:value_check","value":{"type":"minecraft:storage","storage":"eden:settings","path":"mob_manager.mob_equipment.mainhand.equipchance"},"range":{"min":0.01}} run function mob_manager:mob_equipment/equip_weapon with storage eden:settings mob_manager.mob_equipment.mainhand
 execute if predicate {"condition":"minecraft:value_check","value":{"type":"minecraft:storage","storage":"eden:settings","path":"mob_manager.mob_equipment.offhand.equipchance"},"range":{"min":0.01}} run function mob_manager:mob_equipment/equip_weapon with storage eden:settings mob_manager.mob_equipment.offhand
 
+data modify storage eden:temp mob_manager.vex_equip set from storage eden:settings mob_manager.mob_equipment.misc.vex_equip
 
 function mob_manager:mob_settings/hostile_mobs/exec with storage eden:temp mob_manager

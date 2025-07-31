@@ -49,6 +49,34 @@ $dialog show @s \
     },\
     {\
       "type":"minecraft:single_option",\
+      "key":"mobs_on_locator_bar",\
+      "width": 256,\
+      "label":{\
+        "translate":"menu.mob_manager.option.mobs_on_locator_bar",\
+        "fallback":"Mobs Show On Locator Bar"\
+      },\
+      "options":[\
+        {\
+          "id":"enabled",\
+          "display":{\
+            "translate":"option.mob_manager.enabled",\
+            "fallback":"Enabled",\
+            "color":"green"\
+          }\
+        },\
+        {\
+          "id":"disabled",\
+          "display":{\
+            "translate":"option.mob_manager.disabled",\
+            "fallback":"Disabled",\
+            "color":"red"\
+          },\
+          "initial":$(mobs_on_locator_bar_initial)\
+        }\
+      ]\
+    },\
+    {\
+      "type":"minecraft:single_option",\
       "key":"need_sky",\
       "width": 256,\
       "label":{\

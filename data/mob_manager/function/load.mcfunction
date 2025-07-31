@@ -34,3 +34,10 @@ data modify storage eden:settings mob_manager.mob_equipment.misc merge value {\
     vex_equip_netherite_sword_initial:"false",\
     command_template:"function mob_manager:dialog/command_template/mob_equipment/misc {vex_equip:$(vex_equip),leathercolor:$(leathercolor),trim:$(trim),bannershield:$(bannershield),playerheads:$(playerheads),mobheads:$(mobheads)}"\
     }
+
+##v1.8 added options
+data modify storage eden:settings mob_manager.misc merge value {\
+mobs_on_locator_bar:"enabled",\
+mobs_on_locator_bar_initial:"false",\
+command_template:"function mob_manager:dialog/command_template/misc {mobs_on_locator_bar:$(mobs_on_locator_bar),lefthanded:$(lefthanded),shulkercolor:$(shulkercolor),rabbitcarrot:$(rabbitcarrot),locator_assets:$(locator_assets),snifferbrain:$(snifferbrain),immunezombie:$(immunezombie),creeperfuse:$(creeperfuse),skeletonhorsetrap:$(skeletonhorsetrap),irongolemanger:$(irongolemanger),brownmoospawning:$(brownmoospawning),illusionerspawning:$(illusionerspawning),babymountspawning:$(babymountspawning),killerrabbitspawning:$(killerrabbitspawning),jebcolor:$(jebcolor),jebspawning:$(jebspawning),egglay:$(egglay),need_sky:$(need_sky)}"\
+}

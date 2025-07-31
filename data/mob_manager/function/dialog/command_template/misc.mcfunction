@@ -1,4 +1,7 @@
-$data modify storage eden:settings mob_manager.misc merge value {shulkercolor:$(shulkercolor),rabbitcarrot:$(rabbitcarrot),locator_assets:$(locator_assets),snifferbrain:$(snifferbrain),creeperfuse:$(creeperfuse),skeletonhorsetrap:$(skeletonhorsetrap),irongolemanger:$(irongolemanger),jebcolor:$(jebcolor),egglay:$(egglay),need_sky:$(need_sky)}
+$data modify storage eden:settings mob_manager.misc merge value {mobs_on_locator_bar:$(mobs_on_locator_bar),shulkercolor:$(shulkercolor),rabbitcarrot:$(rabbitcarrot),locator_assets:$(locator_assets),snifferbrain:$(snifferbrain),creeperfuse:$(creeperfuse),skeletonhorsetrap:$(skeletonhorsetrap),irongolemanger:$(irongolemanger),jebcolor:$(jebcolor),egglay:$(egglay),need_sky:$(need_sky)}
+
+execute if data storage eden:settings mob_manager.misc{mobs_on_locator_bar:"enabled"} run data modify storage eden:settings mob_manager.misc.mobs_on_locator_bar_initial set value "false"
+execute unless data storage eden:settings mob_manager.misc{mobs_on_locator_bar:"enabled"} run data modify storage eden:settings mob_manager.misc.mobs_on_locator_bar_initial set value "true"
 
 execute if data storage eden:settings mob_manager.misc{snifferbrain:"enabled"} run data modify storage eden:settings mob_manager.misc.snifferbrain_initial set value "false"
 execute unless data storage eden:settings mob_manager.misc{snifferbrain:"enabled"} run data modify storage eden:settings mob_manager.misc.snifferbrain_initial set value "true"

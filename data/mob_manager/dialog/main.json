@@ -76,7 +76,7 @@
     },
     {
       "label": {
-        "translate": "menu.mob_manager.rarity_mobs",
+        "translate": "menu.mob_manager.rarity_mobs.title",
         "fallback": "Rarity Mobs"
       },
       "tooltip": {
@@ -104,7 +104,7 @@
     },
     {
       "label": {
-        "translate": "menu.mob_manager.mob_equipment",
+        "translate": "menu.mob_manager.mob_equipment.title",
         "fallback": "Mob Equipment"
       },
       "tooltip": {
@@ -164,7 +164,7 @@
         "fallback": "Vanilla Gamerules"
       },
       "tooltip": {
-        "translate": "option.mob_manager.main.rarity_mobs.tooltip",
+        "translate": "option.mob_manager.main.vanilla_gamerules.tooltip",
         "fallback": "Customize vanilla gamerules."
       },
       "action": {
@@ -181,17 +181,6 @@
       "action": {
         "type": "minecraft:show_dialog",
         "dialog": "mob_manager:restore_default"
-      }
-    },
-    {
-      "label": {
-        "translate": "menu.eden.info.title",
-        "fallback": "Explorer's Eden",
-        "color": "gray"
-      },
-      "action": {
-        "type": "minecraft:show_dialog",
-        "dialog": "mob_manager:info"
       }
     }
   ]

@@ -24,7 +24,7 @@ $dialog show @s \
       "key":"husksand",\
       "width": 256,\
       "label":{\
-        "translate":"menu.mob_manager.option.husksand",\
+        "translate":"option.mob_manager.husksand",\
         "fallback":"Sand From Husk"\
       },\
       "label_format":"options.percent_value",\
@@ -38,7 +38,7 @@ $dialog show @s \
       "key":"strayice",\
       "width": 256,\
       "label":{\
-        "translate":"menu.mob_manager.option.strayice",\
+        "translate":"option.mob_manager.strayice",\
         "fallback":"Ice From Stray"\
       },\
       "label_format":"options.percent_value",\
@@ -52,7 +52,7 @@ $dialog show @s \
       "key":"beehoneycomb",\
       "width": 256,\
       "label":{\
-        "translate":"menu.mob_manager.option.beehoneycomb",\
+        "translate":"option.mob_manager.beehoneycomb",\
         "fallback":"Honeycomb From Bee"\
       },\
       "label_format":"options.percent_value",\
@@ -66,7 +66,7 @@ $dialog show @s \
       "key":"villageremerald",\
       "width": 256,\
       "label":{\
-        "translate":"menu.mob_manager.option.villageremerald",\
+        "translate":"option.mob_manager.villageremerald",\
         "fallback":"Emerald From Villager"\
       },\
       "label_format":"options.percent_value",\
@@ -80,7 +80,7 @@ $dialog show @s \
       "key":"elderguardianseaheart",\
       "width": 256,\
       "label":{\
-        "translate":"menu.mob_manager.option.elderguardianseaheart",\
+        "translate":"option.mob_manager.elderguardianseaheart",\
         "fallback":"Heart of the Sea From Elder Guardian"\
       },\
       "label_format":"options.percent_value",\
@@ -94,7 +94,7 @@ $dialog show @s \
       "key":"piglingold",\
       "width": 256,\
       "label":{\
-        "translate":"menu.mob_manager.option.piglingold",\
+        "translate":"option.mob_manager.piglingold",\
         "fallback":"Gold Ingot From Piglin"\
       },\
       "label_format":"options.percent_value",\
@@ -108,7 +108,7 @@ $dialog show @s \
       "key":"piglinbrutegoldblock",\
       "width": 256,\
       "label":{\
-        "translate":"menu.mob_manager.option.piglinbrutegoldblock",\
+        "translate":"option.mob_manager.piglinbrutegoldblock",\
         "fallback":"Gold Block From Piglin Brute"\
       },\
       "label_format":"options.percent_value",\
@@ -122,7 +122,7 @@ $dialog show @s \
       "key":"allayshard",\
       "width": 256,\
       "label":{\
-        "translate":"menu.mob_manager.option.allayshard",\
+        "translate":"option.mob_manager.allayshard",\
         "fallback":"Amethyst Shard From Allay"\
       },\
       "label_format":"options.percent_value",\
@@ -136,7 +136,7 @@ $dialog show @s \
       "key":"goatleather",\
       "width": 256,\
       "label":{\
-        "translate":"menu.mob_manager.option.goatleather",\
+        "translate":"option.mob_manager.goatleather",\
         "fallback":"Leather From Goats"\
       },\
       "label_format":"options.percent_value",\
@@ -150,7 +150,7 @@ $dialog show @s \
       "key":"creakingresin",\
       "width": 256,\
       "label":{\
-        "translate":"menu.mob_manager.option.creakingresin",\
+        "translate":"option.mob_manager.creakingresin",\
         "fallback":"Resin Clump From Creaking"\
       },\
       "label_format":"options.percent_value",\
@@ -164,7 +164,7 @@ $dialog show @s \
       "key":"foxsweetberries",\
       "width": 256,\
       "label":{\
-        "translate":"menu.mob_manager.option.foxsweetberries",\
+        "translate":"option.mob_manager.foxsweetberries",\
         "fallback":"Sweet Berries From Foxes"\
       },\
       "label_format":"options.percent_value",\
@@ -178,7 +178,7 @@ $dialog show @s \
       "key":"traderlead",\
       "width": 256,\
       "label":{\
-        "translate":"menu.mob_manager.option.traderlead",\
+        "translate":"option.mob_manager.traderlead",\
         "fallback":"Lead From Wandering Trader"\
       },\
       "label_format":"options.percent_value",\
@@ -192,7 +192,7 @@ $dialog show @s \
       "key":"batmembrane",\
       "width": 256,\
       "label":{\
-        "translate":"menu.mob_manager.option.batmembrane",\
+        "translate":"option.mob_manager.batmembrane",\
         "fallback":"Phantom Membrane From Bat"\
       },\
       "label_format":"options.percent_value",\
@@ -206,7 +206,7 @@ $dialog show @s \
       "key":"dragonegg",\
       "width": 256,\
       "label":{\
-        "translate":"menu.mob_manager.option.dragonegg",\
+        "translate":"option.mob_manager.dragonegg",\
         "fallback":"Dragon Egg From Ender Dragon"\
       },\
       "label_format":"options.percent_value",\
@@ -220,7 +220,7 @@ $dialog show @s \
       "key":"dragonelytra",\
       "width": 256,\
       "label":{\
-        "translate":"menu.mob_manager.option.dragonelytra",\
+        "translate":"option.mob_manager.dragonelytra",\
         "fallback":"Elytra From Ender Dragon"\
       },\
       "label_format":"options.percent_value",\
@@ -234,7 +234,7 @@ $dialog show @s \
       "key":"shulkerdrop",\
       "width": 256,\
       "label":{\
-        "translate":"menu.mob_manager.option.shulkerdrop",\
+        "translate":"option.mob_manager.shulkerdrop",\
         "fallback":"2nd Shulker Shell From Shulker"\
       },\
       "label_format":"options.percent_value",\

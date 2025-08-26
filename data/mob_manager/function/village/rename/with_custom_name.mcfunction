@@ -8,4 +8,4 @@ execute if data entity @s SelectedItem.components."minecraft:custom_name".text r
 
 tag @n[type=armor_stand,tag=mob_manager.village.name,distance=..16] add village.name.custom
 
-execute as @s[gamemode=!creative] run item modify entity @s weapon.mainhand eden:used_item
+execute as @s[gamemode=!creative] run item modify entity @s weapon.mainhand mob_manager:used_item

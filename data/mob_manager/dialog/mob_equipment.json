@@ -11,13 +11,13 @@
       }
     },
     "description": {
-      "translate": "menu.mob_manager.mob_equipment.description",
+      "translate": "menu.mob_manager.main.description",
       "fallback": "Select An Option To Configure:"
     }
   },
   "can_close_with_escape": true,
   "external_title": {
-    "translate": "menu.mob_manager.rarity_mobs.title",
+    "translate": "menu.mob_manager.mob_equipment.title",
     "fallback": "Mob Equipment"
   },
   "title": {
@@ -38,7 +38,7 @@
   "actions": [
     {
       "label": {
-        "translate": "menu.mob_manager.mob_equipment_head.title",
+        "translate": "menu.mob_manager.mob_equipment.head.title",
         "fallback": "Head"
       },
       "action": {
@@ -48,7 +48,7 @@
     },
     {
       "label": {
-        "translate": "menu.mob_manager.mob_equipment_chest.title",
+        "translate": "menu.mob_manager.mob_equipment.chest.title",
         "fallback": "Chest"
       },
       "action": {
@@ -58,7 +58,7 @@
     },
     {
       "label": {
-        "translate": "menu.mob_manager.mob_equipment_legs.title",
+        "translate": "menu.mob_manager.mob_equipment.legs.title",
         "fallback": "Legs"
       },
       "action": {
@@ -68,7 +68,7 @@
     },
     {
       "label": {
-        "translate": "menu.mob_manager.mob_equipment_feet.title",
+        "translate": "menu.mob_manager.mob_equipment.feet.title",
         "fallback": "Feet"
       },
       "action": {
@@ -78,7 +78,7 @@
     },
     {
       "label": {
-        "translate": "menu.mob_manager.mob_equipment_weapon.title",
+        "translate": "menu.mob_manager.mob_equipment.weapon.title",
         "fallback": "Mainhand"
       },
       "action": {
@@ -88,7 +88,7 @@
     },
     {
       "label": {
-        "translate": "menu.mob_manager.mob_equipment_offhand.title",
+        "translate": "menu.mob_manager.mob_equipment.offhand.title",
         "fallback": "Offhand"
       },
       "action": {
@@ -98,7 +98,7 @@
     },
     {
       "label": {
-        "translate": "menu.mob_manager.mob_equipment_misc.title",
+        "translate": "menu.mob_manager.mob_equipment.misc.title",
         "fallback": "Miscellaneous"
       },
       "action": {

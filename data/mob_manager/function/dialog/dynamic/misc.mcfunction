@@ -24,7 +24,7 @@ $dialog show @s \
       "key":"locator_assets",\
       "width": 256,\
       "label":{\
-        "translate":"menu.mob_manager.option.locator_assets",\
+        "translate":"option.mob_manager.locator_assets",\
         "fallback":"Spawn Egg Locator Bar Icons"\
       },\
       "options":[\
@@ -52,7 +52,7 @@ $dialog show @s \
       "key":"mobs_on_locator_bar",\
       "width": 256,\
       "label":{\
-        "translate":"menu.mob_manager.option.mobs_on_locator_bar",\
+        "translate":"option.mob_manager.mobs_on_locator_bar",\
         "fallback":"Mobs Show On Locator Bar"\
       },\
       "options":[\
@@ -80,7 +80,7 @@ $dialog show @s \
       "key":"need_sky",\
       "width": 256,\
       "label":{\
-        "translate":"menu.mob_manager.option.need_sky",\
+        "translate":"option.mob_manager.need_sky",\
         "fallback":"Scaling Only On Surface"\
       },\
       "options":[\
@@ -108,7 +108,7 @@ $dialog show @s \
       "key":"skeletonhorsetrap",\
       "width": 256,\
       "label":{\
-        "translate":"menu.mob_manager.option.skeletonhorsetrap",\
+        "translate":"option.mob_manager.skeletonhorsetrap",\
         "fallback":"Skeleton Horse Traps"\
       },\
       "options":[\
@@ -136,7 +136,7 @@ $dialog show @s \
       "key":"shulkercolor",\
       "width": 256,\
       "label":{\
-        "translate":"menu.mob_manager.option.shulkercolor",\
+        "translate":"option.mob_manager.shulkercolor",\
         "fallback":"Random Shulker Color"\
       },\
       "options":[\
@@ -164,7 +164,7 @@ $dialog show @s \
       "key":"irongolemanger",\
       "width": 256,\
       "label":{\
-        "translate":"menu.mob_manager.option.irongolemanger",\
+        "translate":"option.mob_manager.irongolemanger",\
         "fallback":"Iron Golem Angry At Player"\
       },\
       "options":[\
@@ -192,7 +192,7 @@ $dialog show @s \
       "key":"egglay",\
       "width": 256,\
       "label":{\
-        "translate":"menu.mob_manager.option.egglay",\
+        "translate":"option.mob_manager.egglay",\
         "fallback":"Chickens Lay Eggs"\
       },\
       "options":[\
@@ -220,7 +220,7 @@ $dialog show @s \
       "key":"creeperfuse",\
       "width": 256,\
       "label":{\
-        "translate":"menu.mob_manager.option.creeperfuse",\
+        "translate":"option.mob_manager.creeperfuse",\
         "fallback":"Size Relative Creeper Fuse"\
       },\
       "options":[\
@@ -248,7 +248,7 @@ $dialog show @s \
       "key":"snifferbrain",\
       "width": 256,\
       "label":{\
-        "translate":"menu.mob_manager.option.snifferbrain",\
+        "translate":"option.mob_manager.snifferbrain",\
         "fallback":"Sniffers Track Digs"\
       },\
       "options":[\
@@ -276,7 +276,7 @@ $dialog show @s \
       "key":"rabbitcarrot",\
       "width": 256,\
       "label":{\
-        "translate":"menu.mob_manager.option.rabbitcarrot",\
+        "translate":"option.mob_manager.rabbitcarrot",\
         "fallback":"Rabbits Eat Carrot Plants"\
       },\
       "options":[\
@@ -304,7 +304,7 @@ $dialog show @s \
       "key":"jebcolor",\
       "width": 256,\
       "label":{\
-        "translate":"menu.mob_manager.option.jebcolor",\
+        "translate":"option.mob_manager.jebcolor",\
         "fallback":"Random Jeb Sheep Wool Color"\
       },\
       "options":[\
@@ -332,7 +332,7 @@ $dialog show @s \
       "key":"jebspawning",\
       "width": 256,\
       "label":{\
-        "translate":"menu.mob_manager.option.jebspawning",\
+        "translate":"option.mob_manager.jebspawning",\
         "fallback":"Jeb Sheep Spawn Chance"\
       },\
       "label_format":"options.percent_value",\
@@ -346,7 +346,7 @@ $dialog show @s \
       "key":"killerrabbitspawning",\
       "width": 256,\
       "label":{\
-        "translate":"menu.mob_manager.option.jebspawning",\
+        "translate":"option.mob_manager.killerrabbit",\
         "fallback":"Killer Rabbit Spawn Chance"\
       },\
       "label_format":"options.percent_value",\
@@ -360,7 +360,7 @@ $dialog show @s \
       "key":"babymountspawning",\
       "width": 256,\
       "label":{\
-        "translate":"menu.mob_manager.option.babymountspawning",\
+        "translate":"option.mob_manager.babymountspawning",\
         "fallback":"Baby Mount Spawn Chance"\
       },\
       "label_format":"options.percent_value",\
@@ -374,7 +374,7 @@ $dialog show @s \
       "key":"illusionerspawning",\
       "width": 256,\
       "label":{\
-        "translate":"menu.mob_manager.option.illusionerspawning",\
+        "translate":"option.mob_manager.illusionerspawning",\
         "fallback":"Evoker To Illusioner Chance"\
       },\
       "label_format":"options.percent_value",\
@@ -388,7 +388,7 @@ $dialog show @s \
       "key":"immunezombie",\
       "width": 256,\
       "label":{\
-        "translate":"menu.mob_manager.option.immunezombie",\
+        "translate":"option.mob_manager.immunezombie",\
         "fallback":"Immune To Zombification Chance"\
       },\
       "label_format":"options.percent_value",\
@@ -402,7 +402,7 @@ $dialog show @s \
       "key":"brownmoospawning",\
       "width": 256,\
       "label":{\
-        "translate":"menu.mob_manager.option.brownmoospawning",\
+        "translate":"option.mob_manager.brownmoospawning",\
         "fallback":"Brown Mooshroom Spawn Chance"\
       },\
       "label_format":"options.percent_value",\
@@ -416,7 +416,7 @@ $dialog show @s \
       "key":"lefthanded",\
       "width": 256,\
       "label":{\
-        "translate":"menu.mob_manager.option.lefthanded",\
+        "translate":"option.mob_manager.lefthanded",\
         "fallback":"Chance For Mobs To Be Left Handed"\
       },\
       "label_format":"options.percent_value",\

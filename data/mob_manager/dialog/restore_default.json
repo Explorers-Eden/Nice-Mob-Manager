@@ -40,7 +40,7 @@
   },
   "no": {
     "label": {
-      "translate": "menu.mob_manager.back",
+      "translate":"gui.back",
       "fallback": "Back"
     },
     "action": {

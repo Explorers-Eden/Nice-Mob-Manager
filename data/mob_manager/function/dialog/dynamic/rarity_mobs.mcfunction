@@ -18,11 +18,11 @@ $dialog show @s \
         "fallback":"Configure "\
         },\
         {\
-          "translate": "menu.mob_manager.rarity_mobs.$(type)",\
+          "translate": "menu.mob_manager.rarity_mobs_$(type).title",\
           "fallback": "$(cap_type)"\
         },\
         {\
-        "translate":"menu.mob_manager.configure_mob.description_sufix",\
+        "translate":"menu.mob_manager.configure_rarity_mob.description_sufix",\
         "fallback":" Mob Settings:"\
         }\
       ]\
@@ -117,7 +117,7 @@ $dialog show @s \
       "key": "health",\
       "width": 256,\
       "label": {\
-        "translate": "option.mob_manager.rarity_mobs.health",\
+        "translate": "option.mob_manager.health",\
         "fallback": "Health"\
       },\
       "start": 1,\
@@ -152,8 +152,8 @@ $dialog show @s \
   "pause": true,\
   "after_action": "close",\
   "external_title": {\
-    "translate": "menu.mob_manager.rarity_mobs_common.title",\
-    "fallback": "Common"\
+    "translate": "menu.mob_manager.rarity_mobs_$(type).title",\
+    "fallback": "$(cap_type)"\
   },\
   "title": {\
     "translate": "menu.mob_manager.main.title",\

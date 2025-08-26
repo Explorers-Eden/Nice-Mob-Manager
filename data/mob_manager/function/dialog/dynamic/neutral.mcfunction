@@ -34,7 +34,7 @@ $dialog show @s \
       "key":"mobhead",\
       "width": 256,\
       "label":{\
-        "translate":"menu.mob_manager.option.mobhead",\
+        "translate":"option.mob_manager.mobhead",\
         "fallback":"Mobhead Drop Chance"\
       },\
       "label_format":"options.percent_value",\

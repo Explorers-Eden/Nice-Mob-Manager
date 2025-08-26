@@ -1,0 +1,9 @@
+## Changes:
+- restructured some code
+- removed info dialog
+- mobs showing on locator bar is now disabled by default
+- dis-/enabling the option for mobs to show up on locator bar now also affects existing mobs (spawned after this update)
+- finished lang file for en_us: Translations can be submitted on our [Crowdin Page](https://crowdin.com/project/explorers-eden)
+
+## Fixes:
+- some dialog entries having wrong translation keys

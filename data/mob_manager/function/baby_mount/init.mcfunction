@@ -7,8 +7,8 @@ execute if data entity @s {IsChickenJockey:1b} run return run tag @s add mob_man
 function mob_manager:baby_mount/get_color
 function mob_manager:baby_mount/get_type
 
-execute as @s[type=#eden:has_variant] run data modify storage eden:temp baby_mount.variant set from entity @s variant
+execute as @s[type=#mob_manager:has_variant] run data modify storage eden:temp baby_mount.variant set from entity @s variant
 
-execute as @s[type=#eden:has_variant] run return run function mob_manager:baby_mount/exec_w_variant with storage eden:temp baby_mount
-execute as @s[type=!#eden:has_variant] run return run function mob_manager:baby_mount/exec_wo_variant with storage eden:temp baby_mount
+execute as @s[type=#mob_manager:has_variant] run return run function mob_manager:baby_mount/exec_w_variant with storage eden:temp baby_mount
+execute as @s[type=!#mob_manager:has_variant] run return run function mob_manager:baby_mount/exec_wo_variant with storage eden:temp baby_mount
 

@@ -13,8 +13,8 @@ $dialog show @s \
         }\
       },\
       "description":{\
-        "translate":"menu.mob_manager.misc.description",\
-        "fallback":"Configure $(capslot) Slot:"\
+        "translate":"menu.mob_manager.equipment.misc.description",\
+        "fallback":"Configure Slot:"\
       }\
     }\
   ],\
@@ -36,7 +36,7 @@ $dialog show @s \
       "width": 256,\
       "label":{\
         "translate":"option.mob_manager.equipchance",\
-        "fallback":"$(capslot) Equipment Chance"\
+        "fallback":"Equipment Chance"\
       },\
       "label_format":"options.percent_value",\
       "start":0,\
@@ -50,7 +50,7 @@ $dialog show @s \
       "width": 256,\
       "label": {\
         "translate": "option.mob_manager.equiploottable",\
-        "fallback": "Loot Table For $(capslot) Item"\
+        "fallback": "Loot Table For Item"\
       },\
       "initial": "$(equiploottable)",\
       "max_length": 1024\

@@ -21,3 +21,6 @@ scoreboard objectives add mob_manager.used.bell minecraft.custom:minecraft.bell_
 ##apply default values on first load
 execute unless data storage eden:settings mob_manager.misc run function mob_manager:default_values
 data modify storage eden:database names.village set from storage eden:database village
+
+##set data pack version
+data modify storage eden:datapack nice_mob_manager.version set value "1.9"

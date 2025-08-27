@@ -46,7 +46,7 @@
                   "condition": "minecraft:random_chance",
                   "chance": {
                     "type": "minecraft:storage",
-                    "storage": "mob_manager:settings",
+                    "storage": "eden:settings",
                     "path": "mob_manager.shulker.mobhead"
                   }
                 }
@@ -91,7 +91,7 @@
                   "condition": "minecraft:random_chance",
                   "chance": {
                     "type": "minecraft:storage",
-                    "storage": "mob_manager:settings",
+                    "storage": "eden:settings",
                     "path": "mob_manager.shulker.mobhead"
                   }
                 }
@@ -136,7 +136,7 @@
                   "condition": "minecraft:random_chance",
                   "chance": {
                     "type": "minecraft:storage",
-                    "storage": "mob_manager:settings",
+                    "storage": "eden:settings",
                     "path": "mob_manager.shulker.mobhead"
                   }
                 }
@@ -181,7 +181,7 @@
                   "condition": "minecraft:random_chance",
                   "chance": {
                     "type": "minecraft:storage",
-                    "storage": "mob_manager:settings",
+                    "storage": "eden:settings",
                     "path": "mob_manager.shulker.mobhead"
                   }
                 }
@@ -226,7 +226,7 @@
                   "condition": "minecraft:random_chance",
                   "chance": {
                     "type": "minecraft:storage",
-                    "storage": "mob_manager:settings",
+                    "storage": "eden:settings",
                     "path": "mob_manager.shulker.mobhead"
                   }
                 }
@@ -271,7 +271,7 @@
                   "condition": "minecraft:random_chance",
                   "chance": {
                     "type": "minecraft:storage",
-                    "storage": "mob_manager:settings",
+                    "storage": "eden:settings",
                     "path": "mob_manager.shulker.mobhead"
                   }
                 }
@@ -316,7 +316,7 @@
                   "condition": "minecraft:random_chance",
                   "chance": {
                     "type": "minecraft:storage",
-                    "storage": "mob_manager:settings",
+                    "storage": "eden:settings",
                     "path": "mob_manager.shulker.mobhead"
                   }
                 }
@@ -361,7 +361,7 @@
                   "condition": "minecraft:random_chance",
                   "chance": {
                     "type": "minecraft:storage",
-                    "storage": "mob_manager:settings",
+                    "storage": "eden:settings",
                     "path": "mob_manager.shulker.mobhead"
                   }
                 }
@@ -406,7 +406,7 @@
                   "condition": "minecraft:random_chance",
                   "chance": {
                     "type": "minecraft:storage",
-                    "storage": "mob_manager:settings",
+                    "storage": "eden:settings",
                     "path": "mob_manager.shulker.mobhead"
                   }
                 }
@@ -451,7 +451,7 @@
                   "condition": "minecraft:random_chance",
                   "chance": {
                     "type": "minecraft:storage",
-                    "storage": "mob_manager:settings",
+                    "storage": "eden:settings",
                     "path": "mob_manager.shulker.mobhead"
                   }
                 }
@@ -496,7 +496,7 @@
                   "condition": "minecraft:random_chance",
                   "chance": {
                     "type": "minecraft:storage",
-                    "storage": "mob_manager:settings",
+                    "storage": "eden:settings",
                     "path": "mob_manager.shulker.mobhead"
                   }
                 }
@@ -541,7 +541,7 @@
                   "condition": "minecraft:random_chance",
                   "chance": {
                     "type": "minecraft:storage",
-                    "storage": "mob_manager:settings",
+                    "storage": "eden:settings",
                     "path": "mob_manager.shulker.mobhead"
                   }
                 }
@@ -586,7 +586,7 @@
                   "condition": "minecraft:random_chance",
                   "chance": {
                     "type": "minecraft:storage",
-                    "storage": "mob_manager:settings",
+                    "storage": "eden:settings",
                     "path": "mob_manager.shulker.mobhead"
                   }
                 }
@@ -631,7 +631,7 @@
                   "condition": "minecraft:random_chance",
                   "chance": {
                     "type": "minecraft:storage",
-                    "storage": "mob_manager:settings",
+                    "storage": "eden:settings",
                     "path": "mob_manager.shulker.mobhead"
                   }
                 }
@@ -676,7 +676,7 @@
                   "condition": "minecraft:random_chance",
                   "chance": {
                     "type": "minecraft:storage",
-                    "storage": "mob_manager:settings",
+                    "storage": "eden:settings",
                     "path": "mob_manager.shulker.mobhead"
                   }
                 }
@@ -721,7 +721,7 @@
                   "condition": "minecraft:random_chance",
                   "chance": {
                     "type": "minecraft:storage",
-                    "storage": "mob_manager:settings",
+                    "storage": "eden:settings",
                     "path": "mob_manager.shulker.mobhead"
                   }
                 }
@@ -764,7 +764,7 @@
                   "condition": "minecraft:random_chance",
                   "chance": {
                     "type": "minecraft:storage",
-                    "storage": "mob_manager:settings",
+                    "storage": "eden:settings",
                     "path": "mob_manager.shulker.mobhead"
                   }
                 }
@@ -790,7 +790,7 @@
           "condition": "minecraft:random_chance",
           "chance": {
             "type": "minecraft:storage",
-            "storage": "mob_manager:settings",
+            "storage": "eden:settings",
             "path": "mob_manager.mob_drops.shulkerdrop"
           }
         }

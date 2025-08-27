@@ -3,7 +3,7 @@ $execute as @s[type=!#$(validmobs)] run return run tag @s add mob_manager.rarity
 $execute as @s[type=#$(validmobs),tag=mob_manager.rarity_mobs.not_$(type)] run return fail
 $scoreboard players add @s mob_manager.rarity_mobs.$(type).timer 0
 $execute if score @s mob_manager.rarity_mobs.$(type).timer matches ..$(spawntime) run return run scoreboard players add @s mob_manager.rarity_mobs.$(type).timer 1
-$execute unless predicate {"condition":"minecraft:value_check","value":{"type":"minecraft:storage","storage":"mob_manager:settings","path":"mob_manager.rarity_mobs.$(type).spawnchance"},"range":{"min":0.01}} run return run tag @s add mob_manager.rarity_mobs.not_$(type)
+$execute unless predicate {"condition":"minecraft:value_check","value":{"type":"minecraft:storage","storage":"eden:settings","path":"mob_manager.rarity_mobs.$(type).spawnchance"},"range":{"min":0.01}} run return run tag @s add mob_manager.rarity_mobs.not_$(type)
 $execute unless predicate {"condition":"minecraft:random_chance","chance":$(spawnchance)} run return run tag @s add mob_manager.rarity_mobs.not_$(type)
 
 $execute store result storage eden:settings mob_manager.rarity_mobs.$(type).first_name int 1 run random value 1..250

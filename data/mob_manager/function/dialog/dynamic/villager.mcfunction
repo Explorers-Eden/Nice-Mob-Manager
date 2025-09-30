@@ -21,6 +21,34 @@ $dialog show @s \
   "inputs": [\
     {\
       "type": "minecraft:single_option",\
+      "key": "villager_follow",\
+      "width": 256,\
+      "label": {\
+        "translate": "option.mob_manager.villager.follow",\
+        "fallback": "Villager Follow Players Holding Emerald"\
+      },\
+      "options": [\
+        {\
+          "id": "enabled",\
+          "display": {\
+            "translate": "option.mob_manager.enabled",\
+            "fallback": "Enabled",\
+            "color": "green"\
+          }\
+        },\
+        {\
+          "id": "disabled",\
+          "display": {\
+            "translate": "option.mob_manager.disabled",\
+            "fallback": "Disabled",\
+            "color": "red"\
+          },\
+          "initial": $(villager_follow_initial)\
+        }\
+      ]\
+    },\
+    {\
+      "type": "minecraft:single_option",\
       "key": "customname",\
       "width": 256,\
       "label": {\

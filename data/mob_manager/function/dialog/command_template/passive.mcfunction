@@ -55,6 +55,7 @@ data modify storage eden:settings mob_manager.villager merge from storage eden:s
 data modify storage eden:settings mob_manager.wandering_trader merge from storage eden:settings mob_manager.all_passive
 data modify storage eden:settings mob_manager.zombie_horse merge from storage eden:settings mob_manager.all_passive
 data modify storage eden:settings mob_manager.happy_ghast merge from storage eden:settings mob_manager.all_passive
+data modify storage eden:settings mob_manager.copper_golem merge from storage eden:settings mob_manager.all_passive
 
 data modify storage eden:settings mob_manager.allay.type set value "allay"
 data modify storage eden:settings mob_manager.armadillo.type set value "armadillo"
@@ -90,3 +91,4 @@ data modify storage eden:settings mob_manager.villager.type set value "villager"
 data modify storage eden:settings mob_manager.wandering_trader.type set value "wandering_trader"
 data modify storage eden:settings mob_manager.zombie_horse.type set value "zombie_horse"
 data modify storage eden:settings mob_manager.happy_ghast.type set value "happy_ghast"
+data modify storage eden:settings mob_manager.copper_golem.type set value "copper_golem"

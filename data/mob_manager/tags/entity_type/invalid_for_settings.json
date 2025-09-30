@@ -1,6 +1,7 @@
 {
   "values": [
     "minecraft:item",
+    "minecraft:mannequin",
     "minecraft:item_display",
     "minecraft:item_frame",
     "minecraft:glow_item_frame",

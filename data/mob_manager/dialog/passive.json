@@ -126,6 +126,15 @@
     },
     {
       "label": {
+        "translate": "entity.minecraft.copper_golem"
+      },
+      "action": {
+        "type": "minecraft:run_command",
+        "command": "function mob_manager:dialog/dynamic/passive with storage eden:settings mob_manager.copper_golem"
+      }
+    },
+    {
+      "label": {
         "translate": "entity.minecraft.cow"
       },
       "action": {

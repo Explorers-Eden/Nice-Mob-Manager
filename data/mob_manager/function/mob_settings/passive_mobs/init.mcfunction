@@ -32,3 +32,4 @@ execute as @s[type=turtle] run return run function mob_manager:mob_settings/pass
 execute as @s[type=villager] run return run function mob_manager:mob_settings/passive_mobs/get with storage eden:settings mob_manager.villager
 execute as @s[type=wandering_trader] run return run function mob_manager:mob_settings/passive_mobs/get with storage eden:settings mob_manager.wandering_trader
 execute as @s[type=zombie_horse] run return run function mob_manager:mob_settings/passive_mobs/get with storage eden:settings mob_manager.zombie_horse
+execute as @s[type=copper_golem] run return run function mob_manager:mob_settings/passive_mobs/get with storage eden:settings mob_manager.copper_golem

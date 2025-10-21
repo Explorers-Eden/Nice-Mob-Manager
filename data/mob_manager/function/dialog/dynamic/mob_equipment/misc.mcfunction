@@ -181,6 +181,14 @@ $dialog show @s \
           "initial":$(vex_equip_iron_sword_initial)\
         },\
         {\
+          "id":"copper_sword",\
+          "display":{\
+            "translate":"item.minecraft.copper_sword",\
+            "color":"white"\
+          },\
+          "initial":$(vex_equip_copper_sword_initial)\
+        },\
+        {\
           "id":"golden_sword",\
           "display":{\
             "translate":"item.minecraft.golden_sword",\

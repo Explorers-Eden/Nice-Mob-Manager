@@ -16,6 +16,11 @@
         },
         {
           "type": "minecraft:item",
+          "name": "minecraft:copper_helmet",
+          "weight": 25
+        },
+        {
+          "type": "minecraft:item",
           "name": "minecraft:golden_helmet",
           "weight": 15
         },

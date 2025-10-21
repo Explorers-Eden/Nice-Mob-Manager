@@ -16,6 +16,11 @@
         },
         {
           "type": "minecraft:item",
+          "name": "minecraft:copper_chestplate",
+          "weight": 25
+        },
+        {
+          "type": "minecraft:item",
           "name": "minecraft:golden_chestplate",
           "weight": 15
         },

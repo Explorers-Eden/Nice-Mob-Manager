@@ -38,6 +38,11 @@
             "type": "minecraft:loot_table",
             "value": "mob_manager:entity/rarity_mob/equipment/iron",
             "weight": 35
+          },
+          {
+            "type": "minecraft:loot_table",
+            "value": "mob_manager:entity/rarity_mob/equipment/copper",
+            "weight": 35
           }
         ]
       }

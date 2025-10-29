@@ -1,0 +1,4 @@
+## Changes:
+
+## Fixes:
+- Setting min/max scaling values of mobs to the same value causes them to be humongous

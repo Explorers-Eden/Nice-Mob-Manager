@@ -1,5 +1,6 @@
 $execute unless predicate {"condition":"minecraft:value_check","value":{"type":"minecraft:storage","storage":"eden:settings","path":"mob_manager.$(type).scale_min"},"range":{"min":$(scale_max)}} store result storage eden:temp mob_manager.scale float 0.01 run random value $(scale_min)..$(scale_max)
-$execute if predicate {"condition":"minecraft:value_check","value":{"type":"minecraft:storage","storage":"eden:settings","path":"mob_manager.$(type).scale_min"},"range":{"min":$(scale_max)}} run data modify storage eden:temp mob_manager.scale set value $(scale_max)
+$execute if predicate {"condition":"minecraft:value_check","value":{"type":"minecraft:storage","storage":"eden:settings","path":"mob_manager.$(type).scale_min"},"range":{"min":$(scale_max)}} store result storage eden:temp mob_manager.scale float 0.01 run data get storage eden:settings mob_manager.$(type).scale_max
+
 $execute store result storage eden:temp mob_manager.health float 0.01 run attribute @s minecraft:max_health base get $(health)
 $execute store result storage eden:temp mob_manager.tempt_range float 0.01 run attribute @s minecraft:tempt_range base get $(tempt_range)
 $execute store result storage eden:temp mob_manager.follow_range float 0.01 run attribute @s minecraft:follow_range base get $(follow_range)

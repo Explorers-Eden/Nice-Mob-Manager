@@ -1,3 +1,5 @@
+$execute if data storage eden:settings mob_manager.$(type){allow_mob:"disabled"} run return run function mob_manager:kill
+
 $execute unless predicate {"condition":"minecraft:value_check","value":{"type":"minecraft:storage","storage":"eden:settings","path":"mob_manager.$(type).scale_min"},"range":{"min":$(scale_max)}} store result storage eden:temp mob_manager.scale float 0.01 run random value $(scale_min)..$(scale_max)
 $execute if predicate {"condition":"minecraft:value_check","value":{"type":"minecraft:storage","storage":"eden:settings","path":"mob_manager.$(type).scale_min"},"range":{"min":$(scale_max)}} store result storage eden:temp mob_manager.scale float 0.01 run data get storage eden:settings mob_manager.$(type).scale_max
 
@@ -30,7 +32,7 @@ execute if predicate {"condition":"minecraft:value_check","value":{"type":"minec
 execute if predicate {"condition":"minecraft:value_check","value":{"type":"minecraft:storage","storage":"eden:settings","path":"mob_manager.misc.lefthanded"},"range":{"min":0.01}} run function mob_manager:lefthanded with storage eden:settings mob_manager.misc
 execute if data storage eden:settings mob_manager.misc{skeletonhorsetrap:"disabled"} as @s[type=skeleton_horse] run data modify entity @s SkeletonTrap set value 0b
 
-execute as @s[type=villager] run function mob_manager:villager/init
-execute as @s[type=wandering_trader] run function mob_manager:wandering_trader/init
+execute as @s[type=villager] at @s run function mob_manager:villager/init with storage eden:settings mob_manager.villager_settings
+execute as @s[type=wandering_trader] at @s run function mob_manager:wandering_trader/init
 
 function mob_manager:mob_settings/passive_mobs/exec with storage eden:temp mob_manager

@@ -24,6 +24,7 @@
       "minecraft:guardian",
       "minecraft:spider",
       "minecraft:cave_spider",
-      "minecraft:witch"
+      "minecraft:witch",
+      "minecraft:parched"
     ]
   }

@@ -1,4 +1,7 @@
-$data modify storage eden:settings mob_manager.$(type) merge value {locator_color:'$(locator_color)',locator_range:$(locator_range),type:$(type),pickup:$(pickup),scale_min:$(scale_min),scale_max:$(scale_max),health:$(health),tempt_range:$(tempt_range),follow_range:$(follow_range),safe_fall:$(safe_fall),move_speed:$(move_speed),breed:$(breed),burn:$(burn),silent:$(silent),drown:$(drown)}
+$data modify storage eden:settings mob_manager.$(type) merge value {allow_mob:$(allow_mob),locator_color:'$(locator_color)',locator_range:$(locator_range),type:$(type),pickup:$(pickup),scale_min:$(scale_min),scale_max:$(scale_max),health:$(health),tempt_range:$(tempt_range),follow_range:$(follow_range),safe_fall:$(safe_fall),move_speed:$(move_speed),breed:$(breed),burn:$(burn),silent:$(silent),drown:$(drown)}
+
+$execute if data storage eden:settings mob_manager.$(type){allow_mob:"enabled"} run data modify storage eden:settings mob_manager.$(type).allow_mob_initial set value "false"
+$execute unless data storage eden:settings mob_manager.$(type){allow_mob:"enabled"} run data modify storage eden:settings mob_manager.$(type).allow_mob_initial set value "true"
 
 $execute if data storage eden:settings mob_manager.$(type){burn:"enabled"} run data modify storage eden:settings mob_manager.$(type).burn_initial set value "false"
 $execute unless data storage eden:settings mob_manager.$(type){burn:"enabled"} run data modify storage eden:settings mob_manager.$(type).burn_initial set value "true"
@@ -56,6 +59,7 @@ data modify storage eden:settings mob_manager.wandering_trader merge from storag
 data modify storage eden:settings mob_manager.zombie_horse merge from storage eden:settings mob_manager.all_passive
 data modify storage eden:settings mob_manager.happy_ghast merge from storage eden:settings mob_manager.all_passive
 data modify storage eden:settings mob_manager.copper_golem merge from storage eden:settings mob_manager.all_passive
+data modify storage eden:settings mob_manager.nautilus merge from storage eden:settings mob_manager.all_passive
 
 data modify storage eden:settings mob_manager.allay.type set value "allay"
 data modify storage eden:settings mob_manager.armadillo.type set value "armadillo"
@@ -89,6 +93,6 @@ data modify storage eden:settings mob_manager.tropical_fish.type set value "trop
 data modify storage eden:settings mob_manager.turtle.type set value "turtle"
 data modify storage eden:settings mob_manager.villager.type set value "villager"
 data modify storage eden:settings mob_manager.wandering_trader.type set value "wandering_trader"
-data modify storage eden:settings mob_manager.zombie_horse.type set value "zombie_horse"
 data modify storage eden:settings mob_manager.happy_ghast.type set value "happy_ghast"
 data modify storage eden:settings mob_manager.copper_golem.type set value "copper_golem"
+data modify storage eden:settings mob_manager.nautilus.type set value "nautilus"

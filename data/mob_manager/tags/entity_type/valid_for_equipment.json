@@ -9,6 +9,7 @@
       "minecraft:zombie",
       "minecraft:zombified_piglin",
       "minecraft:piglin_brute",
-      "minecraft:piglin"
+      "minecraft:piglin",
+      "minecraft:parched"
     ]
   }

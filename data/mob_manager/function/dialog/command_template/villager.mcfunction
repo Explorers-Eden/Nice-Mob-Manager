@@ -18,6 +18,9 @@ execute unless data storage eden:settings mob_manager.villager_settings{gossip:"
 execute if data storage eden:settings mob_manager.villager_settings{breeddiversity:"enabled"} run data modify storage eden:settings mob_manager.villager_settings.breeddiversity_initial set value "false"
 execute unless data storage eden:settings mob_manager.villager_settings{breeddiversity:"enabled"} run data modify storage eden:settings mob_manager.villager_settings.breeddiversity_initial set value "true"
 
+$data modify storage eden:settings mob_manager.villager_settings.pet_initial set value $(pet)
+execute store result storage eden:settings mob_manager.villager_settings.pet float 0.01 run data get storage eden:settings mob_manager.villager_settings.pet_initial
+
 execute if data storage eden:settings mob_manager.villager_settings{talking:"disabled"} run data modify storage eden:settings mob_manager.villager_settings.talking_chat_initial set value "false"
 execute if data storage eden:settings mob_manager.villager_settings{talking:"disabled"} run data modify storage eden:settings mob_manager.villager_settings.talking_actionbar_initial set value "false"
 execute if data storage eden:settings mob_manager.villager_settings{talking:"chat"} run data modify storage eden:settings mob_manager.villager_settings.talking_chat_initial set value "true"

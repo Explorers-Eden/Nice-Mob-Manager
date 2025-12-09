@@ -1,3 +1,5 @@
+$execute if data storage eden:settings mob_manager.$(type){allow_mob:"disabled"} run return run function mob_manager:kill
+
 $execute unless predicate {"condition":"minecraft:value_check","value":{"type":"minecraft:storage","storage":"eden:settings","path":"mob_manager.$(type).scale_min"},"range":{"min":$(scale_max)}} store result storage eden:temp mob_manager.scale float 0.01 run random value $(scale_min)..$(scale_max)
 $execute if predicate {"condition":"minecraft:value_check","value":{"type":"minecraft:storage","storage":"eden:settings","path":"mob_manager.$(type).scale_min"},"range":{"min":$(scale_max)}} store result storage eden:temp mob_manager.scale float 0.01 run data get storage eden:settings mob_manager.$(type).scale_max
 $execute store result storage eden:temp mob_manager.health float 0.01 run attribute @s minecraft:max_health base get $(health)

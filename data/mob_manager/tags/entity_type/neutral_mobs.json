@@ -15,6 +15,9 @@
     "minecraft:spider",
     "minecraft:trader_llama",
     "minecraft:wolf",
-    "minecraft:zombified_piglin"
+    "minecraft:zombified_piglin",
+    "minecraft:zombie_nautilus",
+    "minecraft:camel_husk",
+    "minecraft:zombie_horse"
   ]
 }

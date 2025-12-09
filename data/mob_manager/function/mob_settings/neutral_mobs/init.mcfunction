@@ -14,3 +14,6 @@ execute as @s[type=spider] run return run function mob_manager:mob_settings/neut
 execute as @s[type=trader_llama] run return run function mob_manager:mob_settings/neutral_mobs/get with storage eden:settings mob_manager.trader_llama
 execute as @s[type=wolf] run return run function mob_manager:mob_settings/neutral_mobs/get with storage eden:settings mob_manager.wolf
 execute as @s[type=zombified_piglin] run return run function mob_manager:mob_settings/neutral_mobs/get with storage eden:settings mob_manager.zombified_piglin
+execute as @s[type=zombie_horse] run return run function mob_manager:mob_settings/neutral_mobs/get with storage eden:settings mob_manager.zombie_horse
+execute as @s[type=zombie_nautilus] run return run function mob_manager:mob_settings/neutral_mobs/get with storage eden:settings mob_manager.zombie_nautilus
+execute as @s[type=camel_husk] run return run function mob_manager:mob_settings/neutral_mobs/get with storage eden:settings mob_manager.camel_husk

@@ -1,34 +1,50 @@
 $dialog show @s \
 {\
   "type":"minecraft:confirmation",\
-  "body":[\
+  "body":\
     {\
-      "type":"minecraft:item",\
-      "item":{\
-        "id":"$(bodyicon)",\
-        "components":{\
-          "minecraft:tooltip_display":{\
-            "hide_tooltip":true\
-          }\
-        }\
+      "type": "minecraft:plain_message",\
+      "contents": [\
+        {"atlas": "minecraft:items",\
+        "sprite": "minecraft:item/$(bodyicon)"},\
+        " ",\
+        {"translate": "menu.mob_manager.configure_mob.description_prefix",\
+        "fallback": "Configure "},\
+        {"translate": "entity.minecraft.$(type)",\
+        "fallback": "Mob"},\
+        {"translate": "menu.mob_manager.configure_mob.description_sufix",\
+        "fallback": " Settings:"}\
+      ]\
+    },\
+  "inputs":[\
+      {\
+      "type":"minecraft:single_option",\
+      "key":"allow_mob",\
+      "width": 256,\
+      "label":{\
+        "translate":"option.mob_manager.allow_mob",\
+        "fallback":"Allow Mob"\
       },\
-      "description":[\
+      "options":[\
         {\
-        "translate":"menu.mob_manager.configure_mob.description_prefix",\
-        "fallback":"Configure "\
+          "id":"enabled",\
+          "display":{\
+            "translate":"option.mob_manager.enabled",\
+            "fallback":"Enabled",\
+            "color":"green"\
+          }\
         },\
         {\
-          "translate": "entity.minecraft.$(type)",\
-          "fallback": "Mob"\
-        },\
-        {\
-        "translate":"menu.mob_manager.configure_mob.description_sufix",\
-        "fallback":" Settings:"\
+          "id":"disabled",\
+          "display":{\
+            "translate":"option.mob_manager.disabled",\
+            "fallback":"Disabled",\
+            "color":"red"\
+          },\
+          "initial":$(allow_mob_initial)\
         }\
       ]\
-    }\
-  ],\
-  "inputs":[\
+      },\
       {\
       "type":"minecraft:number_range",\
       "key":"mobhead",\

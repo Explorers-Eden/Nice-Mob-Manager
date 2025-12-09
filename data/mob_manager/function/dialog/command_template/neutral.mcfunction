@@ -1,4 +1,7 @@
-$data modify storage eden:settings mob_manager.$(type) merge value {locator_color:'$(locator_color)',locator_range:$(locator_range),type:$(type),pickup:$(pickup),attck_dmg:$(attck_dmg),scale_min:$(scale_min),scale_max:$(scale_max),health:$(health),tempt_range:$(tempt_range),follow_range:$(follow_range),safe_fall:$(safe_fall),move_speed:$(move_speed),breed:$(breed),silent:$(silent),burn:$(burn),drown:$(drown)}
+$data modify storage eden:settings mob_manager.$(type) merge value {allow_mob:$(allow_mob),locator_color:'$(locator_color)',locator_range:$(locator_range),type:$(type),pickup:$(pickup),attck_dmg:$(attck_dmg),scale_min:$(scale_min),scale_max:$(scale_max),health:$(health),tempt_range:$(tempt_range),follow_range:$(follow_range),safe_fall:$(safe_fall),move_speed:$(move_speed),breed:$(breed),silent:$(silent),burn:$(burn),drown:$(drown)}
+
+$execute if data storage eden:settings mob_manager.$(type){allow_mob:"enabled"} run data modify storage eden:settings mob_manager.$(type).allow_mob_initial set value "false"
+$execute unless data storage eden:settings mob_manager.$(type){allow_mob:"enabled"} run data modify storage eden:settings mob_manager.$(type).allow_mob_initial set value "true"
 
 $execute if data storage eden:settings mob_manager.$(type){burn:"enabled"} run data modify storage eden:settings mob_manager.$(type).burn_initial set value "false"
 $execute unless data storage eden:settings mob_manager.$(type){burn:"enabled"} run data modify storage eden:settings mob_manager.$(type).burn_initial set value "true"
@@ -37,6 +40,9 @@ data modify storage eden:settings mob_manager.spider merge from storage eden:set
 data modify storage eden:settings mob_manager.trader_llama merge from storage eden:settings mob_manager.all_neutral
 data modify storage eden:settings mob_manager.wolf merge from storage eden:settings mob_manager.all_neutral
 data modify storage eden:settings mob_manager.zombified_piglin merge from storage eden:settings mob_manager.all_neutral
+data modify storage eden:settings mob_manager.zombie_nautilus merge from storage eden:settings mob_manager.all_neutral
+data modify storage eden:settings mob_manager.zombie_horse merge from storage eden:settings mob_manager.all_neutral
+data modify storage eden:settings mob_manager.camel_husk merge from storage eden:settings mob_manager.all_neutral
 
 data modify storage eden:settings mob_manager.bee.type set value "bee"
 data modify storage eden:settings mob_manager.cave_spider.type set value "cave_spider"
@@ -54,3 +60,6 @@ data modify storage eden:settings mob_manager.spider.type set value "spider"
 data modify storage eden:settings mob_manager.trader_llama.type set value "trader_llama"
 data modify storage eden:settings mob_manager.wolf.type set value "wolf"
 data modify storage eden:settings mob_manager.zombified_piglin.type set value "zombified_piglin"
+data modify storage eden:settings mob_manager.zombie_nautilus.type set value "zombie_nautilus"
+data modify storage eden:settings mob_manager.zombie_horse.type set value "zombie_horse"
+data modify storage eden:settings mob_manager.camel_husk.type set value "camel_husk"

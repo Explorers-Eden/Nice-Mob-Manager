@@ -1,0 +1,19 @@
+### *Due to some naming changes in this game drop the default values will be applied by default with this version*
+
+## Changes:
+- Added options for Parched, Nautilus, Zombie Nautilus and Camel Husk
+- Zombie Horse is now listed under Neutral Mobs
+- Entries in each Mob section are now sorted alphabetically
+- Entries in each Mob section now show their respective Spawn Egg
+- Added Spears to list of possible Mob Equipment for Mainhand
+- Added Option to Mob Config to Dis-/Allow Mob spawning for specific types:
+    - Disabled for all mobs by default
+    - Does not affect already existing or from mob settings excluded mobs
+- Added Option to Villager Config for Villagers spawning with a pet:
+    - 10% chance by default
+    - Pets can be either Cats, Wolves or Parrots
+    - Only Villagers spawning as adults have a chance to get a pet
+
+## Fixes:
+- Console throwing error that damage couldn't be applied to Totem of Undying if random item damage is enabled
+- Copper Golem missing the Waypoint texture when using Spawn Egg textures

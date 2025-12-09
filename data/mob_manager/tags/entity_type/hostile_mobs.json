@@ -32,6 +32,7 @@
     "minecraft:zombie",
     "minecraft:zombie_villager",
     "minecraft:wither",
-    "minecraft:ender_dragon"
+    "minecraft:ender_dragon",
+    "minecraft:parched"
   ]
 }

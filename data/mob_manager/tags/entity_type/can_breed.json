@@ -25,6 +25,7 @@
     "minecraft:sheep",
     "minecraft:sniffer",
     "minecraft:turtle",
-    "minecraft:villager"
+    "minecraft:villager",
+    "minecraft:nautilus"
   ]
 }

@@ -1,4 +1,7 @@
-$data modify storage eden:settings mob_manager.$(type) merge value {locator_color:'$(locator_color)',locator_range:$(locator_range),pickup:$(pickup),attck_dmg:$(attck_dmg),scale_min:$(scale_min),scale_max:$(scale_max),health:$(health),follow_range:$(follow_range),safe_fall:$(safe_fall),move_speed:$(move_speed),burn:$(burn),silent:$(silent),drown:$(drown)}
+$data modify storage eden:settings mob_manager.$(type) merge value {allow_mob:$(allow_mob),locator_color:'$(locator_color)',locator_range:$(locator_range),pickup:$(pickup),attck_dmg:$(attck_dmg),scale_min:$(scale_min),scale_max:$(scale_max),health:$(health),follow_range:$(follow_range),safe_fall:$(safe_fall),move_speed:$(move_speed),burn:$(burn),silent:$(silent),drown:$(drown)}
+
+$execute if data storage eden:settings mob_manager.$(type){allow_mob:"enabled"} run data modify storage eden:settings mob_manager.$(type).allow_mob_initial set value "false"
+$execute unless data storage eden:settings mob_manager.$(type){allow_mob:"enabled"} run data modify storage eden:settings mob_manager.$(type).allow_mob_initial set value "true"
 
 $execute if data storage eden:settings mob_manager.$(type){burn:"enabled"} run data modify storage eden:settings mob_manager.$(type).burn_initial set value "false"
 $execute unless data storage eden:settings mob_manager.$(type){burn:"enabled"} run data modify storage eden:settings mob_manager.$(type).burn_initial set value "true"
@@ -51,6 +54,7 @@ data modify storage eden:settings mob_manager.husk merge from storage eden:setti
 data modify storage eden:settings mob_manager.illusioner merge from storage eden:settings mob_manager.all_hostile
 data modify storage eden:settings mob_manager.wither merge from storage eden:settings mob_manager.all_hostile
 data modify storage eden:settings mob_manager.ender_dragon merge from storage eden:settings mob_manager.all_hostile
+data modify storage eden:settings mob_manager.parched merge from storage eden:settings mob_manager.all_hostile
 
 data modify storage eden:settings mob_manager.blaze.type set value "blaze"
 data modify storage eden:settings mob_manager.bogged.type set value "bogged"
@@ -85,3 +89,4 @@ data modify storage eden:settings mob_manager.husk.type set value "husk"
 data modify storage eden:settings mob_manager.illusioner.type set value "illusioner"
 data modify storage eden:settings mob_manager.wither.type set value "wither"
 data modify storage eden:settings mob_manager.ender_dragon.type set value "ender_dragon"
+data modify storage eden:settings mob_manager.parched.type set value "parched"

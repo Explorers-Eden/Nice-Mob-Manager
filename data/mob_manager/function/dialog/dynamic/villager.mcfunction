@@ -20,6 +20,20 @@ $dialog show @s \
   ],\
   "inputs": [\
     {\
+      "type":"minecraft:number_range",\
+      "key":"pet",\
+      "width": 256,\
+      "label":{\
+        "translate":"option.mob_manager.villager_pet",\
+        "fallback":"Villager Pet Chance"\
+      },\
+      "label_format":"options.percent_value",\
+      "start":0,\
+      "end":100,\
+      "step":1,\
+      "initial":$(pet_initial)\
+    },\
+    {\
       "type": "minecraft:single_option",\
       "key": "villager_follow",\
       "width": 256,\

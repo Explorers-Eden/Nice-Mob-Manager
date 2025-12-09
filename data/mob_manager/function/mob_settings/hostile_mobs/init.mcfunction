@@ -30,3 +30,4 @@ execute as @s[type=zombie] run function mob_manager:mob_settings/hostile_mobs/ge
 execute as @s[type=zombie_villager] run function mob_manager:mob_settings/hostile_mobs/get with storage eden:settings mob_manager.zombie_villager
 execute as @s[type=wither] run function mob_manager:mob_settings/hostile_mobs/get with storage eden:settings mob_manager.wither
 execute as @s[type=ender_dragon] run function mob_manager:mob_settings/hostile_mobs/get with storage eden:settings mob_manager.ender_dragon
+execute as @s[type=parched] run function mob_manager:mob_settings/hostile_mobs/get with storage eden:settings mob_manager.parched

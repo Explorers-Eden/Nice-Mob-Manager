@@ -35,8 +35,7 @@ scoreboard objectives add mob_manager.follow.motionZ dummy
 
 ##apply default values on first load
 execute unless data storage eden:settings mob_manager.misc run function mob_manager:default_values
-execute unless data storage eden:datapack nice_mob_manager{version:"2.3"} run function mob_manager:default_values
 data modify storage eden:database names.village set from storage eden:database village
 
 ##set data pack version
-data modify storage eden:datapack nice_mob_manager.version set value "2.3"
+data modify storage eden:datapack nice_mob_manager.version set value "2.4"

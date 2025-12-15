@@ -81,7 +81,7 @@ $dialog show @s \
       "width": 256,\
       "label":{\
         "translate":"option.mob_manager.need_sky",\
-        "fallback":"Scaling Only On Surface"\
+        "fallback":"Scaling/Rarity Only On Surface"\
       },\
       "options":[\
         {\

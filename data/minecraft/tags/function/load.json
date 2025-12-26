@@ -10,6 +10,7 @@
       "mob_manager:database/playerheads/update/init",
       "mob_manager:locator_bar/init",
       "mob_manager:check_gamerules",
-      "mob_manager:villager/follow/init"
+      "mob_manager:villager/follow/init",
+      "mob_manager:spectator_waypoint_receive"
     ]
   }

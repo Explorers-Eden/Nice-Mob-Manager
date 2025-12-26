@@ -38,4 +38,4 @@ execute unless data storage eden:settings mob_manager.misc run function mob_mana
 data modify storage eden:database names.village set from storage eden:database village
 
 ##set data pack version
-data modify storage eden:datapack nice_mob_manager.version set value "2.4"
+data modify storage eden:datapack nice_mob_manager.version set value "2.5"

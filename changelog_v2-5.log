@@ -1,4 +1,4 @@
 ## Changes:
-- Waypoint receive range for players in spectator is now disabled to prevent lag
+- Waypoint receive range for players in spectator is now disabled to prevent clientside lag
 
 ## Fixes:

@@ -113,7 +113,7 @@ $dialog show @s \
       },\
       "options":[\
         {\
-          "id":"fals",\
+          "id":"tru",\
           "display":{\
             "translate":"option.mob_manager.enabled",\
             "fallback":"Enabled",\
@@ -121,7 +121,7 @@ $dialog show @s \
           }\
         },\
         {\
-          "id":"tru",\
+          "id":"fals",\
           "display":{\
             "translate":"option.mob_manager.disabled",\
             "fallback":"Disabled",\

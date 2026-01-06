@@ -1,7 +1,7 @@
 gamerule send_command_feedback true
 gamerule spawn_phantoms true
 gamerule spawn_wardens true
-gamerule raids false
+gamerule raids true
 gamerule mob_drops true
 gamerule spawn_patrols true
 gamerule spawn_wandering_traders true

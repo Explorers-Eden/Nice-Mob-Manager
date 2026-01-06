@@ -22,8 +22,8 @@ execute if data storage eden:temp mob_manager.gamerules{cmdfeedback:1} run data 
 execute unless data storage eden:temp mob_manager.gamerules{cmdfeedback:1} run data modify storage eden:settings mob_manager.gamerules.cmdfeedback_initial set value "true"
 
 execute store result storage eden:temp mob_manager.gamerules.raids int 1 run gamerule raids
-execute if data storage eden:temp mob_manager.gamerules{raids:1} run data modify storage eden:settings mob_manager.gamerules.raids_initial set value "true"
-execute unless data storage eden:temp mob_manager.gamerules{raids:1} run data modify storage eden:settings mob_manager.gamerules.raids_initial set value "false"
+execute if data storage eden:temp mob_manager.gamerules{raids:1} run data modify storage eden:settings mob_manager.gamerules.raids_initial set value "false"
+execute unless data storage eden:temp mob_manager.gamerules{raids:1} run data modify storage eden:settings mob_manager.gamerules.raids_initial set value "true"
 
 execute store result storage eden:temp mob_manager.gamerules.mobloot int 1 run gamerule mob_drops
 execute if data storage eden:temp mob_manager.gamerules{mobloot:1} run data modify storage eden:settings mob_manager.gamerules.mobloot_initial set value "false"

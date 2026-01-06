@@ -1,0 +1,5 @@
+## Changes:
+
+## Fixes:
+- Playerhead database not being updated correctly
+- Raids gamerule being reversed (bug caused by mojangs gamerule changes)

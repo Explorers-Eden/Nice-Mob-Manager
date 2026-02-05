@@ -242,6 +242,20 @@ $dialog show @s \
       "end":100,\
       "step":1,\
       "initial":$(shulkerdrop_initial)\
+    },\
+    {\
+      "type":"minecraft:number_range",\
+      "key":"witherskulldrop",\
+      "width": 256,\
+      "label":{\
+        "translate":"option.mob_manager.witherskulldrop",\
+        "fallback":"2nd Skull From Wither Skeleton"\
+      },\
+      "label_format":"options.percent_value",\
+      "start":0,\
+      "end":100,\
+      "step":1,\
+      "initial":$(witherskulldrop_initial)\
     }\
   ],\
   "can_close_with_escape":true,\

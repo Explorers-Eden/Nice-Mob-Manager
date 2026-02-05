@@ -7,6 +7,9 @@ execute store result storage eden:settings mob_manager.mob_drops.dragonelytra fl
 $data modify storage eden:settings mob_manager.mob_drops.shulkerdrop_initial set value $(shulkerdrop)
 execute store result storage eden:settings mob_manager.mob_drops.shulkerdrop float 0.01 run data get storage eden:settings mob_manager.mob_drops.shulkerdrop_initial
 
+$data modify storage eden:settings mob_manager.mob_drops.witherskulldrop_initial set value $(witherskulldrop)
+execute store result storage eden:settings mob_manager.mob_drops.witherskulldrop float 0.01 run data get storage eden:settings mob_manager.mob_drops.witherskulldrop_initial
+
 $data modify storage eden:settings mob_manager.mob_drops.husksand_initial set value $(husksand)
 execute store result storage eden:settings mob_manager.mob_drops.husksand float 0.01 run data get storage eden:settings mob_manager.mob_drops.husksand_initial
 

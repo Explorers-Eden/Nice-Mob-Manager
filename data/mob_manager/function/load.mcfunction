@@ -34,8 +34,9 @@ scoreboard objectives add mob_manager.follow.motionX dummy
 scoreboard objectives add mob_manager.follow.motionZ dummy
 
 ##apply default values on first load
+execute unless data storage eden:settings mob_manager.mob_drops.witherskulldrop run data modify storage eden:settings mob_manager.mob_drops merge value {witherskulldrop:1.0,witherskulldrop_initial:100,command_template:"function mob_manager:dialog/command_template/mob_drops {witherskulldrop:$(witherskulldrop),creakingresin:$(creakingresin),traderlead:$(traderlead),foxsweetberries:$(foxsweetberries),piglinbrutegoldblock:$(piglinbrutegoldblock),piglingold:$(piglingold),allayshard:$(allayshard),goatleather:$(goatleather),strayice:$(strayice),elderguardianseaheart:$(elderguardianseaheart),villageremerald:$(villageremerald),beehoneycomb:$(beehoneycomb),husksand:$(husksand),batmembrane:$(batmembrane),shulkerdrop:$(shulkerdrop),dragonegg:$(dragonegg),dragonelytra:$(dragonelytra)}"}
 execute unless data storage eden:settings mob_manager.misc run function mob_manager:default_values
 data modify storage eden:database names.village set from storage eden:database village
 
 ##set data pack version
-data modify storage eden:datapack nice_mob_manager.version set value "2.7"
+data modify storage eden:datapack nice_mob_manager.version set value "2.8"

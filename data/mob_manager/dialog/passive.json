@@ -520,6 +520,22 @@
       "label": [
         {
           "atlas": "minecraft:items",
+          "sprite": "minecraft:item/sulfur_cube_spawn_egg"
+        },
+        " ",
+        {
+          "translate": "entity.minecraft.sulfur_cube"
+        }
+      ],
+      "action": {
+        "type": "minecraft:run_command",
+        "command": "function mob_manager:dialog/dynamic/passive with storage eden:settings mob_manager.sulfur_cube"
+      }
+    },
+    {
+      "label": [
+        {
+          "atlas": "minecraft:items",
           "sprite": "minecraft:item/tadpole_spawn_egg"
         },
         " ",

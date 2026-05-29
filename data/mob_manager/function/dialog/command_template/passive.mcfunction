@@ -51,6 +51,7 @@ data modify storage eden:settings mob_manager.sniffer merge from storage eden:se
 data modify storage eden:settings mob_manager.snow_golem merge from storage eden:settings mob_manager.all_passive
 data modify storage eden:settings mob_manager.squid merge from storage eden:settings mob_manager.all_passive
 data modify storage eden:settings mob_manager.strider merge from storage eden:settings mob_manager.all_passive
+data modify storage eden:settings mob_manager.sulfur_cube merge from storage eden:settings mob_manager.all_passive
 data modify storage eden:settings mob_manager.tadpole merge from storage eden:settings mob_manager.all_passive
 data modify storage eden:settings mob_manager.tropical_fish merge from storage eden:settings mob_manager.all_passive
 data modify storage eden:settings mob_manager.turtle merge from storage eden:settings mob_manager.all_passive

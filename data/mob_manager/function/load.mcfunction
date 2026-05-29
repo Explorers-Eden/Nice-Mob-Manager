@@ -34,8 +34,10 @@ scoreboard objectives add mob_manager.follow.motionX dummy
 scoreboard objectives add mob_manager.follow.motionZ dummy
 
 ##apply default values on first load
-execute unless data storage eden:settings mob_manager.mob_drops.witherskulldrop run data modify storage eden:settings mob_manager.mob_drops merge value {witherskulldrop:1.0,witherskulldrop_initial:100,command_template:"function mob_manager:dialog/command_template/mob_drops {witherskulldrop:$(witherskulldrop),creakingresin:$(creakingresin),traderlead:$(traderlead),foxsweetberries:$(foxsweetberries),piglinbrutegoldblock:$(piglinbrutegoldblock),piglingold:$(piglingold),allayshard:$(allayshard),goatleather:$(goatleather),strayice:$(strayice),elderguardianseaheart:$(elderguardianseaheart),villageremerald:$(villageremerald),beehoneycomb:$(beehoneycomb),husksand:$(husksand),batmembrane:$(batmembrane),shulkerdrop:$(shulkerdrop),dragonegg:$(dragonegg),dragonelytra:$(dragonelytra)}"}
+execute unless data storage eden:settings mob_manager.sulfur_cube run data modify storage eden:settings mob_manager.sulfur_cube set value {bodyicon:"sulfur_cube_spawn_egg",type:"sulfur_cube",scale_min:90,mobhead:0.25,allow_mob:enabled,allow_mob_initial:false,mobhead_initial:25,locator_color:"64e764",locator_range:8,scale_max:110,health:100,tempt_range:100,follow_range:100,safe_fall:100,move_speed:100,burn:enabled,pickup:enabled,silent:disabled,drown:enabled,breed:enabled,burn_initial:false,pickup_initial:false,silent_initial:true,drown_initial:false,breed_initial:false,command_template:",tempt_range:$(tempt_range),mobhead:$(mobhead),allow_mob:$(allow_mob),locator_color:\'$(locator_color)\',locator_range:$(locator_range),pickup:$(pickup),scale_min:$(scale_min),scale_max:$(scale_max),health:$(health),follow_range:$(follow_range),safe_fall:$(safe_fall),move_speed:$(move_speed),burn:$(burn),silent:$(silent),drown:$(drown),breed:$(breed)}"}
 execute unless data storage eden:settings mob_manager.misc run function mob_manager:default_values
+
+##Update Village Name DB
 data modify storage eden:database names.village set from storage eden:database village
 
 ##set data pack version

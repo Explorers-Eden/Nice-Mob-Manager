@@ -34,6 +34,7 @@
     "minecraft:villager",
     "minecraft:wandering_trader",
     "minecraft:copper_golem",
-    "minecraft:nautilus"
+    "minecraft:nautilus",
+    "minecraft:sulfur_cube"
   ]
 }

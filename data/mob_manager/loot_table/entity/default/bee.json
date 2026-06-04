@@ -46,7 +46,7 @@
 								{
 									"condition": "entity_properties",
 									"predicate": {
-										"nbt": "{AngerTime:0,HasNectar:0b}"
+										"nbt": "{anger_end_time:-1L,HasNectar:0b}"
 									},
 									"entity": "this"
 								}
@@ -78,7 +78,7 @@
 								{
 									"condition": "entity_properties",
 									"predicate": {
-										"nbt": "{AngerTime:0,HasNectar:1b}"
+										"nbt": "{anger_end_time:-1L,HasNectar:1b}"
 									},
 									"entity": "this"
 								}

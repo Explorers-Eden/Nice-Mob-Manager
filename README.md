@@ -1,6 +1,3 @@
-<img src="https://explorerseden.eu/images/mob_manager_title.png" alt="header" width=100%>
-<br><br>
-
 ## 📖 Description
 **Nice Mob Manager** is a super versatile tool that lets you control pretty much everything about mobs. It uses Mojang’s new Dialog system to give you easy, menu-based access to tons of features — only one command needed. You can tweak individual mobs or mob groups, add cool stuff like rarities with better loot, randomize gear, and even mess with vanilla gamerules. If you’ve thought about it, chances are you can do it.
 

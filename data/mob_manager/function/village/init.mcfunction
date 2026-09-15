@@ -1,7 +1,7 @@
 schedule function mob_manager:village/init 1s
 
 #get data and spawn armor stand at meeting point
-execute if data storage eden:settings mob_manager.villager_settings{villagename:"enabled"} as @e[type=villager,tag=!mob_manager.settings.exclude,tag=!mob_manager.settings.villagename.applied,limit=1] at @s if data entity @s Brain.memories.minecraft:meeting_point.value run function mob_manager:village/name/init
+execute if data storage eden:settings mob_manager.villager_settings{villagename:"enabled"} as @e[type=villager,tag=!mob_manager.settings.exclude,tag=!mob_manager.settings.villagename.applied,limit=10,sort=random] at @s if data entity @s Brain.memories.minecraft:meeting_point.value run function mob_manager:village/name/init
 
 #summon texyt display at meeting point if possible
 execute as @e[type=armor_stand,tag=mob_manager.village.name] at @s run function mob_manager:village/name/set_display with entity @s
@@ -14,7 +14,7 @@ execute as @e[type=armor_stand,tag=mob_manager.village.name] at @s unless block 
 
 #remove tag if meeting point is lost
 execute as @e[type=villager,tag=!mob_manager.settings.exclude,tag=mob_manager.settings.villagename.applied] unless data entity @s Brain.memories.minecraft:meeting_point.value run tag @s remove mob_manager.settings.villagename.applied
-execute as @e[type=villager,tag=!mob_manager.settings.exclude,tag=mob_manager.settings.villagename.applied] at @s unless entity @e[type=armor_stand,tag=mob_manager.village.name,distance=..128] run tag @s remove mob_manager.settings.villagename.applied
+execute as @e[type=villager,tag=!mob_manager.settings.exclude,tag=mob_manager.settings.villagename.applied] at @s unless entity @e[type=armor_stand,tag=mob_manager.village.name,distance=..156] run tag @s remove mob_manager.settings.villagename.applied
 
 #heal villagers when enabled and near meeting point
 execute unless data storage eden:settings mob_manager.villager_settings{villagecenter_healing:"disabled"} run function mob_manager:village/healing with storage eden:settings mob_manager.villager_settings
@@ -28,4 +28,4 @@ scoreboard players set @a[scores={mob_manager.used.bell=1..}] mob_manager.used.b
 
 #display village name message
 execute unless data storage eden:settings mob_manager.villager_settings{villagename_msg:"disabled"} as @e[type=player,tag=!at_village] at @s if entity @e[type=armor_stand,tag=mob_manager.village.name,distance=..96] run function mob_manager:village/message/entering with entity @n[type=armor_stand,tag=mob_manager.village.name]
-execute as @e[type=player,tag=!not_at_village] at @s unless entity @e[type=armor_stand,tag=mob_manager.village.name,distance=..96] run function mob_manager:village/message/exiting
+execute as @e[type=player,tag=!not_at_village] at @s unless entity @e[type=armor_stand,tag=mob_manager.village.name,distance=..128] run function mob_manager:village/message/exiting

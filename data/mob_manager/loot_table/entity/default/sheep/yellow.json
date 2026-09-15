@@ -8,9 +8,9 @@
           "type": "item",
           "name": "minecraft:player_head",
           "weight": 1,
-          "functions": [
+          "modifier": [
             {
-              "function": "set_components",
+              "type": "set_components",
               "components": {
                 "minecraft:note_block_sound": "minecraft:entity.sheep.ambient",
                 "minecraft:profile": {
@@ -29,28 +29,31 @@
           ]
         }
       ],
-      "conditions": [
-        {
-          "condition": "killed_by_player"
-        },
-        {
-          "condition": "minecraft:random_chance",
-          "chance": {
-            "type": "minecraft:storage",
-            "storage": "eden:settings",
-            "path": "mob_manager.sheep.mobhead"
-          }
-        },
-        {
-          "condition": "minecraft:entity_properties",
-          "entity": "this",
-          "predicate": {
-            "components": {
-              "minecraft:sheep/color": "yellow"
+      "condition": {
+        "type": "minecraft:all_of",
+        "terms": [
+          {
+            "type": "killed_by_player"
+          },
+          {
+            "type": "minecraft:random_chance",
+            "chance": {
+              "type": "minecraft:storage",
+              "storage": "eden:settings",
+              "path": "mob_manager.sheep.mobhead"
+            }
+          },
+          {
+            "type": "minecraft:entity_properties",
+            "entity": "this",
+            "predicate": {
+              "components": {
+                "minecraft:sheep/color": "yellow"
+              }
             }
           }
-        }
-      ]
+        ]
+      }
     }
   ]
 }

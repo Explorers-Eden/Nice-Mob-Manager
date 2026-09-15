@@ -3,27 +3,29 @@
   "pools": [
     {
       "rolls": {
+        "type": "minecraft:uniform",
         "min": 1,
         "max": 6
       },
       "entries": [
         {
           "type": "minecraft:tag",
-          "name": "mob_manager:dead_corals",
-          "expand": true
+          "expand": true,
+          "items": "#mob_manager:dead_corals"
         }
       ]
     },
     {
       "rolls": {
+        "type": "minecraft:uniform",
         "min": 1,
         "max": 12
       },
       "entries": [
         {
           "type": "minecraft:tag",
-          "name": "mob_manager:corals",
-          "expand": true
+          "expand": true,
+          "items": "#mob_manager:corals"
         }
       ]
     }

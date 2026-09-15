@@ -10,9 +10,34 @@
             {
               "type": "minecraft:item",
               "name": "minecraft:player_head",
-              "functions": [
+              "condition": {
+                "type": "minecraft:all_of",
+                "terms": [
+                  {
+                    "type": "minecraft:entity_properties",
+                    "entity": "this",
+                    "predicate": {
+                      "components": {
+                        "minecraft:shulker/color": "white"
+                      }
+                    }
+                  },
+                  {
+                    "type": "killed_by_player"
+                  },
+                  {
+                    "type": "minecraft:random_chance",
+                    "chance": {
+                      "type": "minecraft:storage",
+                      "storage": "eden:settings",
+                      "path": "mob_manager.shulker.mobhead"
+                    }
+                  }
+                ]
+              },
+              "modifier": [
                 {
-                  "function": "set_components",
+                  "type": "set_components",
                   "components": {
                     "minecraft:note_block_sound": "minecraft:entity.shulker.ambient",
                     "minecraft:profile": {
@@ -28,36 +53,39 @@
                     }
                   }
                 }
-              ],
-              "conditions": [
-                {
-                  "condition": "minecraft:entity_properties",
-                  "entity": "this",
-                  "predicate": {
-                    "components": {
-                      "minecraft:shulker/color": "white"
-                    }
-                  }
-                },
-                {
-                  "condition": "killed_by_player"
-                },
-                {
-                  "condition": "minecraft:random_chance",
-                  "chance": {
-                    "type": "minecraft:storage",
-                    "storage": "eden:settings",
-                    "path": "mob_manager.shulker.mobhead"
-                  }
-                }
               ]
             },
             {
               "type": "minecraft:item",
               "name": "minecraft:player_head",
-              "functions": [
+              "condition": {
+                "type": "minecraft:all_of",
+                "terms": [
+                  {
+                    "type": "minecraft:entity_properties",
+                    "entity": "this",
+                    "predicate": {
+                      "components": {
+                        "minecraft:shulker/color": "black"
+                      }
+                    }
+                  },
+                  {
+                    "type": "killed_by_player"
+                  },
+                  {
+                    "type": "minecraft:random_chance",
+                    "chance": {
+                      "type": "minecraft:storage",
+                      "storage": "eden:settings",
+                      "path": "mob_manager.shulker.mobhead"
+                    }
+                  }
+                ]
+              },
+              "modifier": [
                 {
-                  "function": "set_components",
+                  "type": "set_components",
                   "components": {
                     "minecraft:note_block_sound": "minecraft:entity.shulker.ambient",
                     "minecraft:profile": {
@@ -73,36 +101,39 @@
                     }
                   }
                 }
-              ],
-              "conditions": [
-                {
-                  "condition": "minecraft:entity_properties",
-                  "entity": "this",
-                  "predicate": {
-                    "components": {
-                      "minecraft:shulker/color": "black"
-                    }
-                  }
-                },
-                {
-                  "condition": "killed_by_player"
-                },
-                {
-                  "condition": "minecraft:random_chance",
-                  "chance": {
-                    "type": "minecraft:storage",
-                    "storage": "eden:settings",
-                    "path": "mob_manager.shulker.mobhead"
-                  }
-                }
               ]
             },
             {
               "type": "minecraft:item",
               "name": "minecraft:player_head",
-              "functions": [
+              "condition": {
+                "type": "minecraft:all_of",
+                "terms": [
+                  {
+                    "type": "minecraft:entity_properties",
+                    "entity": "this",
+                    "predicate": {
+                      "components": {
+                        "minecraft:shulker/color": "blue"
+                      }
+                    }
+                  },
+                  {
+                    "type": "killed_by_player"
+                  },
+                  {
+                    "type": "minecraft:random_chance",
+                    "chance": {
+                      "type": "minecraft:storage",
+                      "storage": "eden:settings",
+                      "path": "mob_manager.shulker.mobhead"
+                    }
+                  }
+                ]
+              },
+              "modifier": [
                 {
-                  "function": "set_components",
+                  "type": "set_components",
                   "components": {
                     "minecraft:note_block_sound": "minecraft:entity.shulker.ambient",
                     "minecraft:profile": {
@@ -118,36 +149,39 @@
                     }
                   }
                 }
-              ],
-              "conditions": [
-                {
-                  "condition": "minecraft:entity_properties",
-                  "entity": "this",
-                  "predicate": {
-                    "components": {
-                      "minecraft:shulker/color": "blue"
-                    }
-                  }
-                },
-                {
-                  "condition": "killed_by_player"
-                },
-                {
-                  "condition": "minecraft:random_chance",
-                  "chance": {
-                    "type": "minecraft:storage",
-                    "storage": "eden:settings",
-                    "path": "mob_manager.shulker.mobhead"
-                  }
-                }
               ]
             },
             {
               "type": "minecraft:item",
               "name": "minecraft:player_head",
-              "functions": [
+              "condition": {
+                "type": "minecraft:all_of",
+                "terms": [
+                  {
+                    "type": "minecraft:entity_properties",
+                    "entity": "this",
+                    "predicate": {
+                      "components": {
+                        "minecraft:shulker/color": "brown"
+                      }
+                    }
+                  },
+                  {
+                    "type": "killed_by_player"
+                  },
+                  {
+                    "type": "minecraft:random_chance",
+                    "chance": {
+                      "type": "minecraft:storage",
+                      "storage": "eden:settings",
+                      "path": "mob_manager.shulker.mobhead"
+                    }
+                  }
+                ]
+              },
+              "modifier": [
                 {
-                  "function": "set_components",
+                  "type": "set_components",
                   "components": {
                     "minecraft:note_block_sound": "minecraft:entity.shulker.ambient",
                     "minecraft:profile": {
@@ -163,36 +197,39 @@
                     }
                   }
                 }
-              ],
-              "conditions": [
-                {
-                  "condition": "minecraft:entity_properties",
-                  "entity": "this",
-                  "predicate": {
-                    "components": {
-                      "minecraft:shulker/color": "brown"
-                    }
-                  }
-                },
-                {
-                  "condition": "killed_by_player"
-                },
-                {
-                  "condition": "minecraft:random_chance",
-                  "chance": {
-                    "type": "minecraft:storage",
-                    "storage": "eden:settings",
-                    "path": "mob_manager.shulker.mobhead"
-                  }
-                }
               ]
             },
             {
               "type": "minecraft:item",
               "name": "minecraft:player_head",
-              "functions": [
+              "condition": {
+                "type": "minecraft:all_of",
+                "terms": [
+                  {
+                    "type": "minecraft:entity_properties",
+                    "entity": "this",
+                    "predicate": {
+                      "components": {
+                        "minecraft:shulker/color": "cyan"
+                      }
+                    }
+                  },
+                  {
+                    "type": "killed_by_player"
+                  },
+                  {
+                    "type": "minecraft:random_chance",
+                    "chance": {
+                      "type": "minecraft:storage",
+                      "storage": "eden:settings",
+                      "path": "mob_manager.shulker.mobhead"
+                    }
+                  }
+                ]
+              },
+              "modifier": [
                 {
-                  "function": "set_components",
+                  "type": "set_components",
                   "components": {
                     "minecraft:note_block_sound": "minecraft:entity.shulker.ambient",
                     "minecraft:profile": {
@@ -208,36 +245,39 @@
                     }
                   }
                 }
-              ],
-              "conditions": [
-                {
-                  "condition": "minecraft:entity_properties",
-                  "entity": "this",
-                  "predicate": {
-                    "components": {
-                      "minecraft:shulker/color": "cyan"
-                    }
-                  }
-                },
-                {
-                  "condition": "killed_by_player"
-                },
-                {
-                  "condition": "minecraft:random_chance",
-                  "chance": {
-                    "type": "minecraft:storage",
-                    "storage": "eden:settings",
-                    "path": "mob_manager.shulker.mobhead"
-                  }
-                }
               ]
             },
             {
               "type": "minecraft:item",
               "name": "minecraft:player_head",
-              "functions": [
+              "condition": {
+                "type": "minecraft:all_of",
+                "terms": [
+                  {
+                    "type": "minecraft:entity_properties",
+                    "entity": "this",
+                    "predicate": {
+                      "components": {
+                        "minecraft:shulker/color": "gray"
+                      }
+                    }
+                  },
+                  {
+                    "type": "killed_by_player"
+                  },
+                  {
+                    "type": "minecraft:random_chance",
+                    "chance": {
+                      "type": "minecraft:storage",
+                      "storage": "eden:settings",
+                      "path": "mob_manager.shulker.mobhead"
+                    }
+                  }
+                ]
+              },
+              "modifier": [
                 {
-                  "function": "set_components",
+                  "type": "set_components",
                   "components": {
                     "minecraft:note_block_sound": "minecraft:entity.shulker.ambient",
                     "minecraft:profile": {
@@ -253,36 +293,39 @@
                     }
                   }
                 }
-              ],
-              "conditions": [
-                {
-                  "condition": "minecraft:entity_properties",
-                  "entity": "this",
-                  "predicate": {
-                    "components": {
-                      "minecraft:shulker/color": "gray"
-                    }
-                  }
-                },
-                {
-                  "condition": "killed_by_player"
-                },
-                {
-                  "condition": "minecraft:random_chance",
-                  "chance": {
-                    "type": "minecraft:storage",
-                    "storage": "eden:settings",
-                    "path": "mob_manager.shulker.mobhead"
-                  }
-                }
               ]
             },
             {
               "type": "minecraft:item",
               "name": "minecraft:player_head",
-              "functions": [
+              "condition": {
+                "type": "minecraft:all_of",
+                "terms": [
+                  {
+                    "type": "minecraft:entity_properties",
+                    "entity": "this",
+                    "predicate": {
+                      "components": {
+                        "minecraft:shulker/color": "green"
+                      }
+                    }
+                  },
+                  {
+                    "type": "killed_by_player"
+                  },
+                  {
+                    "type": "minecraft:random_chance",
+                    "chance": {
+                      "type": "minecraft:storage",
+                      "storage": "eden:settings",
+                      "path": "mob_manager.shulker.mobhead"
+                    }
+                  }
+                ]
+              },
+              "modifier": [
                 {
-                  "function": "set_components",
+                  "type": "set_components",
                   "components": {
                     "minecraft:note_block_sound": "minecraft:entity.shulker.ambient",
                     "minecraft:profile": {
@@ -298,36 +341,39 @@
                     }
                   }
                 }
-              ],
-              "conditions": [
-                {
-                  "condition": "minecraft:entity_properties",
-                  "entity": "this",
-                  "predicate": {
-                    "components": {
-                      "minecraft:shulker/color": "green"
-                    }
-                  }
-                },
-                {
-                  "condition": "killed_by_player"
-                },
-                {
-                  "condition": "minecraft:random_chance",
-                  "chance": {
-                    "type": "minecraft:storage",
-                    "storage": "eden:settings",
-                    "path": "mob_manager.shulker.mobhead"
-                  }
-                }
               ]
             },
             {
               "type": "minecraft:item",
               "name": "minecraft:player_head",
-              "functions": [
+              "condition": {
+                "type": "minecraft:all_of",
+                "terms": [
+                  {
+                    "type": "minecraft:entity_properties",
+                    "entity": "this",
+                    "predicate": {
+                      "components": {
+                        "minecraft:shulker/color": "light_blue"
+                      }
+                    }
+                  },
+                  {
+                    "type": "killed_by_player"
+                  },
+                  {
+                    "type": "minecraft:random_chance",
+                    "chance": {
+                      "type": "minecraft:storage",
+                      "storage": "eden:settings",
+                      "path": "mob_manager.shulker.mobhead"
+                    }
+                  }
+                ]
+              },
+              "modifier": [
                 {
-                  "function": "set_components",
+                  "type": "set_components",
                   "components": {
                     "minecraft:note_block_sound": "minecraft:entity.shulker.ambient",
                     "minecraft:profile": {
@@ -343,36 +389,39 @@
                     }
                   }
                 }
-              ],
-              "conditions": [
-                {
-                  "condition": "minecraft:entity_properties",
-                  "entity": "this",
-                  "predicate": {
-                    "components": {
-                      "minecraft:shulker/color": "light_blue"
-                    }
-                  }
-                },
-                {
-                  "condition": "killed_by_player"
-                },
-                {
-                  "condition": "minecraft:random_chance",
-                  "chance": {
-                    "type": "minecraft:storage",
-                    "storage": "eden:settings",
-                    "path": "mob_manager.shulker.mobhead"
-                  }
-                }
               ]
             },
             {
               "type": "minecraft:item",
               "name": "minecraft:player_head",
-              "functions": [
+              "condition": {
+                "type": "minecraft:all_of",
+                "terms": [
+                  {
+                    "type": "minecraft:entity_properties",
+                    "entity": "this",
+                    "predicate": {
+                      "components": {
+                        "minecraft:shulker/color": "lime"
+                      }
+                    }
+                  },
+                  {
+                    "type": "killed_by_player"
+                  },
+                  {
+                    "type": "minecraft:random_chance",
+                    "chance": {
+                      "type": "minecraft:storage",
+                      "storage": "eden:settings",
+                      "path": "mob_manager.shulker.mobhead"
+                    }
+                  }
+                ]
+              },
+              "modifier": [
                 {
-                  "function": "set_components",
+                  "type": "set_components",
                   "components": {
                     "minecraft:note_block_sound": "minecraft:entity.shulker.ambient",
                     "minecraft:profile": {
@@ -388,36 +437,39 @@
                     }
                   }
                 }
-              ],
-              "conditions": [
-                {
-                  "condition": "minecraft:entity_properties",
-                  "entity": "this",
-                  "predicate": {
-                    "components": {
-                      "minecraft:shulker/color": "lime"
-                    }
-                  }
-                },
-                {
-                  "condition": "killed_by_player"
-                },
-                {
-                  "condition": "minecraft:random_chance",
-                  "chance": {
-                    "type": "minecraft:storage",
-                    "storage": "eden:settings",
-                    "path": "mob_manager.shulker.mobhead"
-                  }
-                }
               ]
             },
             {
               "type": "minecraft:item",
               "name": "minecraft:player_head",
-              "functions": [
+              "condition": {
+                "type": "minecraft:all_of",
+                "terms": [
+                  {
+                    "type": "minecraft:entity_properties",
+                    "entity": "this",
+                    "predicate": {
+                      "components": {
+                        "minecraft:shulker/color": "magenta"
+                      }
+                    }
+                  },
+                  {
+                    "type": "killed_by_player"
+                  },
+                  {
+                    "type": "minecraft:random_chance",
+                    "chance": {
+                      "type": "minecraft:storage",
+                      "storage": "eden:settings",
+                      "path": "mob_manager.shulker.mobhead"
+                    }
+                  }
+                ]
+              },
+              "modifier": [
                 {
-                  "function": "set_components",
+                  "type": "set_components",
                   "components": {
                     "minecraft:note_block_sound": "minecraft:entity.shulker.ambient",
                     "minecraft:profile": {
@@ -433,36 +485,39 @@
                     }
                   }
                 }
-              ],
-              "conditions": [
-                {
-                  "condition": "minecraft:entity_properties",
-                  "entity": "this",
-                  "predicate": {
-                    "components": {
-                      "minecraft:shulker/color": "magenta"
-                    }
-                  }
-                },
-                {
-                  "condition": "killed_by_player"
-                },
-                {
-                  "condition": "minecraft:random_chance",
-                  "chance": {
-                    "type": "minecraft:storage",
-                    "storage": "eden:settings",
-                    "path": "mob_manager.shulker.mobhead"
-                  }
-                }
               ]
             },
             {
               "type": "minecraft:item",
               "name": "minecraft:player_head",
-              "functions": [
+              "condition": {
+                "type": "minecraft:all_of",
+                "terms": [
+                  {
+                    "type": "minecraft:entity_properties",
+                    "entity": "this",
+                    "predicate": {
+                      "components": {
+                        "minecraft:shulker/color": "orange"
+                      }
+                    }
+                  },
+                  {
+                    "type": "killed_by_player"
+                  },
+                  {
+                    "type": "minecraft:random_chance",
+                    "chance": {
+                      "type": "minecraft:storage",
+                      "storage": "eden:settings",
+                      "path": "mob_manager.shulker.mobhead"
+                    }
+                  }
+                ]
+              },
+              "modifier": [
                 {
-                  "function": "set_components",
+                  "type": "set_components",
                   "components": {
                     "minecraft:note_block_sound": "minecraft:entity.shulker.ambient",
                     "minecraft:profile": {
@@ -478,36 +533,39 @@
                     }
                   }
                 }
-              ],
-              "conditions": [
-                {
-                  "condition": "minecraft:entity_properties",
-                  "entity": "this",
-                  "predicate": {
-                    "components": {
-                      "minecraft:shulker/color": "orange"
-                    }
-                  }
-                },
-                {
-                  "condition": "killed_by_player"
-                },
-                {
-                  "condition": "minecraft:random_chance",
-                  "chance": {
-                    "type": "minecraft:storage",
-                    "storage": "eden:settings",
-                    "path": "mob_manager.shulker.mobhead"
-                  }
-                }
               ]
             },
             {
               "type": "minecraft:item",
               "name": "minecraft:player_head",
-              "functions": [
+              "condition": {
+                "type": "minecraft:all_of",
+                "terms": [
+                  {
+                    "type": "minecraft:entity_properties",
+                    "entity": "this",
+                    "predicate": {
+                      "components": {
+                        "minecraft:shulker/color": "pink"
+                      }
+                    }
+                  },
+                  {
+                    "type": "killed_by_player"
+                  },
+                  {
+                    "type": "minecraft:random_chance",
+                    "chance": {
+                      "type": "minecraft:storage",
+                      "storage": "eden:settings",
+                      "path": "mob_manager.shulker.mobhead"
+                    }
+                  }
+                ]
+              },
+              "modifier": [
                 {
-                  "function": "set_components",
+                  "type": "set_components",
                   "components": {
                     "minecraft:note_block_sound": "minecraft:entity.shulker.ambient",
                     "minecraft:profile": {
@@ -523,36 +581,39 @@
                     }
                   }
                 }
-              ],
-              "conditions": [
-                {
-                  "condition": "minecraft:entity_properties",
-                  "entity": "this",
-                  "predicate": {
-                    "components": {
-                      "minecraft:shulker/color": "pink"
-                    }
-                  }
-                },
-                {
-                  "condition": "killed_by_player"
-                },
-                {
-                  "condition": "minecraft:random_chance",
-                  "chance": {
-                    "type": "minecraft:storage",
-                    "storage": "eden:settings",
-                    "path": "mob_manager.shulker.mobhead"
-                  }
-                }
               ]
             },
             {
               "type": "minecraft:item",
               "name": "minecraft:player_head",
-              "functions": [
+              "condition": {
+                "type": "minecraft:all_of",
+                "terms": [
+                  {
+                    "type": "minecraft:entity_properties",
+                    "entity": "this",
+                    "predicate": {
+                      "components": {
+                        "minecraft:shulker/color": "red"
+                      }
+                    }
+                  },
+                  {
+                    "type": "killed_by_player"
+                  },
+                  {
+                    "type": "minecraft:random_chance",
+                    "chance": {
+                      "type": "minecraft:storage",
+                      "storage": "eden:settings",
+                      "path": "mob_manager.shulker.mobhead"
+                    }
+                  }
+                ]
+              },
+              "modifier": [
                 {
-                  "function": "set_components",
+                  "type": "set_components",
                   "components": {
                     "minecraft:note_block_sound": "minecraft:entity.shulker.ambient",
                     "minecraft:profile": {
@@ -568,36 +629,39 @@
                     }
                   }
                 }
-              ],
-              "conditions": [
-                {
-                  "condition": "minecraft:entity_properties",
-                  "entity": "this",
-                  "predicate": {
-                    "components": {
-                      "minecraft:shulker/color": "red"
-                    }
-                  }
-                },
-                {
-                  "condition": "killed_by_player"
-                },
-                {
-                  "condition": "minecraft:random_chance",
-                  "chance": {
-                    "type": "minecraft:storage",
-                    "storage": "eden:settings",
-                    "path": "mob_manager.shulker.mobhead"
-                  }
-                }
               ]
             },
             {
               "type": "minecraft:item",
               "name": "minecraft:player_head",
-              "functions": [
+              "condition": {
+                "type": "minecraft:all_of",
+                "terms": [
+                  {
+                    "type": "minecraft:entity_properties",
+                    "entity": "this",
+                    "predicate": {
+                      "components": {
+                        "minecraft:shulker/color": "light_gray"
+                      }
+                    }
+                  },
+                  {
+                    "type": "killed_by_player"
+                  },
+                  {
+                    "type": "minecraft:random_chance",
+                    "chance": {
+                      "type": "minecraft:storage",
+                      "storage": "eden:settings",
+                      "path": "mob_manager.shulker.mobhead"
+                    }
+                  }
+                ]
+              },
+              "modifier": [
                 {
-                  "function": "set_components",
+                  "type": "set_components",
                   "components": {
                     "minecraft:note_block_sound": "minecraft:entity.shulker.ambient",
                     "minecraft:profile": {
@@ -613,36 +677,39 @@
                     }
                   }
                 }
-              ],
-              "conditions": [
-                {
-                  "condition": "minecraft:entity_properties",
-                  "entity": "this",
-                  "predicate": {
-                    "components": {
-                      "minecraft:shulker/color": "light_gray"
-                    }
-                  }
-                },
-                {
-                  "condition": "killed_by_player"
-                },
-                {
-                  "condition": "minecraft:random_chance",
-                  "chance": {
-                    "type": "minecraft:storage",
-                    "storage": "eden:settings",
-                    "path": "mob_manager.shulker.mobhead"
-                  }
-                }
               ]
             },
             {
               "type": "minecraft:item",
               "name": "minecraft:player_head",
-              "functions": [
+              "condition": {
+                "type": "minecraft:all_of",
+                "terms": [
+                  {
+                    "type": "minecraft:entity_properties",
+                    "entity": "this",
+                    "predicate": {
+                      "components": {
+                        "minecraft:shulker/color": "purple"
+                      }
+                    }
+                  },
+                  {
+                    "type": "killed_by_player"
+                  },
+                  {
+                    "type": "minecraft:random_chance",
+                    "chance": {
+                      "type": "minecraft:storage",
+                      "storage": "eden:settings",
+                      "path": "mob_manager.shulker.mobhead"
+                    }
+                  }
+                ]
+              },
+              "modifier": [
                 {
-                  "function": "set_components",
+                  "type": "set_components",
                   "components": {
                     "minecraft:note_block_sound": "minecraft:entity.shulker.ambient",
                     "minecraft:profile": {
@@ -658,36 +725,39 @@
                     }
                   }
                 }
-              ],
-              "conditions": [
-                {
-                  "condition": "minecraft:entity_properties",
-                  "entity": "this",
-                  "predicate": {
-                    "components": {
-                      "minecraft:shulker/color": "purple"
-                    }
-                  }
-                },
-                {
-                  "condition": "killed_by_player"
-                },
-                {
-                  "condition": "minecraft:random_chance",
-                  "chance": {
-                    "type": "minecraft:storage",
-                    "storage": "eden:settings",
-                    "path": "mob_manager.shulker.mobhead"
-                  }
-                }
               ]
             },
             {
               "type": "minecraft:item",
               "name": "minecraft:player_head",
-              "functions": [
+              "condition": {
+                "type": "minecraft:all_of",
+                "terms": [
+                  {
+                    "type": "minecraft:entity_properties",
+                    "entity": "this",
+                    "predicate": {
+                      "components": {
+                        "minecraft:shulker/color": "yellow"
+                      }
+                    }
+                  },
+                  {
+                    "type": "killed_by_player"
+                  },
+                  {
+                    "type": "minecraft:random_chance",
+                    "chance": {
+                      "type": "minecraft:storage",
+                      "storage": "eden:settings",
+                      "path": "mob_manager.shulker.mobhead"
+                    }
+                  }
+                ]
+              },
+              "modifier": [
                 {
-                  "function": "set_components",
+                  "type": "set_components",
                   "components": {
                     "minecraft:note_block_sound": "minecraft:entity.shulker.ambient",
                     "minecraft:profile": {
@@ -703,36 +773,37 @@
                     }
                   }
                 }
-              ],
-              "conditions": [
-                {
-                  "condition": "minecraft:entity_properties",
-                  "entity": "this",
-                  "predicate": {
-                    "components": {
-                      "minecraft:shulker/color": "yellow"
-                    }
-                  }
-                },
-                {
-                  "condition": "killed_by_player"
-                },
-                {
-                  "condition": "minecraft:random_chance",
-                  "chance": {
-                    "type": "minecraft:storage",
-                    "storage": "eden:settings",
-                    "path": "mob_manager.shulker.mobhead"
-                  }
-                }
               ]
             },
             {
               "type": "minecraft:item",
               "name": "minecraft:player_head",
-              "functions": [
+              "condition": {
+                "type": "minecraft:all_of",
+                "terms": [
+                  {
+                    "type": "minecraft:entity_properties",
+                    "entity": "this",
+                    "predicate": {
+                      "nbt": "{Color:16b}"
+                    }
+                  },
+                  {
+                    "type": "killed_by_player"
+                  },
+                  {
+                    "type": "minecraft:random_chance",
+                    "chance": {
+                      "type": "minecraft:storage",
+                      "storage": "eden:settings",
+                      "path": "mob_manager.shulker.mobhead"
+                    }
+                  }
+                ]
+              },
+              "modifier": [
                 {
-                  "function": "set_components",
+                  "type": "set_components",
                   "components": {
                     "minecraft:note_block_sound": "minecraft:entity.shulker.ambient",
                     "minecraft:profile": {
@@ -746,26 +817,6 @@
                     "minecraft:item_name": {
                       "translate": "entity.minecraft.shulker"
                     }
-                  }
-                }
-              ],
-              "conditions": [
-                {
-                  "condition": "minecraft:entity_properties",
-                  "entity": "this",
-                  "predicate": {
-                    "nbt": "{Color:16b}"
-                  }
-                },
-                {
-                  "condition": "killed_by_player"
-                },
-                {
-                  "condition": "minecraft:random_chance",
-                  "chance": {
-                    "type": "minecraft:storage",
-                    "storage": "eden:settings",
-                    "path": "mob_manager.shulker.mobhead"
                   }
                 }
               ]
@@ -782,19 +833,22 @@
           "name": "minecraft:shulker_shell"
         }
       ],
-      "conditions": [
-        {
-          "condition": "killed_by_player"
-        },
-        {
-          "condition": "minecraft:random_chance",
-          "chance": {
-            "type": "minecraft:storage",
-            "storage": "eden:settings",
-            "path": "mob_manager.mob_drops.shulkerdrop"
+      "condition": {
+        "type": "minecraft:all_of",
+        "terms": [
+          {
+            "type": "killed_by_player"
+          },
+          {
+            "type": "minecraft:random_chance",
+            "chance": {
+              "type": "minecraft:storage",
+              "storage": "eden:settings",
+              "path": "mob_manager.mob_drops.shulkerdrop"
+            }
           }
-        }
-      ]
+        ]
+      }
     },
     {
       "rolls": 1,

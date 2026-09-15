@@ -10,9 +10,34 @@
             {
               "type": "minecraft:item",
               "name": "minecraft:player_head",
-              "functions": [
+              "condition": {
+                "type": "minecraft:all_of",
+                "terms": [
+                  {
+                    "type": "minecraft:entity_properties",
+                    "entity": "this",
+                    "predicate": {
+                      "components": {
+                        "minecraft:mooshroom/variant": "brown"
+                      }
+                    }
+                  },
+                  {
+                    "type": "killed_by_player"
+                  },
+                  {
+                    "type": "minecraft:random_chance",
+                    "chance": {
+                      "type": "minecraft:storage",
+                      "storage": "eden:settings",
+                      "path": "mob_manager.mooshroom.mobhead"
+                    }
+                  }
+                ]
+              },
+              "modifier": [
                 {
-                  "function": "set_components",
+                  "type": "set_components",
                   "components": {
                     "minecraft:note_block_sound": "minecraft:entity.cow.ambient",
                     "minecraft:profile": {
@@ -28,36 +53,39 @@
                     }
                   }
                 }
-              ],
-              "conditions": [
-                {
-                  "condition": "minecraft:entity_properties",
-                  "entity": "this",
-                  "predicate": {
-                    "components": {
-                      "minecraft:mooshroom/variant": "brown"
-                    }
-                  }
-                },
-                {
-                  "condition": "killed_by_player"
-                },
-                {
-                  "condition": "minecraft:random_chance",
-                  "chance": {
-                    "type": "minecraft:storage",
-                    "storage": "eden:settings",
-                    "path": "mob_manager.mooshroom.mobhead"
-                  }
-                }
               ]
             },
             {
               "type": "minecraft:item",
               "name": "minecraft:player_head",
-              "functions": [
+              "condition": {
+                "type": "minecraft:all_of",
+                "terms": [
+                  {
+                    "type": "minecraft:entity_properties",
+                    "entity": "this",
+                    "predicate": {
+                      "components": {
+                        "minecraft:mooshroom/variant": "red"
+                      }
+                    }
+                  },
+                  {
+                    "type": "killed_by_player"
+                  },
+                  {
+                    "type": "minecraft:random_chance",
+                    "chance": {
+                      "type": "minecraft:storage",
+                      "storage": "eden:settings",
+                      "path": "mob_manager.mooshroom.mobhead"
+                    }
+                  }
+                ]
+              },
+              "modifier": [
                 {
-                  "function": "set_components",
+                  "type": "set_components",
                   "components": {
                     "minecraft:note_block_sound": "minecraft:entity.cow.ambient",
                     "minecraft:profile": {
@@ -71,28 +99,6 @@
                     "minecraft:item_name": {
                       "translate": "entity.minecraft.mooshroom"
                     }
-                  }
-                }
-              ],
-              "conditions": [
-                {
-                  "condition": "minecraft:entity_properties",
-                  "entity": "this",
-                  "predicate": {
-                    "components": {
-                      "minecraft:mooshroom/variant": "red"
-                    }
-                  }
-                },
-                {
-                  "condition": "killed_by_player"
-                },
-                {
-                  "condition": "minecraft:random_chance",
-                  "chance": {
-                    "type": "minecraft:storage",
-                    "storage": "eden:settings",
-                    "path": "mob_manager.mooshroom.mobhead"
                   }
                 }
               ]

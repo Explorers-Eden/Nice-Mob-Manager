@@ -5,29 +5,14 @@ rotate @s facing entity @p[distance=..8,tag=mob_manager.villager.leader]
 execute store result score @s mob_manager.follow.motionX run data get entity @s Motion[0] 100
 execute store result score @s mob_manager.follow.motionZ run data get entity @s Motion[2] 100
 
-execute as @p[distance=..8,tag=mob_manager.villager.leader] store result score @s mob_manager.follow.px run data get entity @s Pos[0] 5
-execute as @p[distance=..8,tag=mob_manager.villager.leader] store result score @s mob_manager.follow.py run data get entity @s Pos[1] 50
-execute as @p[distance=..8,tag=mob_manager.villager.leader] store result score @s mob_manager.follow.pz run data get entity @s Pos[2] 5
+execute as @p[distance=..8,tag=mob_manager.villager.leader] run data modify storage eden:temp mob_manager.follow.leader_pos set from entity @s Pos
+data modify storage eden:temp mob_manager.follow.self_pos set from entity @s Pos
 
-execute store result score @s mob_manager.follow.ex run data get entity @s Pos[0] 5
-execute store result score @s mob_manager.follow.ey run data get entity @s Pos[1] 50
-execute store result score @s mob_manager.follow.ez run data get entity @s Pos[2] 5
+execute store result score @s mob_manager.follow.dx run compute default float mob_manager:follow/dx 5
+execute store result score @s mob_manager.follow.dy run compute default float mob_manager:follow/dy 50
+execute store result score @s mob_manager.follow.dz run compute default float mob_manager:follow/dz 5
 
-scoreboard players operation @s mob_manager.follow.dx = @p[distance=..8,tag=mob_manager.villager.leader] mob_manager.follow.px
-scoreboard players operation @s mob_manager.follow.dx -= @s mob_manager.follow.ex
-
-scoreboard players operation @s mob_manager.follow.dy = @p[distance=..8,tag=mob_manager.villager.leader] mob_manager.follow.py
-scoreboard players operation @s mob_manager.follow.dy -= @s mob_manager.follow.ey
-
-scoreboard players operation @s mob_manager.follow.dz = @p[distance=..8,tag=mob_manager.villager.leader] mob_manager.follow.pz
-scoreboard players operation @s mob_manager.follow.dz -= @s mob_manager.follow.ez
-
-scoreboard players operation @s mob_manager.follow.dx2 = @s mob_manager.follow.dx
-scoreboard players operation @s mob_manager.follow.dx2 *= @s mob_manager.follow.dx
-scoreboard players operation @s mob_manager.follow.dz2 = @s mob_manager.follow.dz
-scoreboard players operation @s mob_manager.follow.dz2 *= @s mob_manager.follow.dz
-scoreboard players operation @s mob_manager.follow.len2 = @s mob_manager.follow.dx2
-scoreboard players operation @s mob_manager.follow.len2 += @s mob_manager.follow.dz2
+execute store result score @s mob_manager.follow.len2 run compute default float mob_manager:follow/len2 25
 
 execute if score @s mob_manager.follow.len2 matches ..99 run return 0
 

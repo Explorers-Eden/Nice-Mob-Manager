@@ -10,9 +10,34 @@
             {
               "type": "minecraft:item",
               "name": "minecraft:player_head",
-              "functions": [
+              "condition": {
+                "type": "minecraft:all_of",
+                "terms": [
+                  {
+                    "type": "minecraft:entity_properties",
+                    "entity": "this",
+                    "predicate": {
+                      "components": {
+                        "minecraft:frog/variant": "minecraft:cold"
+                      }
+                    }
+                  },
+                  {
+                    "type": "killed_by_player"
+                  },
+                  {
+                    "type": "minecraft:random_chance",
+                    "chance": {
+                      "type": "minecraft:storage",
+                      "storage": "eden:settings",
+                      "path": "mob_manager.frog.mobhead"
+                    }
+                  }
+                ]
+              },
+              "modifier": [
                 {
-                  "function": "set_components",
+                  "type": "set_components",
                   "components": {
                     "minecraft:note_block_sound": "minecraft:entity.frog.ambient",
                     "minecraft:profile": {
@@ -28,36 +53,39 @@
                     }
                   }
                 }
-              ],
-              "conditions": [
-                {
-                  "condition": "minecraft:entity_properties",
-                  "entity": "this",
-                  "predicate": {
-                    "components": {
-                      "minecraft:frog/variant": "minecraft:cold"
-                    }
-                  }
-                },
-                {
-                  "condition": "killed_by_player"
-                },
-                {
-                  "condition": "minecraft:random_chance",
-                  "chance": {
-                    "type": "minecraft:storage",
-                    "storage": "eden:settings",
-                    "path": "mob_manager.frog.mobhead"
-                  }
-                }
               ]
             },
             {
               "type": "minecraft:item",
               "name": "minecraft:player_head",
-              "functions": [
+              "condition": {
+                "type": "minecraft:all_of",
+                "terms": [
+                  {
+                    "type": "minecraft:entity_properties",
+                    "entity": "this",
+                    "predicate": {
+                      "components": {
+                        "minecraft:frog/variant": "minecraft:warm"
+                      }
+                    }
+                  },
+                  {
+                    "type": "killed_by_player"
+                  },
+                  {
+                    "type": "minecraft:random_chance",
+                    "chance": {
+                      "type": "minecraft:storage",
+                      "storage": "eden:settings",
+                      "path": "mob_manager.frog.mobhead"
+                    }
+                  }
+                ]
+              },
+              "modifier": [
                 {
-                  "function": "set_components",
+                  "type": "set_components",
                   "components": {
                     "minecraft:note_block_sound": "minecraft:entity.frog.ambient",
                     "minecraft:profile": {
@@ -73,36 +101,39 @@
                     }
                   }
                 }
-              ],
-              "conditions": [
-                {
-                  "condition": "minecraft:entity_properties",
-                  "entity": "this",
-                  "predicate": {
-                    "components": {
-                      "minecraft:frog/variant": "minecraft:warm"
-                    }
-                  }
-                },
-                {
-                  "condition": "killed_by_player"
-                },
-                {
-                  "condition": "minecraft:random_chance",
-                  "chance": {
-                    "type": "minecraft:storage",
-                    "storage": "eden:settings",
-                    "path": "mob_manager.frog.mobhead"
-                  }
-                }
               ]
             },
             {
               "type": "minecraft:item",
               "name": "minecraft:player_head",
-              "functions": [
+              "condition": {
+                "type": "minecraft:all_of",
+                "terms": [
+                  {
+                    "type": "minecraft:entity_properties",
+                    "entity": "this",
+                    "predicate": {
+                      "components": {
+                        "minecraft:frog/variant": "minecraft:temperate"
+                      }
+                    }
+                  },
+                  {
+                    "type": "killed_by_player"
+                  },
+                  {
+                    "type": "minecraft:random_chance",
+                    "chance": {
+                      "type": "minecraft:storage",
+                      "storage": "eden:settings",
+                      "path": "mob_manager.frog.mobhead"
+                    }
+                  }
+                ]
+              },
+              "modifier": [
                 {
-                  "function": "set_components",
+                  "type": "set_components",
                   "components": {
                     "minecraft:note_block_sound": "minecraft:entity.frog.ambient",
                     "minecraft:profile": {
@@ -116,28 +147,6 @@
                     "minecraft:item_name": {
                       "translate": "entity.minecraft.frog"
                     }
-                  }
-                }
-              ],
-              "conditions": [
-                {
-                  "condition": "minecraft:entity_properties",
-                  "entity": "this",
-                  "predicate": {
-                    "components": {
-                      "minecraft:frog/variant": "minecraft:temperate"
-                    }
-                  }
-                },
-                {
-                  "condition": "killed_by_player"
-                },
-                {
-                  "condition": "minecraft:random_chance",
-                  "chance": {
-                    "type": "minecraft:storage",
-                    "storage": "eden:settings",
-                    "path": "mob_manager.frog.mobhead"
                   }
                 }
               ]

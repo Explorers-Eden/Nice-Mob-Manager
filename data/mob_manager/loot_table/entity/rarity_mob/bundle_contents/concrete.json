@@ -3,27 +3,29 @@
   "pools": [
     {
       "rolls": {
+        "type": "minecraft:uniform",
         "min": 1,
         "max": 16
       },
       "entries": [
         {
           "type": "minecraft:tag",
-          "name": "mob_manager:dyeable_concrete_blocks",
-          "expand": true
+          "expand": true,
+          "items": "#mob_manager:dyeable_concrete"
         }
       ]
     },
     {
       "rolls": {
+        "type": "minecraft:uniform",
         "min": 1,
         "max": 16
       },
       "entries": [
         {
           "type": "minecraft:tag",
-          "name": "mob_manager:dyeable_concrete_powder",
-          "expand": true
+          "expand": true,
+          "items": "#mob_manager:dyeable_concrete_powder"
         }
       ]
     }

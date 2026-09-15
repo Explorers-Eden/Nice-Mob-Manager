@@ -1,26 +1,26 @@
 {
-    "values": [
-      "minecraft:cow",
-      "minecraft:pig",
-      "minecraft:goat",
-      "minecraft:mooshroom",
-      "minecraft:sheep",
-      "minecraft:panda",
-      "minecraft:polar_bear",
-      "minecraft:sniffer",
-      "minecraft:chicken",
-      "minecraft:tadpole",
-      "minecraft:villager",
-      "minecraft:axolotl",
-      "minecraft:wolf",
-      "minecraft:cat",
-      "minecraft:llama",
-      "minecraft:trader_llama",
-      "minecraft:horse",
-      "minecraft:donkey",
-      "minecraft:mule",
-      "minecraft:camel",
-      "minecraft:rabbit",
-      "minecraft:nautilus"
-    ]
-  }
+  "values": [
+    "minecraft:axolotl",
+    "minecraft:camel",
+    "minecraft:cat",
+    "minecraft:chicken",
+    "minecraft:cow",
+    "minecraft:donkey",
+    "minecraft:goat",
+    "minecraft:horse",
+    "minecraft:llama",
+    "minecraft:mooshroom",
+    "minecraft:mule",
+    "minecraft:nautilus",
+    "minecraft:panda",
+    "minecraft:pig",
+    "minecraft:polar_bear",
+    "minecraft:rabbit",
+    "minecraft:sheep",
+    "minecraft:sniffer",
+    "minecraft:tadpole",
+    "minecraft:trader_llama",
+    "minecraft:villager",
+    "minecraft:wolf"
+  ]
+}

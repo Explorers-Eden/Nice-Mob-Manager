@@ -1,0 +1,126 @@
+{
+  "parent": "eden:adventure/welcome_to_the_village",
+  "display": {
+    "icon": {
+      "id": "minecraft:emerald"
+    },
+    "title": {
+      "translate": "advancement.eden.adventure.nice_mob_manager.small_talk.title",
+      "fallback": "Small Talk"
+    },
+    "description": {
+      "translate": "advancement.eden.adventure.nice_mob_manager.small_talk.description",
+      "fallback": "Talk to a villager of all 7 biome types."
+    },
+    "frame": "goal",
+    "show_toast": true,
+    "announce_to_chat": true
+  },
+  "criteria": {
+    "desert": {
+      "trigger": "minecraft:player_interacted_with_entity",
+      "conditions": {
+        "entity": {
+          "type": "minecraft:entity_properties",
+          "entity": "this",
+          "predicate": {
+            "minecraft:entity_type": "minecraft:villager",
+            "components": {
+              "minecraft:villager/variant": "minecraft:desert"
+            }
+          }
+        }
+      }
+    },
+    "jungle": {
+      "trigger": "minecraft:player_interacted_with_entity",
+      "conditions": {
+        "entity": {
+          "type": "minecraft:entity_properties",
+          "entity": "this",
+          "predicate": {
+            "minecraft:entity_type": "minecraft:villager",
+            "components": {
+              "minecraft:villager/variant": "minecraft:jungle"
+            }
+          }
+        }
+      }
+    },
+    "plains": {
+      "trigger": "minecraft:player_interacted_with_entity",
+      "conditions": {
+        "entity": {
+          "type": "minecraft:entity_properties",
+          "entity": "this",
+          "predicate": {
+            "minecraft:entity_type": "minecraft:villager",
+            "components": {
+              "minecraft:villager/variant": "minecraft:plains"
+            }
+          }
+        }
+      }
+    },
+    "savanna": {
+      "trigger": "minecraft:player_interacted_with_entity",
+      "conditions": {
+        "entity": {
+          "type": "minecraft:entity_properties",
+          "entity": "this",
+          "predicate": {
+            "minecraft:entity_type": "minecraft:villager",
+            "components": {
+              "minecraft:villager/variant": "minecraft:savanna"
+            }
+          }
+        }
+      }
+    },
+    "snow": {
+      "trigger": "minecraft:player_interacted_with_entity",
+      "conditions": {
+        "entity": {
+          "type": "minecraft:entity_properties",
+          "entity": "this",
+          "predicate": {
+            "minecraft:entity_type": "minecraft:villager",
+            "components": {
+              "minecraft:villager/variant": "minecraft:snow"
+            }
+          }
+        }
+      }
+    },
+    "swamp": {
+      "trigger": "minecraft:player_interacted_with_entity",
+      "conditions": {
+        "entity": {
+          "type": "minecraft:entity_properties",
+          "entity": "this",
+          "predicate": {
+            "minecraft:entity_type": "minecraft:villager",
+            "components": {
+              "minecraft:villager/variant": "minecraft:swamp"
+            }
+          }
+        }
+      }
+    },
+    "taiga": {
+      "trigger": "minecraft:player_interacted_with_entity",
+      "conditions": {
+        "entity": {
+          "type": "minecraft:entity_properties",
+          "entity": "this",
+          "predicate": {
+            "minecraft:entity_type": "minecraft:villager",
+            "components": {
+              "minecraft:villager/variant": "minecraft:taiga"
+            }
+          }
+        }
+      }
+    }
+  }
+}

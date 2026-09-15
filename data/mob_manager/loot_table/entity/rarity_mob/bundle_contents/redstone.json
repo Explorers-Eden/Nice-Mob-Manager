@@ -3,14 +3,15 @@
   "pools": [
     {
       "rolls": {
+        "type": "minecraft:uniform",
         "min": 1,
         "max": 15
       },
       "entries": [
         {
           "type": "minecraft:tag",
-          "name": "mob_manager:redstone_components",
-          "expand": true
+          "expand": true,
+          "items": "#mob_manager:redstone_components"
         }
       ]
     },
@@ -20,10 +21,11 @@
         {
           "type": "minecraft:item",
           "name": "minecraft:redstone",
-          "functions": [
+          "modifier": [
             {
-              "function": "minecraft:set_count",
+              "type": "minecraft:set_count",
               "count": {
+                "type": "minecraft:uniform",
                 "min": 1,
                 "max": 12
               }

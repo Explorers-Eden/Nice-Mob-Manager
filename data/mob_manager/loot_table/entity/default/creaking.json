@@ -1,27 +1,27 @@
 {
-	"type": "minecraft:entity",
-	"pools": [
-		{
-			"rolls": 1,
-			"entries": [
-				{
-					"type": "item",
-					"name": "minecraft:player_head",
-					"weight": 1,
-					"functions": [
-						{
-							"function": "set_components",
-							"components": {
-								"minecraft:note_block_sound": "minecraft:entity.generic.explode",
-								"minecraft:profile": {
-									"properties": [
-										{
-											"name": "textures",
-											"value": "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZjkzYzk0Njk3OTdkZDI5ZWQ4NzdhZGVmY2IzZDJlNmRhNTI4ZDkyMDM1NjdjYTJhNDA3NWU3NTFkYjA1YzNlMCJ9fX0="
-										}
-									]
-								},
-                	"minecraft:item_name": {
+  "type": "minecraft:entity",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "item",
+          "name": "minecraft:player_head",
+          "weight": 1,
+          "modifier": [
+            {
+              "type": "set_components",
+              "components": {
+                "minecraft:note_block_sound": "minecraft:entity.generic.explode",
+                "minecraft:profile": {
+                  "properties": [
+                    {
+                      "name": "textures",
+                      "value": "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZjkzYzk0Njk3OTdkZDI5ZWQ4NzdhZGVmY2IzZDJlNmRhNTI4ZDkyMDM1NjdjYTJhNDA3NWU3NTFkYjA1YzNlMCJ9fX0="
+                    }
+                  ]
+                },
+                "minecraft:item_name": {
                   "translate": "entity.minecraft.creaking"
                 }
               }
@@ -29,61 +29,67 @@
           ]
         }
       ],
-      "conditions": [
-        {
-          "condition": "killed_by_player"
-        },
-        {
-          "condition": "minecraft:random_chance",
-          "chance": {
-            "type": "minecraft:storage",
-            "storage": "eden:settings",
-            "path": "mob_manager.creaking.mobhead"
+      "condition": {
+        "type": "minecraft:all_of",
+        "terms": [
+          {
+            "type": "killed_by_player"
+          },
+          {
+            "type": "minecraft:random_chance",
+            "chance": {
+              "type": "minecraft:storage",
+              "storage": "eden:settings",
+              "path": "mob_manager.creaking.mobhead"
+            }
           }
-        }
-      ]
+        ]
+      }
     },
-            {
+    {
       "rolls": 1,
       "entries": [
         {
           "type": "minecraft:item",
           "name": "minecraft:resin_clump",
-          "functions": [
+          "modifier": [
             {
               "add": false,
               "count": {
                 "type": "minecraft:uniform",
-                "max": 2,
-                "min": 1
+                "min": 1,
+                "max": 2
               },
-              "function": "minecraft:set_count"
+              "type": "minecraft:set_count"
             },
             {
               "count": {
                 "type": "minecraft:uniform",
-                "max": 1,
-                "min": 0
+                "min": 0,
+                "max": 1
               },
               "enchantment": "minecraft:looting",
-              "function": "minecraft:enchanted_count_increase"
+              "type": "minecraft:enchanted_count_increase"
             }
           ]
         }
       ],
-      "conditions": [
-        {
-          "condition": "killed_by_player"
-        },
-        {
-          "condition": "minecraft:random_chance",
-          "chance": {
-            "type": "minecraft:storage",
-            "storage": "eden:settings",
-            "path": "mob_manager.mob_drops.creakingresinclump"
+      "condition": {
+        "type": "minecraft:all_of",
+        "terms": [
+          {
+            "type": "killed_by_player"
+          },
+          {
+            "type": "minecraft:random_chance",
+            "chance": {
+              "type": "minecraft:storage",
+              "storage": "eden:settings",
+              "path": "mob_manager.mob_drops.creakingresinclump"
+            }
           }
-        }
-      ]
+        ]
+      }
     },
     {
       "rolls": 1,

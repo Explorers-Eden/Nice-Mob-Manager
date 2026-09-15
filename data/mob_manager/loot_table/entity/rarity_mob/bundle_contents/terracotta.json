@@ -3,27 +3,29 @@
   "pools": [
     {
       "rolls": {
+        "type": "minecraft:uniform",
         "min": 1,
         "max": 8
       },
       "entries": [
         {
           "type": "minecraft:tag",
-          "name": "mob_manager:dyeable_glazed_terracotta",
-          "expand": true
+          "expand": true,
+          "items": "#minecraft:glazed_terracotta"
         }
       ]
     },
     {
       "rolls": {
+        "type": "minecraft:uniform",
         "min": 1,
         "max": 16
       },
       "entries": [
         {
           "type": "minecraft:tag",
-          "name": "minecraft:terracotta",
-          "expand": true
+          "expand": true,
+          "items": "#minecraft:terracotta"
         }
       ]
     }

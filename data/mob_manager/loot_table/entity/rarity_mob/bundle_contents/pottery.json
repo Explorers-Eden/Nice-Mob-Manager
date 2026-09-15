@@ -3,14 +3,15 @@
   "pools": [
     {
       "rolls": {
+        "type": "minecraft:uniform",
         "min": 1,
         "max": 8
       },
       "entries": [
         {
           "type": "minecraft:tag",
-          "name": "minecraft:decorated_pot_sherds",
-          "expand": true
+          "expand": true,
+          "items": "#minecraft:decorated_pot_sherds"
         }
       ]
     },
@@ -21,10 +22,11 @@
           "type": "minecraft:item",
           "name": "minecraft:brick",
           "weight": 20,
-          "functions": [
+          "modifier": [
             {
-              "function": "minecraft:set_count",
+              "type": "minecraft:set_count",
               "count": {
+                "type": "minecraft:uniform",
                 "min": 1,
                 "max": 10
               }
@@ -35,10 +37,11 @@
           "type": "minecraft:item",
           "name": "minecraft:flower_pot",
           "weight": 15,
-          "functions": [
+          "modifier": [
             {
-              "function": "minecraft:set_count",
+              "type": "minecraft:set_count",
               "count": {
+                "type": "minecraft:uniform",
                 "min": 1,
                 "max": 8
               }
@@ -49,10 +52,11 @@
           "type": "minecraft:item",
           "name": "minecraft:decorated_pot",
           "weight": 5,
-          "functions": [
+          "modifier": [
             {
-              "function": "minecraft:set_count",
+              "type": "minecraft:set_count",
               "count": {
+                "type": "minecraft:uniform",
                 "min": 1,
                 "max": 5
               }

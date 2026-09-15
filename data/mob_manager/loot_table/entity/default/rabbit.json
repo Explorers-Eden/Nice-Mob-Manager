@@ -10,9 +10,34 @@
             {
               "type": "minecraft:item",
               "name": "minecraft:player_head",
-              "functions": [
+              "condition": {
+                "type": "minecraft:all_of",
+                "terms": [
+                  {
+                    "type": "minecraft:entity_properties",
+                    "entity": "this",
+                    "predicate": {
+                      "components": {
+                        "minecraft:rabbit/variant": "brown"
+                      }
+                    }
+                  },
+                  {
+                    "type": "killed_by_player"
+                  },
+                  {
+                    "type": "minecraft:random_chance",
+                    "chance": {
+                      "type": "minecraft:storage",
+                      "storage": "eden:settings",
+                      "path": "mob_manager.rabbit.mobhead"
+                    }
+                  }
+                ]
+              },
+              "modifier": [
                 {
-                  "function": "set_components",
+                  "type": "set_components",
                   "components": {
                     "minecraft:note_block_sound": "minecraft:entity.rabbit.ambient",
                     "minecraft:profile": {
@@ -28,36 +53,39 @@
                     }
                   }
                 }
-              ],
-              "conditions": [
-                {
-                  "condition": "minecraft:entity_properties",
-                  "entity": "this",
-                  "predicate": {
-                    "components": {
-                      "minecraft:rabbit/variant": "brown"
-                    }
-                  }
-                },
-                {
-                  "condition": "killed_by_player"
-                },
-                {
-                  "condition": "minecraft:random_chance",
-                  "chance": {
-                    "type": "minecraft:storage",
-                    "storage": "eden:settings",
-                    "path": "mob_manager.rabbit.mobhead"
-                  }
-                }
               ]
             },
             {
               "type": "minecraft:item",
               "name": "minecraft:player_head",
-              "functions": [
+              "condition": {
+                "type": "minecraft:all_of",
+                "terms": [
+                  {
+                    "type": "minecraft:entity_properties",
+                    "entity": "this",
+                    "predicate": {
+                      "components": {
+                        "minecraft:rabbit/variant": "white"
+                      }
+                    }
+                  },
+                  {
+                    "type": "killed_by_player"
+                  },
+                  {
+                    "type": "minecraft:random_chance",
+                    "chance": {
+                      "type": "minecraft:storage",
+                      "storage": "eden:settings",
+                      "path": "mob_manager.rabbit.mobhead"
+                    }
+                  }
+                ]
+              },
+              "modifier": [
                 {
-                  "function": "set_components",
+                  "type": "set_components",
                   "components": {
                     "minecraft:note_block_sound": "minecraft:entity.rabbit.ambient",
                     "minecraft:profile": {
@@ -73,36 +101,39 @@
                     }
                   }
                 }
-              ],
-              "conditions": [
-                {
-                  "condition": "minecraft:entity_properties",
-                  "entity": "this",
-                  "predicate": {
-                    "components": {
-                      "minecraft:rabbit/variant": "white"
-                    }
-                  }
-                },
-                {
-                  "condition": "killed_by_player"
-                },
-                {
-                  "condition": "minecraft:random_chance",
-                  "chance": {
-                    "type": "minecraft:storage",
-                    "storage": "eden:settings",
-                    "path": "mob_manager.rabbit.mobhead"
-                  }
-                }
               ]
             },
             {
               "type": "minecraft:item",
               "name": "minecraft:player_head",
-              "functions": [
+              "condition": {
+                "type": "minecraft:all_of",
+                "terms": [
+                  {
+                    "type": "minecraft:entity_properties",
+                    "entity": "this",
+                    "predicate": {
+                      "components": {
+                        "minecraft:rabbit/variant": "black"
+                      }
+                    }
+                  },
+                  {
+                    "type": "killed_by_player"
+                  },
+                  {
+                    "type": "minecraft:random_chance",
+                    "chance": {
+                      "type": "minecraft:storage",
+                      "storage": "eden:settings",
+                      "path": "mob_manager.rabbit.mobhead"
+                    }
+                  }
+                ]
+              },
+              "modifier": [
                 {
-                  "function": "set_components",
+                  "type": "set_components",
                   "components": {
                     "minecraft:note_block_sound": "minecraft:entity.rabbit.ambient",
                     "minecraft:profile": {
@@ -118,36 +149,39 @@
                     }
                   }
                 }
-              ],
-              "conditions": [
-                {
-                  "condition": "minecraft:entity_properties",
-                  "entity": "this",
-                  "predicate": {
-                    "components": {
-                      "minecraft:rabbit/variant": "black"
-                    }
-                  }
-                },
-                {
-                  "condition": "killed_by_player"
-                },
-                {
-                  "condition": "minecraft:random_chance",
-                  "chance": {
-                    "type": "minecraft:storage",
-                    "storage": "eden:settings",
-                    "path": "mob_manager.rabbit.mobhead"
-                  }
-                }
               ]
             },
             {
               "type": "minecraft:item",
               "name": "minecraft:player_head",
-              "functions": [
+              "condition": {
+                "type": "minecraft:all_of",
+                "terms": [
+                  {
+                    "type": "minecraft:entity_properties",
+                    "entity": "this",
+                    "predicate": {
+                      "components": {
+                        "minecraft:rabbit/variant": "white_splotched"
+                      }
+                    }
+                  },
+                  {
+                    "type": "killed_by_player"
+                  },
+                  {
+                    "type": "minecraft:random_chance",
+                    "chance": {
+                      "type": "minecraft:storage",
+                      "storage": "eden:settings",
+                      "path": "mob_manager.rabbit.mobhead"
+                    }
+                  }
+                ]
+              },
+              "modifier": [
                 {
-                  "function": "set_components",
+                  "type": "set_components",
                   "components": {
                     "minecraft:note_block_sound": "minecraft:entity.rabbit.ambient",
                     "minecraft:profile": {
@@ -163,36 +197,39 @@
                     }
                   }
                 }
-              ],
-              "conditions": [
-                {
-                  "condition": "minecraft:entity_properties",
-                  "entity": "this",
-                  "predicate": {
-                    "components": {
-                      "minecraft:rabbit/variant": "white_splotched"
-                    }
-                  }
-                },
-                {
-                  "condition": "killed_by_player"
-                },
-                {
-                  "condition": "minecraft:random_chance",
-                  "chance": {
-                    "type": "minecraft:storage",
-                    "storage": "eden:settings",
-                    "path": "mob_manager.rabbit.mobhead"
-                  }
-                }
               ]
             },
             {
               "type": "minecraft:item",
               "name": "minecraft:player_head",
-              "functions": [
+              "condition": {
+                "type": "minecraft:all_of",
+                "terms": [
+                  {
+                    "type": "minecraft:entity_properties",
+                    "entity": "this",
+                    "predicate": {
+                      "components": {
+                        "minecraft:rabbit/variant": "gold"
+                      }
+                    }
+                  },
+                  {
+                    "type": "killed_by_player"
+                  },
+                  {
+                    "type": "minecraft:random_chance",
+                    "chance": {
+                      "type": "minecraft:storage",
+                      "storage": "eden:settings",
+                      "path": "mob_manager.rabbit.mobhead"
+                    }
+                  }
+                ]
+              },
+              "modifier": [
                 {
-                  "function": "set_components",
+                  "type": "set_components",
                   "components": {
                     "minecraft:note_block_sound": "minecraft:entity.rabbit.ambient",
                     "minecraft:profile": {
@@ -208,36 +245,39 @@
                     }
                   }
                 }
-              ],
-              "conditions": [
-                {
-                  "condition": "minecraft:entity_properties",
-                  "entity": "this",
-                  "predicate": {
-                    "components": {
-                      "minecraft:rabbit/variant": "gold"
-                    }
-                  }
-                },
-                {
-                  "condition": "killed_by_player"
-                },
-                {
-                  "condition": "minecraft:random_chance",
-                  "chance": {
-                    "type": "minecraft:storage",
-                    "storage": "eden:settings",
-                    "path": "mob_manager.rabbit.mobhead"
-                  }
-                }
               ]
             },
             {
               "type": "minecraft:item",
               "name": "minecraft:player_head",
-              "functions": [
+              "condition": {
+                "type": "minecraft:all_of",
+                "terms": [
+                  {
+                    "type": "minecraft:entity_properties",
+                    "entity": "this",
+                    "predicate": {
+                      "components": {
+                        "minecraft:rabbit/variant": "salt"
+                      }
+                    }
+                  },
+                  {
+                    "type": "killed_by_player"
+                  },
+                  {
+                    "type": "minecraft:random_chance",
+                    "chance": {
+                      "type": "minecraft:storage",
+                      "storage": "eden:settings",
+                      "path": "mob_manager.rabbit.mobhead"
+                    }
+                  }
+                ]
+              },
+              "modifier": [
                 {
-                  "function": "set_components",
+                  "type": "set_components",
                   "components": {
                     "minecraft:note_block_sound": "minecraft:entity.rabbit.ambient",
                     "minecraft:profile": {
@@ -253,36 +293,39 @@
                     }
                   }
                 }
-              ],
-              "conditions": [
-                {
-                  "condition": "minecraft:entity_properties",
-                  "entity": "this",
-                  "predicate": {
-                    "components": {
-                      "minecraft:rabbit/variant": "salt"
-                    }
-                  }
-                },
-                {
-                  "condition": "killed_by_player"
-                },
-                {
-                  "condition": "minecraft:random_chance",
-                  "chance": {
-                    "type": "minecraft:storage",
-                    "storage": "eden:settings",
-                    "path": "mob_manager.rabbit.mobhead"
-                  }
-                }
               ]
             },
             {
               "type": "minecraft:item",
               "name": "minecraft:player_head",
-              "functions": [
+              "condition": {
+                "type": "minecraft:all_of",
+                "terms": [
+                  {
+                    "type": "minecraft:entity_properties",
+                    "entity": "this",
+                    "predicate": {
+                      "components": {
+                        "minecraft:rabbit/variant": "evil"
+                      }
+                    }
+                  },
+                  {
+                    "type": "killed_by_player"
+                  },
+                  {
+                    "type": "minecraft:random_chance",
+                    "chance": {
+                      "type": "minecraft:storage",
+                      "storage": "eden:settings",
+                      "path": "mob_manager.rabbit.mobhead"
+                    }
+                  }
+                ]
+              },
+              "modifier": [
                 {
-                  "function": "set_components",
+                  "type": "set_components",
                   "components": {
                     "minecraft:note_block_sound": "minecraft:entity.rabbit.attack",
                     "minecraft:profile": {
@@ -296,28 +339,6 @@
                     "minecraft:item_name": {
                       "translate": "entity.minecraft.rabbit"
                     }
-                  }
-                }
-              ],
-              "conditions": [
-                {
-                  "condition": "minecraft:entity_properties",
-                  "entity": "this",
-                  "predicate": {
-                    "components": {
-                      "minecraft:rabbit/variant": "evil"
-                    }
-                  }
-                },
-                {
-                  "condition": "killed_by_player"
-                },
-                {
-                  "condition": "minecraft:random_chance",
-                  "chance": {
-                    "type": "minecraft:storage",
-                    "storage": "eden:settings",
-                    "path": "mob_manager.rabbit.mobhead"
                   }
                 }
               ]

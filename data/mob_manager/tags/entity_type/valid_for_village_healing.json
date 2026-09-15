@@ -1,13 +1,12 @@
 {
-    "values": [
-      "minecraft:iron_golem",
-      "minecraft:snow_golem",
-      "minecraft:cat",
-      "minecraft:player",
-      "minecraft:villager",
-      "minecraft:wolf",
-      "minecraft:wandering_trader",
-      "#mob_manager:is_mount"
-    ]
-  }
-  
+  "values": [
+    "#mob_manager:is_mount",
+    "minecraft:cat",
+    "minecraft:iron_golem",
+    "minecraft:player",
+    "minecraft:snow_golem",
+    "minecraft:villager",
+    "minecraft:wandering_trader",
+    "minecraft:wolf"
+  ]
+}

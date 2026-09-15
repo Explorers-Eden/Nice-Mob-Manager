@@ -1,6 +1,7 @@
 {
   "values": [
     "minecraft:bee",
+    "minecraft:camel_husk",
     "minecraft:cave_spider",
     "minecraft:dolphin",
     "minecraft:drowned",
@@ -15,9 +16,8 @@
     "minecraft:spider",
     "minecraft:trader_llama",
     "minecraft:wolf",
-    "minecraft:zombified_piglin",
+    "minecraft:zombie_horse",
     "minecraft:zombie_nautilus",
-    "minecraft:camel_husk",
-    "minecraft:zombie_horse"
+    "minecraft:zombified_piglin"
   ]
 }

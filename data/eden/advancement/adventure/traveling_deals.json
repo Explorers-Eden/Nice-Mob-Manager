@@ -1,0 +1,74 @@
+{
+  "parent": "eden:adventure/welcome_to_the_village",
+  "display": {
+    "icon": {
+      "id": "minecraft:emerald"
+    },
+    "title": {
+      "translate": "advancement.eden.adventure.nice_mob_manager.traveling_deals.title",
+      "fallback": "Traveling Deals"
+    },
+    "description": {
+      "translate": "advancement.eden.adventure.nice_mob_manager.traveling_deals.description",
+      "fallback": "Buy a Miniblock, a Plushie, and a Treasure Book from a Wandering Trader."
+    },
+    "frame": "goal",
+    "show_toast": true,
+    "announce_to_chat": true
+  },
+  "criteria": {
+    "bought_miniblock": {
+      "trigger": "minecraft:villager_trade",
+      "conditions": {
+        "item": {
+          "items": "minecraft:player_head",
+          "count": {
+            "min": 4,
+            "max": 4
+          }
+        },
+        "villager": {
+          "type": "minecraft:entity_properties",
+          "entity": "this",
+          "predicate": {
+            "minecraft:entity_type": "minecraft:wandering_trader"
+          }
+        }
+      }
+    },
+    "bought_plushie": {
+      "trigger": "minecraft:villager_trade",
+      "conditions": {
+        "item": {
+          "items": "minecraft:player_head",
+          "count": {
+            "min": 1,
+            "max": 1
+          }
+        },
+        "villager": {
+          "type": "minecraft:entity_properties",
+          "entity": "this",
+          "predicate": {
+            "minecraft:entity_type": "minecraft:wandering_trader"
+          }
+        }
+      }
+    },
+    "bought_treasure_book": {
+      "trigger": "minecraft:villager_trade",
+      "conditions": {
+        "item": {
+          "items": "minecraft:enchanted_book"
+        },
+        "villager": {
+          "type": "minecraft:entity_properties",
+          "entity": "this",
+          "predicate": {
+            "minecraft:entity_type": "minecraft:wandering_trader"
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,4 +1,4 @@
-$execute unless predicate {"condition":"minecraft:random_chance","chance":$(mobheads)} run return fail
+$execute unless predicate {"type":"minecraft:random_chance","chance":$(mobheads)} run return fail
 
 execute as @s[type=drowned] run function mob_manager:mob_equipment/mobheads/drowned with storage eden:temp mobheads.drowned
 execute as @s[type=husk] run function mob_manager:mob_equipment/mobheads/husk with storage eden:temp mobheads.husk

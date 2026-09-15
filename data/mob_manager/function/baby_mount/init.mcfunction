@@ -1,4 +1,4 @@
-$execute unless predicate {"condition":"minecraft:random_chance","chance":$(babymountspawning)} run return run tag @s add mob_manager.baby_mount.set
+$execute unless predicate {"type":"minecraft:random_chance","chance":$(babymountspawning)} run return run tag @s add mob_manager.baby_mount.set
 execute unless data entity @s {"Age": 0} run return run tag @s add mob_manager.baby_mount.set
 execute if data entity @s {variant:"nice_mobs:skeleton"} run return run tag @s add mob_manager.baby_mount.set
 execute if data entity @s {variant:"nice_mobs:ender"} run return run tag @s add mob_manager.baby_mount.set

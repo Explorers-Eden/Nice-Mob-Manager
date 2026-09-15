@@ -1,15 +1,15 @@
 {
-    "values": [
-      "minecraft:drowned",
-      "minecraft:husk",
-      "minecraft:skeleton",
-      "minecraft:bogged",
-      "minecraft:stray",
-      "minecraft:wither_skeleton",
-      "minecraft:zombie",
-      "minecraft:zombified_piglin",
-      "minecraft:piglin_brute",
-      "minecraft:piglin",
-      "minecraft:parched"
-    ]
-  }
+  "values": [
+    "minecraft:bogged",
+    "minecraft:drowned",
+    "minecraft:husk",
+    "minecraft:parched",
+    "minecraft:piglin",
+    "minecraft:piglin_brute",
+    "minecraft:skeleton",
+    "minecraft:stray",
+    "minecraft:wither_skeleton",
+    "minecraft:zombie",
+    "minecraft:zombified_piglin"
+  ]
+}

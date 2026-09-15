@@ -1,7 +1,7 @@
 $execute if data storage eden:settings mob_manager.$(type){allow_mob:"disabled"} run return run function mob_manager:kill
 
-$execute unless predicate {"condition":"minecraft:value_check","value":{"type":"minecraft:storage","storage":"eden:settings","path":"mob_manager.$(type).scale_min"},"range":{"min":$(scale_max)}} store result storage eden:temp mob_manager.scale float 0.01 run random value $(scale_min)..$(scale_max)
-$execute if predicate {"condition":"minecraft:value_check","value":{"type":"minecraft:storage","storage":"eden:settings","path":"mob_manager.$(type).scale_min"},"range":{"min":$(scale_max)}} store result storage eden:temp mob_manager.scale float 0.01 run data get storage eden:settings mob_manager.$(type).scale_max
+$execute unless predicate {"type":"minecraft:int_value_check","value":{"type":"minecraft:storage","storage":"eden:settings","path":"mob_manager.$(type).scale_min"},"test":{"min":$(scale_max)}} store result storage eden:temp mob_manager.scale float 0.01 run random value $(scale_min)..$(scale_max)
+$execute if predicate {"type":"minecraft:int_value_check","value":{"type":"minecraft:storage","storage":"eden:settings","path":"mob_manager.$(type).scale_min"},"test":{"min":$(scale_max)}} store result storage eden:temp mob_manager.scale float 0.01 run data get storage eden:settings mob_manager.$(type).scale_max
 
 $execute store result storage eden:temp mob_manager.health float 0.01 run attribute @s minecraft:max_health base get $(health)
 $execute store result storage eden:temp mob_manager.tempt_range float 0.01 run attribute @s minecraft:tempt_range base get $(tempt_range)
@@ -25,11 +25,11 @@ $execute if data storage eden:settings mob_manager.misc{locator_assets:"disabled
 $execute if data storage eden:settings mob_manager.misc{locator_assets:"enabled"} run waypoint modify @s style set mob_manager:$(type)
 execute if data storage eden:settings mob_manager.misc{locator_assets:"enabled"} run waypoint modify @s color white
 
-execute if predicate {"condition":"minecraft:value_check","value":{"type":"minecraft:storage","storage":"eden:settings","path":"mob_manager.misc.jebspawning"},"range":{"min":0.01}} as @s[type=sheep] run function mob_manager:jeb_sheep/set_name with storage eden:settings mob_manager.misc
-execute if predicate {"condition":"minecraft:value_check","value":{"type":"minecraft:storage","storage":"eden:settings","path":"mob_manager.misc.brownmoospawning"},"range":{"min":0.01}} as @s[type=mooshroom] run function mob_manager:brown_mooshroom with storage eden:settings mob_manager.misc
-execute if predicate {"condition":"minecraft:value_check","value":{"type":"minecraft:storage","storage":"eden:settings","path":"mob_manager.misc.babymountspawning"},"range":{"min":0.01}} as @s[type=#mob_manager:valid_for_baby_mount] at @s run function mob_manager:baby_mount/init with storage eden:settings mob_manager.misc
-execute if predicate {"condition":"minecraft:value_check","value":{"type":"minecraft:storage","storage":"eden:settings","path":"mob_manager.misc.killerrabbitspawning"},"range":{"min":0.01}} as @s[type=rabbit] run function mob_manager:killer_rabbit with storage eden:settings mob_manager.misc
-execute if predicate {"condition":"minecraft:value_check","value":{"type":"minecraft:storage","storage":"eden:settings","path":"mob_manager.misc.lefthanded"},"range":{"min":0.01}} run function mob_manager:lefthanded with storage eden:settings mob_manager.misc
+execute if predicate {"type":"minecraft:int_value_check","value":{"type":"minecraft:storage","storage":"eden:settings","path":"mob_manager.misc.jebspawning"},"test":{"min":0.01}} as @s[type=sheep] run function mob_manager:jeb_sheep/set_name with storage eden:settings mob_manager.misc
+execute if predicate {"type":"minecraft:int_value_check","value":{"type":"minecraft:storage","storage":"eden:settings","path":"mob_manager.misc.brownmoospawning"},"test":{"min":0.01}} as @s[type=mooshroom] run function mob_manager:brown_mooshroom with storage eden:settings mob_manager.misc
+execute if predicate {"type":"minecraft:int_value_check","value":{"type":"minecraft:storage","storage":"eden:settings","path":"mob_manager.misc.babymountspawning"},"test":{"min":0.01}} as @s[type=#mob_manager:valid_for_baby_mount] at @s run function mob_manager:baby_mount/init with storage eden:settings mob_manager.misc
+execute if predicate {"type":"minecraft:int_value_check","value":{"type":"minecraft:storage","storage":"eden:settings","path":"mob_manager.misc.killerrabbitspawning"},"test":{"min":0.01}} as @s[type=rabbit] run function mob_manager:killer_rabbit with storage eden:settings mob_manager.misc
+execute if predicate {"type":"minecraft:int_value_check","value":{"type":"minecraft:storage","storage":"eden:settings","path":"mob_manager.misc.lefthanded"},"test":{"min":0.01}} run function mob_manager:lefthanded with storage eden:settings mob_manager.misc
 execute if data storage eden:settings mob_manager.misc{skeletonhorsetrap:"disabled"} as @s[type=skeleton_horse] run data modify entity @s SkeletonTrap set value 0b
 
 execute as @s[type=villager] at @s run function mob_manager:villager/init with storage eden:settings mob_manager.villager_settings

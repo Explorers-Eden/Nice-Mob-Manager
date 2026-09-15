@@ -8,9 +8,9 @@
           "type": "item",
           "name": "minecraft:player_head",
           "weight": 1,
-          "functions": [
+          "modifier": [
             {
-              "function": "set_components",
+              "type": "set_components",
               "components": {
                 "minecraft:note_block_sound": "minecraft:entity.small_sulfur_cube.squish",
                 "minecraft:profile": {
@@ -29,19 +29,22 @@
           ]
         }
       ],
-      "conditions": [
-        {
-          "condition": "killed_by_player"
-        },
-        {
-          "condition": "minecraft:random_chance",
-          "chance": {
-            "type": "minecraft:storage",
-            "storage": "eden:settings",
-            "path": "mob_manager.sulfur_cube.mobhead"
+      "condition": {
+        "type": "minecraft:all_of",
+        "terms": [
+          {
+            "type": "killed_by_player"
+          },
+          {
+            "type": "minecraft:random_chance",
+            "chance": {
+              "type": "minecraft:storage",
+              "storage": "eden:settings",
+              "path": "mob_manager.sulfur_cube.mobhead"
+            }
           }
-        }
-      ]
+        ]
+      }
     },
     {
       "rolls": 1,

@@ -1,0 +1,33 @@
+{
+  "parent": "eden:adventure/nice_mob_manager",
+  "display": {
+    "icon": {
+      "id": "minecraft:totem_of_undying"
+    },
+    "title": {
+      "translate": "advancement.eden.adventure.nice_mob_manager.illusion_shattered.title",
+      "fallback": "Illusion Shattered"
+    },
+    "description": {
+      "translate": "advancement.eden.adventure.nice_mob_manager.illusion_shattered.description",
+      "fallback": "Encounter an Illusioner."
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true
+  },
+  "criteria": {
+    "attacked_by_illusioner": {
+      "trigger": "minecraft:entity_hurt_player",
+      "conditions": {
+        "entity": {
+          "type": "minecraft:entity_properties",
+          "entity": "this",
+          "predicate": {
+            "minecraft:entity_type": "minecraft:illusioner"
+          }
+        }
+      }
+    }
+  }
+}

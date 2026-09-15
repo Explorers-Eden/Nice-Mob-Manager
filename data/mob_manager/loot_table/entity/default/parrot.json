@@ -10,9 +10,34 @@
             {
               "type": "minecraft:item",
               "name": "minecraft:player_head",
-              "functions": [
+              "condition": {
+                "type": "minecraft:all_of",
+                "terms": [
+                  {
+                    "type": "minecraft:entity_properties",
+                    "entity": "this",
+                    "predicate": {
+                      "components": {
+                        "minecraft:parrot/variant": "red_blue"
+                      }
+                    }
+                  },
+                  {
+                    "type": "killed_by_player"
+                  },
+                  {
+                    "type": "minecraft:random_chance",
+                    "chance": {
+                      "type": "minecraft:storage",
+                      "storage": "eden:settings",
+                      "path": "mob_manager.parrot.mobhead"
+                    }
+                  }
+                ]
+              },
+              "modifier": [
                 {
-                  "function": "set_components",
+                  "type": "set_components",
                   "components": {
                     "minecraft:note_block_sound": "minecraft:entity.parrot.ambient",
                     "minecraft:profile": {
@@ -28,36 +53,39 @@
                     }
                   }
                 }
-              ],
-              "conditions": [
-                {
-                  "condition": "minecraft:entity_properties",
-                  "entity": "this",
-                  "predicate": {
-                    "components": {
-                      "minecraft:parrot/variant": "red_blue"
-                    }
-                  }
-                },
-                {
-                  "condition": "killed_by_player"
-                },
-                {
-                  "condition": "minecraft:random_chance",
-                  "chance": {
-                    "type": "minecraft:storage",
-                    "storage": "eden:settings",
-                    "path": "mob_manager.parrot.mobhead"
-                  }
-                }
               ]
             },
-			{
+            {
               "type": "minecraft:item",
               "name": "minecraft:player_head",
-              "functions": [
+              "condition": {
+                "type": "minecraft:all_of",
+                "terms": [
+                  {
+                    "type": "minecraft:entity_properties",
+                    "entity": "this",
+                    "predicate": {
+                      "components": {
+                        "minecraft:parrot/variant": "gray"
+                      }
+                    }
+                  },
+                  {
+                    "type": "killed_by_player"
+                  },
+                  {
+                    "type": "minecraft:random_chance",
+                    "chance": {
+                      "type": "minecraft:storage",
+                      "storage": "eden:settings",
+                      "path": "mob_manager.parrot.mobhead"
+                    }
+                  }
+                ]
+              },
+              "modifier": [
                 {
-                  "function": "set_components",
+                  "type": "set_components",
                   "components": {
                     "minecraft:note_block_sound": "minecraft:entity.parrot.ambient",
                     "minecraft:profile": {
@@ -73,36 +101,39 @@
                     }
                   }
                 }
-              ],
-              "conditions": [
-                {
-                  "condition": "minecraft:entity_properties",
-                  "entity": "this",
-                  "predicate": {
-                    "components": {
-                      "minecraft:parrot/variant": "gray"
-                    }
-                  }
-                },
-                {
-                  "condition": "killed_by_player"
-                },
-                {
-                  "condition": "minecraft:random_chance",
-                  "chance": {
-                    "type": "minecraft:storage",
-                    "storage": "eden:settings",
-                    "path": "mob_manager.parrot.mobhead"
-                  }
-                }
               ]
             },
-			{
+            {
               "type": "minecraft:item",
               "name": "minecraft:player_head",
-              "functions": [
+              "condition": {
+                "type": "minecraft:all_of",
+                "terms": [
+                  {
+                    "type": "minecraft:entity_properties",
+                    "entity": "this",
+                    "predicate": {
+                      "components": {
+                        "minecraft:parrot/variant": "blue"
+                      }
+                    }
+                  },
+                  {
+                    "type": "killed_by_player"
+                  },
+                  {
+                    "type": "minecraft:random_chance",
+                    "chance": {
+                      "type": "minecraft:storage",
+                      "storage": "eden:settings",
+                      "path": "mob_manager.parrot.mobhead"
+                    }
+                  }
+                ]
+              },
+              "modifier": [
                 {
-                  "function": "set_components",
+                  "type": "set_components",
                   "components": {
                     "minecraft:note_block_sound": "minecraft:entity.parrot.ambient",
                     "minecraft:profile": {
@@ -118,36 +149,39 @@
                     }
                   }
                 }
-              ],
-              "conditions": [
-                {
-                  "condition": "minecraft:entity_properties",
-                  "entity": "this",
-                  "predicate": {
-                    "components": {
-                      "minecraft:parrot/variant": "blue"
-                    }
-                  }
-                },
-                {
-                  "condition": "killed_by_player"
-                },
-                {
-                  "condition": "minecraft:random_chance",
-                  "chance": {
-                    "type": "minecraft:storage",
-                    "storage": "eden:settings",
-                    "path": "mob_manager.parrot.mobhead"
-                  }
-                }
               ]
             },
-			{
+            {
               "type": "minecraft:item",
               "name": "minecraft:player_head",
-              "functions": [
+              "condition": {
+                "type": "minecraft:all_of",
+                "terms": [
+                  {
+                    "type": "minecraft:entity_properties",
+                    "entity": "this",
+                    "predicate": {
+                      "components": {
+                        "minecraft:parrot/variant": "green"
+                      }
+                    }
+                  },
+                  {
+                    "type": "killed_by_player"
+                  },
+                  {
+                    "type": "minecraft:random_chance",
+                    "chance": {
+                      "type": "minecraft:storage",
+                      "storage": "eden:settings",
+                      "path": "mob_manager.parrot.mobhead"
+                    }
+                  }
+                ]
+              },
+              "modifier": [
                 {
-                  "function": "set_components",
+                  "type": "set_components",
                   "components": {
                     "minecraft:note_block_sound": "minecraft:entity.parrot.ambient",
                     "minecraft:profile": {
@@ -163,36 +197,39 @@
                     }
                   }
                 }
-              ],
-              "conditions": [
-                {
-                  "condition": "minecraft:entity_properties",
-                  "entity": "this",
-                  "predicate": {
-                    "components": {
-                      "minecraft:parrot/variant": "green"
-                    }
-                  }
-                },
-                {
-                  "condition": "killed_by_player"
-                },
-                {
-                  "condition": "minecraft:random_chance",
-                  "chance": {
-                    "type": "minecraft:storage",
-                    "storage": "eden:settings",
-                    "path": "mob_manager.parrot.mobhead"
-                  }
-                }
               ]
             },
-			{
+            {
               "type": "minecraft:item",
               "name": "minecraft:player_head",
-              "functions": [
+              "condition": {
+                "type": "minecraft:all_of",
+                "terms": [
+                  {
+                    "type": "minecraft:entity_properties",
+                    "entity": "this",
+                    "predicate": {
+                      "components": {
+                        "minecraft:parrot/variant": "yellow_blue"
+                      }
+                    }
+                  },
+                  {
+                    "type": "killed_by_player"
+                  },
+                  {
+                    "type": "minecraft:random_chance",
+                    "chance": {
+                      "type": "minecraft:storage",
+                      "storage": "eden:settings",
+                      "path": "mob_manager.parrot.mobhead"
+                    }
+                  }
+                ]
+              },
+              "modifier": [
                 {
-                  "function": "set_components",
+                  "type": "set_components",
                   "components": {
                     "minecraft:note_block_sound": "minecraft:entity.parrot.ambient",
                     "minecraft:profile": {
@@ -206,28 +243,6 @@
                     "minecraft:item_name": {
                       "translate": "entity.minecraft.parrot"
                     }
-                  }
-                }
-              ],
-              "conditions": [
-                {
-                  "condition": "minecraft:entity_properties",
-                  "entity": "this",
-                  "predicate": {
-                    "components": {
-                      "minecraft:parrot/variant": "yellow_blue"
-                    }
-                  }
-                },
-                {
-                  "condition": "killed_by_player"
-                },
-                {
-                  "condition": "minecraft:random_chance",
-                  "chance": {
-                    "type": "minecraft:storage",
-                    "storage": "eden:settings",
-                    "path": "mob_manager.parrot.mobhead"
                   }
                 }
               ]

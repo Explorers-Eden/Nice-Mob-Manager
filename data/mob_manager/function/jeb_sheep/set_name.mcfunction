@@ -1,1 +1,1 @@
-$execute if predicate {"condition":"minecraft:random_chance","chance":$(jebspawning)} run data modify entity @s CustomName set value jeb_
+$execute if predicate {"type":"minecraft:random_chance","chance":$(jebspawning)} run data modify entity @s CustomName set value jeb_

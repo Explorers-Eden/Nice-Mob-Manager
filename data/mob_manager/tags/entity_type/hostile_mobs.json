@@ -3,9 +3,10 @@
     "minecraft:blaze",
     "minecraft:bogged",
     "minecraft:breeze",
-    "minecraft:creeper",
     "minecraft:creaking",
+    "minecraft:creeper",
     "minecraft:elder_guardian",
+    "minecraft:ender_dragon",
     "minecraft:endermite",
     "minecraft:evoker",
     "minecraft:ghast",
@@ -14,6 +15,7 @@
     "minecraft:husk",
     "minecraft:illusioner",
     "minecraft:magma_cube",
+    "minecraft:parched",
     "minecraft:phantom",
     "minecraft:piglin_brute",
     "minecraft:pillager",
@@ -27,12 +29,10 @@
     "minecraft:vindicator",
     "minecraft:warden",
     "minecraft:witch",
+    "minecraft:wither",
     "minecraft:wither_skeleton",
     "minecraft:zoglin",
     "minecraft:zombie",
-    "minecraft:zombie_villager",
-    "minecraft:wither",
-    "minecraft:ender_dragon",
-    "minecraft:parched"
+    "minecraft:zombie_villager"
   ]
 }

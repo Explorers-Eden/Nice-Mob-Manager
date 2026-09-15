@@ -1,0 +1,14 @@
+{
+  "values": [
+    "minecraft:birch_forest",
+    "minecraft:dappled_forest",
+    "minecraft:dark_forest",
+    "minecraft:flower_forest",
+    "minecraft:forest",
+    "minecraft:old_growth_birch_forest",
+    "minecraft:pale_garden",
+    "minecraft:windswept_forest",
+    "nice_things:biome_brew_lavender",
+    "nice_things:biome_brew_pale_garden"
+  ]
+}

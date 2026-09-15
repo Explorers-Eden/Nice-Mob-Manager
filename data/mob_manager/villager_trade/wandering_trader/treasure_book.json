@@ -1,0 +1,18 @@
+{
+  "wants": {
+    "id": "minecraft:emerald",
+    "count": 12
+  },
+  "gives": {
+    "id": "minecraft:book"
+  },
+  "given_item_modifiers": [
+    {
+      "type": "minecraft:enchant_randomly",
+      "options": "#minecraft:treasure"
+    }
+  ],
+  "max_uses": 1,
+  "reputation_discount": 0.0,
+  "xp": 1
+}

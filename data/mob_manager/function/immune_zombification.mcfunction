@@ -1,1 +1,1 @@
-$execute if predicate {"condition":"minecraft:random_chance","chance":$(immunezombie)} run data modify entity @s IsImmuneToZombification set value 1b
+$execute if predicate {"type":"minecraft:random_chance","chance":$(immunezombie)} run data modify entity @s IsImmuneToZombification set value 1b

@@ -1,11 +1,11 @@
 {
-    "values": [
-      "minecraft:wolf",
-      "minecraft:cat",
-      "minecraft:frog",
-      "minecraft:chicken",
-      "minecraft:pig",
-      "minecraft:cow",
-      "minecraft:zombie_nautilus"
-    ]
-  }
+  "values": [
+    "minecraft:cat",
+    "minecraft:chicken",
+    "minecraft:cow",
+    "minecraft:frog",
+    "minecraft:pig",
+    "minecraft:wolf",
+    "minecraft:zombie_nautilus"
+  ]
+}

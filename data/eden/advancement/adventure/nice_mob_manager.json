@@ -1,0 +1,33 @@
+{
+  "display": {
+    "icon": {
+      "id": "minecraft:wolf_spawn_egg"
+    },
+    "title": {
+      "translate": "advancement.eden.adventure.nice_mob_manager.chapter.title",
+      "fallback": "Under New Management"
+    },
+    "description": {
+      "translate": "advancement.eden.adventure.nice_mob_manager.chapter.description",
+      "fallback": "Encounter a mob touched by Nice Mob Manager."
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true
+  },
+  "parent": "eden:adventure/root",
+  "criteria": {
+    "hurt_managed_mob": {
+      "trigger": "minecraft:player_hurt_entity",
+      "conditions": {
+        "entity": {
+          "type": "minecraft:entity_properties",
+          "entity": "this",
+          "predicate": {
+            "nbt": "{Tags:[\"mob_manager.settings.applied\"]}"
+          }
+        }
+      }
+    }
+  }
+}

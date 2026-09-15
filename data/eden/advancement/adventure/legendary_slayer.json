@@ -1,0 +1,33 @@
+{
+  "parent": "eden:adventure/rare_find",
+  "display": {
+    "icon": {
+      "id": "minecraft:netherite_sword"
+    },
+    "title": {
+      "translate": "advancement.eden.adventure.nice_mob_manager.legendary_slayer.title",
+      "fallback": "Legendary Slayer"
+    },
+    "description": {
+      "translate": "advancement.eden.adventure.nice_mob_manager.legendary_slayer.description",
+      "fallback": "Defeat a Legendary rarity mob."
+    },
+    "frame": "goal",
+    "show_toast": true,
+    "announce_to_chat": true
+  },
+  "criteria": {
+    "killed_legendary": {
+      "trigger": "minecraft:player_killed_entity",
+      "conditions": {
+        "entity": {
+          "type": "minecraft:entity_properties",
+          "entity": "this",
+          "predicate": {
+            "nbt": "{Tags:[\"mob_manager.rarity_mobs.legendary\"]}"
+          }
+        }
+      }
+    }
+  }
+}

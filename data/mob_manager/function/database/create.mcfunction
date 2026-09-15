@@ -28,9 +28,19 @@ function mob_manager:database/names/wandering_trader/first
 function mob_manager:database/names/wandering_trader/last
 
 #add village names
+function mob_manager:database/names/village/caves
+function mob_manager:database/names/village/cherry_grove
+function mob_manager:database/names/village/deep_blue
 function mob_manager:database/names/village/desert
+function mob_manager:database/names/village/end
+function mob_manager:database/names/village/forest
 function mob_manager:database/names/village/jungle
+function mob_manager:database/names/village/mountains
+function mob_manager:database/names/village/mushroom_fields
+function mob_manager:database/names/village/nether
+function mob_manager:database/names/village/ocean
 function mob_manager:database/names/village/plains
+function mob_manager:database/names/village/river
 function mob_manager:database/names/village/savanna
 function mob_manager:database/names/village/snow
 function mob_manager:database/names/village/swamp

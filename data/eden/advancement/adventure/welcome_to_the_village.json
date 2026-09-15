@@ -1,0 +1,33 @@
+{
+  "parent": "eden:adventure/nice_mob_manager",
+  "display": {
+    "icon": {
+      "id": "minecraft:oak_door"
+    },
+    "title": {
+      "translate": "advancement.eden.adventure.nice_mob_manager.welcome_to_the_village.title",
+      "fallback": "Welcome to the Village"
+    },
+    "description": {
+      "translate": "advancement.eden.adventure.nice_mob_manager.welcome_to_the_village.description",
+      "fallback": "Entered a village."
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true
+  },
+  "criteria": {
+    "at_village": {
+      "trigger": "minecraft:tick",
+      "conditions": {
+        "player": {
+          "type": "minecraft:entity_properties",
+          "entity": "this",
+          "predicate": {
+            "nbt": "{Tags:[\"at_village\"]}"
+          }
+        }
+      }
+    }
+  }
+}

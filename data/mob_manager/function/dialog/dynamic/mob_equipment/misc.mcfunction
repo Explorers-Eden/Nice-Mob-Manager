@@ -152,6 +152,7 @@ $dialog show @s \
           "id":"stick",\
           "display":{\
             "translate":"item.minecraft.stick",\
+            "fallback":"Stick",\
             "color":"white"\
           },\
           "initial":$(vex_equip_stick_initial)\
@@ -160,6 +161,7 @@ $dialog show @s \
           "id":"wooden_sword",\
           "display":{\
             "translate":"item.minecraft.wooden_sword",\
+            "fallback":"Wooden Sword",\
             "color":"white"\
           },\
           "initial":$(vex_equip_wooden_sword_initial)\
@@ -168,6 +170,7 @@ $dialog show @s \
           "id":"stone_sword",\
           "display":{\
             "translate":"item.minecraft.stone_sword",\
+            "fallback":"Stone Sword",\
             "color":"white"\
           },\
           "initial":$(vex_equip_stone_sword_initial)\
@@ -176,6 +179,7 @@ $dialog show @s \
           "id":"iron_sword",\
           "display":{\
             "translate":"item.minecraft.iron_sword",\
+            "fallback":"Iron Sword",\
             "color":"white"\
           },\
           "initial":$(vex_equip_iron_sword_initial)\
@@ -184,6 +188,7 @@ $dialog show @s \
           "id":"copper_sword",\
           "display":{\
             "translate":"item.minecraft.copper_sword",\
+            "fallback":"Copper Sword",\
             "color":"white"\
           },\
           "initial":$(vex_equip_copper_sword_initial)\
@@ -192,6 +197,7 @@ $dialog show @s \
           "id":"golden_sword",\
           "display":{\
             "translate":"item.minecraft.golden_sword",\
+            "fallback":"Golden Sword",\
             "color":"white"\
           },\
           "initial":$(vex_equip_golden_sword_initial)\
@@ -200,6 +206,7 @@ $dialog show @s \
           "id":"diamond_sword",\
           "display":{\
             "translate":"item.minecraft.diamond_sword",\
+            "fallback":"Diamond Sword",\
             "color":"white"\
           },\
           "initial":$(vex_equip_diamond_sword_initial)\
@@ -208,6 +215,7 @@ $dialog show @s \
           "id":"netherite_sword",\
           "display":{\
             "translate":"item.minecraft.netherite_sword",\
+            "fallback":"Netherite Sword",\
             "color":"white"\
           },\
           "initial":$(vex_equip_netherite_sword_initial)\
@@ -238,7 +246,8 @@ $dialog show @s \
   },\
   "no":{\
     "label":{\
-      "translate":"gui.back"\
+      "translate":"gui.back",\
+      "fallback":"Back"\
     },\
     "action":{\
       "type":"minecraft:show_dialog",\

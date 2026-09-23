@@ -317,7 +317,8 @@ $dialog show @s \
   },\
   "no":{\
     "label":{\
-      "translate":"gui.back"\
+      "translate":"gui.back",\
+      "fallback":"Back"\
     },\
     "action":{\
       "type":"minecraft:show_dialog",\

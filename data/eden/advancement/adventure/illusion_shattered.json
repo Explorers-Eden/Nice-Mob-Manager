@@ -17,8 +17,8 @@
     "announce_to_chat": true
   },
   "criteria": {
-    "attacked_by_illusioner": {
-      "trigger": "minecraft:entity_hurt_player",
+    "attacked_illusioner": {
+      "trigger": "minecraft:player_hurt_entity",
       "conditions": {
         "entity": {
           "type": "minecraft:entity_properties",

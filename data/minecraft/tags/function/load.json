@@ -11,7 +11,6 @@
     "mob_manager:rarity_mobs/init",
     "mob_manager:rarity_mobs/particles/init",
     "mob_manager:spectator_waypoint_receive",
-    "mob_manager:village/init",
-    "mob_manager:villager/follow/init"
+    "mob_manager:village/init"
   ]
 }

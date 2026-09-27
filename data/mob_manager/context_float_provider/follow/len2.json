@@ -1,7 +1,0 @@
-{
-  "type": "minecraft:add",
-  "inputs": [
-    { "type": "minecraft:mul", "inputs": ["mob_manager:follow/dx", "mob_manager:follow/dx"] },
-    { "type": "minecraft:mul", "inputs": ["mob_manager:follow/dz", "mob_manager:follow/dz"] }
-  ]
-}

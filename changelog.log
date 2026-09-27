@@ -4,11 +4,7 @@
 ## Thank you!
 
 ## Changes:
-- Village names shown as titles now also have an animated letterbox effect
-- Village names and colors are now based on the biome instead of the villager type
-- Extended database for Village names massively
-- Wandering Trader trades are now data driven and were added to the pool of vanilla uncommon ones
-- Removed Wandering Trader settings for trades (no longer possible)
-- Added 11 progression advancements
+- Removed Villager following mechanics (Now part of [Nice Things](https://modrinth.com/datapack/nice-things-eden))
 
 ## Fixes:
+- Fixed Villager Breeding Diversity not working

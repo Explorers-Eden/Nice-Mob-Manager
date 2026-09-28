@@ -1,7 +1,7 @@
 {
   "values": [
-    "minecraft:bamboo_jungle",
-    "minecraft:jungle",
-    "minecraft:sparse_jungle"
+    { "id": "minecraft:bamboo_jungle", "required": false },
+    { "id": "minecraft:jungle", "required": false },
+    { "id": "minecraft:sparse_jungle", "required": false }
   ]
 }

@@ -1,5 +1,5 @@
 {
   "values": [
-    "minecraft:mushroom_fields"
+    { "id": "minecraft:mushroom_fields", "required": false }
   ]
 }

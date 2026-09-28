@@ -1,6 +1,6 @@
 {
   "values": [
-    "minecraft:frozen_river",
-    "minecraft:river"
+    { "id": "minecraft:frozen_river", "required": false },
+    { "id": "minecraft:river", "required": false }
   ]
 }

@@ -1,7 +1,7 @@
 {
   "values": [
-    "kattersstructures:coralis",
-    "kattersstructures:dark_chasm",
-    "kattersstructures:deep_blue_plains"
+    { "id": "kattersstructures:coralis", "required": false },
+    { "id": "kattersstructures:dark_chasm", "required": false },
+    { "id": "kattersstructures:deep_blue_plains", "required": false }
   ]
 }

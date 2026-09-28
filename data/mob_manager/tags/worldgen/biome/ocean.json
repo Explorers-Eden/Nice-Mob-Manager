@@ -1,15 +1,15 @@
 {
   "values": [
-    "minecraft:beach",
-    "minecraft:cold_ocean",
-    "minecraft:deep_cold_ocean",
-    "minecraft:deep_frozen_ocean",
-    "minecraft:deep_lukewarm_ocean",
-    "minecraft:deep_ocean",
-    "minecraft:frozen_ocean",
-    "minecraft:lukewarm_ocean",
-    "minecraft:ocean",
-    "minecraft:warm_ocean",
-    "nice_things:biome_brew_teal"
+    { "id": "minecraft:beach", "required": false },
+    { "id": "minecraft:cold_ocean", "required": false },
+    { "id": "minecraft:deep_cold_ocean", "required": false },
+    { "id": "minecraft:deep_frozen_ocean", "required": false },
+    { "id": "minecraft:deep_lukewarm_ocean", "required": false },
+    { "id": "minecraft:deep_ocean", "required": false },
+    { "id": "minecraft:frozen_ocean", "required": false },
+    { "id": "minecraft:lukewarm_ocean", "required": false },
+    { "id": "minecraft:ocean", "required": false },
+    { "id": "minecraft:warm_ocean", "required": false },
+    { "id": "nice_things:biome_brew_teal", "required": false }
   ]
 }

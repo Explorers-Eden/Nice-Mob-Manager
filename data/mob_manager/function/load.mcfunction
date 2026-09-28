@@ -42,4 +42,4 @@ data modify storage eden:database names.village set from storage eden:database v
 function mob_manager:database/create
 
 ##set data pack version
-data modify storage eden:datapack nice_mob_manager.version set value "3.5"
+data modify storage eden:datapack nice_mob_manager.version set value "3.6"

@@ -1,8 +1,8 @@
 {
   "values": [
-    "minecraft:stony_peaks",
-    "minecraft:stony_shore",
-    "minecraft:windswept_gravelly_hills",
-    "minecraft:windswept_hills"
+    { "id": "minecraft:stony_peaks", "required": false },
+    { "id": "minecraft:stony_shore", "required": false },
+    { "id": "minecraft:windswept_gravelly_hills", "required": false },
+    { "id": "minecraft:windswept_hills", "required": false }
   ]
 }

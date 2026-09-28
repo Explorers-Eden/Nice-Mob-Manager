@@ -1,10 +1,10 @@
 {
   "values": [
-    "minecraft:end_barrens",
-    "minecraft:end_highlands",
-    "minecraft:end_midlands",
-    "minecraft:small_end_islands",
-    "minecraft:the_end",
-    "nice_things:biome_brew_void"
+    { "id": "minecraft:end_barrens", "required": false },
+    { "id": "minecraft:end_highlands", "required": false },
+    { "id": "minecraft:end_midlands", "required": false },
+    { "id": "minecraft:small_end_islands", "required": false },
+    { "id": "minecraft:the_end", "required": false },
+    { "id": "nice_things:biome_brew_void", "required": false }
   ]
 }

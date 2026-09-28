@@ -1,10 +1,10 @@
 {
   "values": [
-    "minecraft:deep_dark",
-    "minecraft:dripstone_caves",
-    "minecraft:lush_caves",
-    "minecraft:sulfur_caves",
-    "nice_things:biome_brew_lush",
-    "nice_things:biome_brew_ruby"
+    { "id": "minecraft:deep_dark", "required": false },
+    { "id": "minecraft:dripstone_caves", "required": false },
+    { "id": "minecraft:lush_caves", "required": false },
+    { "id": "minecraft:sulfur_caves", "required": false },
+    { "id": "nice_things:biome_brew_lush", "required": false },
+    { "id": "nice_things:biome_brew_ruby", "required": false }
   ]
 }

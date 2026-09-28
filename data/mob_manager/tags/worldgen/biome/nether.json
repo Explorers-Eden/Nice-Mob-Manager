@@ -1,11 +1,11 @@
 {
   "values": [
-    "minecraft:basalt_deltas",
-    "minecraft:crimson_forest",
-    "minecraft:nether_wastes",
-    "minecraft:soul_sand_valley",
-    "minecraft:warped_forest",
-    "nice_things:biome_brew_crimson_forest",
-    "nice_things:biome_brew_warped_forest"
+    { "id": "minecraft:basalt_deltas", "required": false },
+    { "id": "minecraft:crimson_forest", "required": false },
+    { "id": "minecraft:nether_wastes", "required": false },
+    { "id": "minecraft:soul_sand_valley", "required": false },
+    { "id": "minecraft:warped_forest", "required": false },
+    { "id": "nice_things:biome_brew_crimson_forest", "required": false },
+    { "id": "nice_things:biome_brew_warped_forest", "required": false }
   ]
 }

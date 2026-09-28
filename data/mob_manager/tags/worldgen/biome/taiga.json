@@ -1,7 +1,7 @@
 {
   "values": [
-    "minecraft:old_growth_pine_taiga",
-    "minecraft:old_growth_spruce_taiga",
-    "minecraft:taiga"
+    { "id": "minecraft:old_growth_pine_taiga", "required": false },
+    { "id": "minecraft:old_growth_spruce_taiga", "required": false },
+    { "id": "minecraft:taiga", "required": false }
   ]
 }

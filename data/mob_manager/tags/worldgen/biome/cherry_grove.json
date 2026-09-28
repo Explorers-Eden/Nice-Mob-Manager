@@ -1,5 +1,5 @@
 {
   "values": [
-    "minecraft:cherry_grove"
+    { "id": "minecraft:cherry_grove", "required": false }
   ]
 }

@@ -20,7 +20,7 @@
       "minecraft:note_block_sound": "minecraft:entity.chicken.ambient"
     }
   },
-  "given_item_modifiers": [],
+  "given_item_modifier": [],
   "max_uses": 1,
   "reputation_discount": 0.0,
   "xp": 1

@@ -6,7 +6,7 @@
   "gives": {
     "id": "minecraft:book"
   },
-  "given_item_modifiers": [
+  "given_item_modifier": [
     {
       "type": "minecraft:enchant_randomly",
       "options": "#minecraft:treasure"

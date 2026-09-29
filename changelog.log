@@ -2,4 +2,4 @@
 ## Changes:
 
 ## Fixes:
-- Data PAck failing to load if Katters Structures and Nice Things aren't also installed
+- Wandering Trader having an empty enchanted book instead of an actual one

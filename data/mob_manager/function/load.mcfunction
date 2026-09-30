@@ -5,6 +5,7 @@ team modify wandering_trader color blue
 ##default technical scoreboard
 scoreboard objectives add mob_manager.technical dummy
 scoreboard objectives add mob_manager.village.letterbox.step dummy
+scoreboard objectives add mob_manager.village.letterbox.left minecraft.custom:minecraft.leave_game
 
 ##additional scoreboards
 scoreboard objectives remove mob_manager.rarity_mobs.common.timer
@@ -42,4 +43,4 @@ data modify storage eden:database names.village set from storage eden:database v
 function mob_manager:database/create
 
 ##set data pack version
-data modify storage eden:datapack nice_mob_manager.version set value "3.7"
+data modify storage eden:datapack nice_mob_manager.version set value "3.8"

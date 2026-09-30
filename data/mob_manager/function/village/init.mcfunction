@@ -29,3 +29,10 @@ scoreboard players set @a[scores={mob_manager.used.bell=1..}] mob_manager.used.b
 #display village name message
 execute unless data storage eden:settings mob_manager.villager_settings{villagename_msg:"disabled"} as @e[type=player,tag=!at_village] at @s if entity @e[type=armor_stand,tag=mob_manager.village.name,distance=..96] run function mob_manager:village/message/entering with entity @n[type=armor_stand,tag=mob_manager.village.name]
 execute as @e[type=player,tag=!not_at_village] at @s unless entity @e[type=armor_stand,tag=mob_manager.village.name,distance=..128] run function mob_manager:village/message/exiting
+
+#clear letterbox effect stuck from disconnecting mid-animation
+execute as @a[tag=mob_manager.village.letterbox.active,scores={mob_manager.village.letterbox.left=1..}] run function mob_manager:village/effect/letterbox_reset
+scoreboard players reset @a[scores={mob_manager.village.letterbox.left=1..}] mob_manager.village.letterbox.left
+
+#restart the letterbox tick loop if it stopped while players still have the effect (e.g. stuck before the leave check existed)
+execute if entity @a[tag=mob_manager.village.letterbox.active] run schedule function mob_manager:village/effect/letterbox_tick 1t

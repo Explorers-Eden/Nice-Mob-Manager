@@ -449,7 +449,7 @@ $dialog show @s \
   },\
   "no":{\
     "label":{\
-      "translate":"gui.back",\
+      "translate":"option.mob_manager.back",\
       "fallback":"Back"\
     },\
     "action":{\

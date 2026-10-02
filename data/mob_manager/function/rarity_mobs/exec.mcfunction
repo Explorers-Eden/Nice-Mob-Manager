@@ -1,6 +1,6 @@
 execute as @s[tag=nice_mobs.base] run return run tag @s add mob_manager.rarity_mobs.applied
 $execute as @s[type=!#$(validmobs)] run return run tag @s add mob_manager.rarity_mobs.applied
-$execute if data storage eden:settings mob_manager.misc{need_sky:"enabled"} as @s[type=#$(validmobs)] at @s if predicate mob_manager:location/can_see_sky run return run tag @s add mob_manager.rarity_mobs.applied
+$execute if data storage eden:settings mob_manager.misc{need_sky:"enabled"} as @s[type=#$(validmobs)] at @s unless predicate mob_manager:location/can_see_sky run return run tag @s add mob_manager.rarity_mobs.applied
 
 $execute as @s[type=#$(validmobs),tag=mob_manager.rarity_mobs.not_$(type)] run return fail
 

@@ -29,7 +29,7 @@
   "pause": true,
   "exit_action": {
     "label": {
-      "translate": "gui.back"
+      "translate": "option.mob_manager.back","fallback":"Back"
     },
     "action": {
       "type": "minecraft:show_dialog",

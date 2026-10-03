@@ -1,11 +1,5 @@
 # Minecraft Version(s): 26.3
 ## Changes:
+- Repeating background tasks now start a few ticks apart after loading instead of all on the same tick, spreading out server load
 
 ## Fixes:
-- Unlimited Restocks and Gossip Villager settings having no effect
-- Mythic rarity mobs not showing particles
-- Mob equipment "Chance To Be Enchanted" working inverted
-- "Scaling/Rarity Only On Surface" applying rarities only to mobs underground
-- Raids option in the Vanilla Gamerules menu showing the wrong state
-- Strays always dropping Ice instead of with a 10% chance
-- Back buttons in menus not showing their label

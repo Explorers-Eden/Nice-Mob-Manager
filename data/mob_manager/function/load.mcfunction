@@ -45,5 +45,8 @@ data remove storage eden:settings mob_manager.wandering_trader_settings.treasure
 data modify storage eden:database names.village set from storage eden:database village
 function mob_manager:database/create
 
+##start repeating loops
+function mob_manager:start
+
 ##set data pack version
-data modify storage eden:datapack nice_mob_manager.version set value "3.9"
+data modify storage eden:datapack nice_mob_manager.version set value "4.0"

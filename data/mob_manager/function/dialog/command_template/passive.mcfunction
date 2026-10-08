@@ -57,7 +57,6 @@ data modify storage eden:settings mob_manager.tropical_fish merge from storage e
 data modify storage eden:settings mob_manager.turtle merge from storage eden:settings mob_manager.all_passive
 data modify storage eden:settings mob_manager.villager merge from storage eden:settings mob_manager.all_passive
 data modify storage eden:settings mob_manager.wandering_trader merge from storage eden:settings mob_manager.all_passive
-data modify storage eden:settings mob_manager.zombie_horse merge from storage eden:settings mob_manager.all_passive
 data modify storage eden:settings mob_manager.happy_ghast merge from storage eden:settings mob_manager.all_passive
 data modify storage eden:settings mob_manager.copper_golem merge from storage eden:settings mob_manager.all_passive
 data modify storage eden:settings mob_manager.nautilus merge from storage eden:settings mob_manager.all_passive
@@ -97,3 +96,4 @@ data modify storage eden:settings mob_manager.wandering_trader.type set value "w
 data modify storage eden:settings mob_manager.happy_ghast.type set value "happy_ghast"
 data modify storage eden:settings mob_manager.copper_golem.type set value "copper_golem"
 data modify storage eden:settings mob_manager.nautilus.type set value "nautilus"
+data modify storage eden:settings mob_manager.sulfur_cube.type set value "sulfur_cube"

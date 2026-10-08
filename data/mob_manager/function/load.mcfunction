@@ -27,6 +27,11 @@ execute unless data storage eden:settings mob_manager.misc run function mob_mana
 ##fix Stray Ice drop chance stored as 10 (1000%) instead of 0.1 in versions before 3.9
 execute if data storage eden:settings mob_manager.mob_drops{strayice:10} run data modify storage eden:settings mob_manager.mob_drops.strayice set value 0.1
 
+##fix Zombie Horse and Sulfur Cube settings broken by saving "All Passive Mobs", in versions before 4.0
+execute if data storage eden:settings mob_manager.zombie_horse run data modify storage eden:settings mob_manager.zombie_horse.type set value "zombie_horse"
+execute if data storage eden:settings mob_manager.zombie_horse if data storage eden:settings mob_manager.all_neutral.command_template run data modify storage eden:settings mob_manager.zombie_horse.command_template set from storage eden:settings mob_manager.all_neutral.command_template
+execute if data storage eden:settings mob_manager.sulfur_cube run data modify storage eden:settings mob_manager.sulfur_cube.type set value "sulfur_cube"
+
 ##remove old wandering trader trade settings no longer used (Miniblock/Plushie/Treasure Book moved to always-on data-driven trades)
 data remove storage eden:settings mob_manager.wandering_trader_settings.miniblockpayamount
 data remove storage eden:settings mob_manager.wandering_trader_settings.miniblockpayitem
@@ -49,4 +54,4 @@ function mob_manager:database/create
 function mob_manager:start
 
 ##set data pack version
-data modify storage eden:datapack nice_mob_manager.version set value "4.0"
+data modify storage eden:datapack nice_mob_manager.version set value "4.1"

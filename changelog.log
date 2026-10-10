@@ -1,5 +1,7 @@
 # Minecraft Version(s): 26.3
 ## Changes:
+- Converted mobs (e.g. Pigs struck by lightning, grown-up Tadpoles) now get their new locator bar icon only once, when near a player, instead of all mobs being updated every 15 seconds (performance)
+- Locator bar settings are now applied to all loaded mobs and village names when saving the misc settings
 
 ## Fixes:
-- Zombie Horse and Sulfur Cube exceptions when saving all of their mob type
+- Rarity mobs losing their rarity locator bar icon

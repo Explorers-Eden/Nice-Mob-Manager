@@ -1,10 +1,6 @@
 schedule function mob_manager:locator_bar/init 15s
 
-execute if data storage eden:settings mob_manager.misc{locator_assets:"disabled"} as @e[type=!#mob_manager:invalid_for_settings,tag=mob_manager.settings.applied,tag=!mob_manager.settings.exclude] run function mob_manager:locator_bar/default_icons with entity @s data.mob_manager.locator_bar
-execute if data storage eden:settings mob_manager.misc{locator_assets:"enabled"} as @e[type=!#mob_manager:invalid_for_settings,tag=mob_manager.settings.applied,tag=!mob_manager.settings.exclude] run function mob_manager:locator_bar/resource_icons with entity @s data.mob_manager.locator_bar
-
-execute if data storage eden:settings mob_manager.misc{locator_assets:"disabled"} as @e[type=armor_stand,tag=mob_manager.village.name] run function mob_manager:locator_bar/default_icons with entity @s data.mob_manager.locator_bar
-execute if data storage eden:settings mob_manager.misc{locator_assets:"enabled"} as @e[type=armor_stand,tag=mob_manager.village.name] run function mob_manager:locator_bar/resource_icons with entity @s data.mob_manager.locator_bar
-
-execute if data storage eden:settings mob_manager.misc{mobs_on_locator_bar:"enabled"} as @e[type=!#mob_manager:invalid_for_settings,tag=mob_manager.settings.applied,tag=!mob_manager.settings.exclude] run function mob_manager:locator_bar/set_range with entity @s data.mob_manager.locator_bar
-execute if data storage eden:settings mob_manager.misc{mobs_on_locator_bar:"disabled"} as @e[type=!#mob_manager:invalid_for_settings,tag=mob_manager.settings.applied,tag=!mob_manager.settings.exclude] run attribute @s minecraft:waypoint_transmit_range base set 0
+# Converted mobs keep tags and custom data (old icon) but get a new UUID, so an unset score means "not checked since conversion"
+execute as @a at @s run tag @e[type=#mob_manager:convertible,tag=mob_manager.settings.applied,tag=!mob_manager.settings.exclude,tag=!mob_manager.rarity_mobs.common,tag=!mob_manager.rarity_mobs.rare,tag=!mob_manager.rarity_mobs.legendary,tag=!mob_manager.rarity_mobs.mythic,distance=..48] add mob_manager.locator_bar.near
+execute as @e[tag=mob_manager.locator_bar.near] unless score @s mob_manager.locator_bar.checked matches 1 run function mob_manager:locator_bar/update_type
+tag @e[tag=mob_manager.locator_bar.near] remove mob_manager.locator_bar.near

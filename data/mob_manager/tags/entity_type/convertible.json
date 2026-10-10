@@ -1,0 +1,14 @@
+{
+  "values": [
+    "minecraft:cow",
+    "minecraft:drowned",
+    "minecraft:frog",
+    "minecraft:stray",
+    "minecraft:villager",
+    "minecraft:witch",
+    "minecraft:zoglin",
+    "minecraft:zombie",
+    "minecraft:zombie_villager",
+    "minecraft:zombified_piglin"
+  ]
+}

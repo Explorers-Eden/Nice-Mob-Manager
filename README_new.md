@@ -3,15 +3,12 @@
 
 <br>
 
-## 📋 Features
-- 🐄 **Mob Settings**: size, attack damage, health, head drop chances and more, for individual mobs or whole groups
-- 💎 **Rarity Mobs**: rare mobs that are tougher and drop better loot, because rare should feel rare
-- 🛡️ **Mob Equipment**: randomize the gear mobs can spawn with, from helmets to boots
-- 🦴 **Additional Mob Drops**: extra drops like Sand from Husks or a chance for the Ender Dragon to drop a Dragon Egg
-- 📜 **Vanilla Game Rules**: check and change mob-related game rules without digging through commands
-- 🧑‍🌾 **Villager Settings**: custom names, randomized baby types and named meeting points
-- 🧳 **Wandering Trader Settings**: announcements, a glowing effect and fun trades like Mini Blocks, Plushies or Enchanted Books
-- ✨ **And much more!** Dive in and see what else you can mess with.
+## 🔎 Content Overview (Wiki)
+Want to know what every menu option does? It's all in our **[Wiki](https://wiki.explorerseden.eu/en/nice_mob_manager/home)**:
+- 🐄 **Mob Settings & Rarity Mobs**: size, health, damage and head drops per mob or group, plus rare mobs with better loot
+- 🛡️ **Mob Equipment & Drops**: randomized gear and extra drops like a chance for the Ender Dragon to drop a Dragon Egg
+- 🧑‍🌾 **Villagers & Wandering Traders**: custom names, meeting points, announcements and fun new trades
+- 📜 **Game Rules & Miscellaneous**: mob-related game rules and everything else you can tweak
 
 <br>
 

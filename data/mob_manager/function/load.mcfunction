@@ -17,6 +17,7 @@ scoreboard objectives add mob_manager.rarity_mobs.rare.timer dummy
 scoreboard objectives add mob_manager.rarity_mobs.legendary.timer dummy
 scoreboard objectives add mob_manager.rarity_mobs.mythic.timer dummy
 scoreboard objectives add mob_manager.playerhead.id dummy
+scoreboard objectives add mob_manager.locator_bar.checked dummy
 scoreboard objectives add mob_manager.playerhead.update minecraft.custom:minecraft.leave_game
 scoreboard objectives add mob_manager.used.bell minecraft.custom:minecraft.bell_ring
 
@@ -54,4 +55,4 @@ function mob_manager:database/create
 function mob_manager:start
 
 ##set data pack version
-data modify storage eden:datapack nice_mob_manager.version set value "4.1"
+data modify storage eden:datapack nice_mob_manager.version set value "4.2"

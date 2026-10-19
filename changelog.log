@@ -1,7 +1,5 @@
 # Minecraft Version(s): 26.3
 ## Changes:
-- Converted mobs (e.g. Pigs struck by lightning, grown-up Tadpoles) now get their new locator bar icon only once, when near a player, instead of all mobs being updated every 15 seconds (performance)
-- Locator bar settings are now applied to all loaded mobs and village names when saving the misc settings
+- Wandering Traders can sell mini blocks of the new cinnabar, sulfur and poplar blocks (14 new trades)
 
 ## Fixes:
-- Rarity mobs losing their rarity locator bar icon

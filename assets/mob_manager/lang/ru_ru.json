@@ -140,6 +140,7 @@
     "option.mob_manager.chat": "Чат",
     "option.mob_manager.villager.villagename": "Жители дают название Точке Сбора",
     "option.mob_manager.villager.villagename_msg": "Показывать название Точки Сбора игроку",
+    "option.mob_manager.villager.villagename_effect": "Screen Effect When Entering A Village",
     "option.mob_manager.title": "Заголовок",
     "option.mob_manager.villager.villagename_rename": "Игрок может изменить название Точки Сбора",
     "option.mob_manager.villager.villagecenter_healing": "Восстановление здоровья у Точки Сбора",

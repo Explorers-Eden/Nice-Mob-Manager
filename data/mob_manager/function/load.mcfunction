@@ -47,6 +47,10 @@ data remove storage eden:settings mob_manager.wandering_trader_settings.treasure
 data remove storage eden:settings mob_manager.wandering_trader_settings.treasurebook
 data remove storage eden:settings mob_manager.wandering_trader_settings.treasurebook_initial
 
+##add the village entry screen effect toggle to villager settings saved before 4.5
+execute if data storage eden:settings mob_manager.villager_settings unless data storage eden:settings mob_manager.villager_settings.villagename_effect run data modify storage eden:settings mob_manager.villager_settings merge value {villagename_effect:"enabled",villagename_effect_initial:"false"}
+execute if data storage eden:settings mob_manager.villager_settings run data modify storage eden:settings mob_manager.villager_settings.command_template set value "function mob_manager:dialog/command_template/villager {pet:$(pet),validmobs:\'$(validmobs)\',locator_color:\'$(locator_color)\',locator_range:$(locator_range),village_heal_distance:$(village_heal_distance),villagecenter_healing:$(villagecenter_healing),villagename_rename:$(villagename_rename),villagename_msg:$(villagename_msg),villagename_effect:$(villagename_effect),villagename:$(villagename),talking:$(talking),breeddiversity:$(breeddiversity),gossip:$(gossip),restock:$(restock),customname:$(customname)}"
+
 ##Update DB
 data modify storage eden:database names.village set from storage eden:database village
 function mob_manager:database/create
@@ -55,4 +59,4 @@ function mob_manager:database/create
 function mob_manager:start
 
 ##set data pack version
-data modify storage eden:datapack nice_mob_manager.version set value "4.2"
+data modify storage eden:datapack nice_mob_manager.version set value "4.5"

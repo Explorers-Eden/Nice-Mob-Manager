@@ -1,6 +1,5 @@
 # Minecraft Version(s): 26.3
 ## Changes:
-- "Mobs on locator bar" now also reaches mobs that weren't loaded when the setting was changed: every 15 seconds, loaded mobs whose locator bar range doesn't match the setting yet get it once (each mob is only touched once per setting, so this stays cheap)
+- New Villager setting "Screen Effect When Entering A Village": turns off the cinematic letterbox effect that plays with the village name title (the title and sound still show)
 
 ## Fixes:
-- Mobs from chunks that were unloaded while "Mobs on locator bar" was switched off kept showing on the locator bar, which also made every player's movement more expensive for the server

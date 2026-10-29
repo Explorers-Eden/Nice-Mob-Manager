@@ -140,6 +140,7 @@
     "option.mob_manager.chat": "Чат",
     "option.mob_manager.villager.villagename": "Жителі називають місце зборів",
     "option.mob_manager.villager.villagename_msg": "Показувати назву місця зборів гравцю",
+    "option.mob_manager.villager.villagename_effect": "Screen Effect When Entering A Village",
     "option.mob_manager.title": "Заголовок",
     "option.mob_manager.villager.villagename_rename": "Гравці можуть перейменовувати місце зборів",
     "option.mob_manager.villager.villagecenter_healing": "Зцілення біля місця зборів",

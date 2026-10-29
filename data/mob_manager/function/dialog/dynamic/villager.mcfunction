@@ -257,6 +257,34 @@ $dialog show @s \
       ]\
     },\
     {\
+      "type": "minecraft:single_option",\
+      "key": "villagename_effect",\
+      "width": 256,\
+      "label": {\
+        "translate": "option.mob_manager.villager.villagename_effect",\
+        "fallback": "Screen Effect When Entering A Village"\
+      },\
+      "options": [\
+        {\
+          "id": "enabled",\
+          "display": {\
+            "translate": "option.mob_manager.enabled",\
+            "fallback": "Enabled",\
+            "color": "green"\
+          }\
+        },\
+        {\
+          "id": "disabled",\
+          "display": {\
+            "translate": "option.mob_manager.disabled",\
+            "fallback": "Disabled",\
+            "color": "red"\
+          },\
+          "initial": $(villagename_effect_initial)\
+        }\
+      ]\
+    },\
+    {\
       "type":"minecraft:text",\
       "key":"locator_color",\
       "width": 256,\

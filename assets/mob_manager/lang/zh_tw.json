@@ -163,6 +163,8 @@
     "option.mob_manager.wandering_trader.treasurebookpayamount": "Item Amount For Treasure Book Payment",
     "option.mob_manager.mob_equipment.mobheads": "Chance For Mobs Wearing Mobheads",
     "option.mob_manager.mob_equipment.playerheads": "Chance For Mobs Wearing Playerheads",
+    "option.mob_manager.mob_equipment.mobheads_drop": "Mobhead Drop Chance",
+    "option.mob_manager.mob_equipment.playerheads_drop": "Playerhead Drop Chance",
     "option.mob_manager.leathercolor": "Random Leather Armor Color",
     "option.mob_manager.trim": "Random Armor Trims",
     "option.mob_manager.bannershield": "Random Shield Banners",

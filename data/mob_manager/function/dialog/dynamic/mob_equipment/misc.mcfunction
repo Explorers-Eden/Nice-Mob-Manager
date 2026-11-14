@@ -48,6 +48,34 @@ $dialog show @s \
       "initial":$(playerheads_initial)\
     },\
     {\
+      "type":"minecraft:number_range",\
+      "key":"mobheads_drop",\
+      "width": 256,\
+      "label":{\
+        "translate":"option.mob_manager.mob_equipment.mobheads_drop",\
+        "fallback":"Mobhead Drop Chance"\
+      },\
+      "label_format":"options.percent_value",\
+      "start":0,\
+      "end":100,\
+      "step":1,\
+      "initial":$(mobheads_drop_initial)\
+    },\
+    {\
+      "type":"minecraft:number_range",\
+      "key":"playerheads_drop",\
+      "width": 256,\
+      "label":{\
+        "translate":"option.mob_manager.mob_equipment.playerheads_drop",\
+        "fallback":"Playerhead Drop Chance"\
+      },\
+      "label_format":"options.percent_value",\
+      "start":0,\
+      "end":100,\
+      "step":1,\
+      "initial":$(playerheads_drop_initial)\
+    },\
+    {\
       "type":"minecraft:single_option",\
       "key":"leathercolor",\
       "width": 256,\

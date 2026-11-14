@@ -15,6 +15,12 @@ execute store result storage eden:settings mob_manager.mob_equipment.misc.player
 $data modify storage eden:settings mob_manager.mob_equipment.misc.mobheads_initial set value $(mobheads)
 execute store result storage eden:settings mob_manager.mob_equipment.misc.mobheads float 0.01 run data get storage eden:settings mob_manager.mob_equipment.misc.mobheads_initial
 
+$data modify storage eden:settings mob_manager.mob_equipment.misc.playerheads_drop_initial set value $(playerheads_drop)
+execute store result storage eden:settings mob_manager.mob_equipment.misc.playerheads_drop float 0.01 run data get storage eden:settings mob_manager.mob_equipment.misc.playerheads_drop_initial
+
+$data modify storage eden:settings mob_manager.mob_equipment.misc.mobheads_drop_initial set value $(mobheads_drop)
+execute store result storage eden:settings mob_manager.mob_equipment.misc.mobheads_drop float 0.01 run data get storage eden:settings mob_manager.mob_equipment.misc.mobheads_drop_initial
+
 execute if data storage eden:settings mob_manager.mob_equipment.misc{vex_equip:"air"} run data modify storage eden:settings mob_manager.mob_equipment.misc merge value {vex_equip_copper_sword_initial:"false",vex_equip_stick_initial:"false",vex_equip_wooden_sword_initial:"false",vex_equip_stone_sword_initial:"false",vex_equip_iron_sword_initial:"false",vex_equip_golden_sword_initial:"false",vex_equip_diamond_sword_initial:"false",vex_equip_netherite_sword_initial:"false"}
 execute if data storage eden:settings mob_manager.mob_equipment.misc{vex_equip:"stick"} run data modify storage eden:settings mob_manager.mob_equipment.misc merge value {vex_equip_copper_sword_initial:"false",vex_equip_stick_initial:"true",vex_equip_wooden_sword_initial:"false",vex_equip_stone_sword_initial:"false",vex_equip_iron_sword_initial:"false",vex_equip_golden_sword_initial:"false",vex_equip_diamond_sword_initial:"false",vex_equip_netherite_sword_initial:"false"}
 execute if data storage eden:settings mob_manager.mob_equipment.misc{vex_equip:"wooden_sword"} run data modify storage eden:settings mob_manager.mob_equipment.misc merge value {vex_equip_copper_sword_initial:"false",vex_equip_stick_initial:"false",vex_equip_wooden_sword_initial:"true",vex_equip_stone_sword_initial:"false",vex_equip_iron_sword_initial:"false",vex_equip_golden_sword_initial:"false",vex_equip_diamond_sword_initial:"false",vex_equip_netherite_sword_initial:"false"}

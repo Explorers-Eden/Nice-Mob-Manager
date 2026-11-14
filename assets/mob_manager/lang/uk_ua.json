@@ -163,6 +163,8 @@
     "option.mob_manager.wandering_trader.treasurebookpayamount": "Кількість предметів для оплати книг скарбів",
     "option.mob_manager.mob_equipment.mobheads": "Шанс, що моб носитиме голову моба",
     "option.mob_manager.mob_equipment.playerheads": "Шанс, що моб носитиме голову гравця",
+    "option.mob_manager.mob_equipment.mobheads_drop": "Mobhead Drop Chance",
+    "option.mob_manager.mob_equipment.playerheads_drop": "Playerhead Drop Chance",
     "option.mob_manager.leathercolor": "Випадковий колір шкіряної броні",
     "option.mob_manager.trim": "Випадкові візерунки броні",
     "option.mob_manager.bannershield": "Випадкові прапори на щитах",

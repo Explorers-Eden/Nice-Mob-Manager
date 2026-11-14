@@ -163,6 +163,8 @@
     "option.mob_manager.wandering_trader.treasurebookpayamount": "Число предметов, необходимых для обмена на редкие зачарованные книги",
     "option.mob_manager.mob_equipment.mobheads": "Вероятность, что мобы будут носить головы других мобов",
     "option.mob_manager.mob_equipment.playerheads": "Вероятность, что мобы будут носить головы игроков",
+    "option.mob_manager.mob_equipment.mobheads_drop": "Mobhead Drop Chance",
+    "option.mob_manager.mob_equipment.playerheads_drop": "Playerhead Drop Chance",
     "option.mob_manager.leathercolor": "Произвольный цвет кожаной брони",
     "option.mob_manager.trim": "Произвольный узор на броне",
     "option.mob_manager.bannershield": "Щит с произвольным баннером",

@@ -51,6 +51,10 @@ data remove storage eden:settings mob_manager.wandering_trader_settings.treasure
 execute if data storage eden:settings mob_manager.villager_settings unless data storage eden:settings mob_manager.villager_settings.villagename_effect run data modify storage eden:settings mob_manager.villager_settings merge value {villagename_effect:"enabled",villagename_effect_initial:"false"}
 execute if data storage eden:settings mob_manager.villager_settings run data modify storage eden:settings mob_manager.villager_settings.command_template set value "function mob_manager:dialog/command_template/villager {pet:$(pet),validmobs:\'$(validmobs)\',locator_color:\'$(locator_color)\',locator_range:$(locator_range),village_heal_distance:$(village_heal_distance),villagecenter_healing:$(villagecenter_healing),villagename_rename:$(villagename_rename),villagename_msg:$(villagename_msg),villagename_effect:$(villagename_effect),villagename:$(villagename),talking:$(talking),breeddiversity:$(breeddiversity),gossip:$(gossip),restock:$(restock),customname:$(customname)}"
 
+##add the mobhead/playerhead drop chance settings to mob equipment settings saved before 4.6
+execute if data storage eden:settings mob_manager.mob_equipment.misc unless data storage eden:settings mob_manager.mob_equipment.misc.mobheads_drop run data modify storage eden:settings mob_manager.mob_equipment.misc merge value {playerheads_drop:0.08,playerheads_drop_initial:8,mobheads_drop:0.08,mobheads_drop_initial:8}
+execute if data storage eden:settings mob_manager.mob_equipment.misc run data modify storage eden:settings mob_manager.mob_equipment.misc.command_template set value "function mob_manager:dialog/command_template/mob_equipment/misc {vex_equip:$(vex_equip),leathercolor:$(leathercolor),trim:$(trim),bannershield:$(bannershield),playerheads:$(playerheads),mobheads:$(mobheads),playerheads_drop:$(playerheads_drop),mobheads_drop:$(mobheads_drop)}"
+
 ##Update DB
 data modify storage eden:database names.village set from storage eden:database village
 function mob_manager:database/create
@@ -59,4 +63,4 @@ function mob_manager:database/create
 function mob_manager:start
 
 ##set data pack version
-data modify storage eden:datapack nice_mob_manager.version set value "4.5"
+data modify storage eden:datapack nice_mob_manager.version set value "4.6"
